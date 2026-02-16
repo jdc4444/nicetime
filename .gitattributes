@@ -1,0 +1,2 @@
+working/weather_data_v2.db filter=lfs diff=lfs merge=lfs -text
+archive/weather_data.db filter=lfs diff=lfs merge=lfs -text
