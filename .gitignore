@@ -15,6 +15,7 @@ __pycache__/
 # Local run artifacts
 *.lock
 backfill_run.out
+lfs_push.log
 
 # Files above GitHub size limit (use LFS if needed)
 archive/allCountries.txt
