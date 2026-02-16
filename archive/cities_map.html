@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f4ef689154df7fc22bd23f140f48c0f9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+        <style>
+            .leaflet-popup-content-wrapper {
+                background: rgba(255, 255, 255, 0.9);
+                border-radius: 8px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            }
+            .leaflet-popup-tip {
+                background: rgba(255, 255, 255, 0.9);
+            }
+        </style>
+        
+    
+            <div class="folium-map" id="map_f4ef689154df7fc22bd23f140f48c0f9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f4ef689154df7fc22bd23f140f48c0f9 = L.map(
+                "map_f4ef689154df7fc22bd23f140f48c0f9",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": true,
+  "zoomControl": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fb35a13259d591feaea6a5866333b2da = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_fb35a13259d591feaea6a5866333b2da.addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+            var circle_marker_f5f2a791b4a00e36cbc810f1aefe39be = L.circleMarker(
+                [28.2916, -16.6291],
+                {"bubblingMouseEvents": true, "color": "#be4000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#be4000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_b1cc7154df022db36d1f6c02fe629ff8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c84291212c9f563c65ecbef2621c2171 = $(`<div id="html_c84291212c9f563c65ecbef2621c2171" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Tenerife, Spain</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 55.58°F / 38.660000000000004°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.25                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 10/30                         </p>                     </div>                 </div>`)[0];
+                popup_b1cc7154df022db36d1f6c02fe629ff8.setContent(html_c84291212c9f563c65ecbef2621c2171);
+            
+        
+
+        circle_marker_f5f2a791b4a00e36cbc810f1aefe39be.bindPopup(popup_b1cc7154df022db36d1f6c02fe629ff8)
+        ;
+
+        
+    
+    
+            circle_marker_f5f2a791b4a00e36cbc810f1aefe39be.bindTooltip(
+                `<div>
+                     Tenerife
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e84be227f688b6a618e422ce1a97aac9 = L.circleMarker(
+                [21.3069, -157.8583],
+                {"bubblingMouseEvents": true, "color": "#58a600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#58a600", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_e95e1c7d0ceacb69cce52b5eb3a4e404 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c613c7597e5b186d4e84e3b0b4ec79f5 = $(`<div id="html_c613c7597e5b186d4e84e3b0b4ec79f5" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Honolulu, USA</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 85.46000000000001°F / 74.66°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.65                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 3/30                         </p>                     </div>                 </div>`)[0];
+                popup_e95e1c7d0ceacb69cce52b5eb3a4e404.setContent(html_c613c7597e5b186d4e84e3b0b4ec79f5);
+            
+        
+
+        circle_marker_e84be227f688b6a618e422ce1a97aac9.bindPopup(popup_e95e1c7d0ceacb69cce52b5eb3a4e404)
+        ;
+
+        
+    
+    
+            circle_marker_e84be227f688b6a618e422ce1a97aac9.bindTooltip(
+                `<div>
+                     Honolulu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5d96c286335015ab8b0984c656c7c759 = L.circleMarker(
+                [23.4469, -110.2231],
+                {"bubblingMouseEvents": true, "color": "#32cc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#32cc00", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_0ab16a426564a796432f4e0f064b1189 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c9bab1a4f2b872b0a5a2a79366ee0174 = $(`<div id="html_c9bab1a4f2b872b0a5a2a79366ee0174" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Todos Santos, Mexico</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 82.4°F / 59.0°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.80                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 21/30                         </p>                     </div>                 </div>`)[0];
+                popup_0ab16a426564a796432f4e0f064b1189.setContent(html_c9bab1a4f2b872b0a5a2a79366ee0174);
+            
+        
+
+        circle_marker_5d96c286335015ab8b0984c656c7c759.bindPopup(popup_0ab16a426564a796432f4e0f064b1189)
+        ;
+
+        
+    
+    
+            circle_marker_5d96c286335015ab8b0984c656c7c759.bindTooltip(
+                `<div>
+                     Todos Santos
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7845d93dd1db308137984e93220c3e7e = L.circleMarker(
+                [34.0522, -118.2437],
+                {"bubblingMouseEvents": true, "color": "#58a600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#58a600", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_d7cd692651206d24301782c3e56b73b3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f52ec382b71b81a7286dd11951692690 = $(`<div id="html_f52ec382b71b81a7286dd11951692690" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Los Angeles, USA</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 76.46°F / 52.879999999999995°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.65                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 12/30                         </p>                     </div>                 </div>`)[0];
+                popup_d7cd692651206d24301782c3e56b73b3.setContent(html_f52ec382b71b81a7286dd11951692690);
+            
+        
+
+        circle_marker_7845d93dd1db308137984e93220c3e7e.bindPopup(popup_d7cd692651206d24301782c3e56b73b3)
+        ;
+
+        
+    
+    
+            circle_marker_7845d93dd1db308137984e93220c3e7e.bindTooltip(
+                `<div>
+                     Los Angeles
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e12f01069970fbd42f3bb1dfd3b8b888 = L.circleMarker(
+                [36.1699, -115.1398],
+                {"bubblingMouseEvents": true, "color": "#48b600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#48b600", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_d90abf56f917d35be68e68cead5457b5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a2c1ef7b4907aa45b63ab40427f0be79 = $(`<div id="html_a2c1ef7b4907aa45b63ab40427f0be79" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Las Vegas, USA</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 84.74°F / 60.440000000000005°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.72                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 11/30                         </p>                     </div>                 </div>`)[0];
+                popup_d90abf56f917d35be68e68cead5457b5.setContent(html_a2c1ef7b4907aa45b63ab40427f0be79);
+            
+        
+
+        circle_marker_e12f01069970fbd42f3bb1dfd3b8b888.bindPopup(popup_d90abf56f917d35be68e68cead5457b5)
+        ;
+
+        
+    
+    
+            circle_marker_e12f01069970fbd42f3bb1dfd3b8b888.bindTooltip(
+                `<div>
+                     Las Vegas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1b97d8fa58e7998d5492b8186cc897c0 = L.circleMarker(
+                [19.4326, -99.1332],
+                {"bubblingMouseEvents": true, "color": "#4bb300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4bb300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_783e73c84792e867dd5d6499ed75b404 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0ede33efbe1eabc66975d2d05624d259 = $(`<div id="html_0ede33efbe1eabc66975d2d05624d259" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Mexico City, Mexico</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 88.52°F / 59.18°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.70                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 9/30                         </p>                     </div>                 </div>`)[0];
+                popup_783e73c84792e867dd5d6499ed75b404.setContent(html_0ede33efbe1eabc66975d2d05624d259);
+            
+        
+
+        circle_marker_1b97d8fa58e7998d5492b8186cc897c0.bindPopup(popup_783e73c84792e867dd5d6499ed75b404)
+        ;
+
+        
+    
+    
+            circle_marker_1b97d8fa58e7998d5492b8186cc897c0.bindTooltip(
+                `<div>
+                     Mexico City
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_654d90c3f223d05c5ab23189ad96077b = L.circleMarker(
+                [6.2442, -75.5812],
+                {"bubblingMouseEvents": true, "color": "#798500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#798500", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_f7e1a077683b71da914ca33b20e05eff = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_809a81b44d1c66e9d7ba5b239c94553c = $(`<div id="html_809a81b44d1c66e9d7ba5b239c94553c" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Medellin, Colombia</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 73.94°F / 65.84°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.52                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 0/30                         </p>                     </div>                 </div>`)[0];
+                popup_f7e1a077683b71da914ca33b20e05eff.setContent(html_809a81b44d1c66e9d7ba5b239c94553c);
+            
+        
+
+        circle_marker_654d90c3f223d05c5ab23189ad96077b.bindPopup(popup_f7e1a077683b71da914ca33b20e05eff)
+        ;
+
+        
+    
+    
+            circle_marker_654d90c3f223d05c5ab23189ad96077b.bindTooltip(
+                `<div>
+                     Medellin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b007c588c87546ca4046f1aa55026b40 = L.circleMarker(
+                [24.4539, 54.3773],
+                {"bubblingMouseEvents": true, "color": "#9e6000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9e6000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_46571f4833558bd6eb4101866e38c518 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2cc2a7f5550c42b9e417def97d684ffd = $(`<div id="html_2cc2a7f5550c42b9e417def97d684ffd" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Abu Dhabi, UAE</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 106.7°F / 87.98°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.38                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 29/30                         </p>                     </div>                 </div>`)[0];
+                popup_46571f4833558bd6eb4101866e38c518.setContent(html_2cc2a7f5550c42b9e417def97d684ffd);
+            
+        
+
+        circle_marker_b007c588c87546ca4046f1aa55026b40.bindPopup(popup_46571f4833558bd6eb4101866e38c518)
+        ;
+
+        
+    
+    
+            circle_marker_b007c588c87546ca4046f1aa55026b40.bindTooltip(
+                `<div>
+                     Abu Dhabi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1a664fd125acf4b92e74ade7f3365f0d = L.circleMarker(
+                [32.2226, -110.9747],
+                {"bubblingMouseEvents": true, "color": "#2fcf00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2fcf00", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_01adf0ff288ae6d81def15c1dde63f32 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4bb20c0606079d79a2f5753d7b673ab4 = $(`<div id="html_4bb20c0606079d79a2f5753d7b673ab4" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Tucson, USA</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 84.91999999999999°F / 53.96°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.82                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 23/30                         </p>                     </div>                 </div>`)[0];
+                popup_01adf0ff288ae6d81def15c1dde63f32.setContent(html_4bb20c0606079d79a2f5753d7b673ab4);
+            
+        
+
+        circle_marker_1a664fd125acf4b92e74ade7f3365f0d.bindPopup(popup_01adf0ff288ae6d81def15c1dde63f32)
+        ;
+
+        
+    
+    
+            circle_marker_1a664fd125acf4b92e74ade7f3365f0d.bindTooltip(
+                `<div>
+                     Tucson
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aee58e49ff291711f70f959785b51638 = L.circleMarker(
+                [-22.9068, -43.1729],
+                {"bubblingMouseEvents": true, "color": "#49b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49b500", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_ff416ffce2e66af7167654efc5bf6413 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c40588d0f97bac1ab5ee5c1ae65014b2 = $(`<div id="html_c40588d0f97bac1ab5ee5c1ae65014b2" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Rio de Janeiro, Brazil</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 81.32°F / 62.6°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.71                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 10/30                         </p>                     </div>                 </div>`)[0];
+                popup_ff416ffce2e66af7167654efc5bf6413.setContent(html_c40588d0f97bac1ab5ee5c1ae65014b2);
+            
+        
+
+        circle_marker_aee58e49ff291711f70f959785b51638.bindPopup(popup_ff416ffce2e66af7167654efc5bf6413)
+        ;
+
+        
+    
+    
+            circle_marker_aee58e49ff291711f70f959785b51638.bindTooltip(
+                `<div>
+                     Rio de Janeiro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_316f7fb7eddc9b0196452648de3b3aea = L.circleMarker(
+                [-3.7319, -38.5267],
+                {"bubblingMouseEvents": true, "color": "#6b9300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6b9300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_354a8f223379e09dc8e860390631f294 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3e330a2d4646b8eee085fd421f566c11 = $(`<div id="html_3e330a2d4646b8eee085fd421f566c11" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Fortaleza, Brazil</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 86.9°F / 79.34°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.58                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 0/30                         </p>                     </div>                 </div>`)[0];
+                popup_354a8f223379e09dc8e860390631f294.setContent(html_3e330a2d4646b8eee085fd421f566c11);
+            
+        
+
+        circle_marker_316f7fb7eddc9b0196452648de3b3aea.bindPopup(popup_354a8f223379e09dc8e860390631f294)
+        ;
+
+        
+    
+    
+            circle_marker_316f7fb7eddc9b0196452648de3b3aea.bindTooltip(
+                `<div>
+                     Fortaleza
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_51f1810c029c972f38c80bf7f6c84503 = L.circleMarker(
+                [55.6761, 12.5683],
+                {"bubblingMouseEvents": true, "color": "#a95500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a95500", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_01f4be68257ca170ad117d4526497453 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_148ec5aa705a78ca49dc75816562cb28 = $(`<div id="html_148ec5aa705a78ca49dc75816562cb28" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Copenhagen, Denmark</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 63.86°F / 48.92°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.33                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 7/30                         </p>                     </div>                 </div>`)[0];
+                popup_01f4be68257ca170ad117d4526497453.setContent(html_148ec5aa705a78ca49dc75816562cb28);
+            
+        
+
+        circle_marker_51f1810c029c972f38c80bf7f6c84503.bindPopup(popup_01f4be68257ca170ad117d4526497453)
+        ;
+
+        
+    
+    
+            circle_marker_51f1810c029c972f38c80bf7f6c84503.bindTooltip(
+                `<div>
+                     Copenhagen
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a037fc3d2e588f85eeae8bef1bf22a8a = L.circleMarker(
+                [40.7128, -74.006],
+                {"bubblingMouseEvents": true, "color": "#a75700", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a75700", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_8b469fc8ab8db269142f5af21d35897b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8ef1232fa43e4f9c5067795aafae1cc3 = $(`<div id="html_8ef1232fa43e4f9c5067795aafae1cc3" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">New York, USA</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 68.36°F / 59.9°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.34                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 0/30                         </p>                     </div>                 </div>`)[0];
+                popup_8b469fc8ab8db269142f5af21d35897b.setContent(html_8ef1232fa43e4f9c5067795aafae1cc3);
+            
+        
+
+        circle_marker_a037fc3d2e588f85eeae8bef1bf22a8a.bindPopup(popup_8b469fc8ab8db269142f5af21d35897b)
+        ;
+
+        
+    
+    
+            circle_marker_a037fc3d2e588f85eeae8bef1bf22a8a.bindTooltip(
+                `<div>
+                     New York
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4ec8c7d1846917a50ed07d068dcaba1b = L.circleMarker(
+                [-23.5505, -46.6333],
+                {"bubblingMouseEvents": true, "color": "#926c00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#926c00", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_c9d899ff1199d19751e6a756f2e836ed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4d6a7a8545fa8649d539fb74feb96291 = $(`<div id="html_4d6a7a8545fa8649d539fb74feb96291" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Sao Paolo, Brazil</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 72.14°F / 56.48°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.42                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 4/30                         </p>                     </div>                 </div>`)[0];
+                popup_c9d899ff1199d19751e6a756f2e836ed.setContent(html_4d6a7a8545fa8649d539fb74feb96291);
+            
+        
+
+        circle_marker_4ec8c7d1846917a50ed07d068dcaba1b.bindPopup(popup_c9d899ff1199d19751e6a756f2e836ed)
+        ;
+
+        
+    
+    
+            circle_marker_4ec8c7d1846917a50ed07d068dcaba1b.bindTooltip(
+                `<div>
+                     Sao Paolo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c6b4baf4d937a0150abd1c7c86a0e197 = L.circleMarker(
+                [52.3676, 4.9041],
+                {"bubblingMouseEvents": true, "color": "#9f5f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9f5f00", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_14d39b45eddcf39e018984271569548d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eba26a4784114b6e3f7adf015f619957 = $(`<div id="html_eba26a4784114b6e3f7adf015f619957" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Amsterdam, Netherlands</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 66.2°F / 51.8°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.38                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 9/30                         </p>                     </div>                 </div>`)[0];
+                popup_14d39b45eddcf39e018984271569548d.setContent(html_eba26a4784114b6e3f7adf015f619957);
+            
+        
+
+        circle_marker_c6b4baf4d937a0150abd1c7c86a0e197.bindPopup(popup_14d39b45eddcf39e018984271569548d)
+        ;
+
+        
+    
+    
+            circle_marker_c6b4baf4d937a0150abd1c7c86a0e197.bindTooltip(
+                `<div>
+                     Amsterdam
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3d2dcc296d20f6403a1e3268da0c91d2 = L.circleMarker(
+                [35.687, -105.9378],
+                {"bubblingMouseEvents": true, "color": "#aa5400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aa5400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_87cfde1f79f925e0ec712235d96b176f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6fa035ae95436a1004ef99726fa995ae = $(`<div id="html_6fa035ae95436a1004ef99726fa995ae" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Santa Fe, USA</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 63.68°F / 42.260000000000005°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.33                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 8/30                         </p>                     </div>                 </div>`)[0];
+                popup_87cfde1f79f925e0ec712235d96b176f.setContent(html_6fa035ae95436a1004ef99726fa995ae);
+            
+        
+
+        circle_marker_3d2dcc296d20f6403a1e3268da0c91d2.bindPopup(popup_87cfde1f79f925e0ec712235d96b176f)
+        ;
+
+        
+    
+    
+            circle_marker_3d2dcc296d20f6403a1e3268da0c91d2.bindTooltip(
+                `<div>
+                     Santa Fe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ea23bbf136a037e1252a83063a154d45 = L.circleMarker(
+                [52.52, 13.405],
+                {"bubblingMouseEvents": true, "color": "#be4000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#be4000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_5e0c32ea726958170d80838b73d2b88a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_30cdccb74ec26208aa5f1debb6e730ec = $(`<div id="html_30cdccb74ec26208aa5f1debb6e730ec" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Berlin, Germany</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 57.74°F / 46.94°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.25                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 6/30                         </p>                     </div>                 </div>`)[0];
+                popup_5e0c32ea726958170d80838b73d2b88a.setContent(html_30cdccb74ec26208aa5f1debb6e730ec);
+            
+        
+
+        circle_marker_ea23bbf136a037e1252a83063a154d45.bindPopup(popup_5e0c32ea726958170d80838b73d2b88a)
+        ;
+
+        
+    
+    
+            circle_marker_ea23bbf136a037e1252a83063a154d45.bindTooltip(
+                `<div>
+                     Berlin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd6fc6d17a11afa21ed6d9b93a503c5f = L.circleMarker(
+                [51.5074, -0.1278],
+                {"bubblingMouseEvents": true, "color": "#c63800", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c63800", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_0d6158c6f58683ce1ec98ba70689ada6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8540642b52bcc3806bdc33fe9c8ac6d1 = $(`<div id="html_8540642b52bcc3806bdc33fe9c8ac6d1" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">London, UK</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 57.56°F / 48.379999999999995°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.22                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 2/30                         </p>                     </div>                 </div>`)[0];
+                popup_0d6158c6f58683ce1ec98ba70689ada6.setContent(html_8540642b52bcc3806bdc33fe9c8ac6d1);
+            
+        
+
+        circle_marker_fd6fc6d17a11afa21ed6d9b93a503c5f.bindPopup(popup_0d6158c6f58683ce1ec98ba70689ada6)
+        ;
+
+        
+    
+    
+            circle_marker_fd6fc6d17a11afa21ed6d9b93a503c5f.bindTooltip(
+                `<div>
+                     London
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d984895105b13a12bcddeb53f91ca081 = L.circleMarker(
+                [-34.6037, -58.3816],
+                {"bubblingMouseEvents": true, "color": "#5f9f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5f9f00", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_18168610c030e0cfbfcd039f9ac381c7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ebcfca73be5f78926d4176bd3316fb9c = $(`<div id="html_ebcfca73be5f78926d4176bd3316fb9c" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Buenos Aires, Argentina</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 74.3°F / 64.58°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.62                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 11/30                         </p>                     </div>                 </div>`)[0];
+                popup_18168610c030e0cfbfcd039f9ac381c7.setContent(html_ebcfca73be5f78926d4176bd3316fb9c);
+            
+        
+
+        circle_marker_d984895105b13a12bcddeb53f91ca081.bindPopup(popup_18168610c030e0cfbfcd039f9ac381c7)
+        ;
+
+        
+    
+    
+            circle_marker_d984895105b13a12bcddeb53f91ca081.bindTooltip(
+                `<div>
+                     Buenos Aires
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7987ba7ef7eb842f1a65b45e8d14c677 = L.circleMarker(
+                [37.9838, 23.7275],
+                {"bubblingMouseEvents": true, "color": "#7f7f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7f7f00", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_f868bea13b2e6e3573a6027323a51737 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_780630723cdfc897874d99a9bf3420bb = $(`<div id="html_780630723cdfc897874d99a9bf3420bb" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Athens, Greece</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 72.86°F / 56.66°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.50                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 10/30                         </p>                     </div>                 </div>`)[0];
+                popup_f868bea13b2e6e3573a6027323a51737.setContent(html_780630723cdfc897874d99a9bf3420bb);
+            
+        
+
+        circle_marker_7987ba7ef7eb842f1a65b45e8d14c677.bindPopup(popup_f868bea13b2e6e3573a6027323a51737)
+        ;
+
+        
+    
+    
+            circle_marker_7987ba7ef7eb842f1a65b45e8d14c677.bindTooltip(
+                `<div>
+                     Athens
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_285c159c0fcd9118f17518ee67344ac6 = L.circleMarker(
+                [35.6762, 139.6503],
+                {"bubblingMouseEvents": true, "color": "#669800", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#669800", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_9b3fd59acc109a9f788ae16cc3c8eeb5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1df4809b11efd4d63dde9904c24ba9a5 = $(`<div id="html_1df4809b11efd4d63dde9904c24ba9a5" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Tokyo, Japan</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 76.28°F / 59.18°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.60                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 2/30                         </p>                     </div>                 </div>`)[0];
+                popup_9b3fd59acc109a9f788ae16cc3c8eeb5.setContent(html_1df4809b11efd4d63dde9904c24ba9a5);
+            
+        
+
+        circle_marker_285c159c0fcd9118f17518ee67344ac6.bindPopup(popup_9b3fd59acc109a9f788ae16cc3c8eeb5)
+        ;
+
+        
+    
+    
+            circle_marker_285c159c0fcd9118f17518ee67344ac6.bindTooltip(
+                `<div>
+                     Tokyo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_62de1059c90d27a62e87e362af47661d = L.circleMarker(
+                [39.4699, -0.3763],
+                {"bubblingMouseEvents": true, "color": "#7a8400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7a8400", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_0838a23eb671bdb79dabf6f70271fc55 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2457f739e0062b3d518b7062d484af63 = $(`<div id="html_2457f739e0062b3d518b7062d484af63" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Valencia, Spain</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 74.66°F / 56.66°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.52                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 3/30                         </p>                     </div>                 </div>`)[0];
+                popup_0838a23eb671bdb79dabf6f70271fc55.setContent(html_2457f739e0062b3d518b7062d484af63);
+            
+        
+
+        circle_marker_62de1059c90d27a62e87e362af47661d.bindPopup(popup_0838a23eb671bdb79dabf6f70271fc55)
+        ;
+
+        
+    
+    
+            circle_marker_62de1059c90d27a62e87e362af47661d.bindTooltip(
+                `<div>
+                     Valencia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_209d5062b7326c5c1d7263ea226eebdd = L.circleMarker(
+                [30.2672, -97.7431],
+                {"bubblingMouseEvents": true, "color": "#966800", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#966800", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_d14de026cce46bb47e8b98c1e1f12a9e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_24a53bcf1303b0c4451474d11bb2d715 = $(`<div id="html_24a53bcf1303b0c4451474d11bb2d715" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Austin, USA</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 96.98°F / 71.06°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.41                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 12/30                         </p>                     </div>                 </div>`)[0];
+                popup_d14de026cce46bb47e8b98c1e1f12a9e.setContent(html_24a53bcf1303b0c4451474d11bb2d715);
+            
+        
+
+        circle_marker_209d5062b7326c5c1d7263ea226eebdd.bindPopup(popup_d14de026cce46bb47e8b98c1e1f12a9e)
+        ;
+
+        
+    
+    
+            circle_marker_209d5062b7326c5c1d7263ea226eebdd.bindTooltip(
+                `<div>
+                     Austin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_624c63eeb8525705c249bfdcd2935e7f = L.circleMarker(
+                [36.726, 24.4443],
+                {"bubblingMouseEvents": true, "color": "#916d00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#916d00", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_395b8c81f488835ad9f062a55d4e2485 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_00430b39f839f3135a9910cbf483f73c = $(`<div id="html_00430b39f839f3135a9910cbf483f73c" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Milos, Greece</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 69.44°F / 60.980000000000004°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.43                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 9/30                         </p>                     </div>                 </div>`)[0];
+                popup_395b8c81f488835ad9f062a55d4e2485.setContent(html_00430b39f839f3135a9910cbf483f73c);
+            
+        
+
+        circle_marker_624c63eeb8525705c249bfdcd2935e7f.bindPopup(popup_395b8c81f488835ad9f062a55d4e2485)
+        ;
+
+        
+    
+    
+            circle_marker_624c63eeb8525705c249bfdcd2935e7f.bindTooltip(
+                `<div>
+                     Milos
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3ef15ad41d865eb9771c09ec10df8414 = L.circleMarker(
+                [-33.8688, 151.2093],
+                {"bubblingMouseEvents": true, "color": "#ac5200", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ac5200", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_18a9bd77ad07b8729439c704cfc26050 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b9588d48a5cc39ccdde41495657d5934 = $(`<div id="html_b9588d48a5cc39ccdde41495657d5934" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Sydney, Australia</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 65.3°F / 58.459999999999994°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.32                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 2/30                         </p>                     </div>                 </div>`)[0];
+                popup_18a9bd77ad07b8729439c704cfc26050.setContent(html_b9588d48a5cc39ccdde41495657d5934);
+            
+        
+
+        circle_marker_3ef15ad41d865eb9771c09ec10df8414.bindPopup(popup_18a9bd77ad07b8729439c704cfc26050)
+        ;
+
+        
+    
+    
+            circle_marker_3ef15ad41d865eb9771c09ec10df8414.bindTooltip(
+                `<div>
+                     Sydney
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cde7e78f318be87a3f987698ecf1acbb = L.circleMarker(
+                [41.3851, 2.1734],
+                {"bubblingMouseEvents": true, "color": "#936b00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#936b00", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_8f7298e771640dc00b222008d286e7f8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f35ba60244c7524659f72061a305e6a5 = $(`<div id="html_f35ba60244c7524659f72061a305e6a5" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Barcelona, Spain</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 72.32°F / 59.0°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.42                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 2/30                         </p>                     </div>                 </div>`)[0];
+                popup_8f7298e771640dc00b222008d286e7f8.setContent(html_f35ba60244c7524659f72061a305e6a5);
+            
+        
+
+        circle_marker_cde7e78f318be87a3f987698ecf1acbb.bindPopup(popup_8f7298e771640dc00b222008d286e7f8)
+        ;
+
+        
+    
+    
+            circle_marker_cde7e78f318be87a3f987698ecf1acbb.bindTooltip(
+                `<div>
+                     Barcelona
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b8daa5917139b2dcc8b0914fd6155b05 = L.circleMarker(
+                [38.7223, -9.1393],
+                {"bubblingMouseEvents": true, "color": "#966800", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#966800", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_654907a4d6cd40c4252a776cf4835707 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ff839483e9e6b400bee9cb527482c485 = $(`<div id="html_ff839483e9e6b400bee9cb527482c485" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Lisbon, Portugal</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 69.62°F / 56.3°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.41                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 7/30                         </p>                     </div>                 </div>`)[0];
+                popup_654907a4d6cd40c4252a776cf4835707.setContent(html_ff839483e9e6b400bee9cb527482c485);
+            
+        
+
+        circle_marker_b8daa5917139b2dcc8b0914fd6155b05.bindPopup(popup_654907a4d6cd40c4252a776cf4835707)
+        ;
+
+        
+    
+    
+            circle_marker_b8daa5917139b2dcc8b0914fd6155b05.bindTooltip(
+                `<div>
+                     Lisbon
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5bd24df66c1e39dd30dfbb59f6768b24 = L.circleMarker(
+                [31.7619, -106.485],
+                {"bubblingMouseEvents": true, "color": "#3ec000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3ec000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_fba54f038c80e3ba6f9f3e5babf24bbf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_362d3fa4b8f4ddadc2433fefcd41b897 = $(`<div id="html_362d3fa4b8f4ddadc2433fefcd41b897" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">El Paso, USA</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 85.1°F / 65.84°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.75                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 15/30                         </p>                     </div>                 </div>`)[0];
+                popup_fba54f038c80e3ba6f9f3e5babf24bbf.setContent(html_362d3fa4b8f4ddadc2433fefcd41b897);
+            
+        
+
+        circle_marker_5bd24df66c1e39dd30dfbb59f6768b24.bindPopup(popup_fba54f038c80e3ba6f9f3e5babf24bbf)
+        ;
+
+        
+    
+    
+            circle_marker_5bd24df66c1e39dd30dfbb59f6768b24.bindTooltip(
+                `<div>
+                     El Paso
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0af92e61fdb22600ac714a2cb98a058a = L.circleMarker(
+                [31.2304, 121.4737],
+                {"bubblingMouseEvents": true, "color": "#699500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#699500", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_61649dd52204bb1c5dd100ab0a377a29 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3ac6a4aeb3f6c9c27c2be275060dc6a3 = $(`<div id="html_3ac6a4aeb3f6c9c27c2be275060dc6a3" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Shanghai, China</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 88.34°F / 72.32°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.59                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 3/30                         </p>                     </div>                 </div>`)[0];
+                popup_61649dd52204bb1c5dd100ab0a377a29.setContent(html_3ac6a4aeb3f6c9c27c2be275060dc6a3);
+            
+        
+
+        circle_marker_0af92e61fdb22600ac714a2cb98a058a.bindPopup(popup_61649dd52204bb1c5dd100ab0a377a29)
+        ;
+
+        
+    
+    
+            circle_marker_0af92e61fdb22600ac714a2cb98a058a.bindTooltip(
+                `<div>
+                     Shanghai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ee9094b5272ae50ec7b6a2a391858840 = L.circleMarker(
+                [-33.4489, -70.6693],
+                {"bubblingMouseEvents": true, "color": "#758900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#758900", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_b2ffb1c797ddc5104fab8a9ed74c7503 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f2b9b788e8cc78b0382c619ae4e409ed = $(`<div id="html_f2b9b788e8cc78b0382c619ae4e409ed" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Santiago, Chile</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 68.18°F / 44.06°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.54                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 27/30                         </p>                     </div>                 </div>`)[0];
+                popup_b2ffb1c797ddc5104fab8a9ed74c7503.setContent(html_f2b9b788e8cc78b0382c619ae4e409ed);
+            
+        
+
+        circle_marker_ee9094b5272ae50ec7b6a2a391858840.bindPopup(popup_b2ffb1c797ddc5104fab8a9ed74c7503)
+        ;
+
+        
+    
+    
+            circle_marker_ee9094b5272ae50ec7b6a2a391858840.bindTooltip(
+                `<div>
+                     Santiago
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b5285f7d630b325a5056d2419bd6ecd4 = L.circleMarker(
+                [33.8303, -116.5453],
+                {"bubblingMouseEvents": true, "color": "#679700", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#679700", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+    
+        var popup_faaf904bed8d64211f3891aefd2edeca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_88e35a1a51fe0f12bd23b9fddfa86ee0 = $(`<div id="html_88e35a1a51fe0f12bd23b9fddfa86ee0" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; padding: 10px;">                         <h3 style="margin: 0 0 10px 0;">Palm Springs, USA</h3>                         <p style="margin: 5px 0;">                             <strong>Temperature:</strong> 91.58000000000001°F / 65.66°F                         </p>                         <p style="margin: 5px 0;">                             <strong>Niceness:</strong> 0.60                         </p>                         <p style="margin: 5px 0;">                             <strong>Sunny Days:</strong> 17/30                         </p>                     </div>                 </div>`)[0];
+                popup_faaf904bed8d64211f3891aefd2edeca.setContent(html_88e35a1a51fe0f12bd23b9fddfa86ee0);
+            
+        
+
+        circle_marker_b5285f7d630b325a5056d2419bd6ecd4.bindPopup(popup_faaf904bed8d64211f3891aefd2edeca)
+        ;
+
+        
+    
+    
+            circle_marker_b5285f7d630b325a5056d2419bd6ecd4.bindTooltip(
+                `<div>
+                     Palm Springs
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_fb35a13259d591feaea6a5866333b2da.addTo(map_f4ef689154df7fc22bd23f140f48c0f9);
+        
+</script>
+</html>

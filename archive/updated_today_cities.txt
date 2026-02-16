@@ -1,0 +1,661 @@
+Aalborg, Denmark
+Aarhus, Denmark
+Abu Dhabi
+Abu Dhabi, UAE
+Acapulco, Mexico
+Agra, India
+Al Jahra, Kuwait
+Al Wakrah, Qatar
+Alberobello, Italy
+Albuquerque, United States
+Aleppo, Syria
+Alghero, Italy
+Almaty, Kazakhstan
+Amman, Jordan
+Amsterdam
+Anchorage, United States
+Angra dos Reis, Brazil
+Annecy, France
+Antigua Guatemala, Guatemala
+Antwerp, Belgium
+Aqaba, Jordan
+Aracaju, Brazil
+Arequipa, Peru
+Arica, Chile
+Arles, France
+Asheville, United States
+Ashgabat, Turkmenistan
+Asunción, Paraguay
+Athens
+Athens, Greece
+Atlanta, United States
+Austin
+Austin, United States
+Aveiro, Portugal
+Avignon, France
+Baden-Baden, Germany
+Baghdad, Iraq
+Bahía Blanca, Argentina
+Baku, Azerbaijan
+Bandung, Indonesia
+Banff, Canada
+Bangkok, Thailand
+Bar Harbor, United States
+Barcelona
+Barcelona, Spain
+Bari, Italy
+Bariloche, Argentina
+Barranquilla, Colombia
+Basra, Iraq
+Bath, United Kingdom
+Batumi, Georgia
+Bayeux, France
+Beijing, China
+Beirut, Lebanon
+Belgrade, Serbia
+Belize City, Belize
+Belo Horizonte, Brazil
+Belém, Brazil
+Bengaluru, India
+Bergamo, Italy
+Bergen, Norway
+Berlin
+Berlin, Germany
+Bhaktapur, Nepal
+Bilbao, Spain
+Bishkek, Kyrgyzstan
+Bled, Slovenia
+Boa Vista, Brazil
+Bocas del Toro, Panama
+Bogotá, Colombia
+Bologna, Italy
+Boquete, Panama
+Bordeaux, France
+Boston, United States
+Braga, Portugal
+Brasília, Brazil
+Bratislava, Slovakia
+Bridgetown, Barbados
+Bruges, Belgium
+Brussels, Belgium
+Bucaramanga, Colombia
+Bucharest, Romania
+Budapest, Hungary
+Budva, Montenegro
+Buenos Aires
+Buenos Aires, Argentina
+Buffalo, United States
+Bukhara, Uzbekistan
+Burgos, Spain
+Busan, South Korea
+Byblos, Lebanon
+Cabo Polonio, Uruguay
+Cabo San Lucas, Mexico
+Cadiz, Spain
+Cafayate, Argentina
+Cagliari, Italy
+Cajamarca, Peru
+Calgary, Canada
+Cali, Colombia
+Cambridge, United Kingdom
+Campo Grande, Brazil
+Cancun, Mexico
+Cannes, France
+Cap-Haïtien, Haiti
+Capri, Italy
+Caracas, Venezuela
+Carcassonne, France
+Carmel-by-the-Sea, United States
+Carmelo, Uruguay
+Cartagena, Colombia
+Caye Caulker, Belize
+Cebu City, Philippines
+Chamonix, France
+Changsha, China
+Charleston, United States
+Charlotte, United States
+Chengdu, China
+Chennai, India
+Chiang Mai, Thailand
+Chiang Rai, Thailand
+Chicago, United States
+Chicama, Peru
+Chiclayo, Peru
+Chihuahua, Mexico
+Chittagong, Bangladesh
+Chișinău, Moldova
+Choroní, Venezuela
+Cincinnati, United States
+Ciudad Bolívar, Venezuela
+Ciudad del Este, Paraguay
+Cleveland, United States
+Cochabamba, Bolivia
+Coimbra, Portugal
+Colima, Mexico
+Colmar, France
+Cologne, Germany
+Colombo, Sri Lanka
+Colonia Tovar, Venezuela
+Colonia del Sacramento, Uruguay
+Copan Ruinas, Honduras
+Copenhagen
+Copenhagen, Denmark
+Coron, Philippines
+Cortina d'Ampezzo, Italy
+Cox's Bazar, Bangladesh
+Coyhaique, Chile
+Cozumel, Mexico
+Cuenca, Ecuador
+Curitiba, Brazil
+Cusco, Peru
+Da Nang, Vietnam
+Dalian, China
+Dallas, United States
+Damascus, Syria
+Dammam, Saudi Arabia
+Davao, Philippines
+Dawson City, Canada
+Denver, United States
+Detroit, United States
+Dhaka, Bangladesh
+Dijon, France
+Doha, Qatar
+Dresden, Germany
+Dubai, UAE
+Dublin, Ireland
+Dubrovnik, Croatia
+Dushanbe, Tajikistan
+Edinburgh, United Kingdom
+Edmonton, Canada
+Eilat, Israel
+El Bolsón, Argentina
+El Calafate, Argentina
+El Chaltén, Argentina
+El Nido, Philippines
+El Paso
+Ella, Sri Lanka
+Encarnación, Paraguay
+Erbil, Iraq
+Esbjerg, Denmark
+Faro, Portugal
+Fernando de Noronha, Brazil
+Flam, Norway
+Florence, Italy
+Florianópolis, Brazil
+Fort Lauderdale, United States
+Fortaleza
+Fortaleza, Brazil
+Foz do Iguaçu, Brazil
+Frankfurt, Germany
+Fukuoka, Japan
+Galle, Sri Lanka
+Gander, Canada
+Garmisch-Partenkirchen, Germany
+Gaspé, Canada
+Gdansk, Poland
+Geneva, Switzerland
+Genoa, Italy
+Georgetown, Guyana
+Ghent, Belgium
+Goiânia, Brazil
+Gothenburg, Sweden
+Gramado, Brazil
+Granada, Spain
+Grand Canyon Village, United States
+Grindelwald, Switzerland
+Gstaad, Switzerland
+Gualeguaychú, Argentina
+Guanajuato, Mexico
+Guangzhou, China
+Guaranda, Ecuador
+Guatapé, Colombia
+Guatemala City, Guatemala
+Guayaquil, Ecuador
+Guilin, China
+Guimarães, Portugal
+Guiria, Venezuela
+Gyeongju, South Korea
+Haifa, Israel
+Halifax, Canada
+Hallstatt, Austria
+Hamburg, Germany
+Hangzhou, China
+Hanoi, Vietnam
+Harbin, China
+Havana, Cuba
+Heidelberg, Germany
+Helsinki, Finland
+Heraklion, Greece
+Hermosillo, Mexico
+Hiroshima, Japan
+Ho Chi Minh City, Vietnam
+Hoi An, Vietnam
+Holbox, Mexico
+Holguin, Cuba
+Homs, Syria
+Honolulu
+Honolulu, United States
+Houston, United States
+Hua Hin, Thailand
+Huaraz, Peru
+Hulhumalé, Maldives
+Ibiza Town, Spain
+Ica, Peru
+Ilhéus, Brazil
+Incheon, South Korea
+Indianapolis, United States
+Innsbruck, Austria
+Interlaken, Switzerland
+Ipiales, Colombia
+Iqaluit, Canada
+Iquique, Chile
+Iquitos, Peru
+Isfahan, Iran
+Islamabad, Pakistan
+Jacksonville, United States
+Jaffna, Sri Lanka
+Jaipur, India
+Jakarta, Indonesia
+Jeddah, Saudi Arabia
+Jeju City, South Korea
+Jeonju, South Korea
+Jerash, Jordan
+Jericoacoara, Brazil
+Jerusalem, Israel
+João Pessoa, Brazil
+Juazeiro do Norte, Brazil
+Juliaca, Peru
+Juneau, United States
+Kanazawa, Japan
+Kanchanaburi, Thailand
+Kandy, Sri Lanka
+Kansas City, United States
+Kaohsiung, Taiwan
+Karachi, Pakistan
+Kashan, Iran
+Kathmandu, Nepal
+Kaunas, Lithuania
+Kelowna, Canada
+Key West, United States
+Kingston, Jamaica
+Klaipeda, Lithuania
+Koh Phi Phi, Thailand
+Koh Samui, Thailand
+Koh Tao, Thailand
+Kolkata, India
+Kota Kinabalu, Malaysia
+Kotor, Montenegro
+Košice, Slovakia
+Krakow, Poland
+Kuala Lumpur, Malaysia
+Kunming, China
+Kuwait City, Kuwait
+Kyoto, Japan
+La Romana, Dominican Republic
+Lago Agrio, Ecuador
+Lahore, Pakistan
+Lake Placid, United States
+Lampang, Thailand
+Langkawi, Malaysia
+Las Vegas
+Las Vegas, United States
+Latacunga, Ecuador
+Lausanne, Switzerland
+Leipzig, Germany
+Leticia, Colombia
+Leuven, Belgium
+Lijiang, China
+Lille, France
+Lillehammer, Norway
+Lima, Peru
+Lisbon
+Lisbon, Portugal
+Liverpool, United Kingdom
+Ljubljana, Slovenia
+Locarno, Switzerland
+London
+London, United Kingdom
+Los Angeles
+Los Angeles, United States
+Luang Prabang, Laos
+Lucerne, Switzerland
+Lugano, Switzerland
+Lyon, France
+Lübeck, Germany
+Macapá, Brazil
+Maceió, Brazil
+Machala, Ecuador
+Madrid, Spain
+Makassar, Indonesia
+Malacca, Malaysia
+Male, Maldives
+Malmo, Sweden
+Managua, Nicaragua
+Manama, Bahrain
+Manaus, Brazil
+Manchester, United Kingdom
+Mandalay, Myanmar
+Manila, Philippines
+Manta, Ecuador
+Manuel Antonio, Costa Rica
+Mar del Plata, Argentina
+Maracaibo, Venezuela
+Maracay, Venezuela
+Maragogi, Brazil
+Marseille, France
+Mashhad, Iran
+Matera, Italy
+Mazatlan, Mexico
+Medan, Indonesia
+Medellin
+Medellín, Colombia
+Medina, Saudi Arabia
+Memphis, United States
+Mendoza, Argentina
+Merida, Mexico
+Mexico City
+Mexico City, Mexico
+Miami, United States
+Milan, Italy
+Milos
+Minca, Colombia
+Minneapolis, United States
+Mons, Belgium
+Mont Tremblant, Canada
+Montego Bay, Jamaica
+Monterey, United States
+Monterrey, Mexico
+Montevideo, Uruguay
+Montreal, Canada
+Montreux, Switzerland
+Moquegua, Peru
+Morelia, Mexico
+Moscow, Russia
+Mostar, Bosnia and Herzegovina
+Mtskheta, Georgia
+Muharraq, Bahrain
+Mumbai, India
+Munich, Germany
+Muscat, Oman
+Mykonos Town, Greece
+Nagoya, Japan
+Namur, Belgium
+Nantucket, United States
+Napa, United States
+Naples, Italy
+Nara, Japan
+Nashville, United States
+Nassau, Bahamas
+Natal, Brazil
+Naypyidaw, Myanmar
+Nazareth, Israel
+Nazca, Peru
+Negril, Jamaica
+Neuquén, Argentina
+New Delhi, India
+New Orleans, United States
+New York
+New York City, United States
+Ngapali, Myanmar
+Nice, France
+Nieuw Nickerie, Suriname
+Ninh Binh, Vietnam
+Nizwa, Oman
+Novi Sad, Serbia
+Nuremberg, Germany
+Nuwara Eliya, Sri Lanka
+Nîmes, France
+Oaxaca, Mexico
+Ocho Rios, Jamaica
+Odense, Denmark
+Orlando, United States
+Oruro, Bolivia
+Osaka, Japan
+Oslo, Norway
+Otavalo, Ecuador
+Ottawa, Canada
+Ouro Preto, Brazil
+Oxford, United Kingdom
+Pakse, Laos
+Palermo, Italy
+Palm Springs
+Palm Springs, United States
+Palmas, Brazil
+Pamplona, Spain
+Panama City, Panama
+Paramaribo, Suriname
+Paraty, Brazil
+Paris, France
+Paro, Bhutan
+Pasto, Colombia
+Pattaya, Thailand
+Pereira, Colombia
+Perugia, Italy
+Philadelphia, United States
+Phnom Penh, Cambodia
+Pisa, Italy
+Pittsburgh, United States
+Piura, Peru
+Playa del Carmen, Mexico
+Podgorica, Montenegro
+Pokhara, Nepal
+Popayán, Colombia
+Port Antonio, Jamaica
+Port of Spain, Trinidad and Tobago
+Port-au-Prince, Haiti
+Porto Alegre, Brazil
+Porto Seguro, Brazil
+Porto Velho, Brazil
+Porto, Portugal
+Posadas, Argentina
+Positano, Italy
+Potosí, Bolivia
+Potsdam, Germany
+Pristina, Kosovo
+Puebla, Mexico
+Puerto Carreño, Colombia
+Puerto Iguazú, Argentina
+Puerto La Cruz, Venezuela
+Puerto Lopez, Ecuador
+Puerto Madryn, Argentina
+Puerto Maldonado, Peru
+Puerto Montt, Chile
+Puerto Morelos, Mexico
+Puerto Natales, Chile
+Puerto Ordaz, Venezuela
+Puerto Plata, Dominican Republic
+Puerto Princesa, Philippines
+Puerto Quito, Ecuador
+Puerto Vallarta, Mexico
+Puerto Varas, Chile
+Puno, Peru
+Punta Arenas, Chile
+Punta Cana, Dominican Republic
+Punta del Diablo, Uruguay
+Punta del Este, Uruguay
+Pärnu, Estonia
+Qingdao, China
+Queretaro, Mexico
+Quito, Ecuador
+Ras Al Khaimah, UAE
+Ravenna, Italy
+Recife, Brazil
+Regensburg, Germany
+Regina, Canada
+Reims, France
+Revelstoke, Canada
+Reykjavik, Iceland
+Ribeirão Preto, Brazil
+Riberalta, Bolivia
+Riga, Latvia
+Rio Gallegos, Argentina
+Rio de Janeiro
+Rio de Janeiro, Brazil
+Riyadh, Saudi Arabia
+Roatan, Honduras
+Rome, Italy
+Rosario, Argentina
+Rothenburg ob der Tauber, Germany
+Rouen, France
+Rovaniemi, Finland
+Rurrenabaque, Bolivia
+Saint-Malo, France
+Salalah, Oman
+Salt Lake City, United States
+Salta, Argentina
+Salvador, Brazil
+Salzburg, Austria
+Samarkand, Uzbekistan
+San Antonio, United States
+San Francisco, United States
+San Gil, Colombia
+San José del Cabo, Mexico
+San Miguel de Allende, Mexico
+San Pedro de Atacama, Chile
+San Salvador, El Salvador
+Santa Cruz de la Sierra, Bolivia
+Santa Elena de Uairén, Venezuela
+Santa Fe
+Santa Fe de Antioquia, Colombia
+Santa Marta, Colombia
+Santiago
+Santiago de Compostela, Spain
+Santiago de Cuba, Cuba
+Santo Domingo, Dominican Republic
+Sao Paolo
+Sapa, Vietnam
+Sapporo, Japan
+Sarajevo, Bosnia and Herzegovina
+Saskatoon, Canada
+Savannah, United States
+Seattle, United States
+Sedona, United States
+Segovia, Spain
+Seoul, South Korea
+Seville, Spain
+Shanghai
+Shanghai, China
+Sharjah, UAE
+Shenzhen, China
+Shiraz, Iran
+Siem Reap, Cambodia
+Siena, Italy
+Singapore, Singapore
+Sintra, Portugal
+Skopje, North Macedonia
+Sofia, Bulgaria
+Sonoma, United States
+Sorrento, Italy
+South Lake Tahoe, United States
+Split, Croatia
+Squamish, Canada
+St. John's, Canada
+St. Louis, United States
+Stavanger, Norway
+Stockholm, Sweden
+Strasbourg, France
+Stuttgart, Germany
+Sucre, Bolivia
+Sudbury, Canada
+Sukhothai, Thailand
+Surabaya, Indonesia
+Surat Thani, Thailand
+Suzhou, China
+Sydney
+Sylhet, Bangladesh
+São Luís, Brazil
+São Paulo, Brazil
+Tacna, Peru
+Tagaytay, Philippines
+Taichung, Taiwan
+Tainan, Taiwan
+Taipei, Taiwan
+Tallinn, Estonia
+Tampa, United States
+Tampere, Finland
+Taormina, Italy
+Tarapoto, Peru
+Tarija, Bolivia
+Tarma, Peru
+Tartu, Estonia
+Tartus, Syria
+Tashkent, Uzbekistan
+Tbilisi, Georgia
+Tegucigalpa, Honduras
+Tehran, Iran
+Tel Aviv, Israel
+Tena, Ecuador
+Tenerife
+Teresina, Brazil
+Thimphu, Bhutan
+Thunder Bay, Canada
+Tianjin, China
+Tijuana, Mexico
+Tilcara, Argentina
+Tirana, Albania
+Todos Santos
+Tokyo
+Tokyo, Japan
+Toluca, Mexico
+Toronto, Canada
+Toulouse, France
+Trelew, Argentina
+Trier, Germany
+Trieste, Italy
+Tromsø, Norway
+Trondheim, Norway
+Trujillo, Peru
+Tucson
+Tulum, Mexico
+Tumbes, Peru
+Turin, Italy
+Turku, Finland
+Ubud, Indonesia
+Udaipur, India
+Ulaanbaatar, Mongolia
+Urumqi, China
+Ushuaia, Argentina
+Utila, Honduras
+Uyuni, Bolivia
+Valdivia, Chile
+Valencia
+Valencia, Spain
+Valletta, Malta
+Valparaíso, Chile
+Vancouver, Canada
+Vang Vieng, Laos
+Varadero, Cuba
+Varanasi, India
+Venice, Italy
+Verona, Italy
+Vienna, Austria
+Vientiane, Laos
+Vigan, Philippines
+Villa La Angostura, Argentina
+Villa de Leyva, Colombia
+Villahermosa, Mexico
+Vilnius, Lithuania
+Viña del Mar, Chile
+Warsaw, Poland
+Whistler, Canada
+Whitehorse, Canada
+Winnipeg, Canada
+Wroclaw, Poland
+Wuhan, China
+Xi'an, China
+Yangon, Myanmar
+Yazd, Iran
+Yellowknife, Canada
+Yerevan, Armenia
+Yogyakarta, Indonesia
+Yokohama, Japan
+York, United Kingdom
+Yosemite Village, United States
+Zacatecas, Mexico
+Zadar, Croatia
+Zaragoza, Spain
+Zermatt, Switzerland
+Zhangjiajie, China
+Zhuhai, China
+Zurich, Switzerland
+Évora, Portugal

@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destino - Dummy Site (Improved Visuals)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+            margin: 0;
+            padding: 20px 0; /* Added padding top and bottom */
+            background-color: #f8f9fa; /* Lighter grey */
+            color: #343a40; /* Darker grey for text */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 30px 40px; /* Increased padding */
+            border-radius: 12px; /* Softer radius */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); /* Softer shadow */
+            width: 90%;
+            max-width: 750px; /* Slightly wider */
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #e9ecef; /* Subtle border */
+        }
+
+        .page {
+            display: none;
+            animation: fadeIn 0.4s ease-in-out;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 3em; /* Larger */
+            font-weight: 700;
+            color: #212529; /* Almost black */
+            text-align: center;
+            margin-bottom: 25px; /* Increased margin */
+        }
+
+        h2 {
+            font-size: 1.75em; /* Slightly smaller for page titles */
+            font-weight: 600;
+            color: #e67e22; /* Orange accent */
+            text-align: center;
+            margin-bottom: 30px; /* Increased margin */
+            border-bottom: 2px solid #fdf0e6; /* Subtle orange underline */
+            padding-bottom: 10px;
+        }
+
+        .input-group {
+            margin-bottom: 25px; /* Increased margin */
+        }
+
+        .input-group label, .field-label { /* New class for consistent labeling */
+            display: block;
+            margin-bottom: 10px; /* Increased margin */
+            font-weight: 600; /* Bolder */
+            color: #495057; /* Medium grey */
+            font-size: 0.95em;
+        }
+
+        .input-group input[type="text"],
+        .input-group input[type="number"], /* Will be mostly replaced by styled sliders */
+        .input-group select,
+        .input-group textarea {
+            width: calc(100% - 24px); /* Adjusted for padding */
+            padding: 12px; /* Increased padding */
+            border: 1px solid #ced4da; /* Standard border */
+            border-radius: 6px; /* Softer radius */
+            box-sizing: border-box;
+            font-size: 1em;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+        .input-group input[type="text"]:focus,
+        .input-group select:focus {
+            border-color: #e67e22;
+            box-shadow: 0 0 0 0.2rem rgba(230, 126, 34, 0.25);
+            outline: none;
+        }
+
+        /* Custom Selectable Items (replaces most checkboxes/radios) */
+        .selectable-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px; /* Increased gap */
+        }
+        .selectable-item {
+            padding: 10px 18px; /* Adjusted padding */
+            border: 1px solid #dee2e6; /* Lighter border */
+            border-radius: 20px; /* Pill shape */
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            font-size: 0.9em;
+            background-color: #f8f9fa; /* Light grey background */
+            color: #495057;
+            text-align: center;
+        }
+        .selectable-item.selected {
+            background-color: #e67e22;
+            color: white;
+            border-color: #e67e22;
+            font-weight: 600;
+            box-shadow: 0 2px 5px rgba(230, 126, 34, 0.3);
+        }
+        .selectable-item:hover:not(.selected) {
+            border-color: #e67e22;
+            background-color: #fef8f2;
+        }
+
+
+        /* Date Page Specific Styling */
+        #datesMonthGroup, #datesCertaintyGroup {
+            display: flex;
+            justify-content: center; /* Center buttons */
+            gap: 20px;
+            margin-top: 10px;
+        }
+        #datesMonthGroup .selectable-item,
+        #datesCertaintyGroup .selectable-item {
+            padding: 12px 25px; /* Larger buttons for dates */
+            font-size: 1.1em;
+        }
+
+
+        /* Slider Styling */
+        .slider-container {
+            margin-bottom: 10px; /* Reduced margin as value is separate */
+        }
+        .slider-display {
+            font-size: 1.8em; /* Prominent display for value */
+            font-weight: 700;
+            color: #e67e22;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+         input[type="range"] {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 8px;
+            background: #e9ecef; /* Lighter track */
+            border-radius: 5px;
+            outline: none;
+            opacity: 0.9;
+            transition: opacity .15s ease-in-out;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #e67e22;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid white; /* White border around thumb */
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+        input[type="range"]::-moz-range-thumb {
+            width: 18px; /* Adjusted for consistency */
+            height: 18px;
+            background: #e67e22;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+
+        /* Navigation Buttons */
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px; /* Increased margin */
+            padding-top: 25px; /* Increased padding */
+            border-top: 1px solid #e9ecef; /* Lighter border */
+        }
+        .nav-button {
+            padding: 12px 25px; /* Increased padding */
+            border: none;
+            border-radius: 6px; /* Softer radius */
+            background-color: #e67e22;
+            color: white;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+        .nav-button:hover {
+            background-color: #d35400; /* Darker orange on hover */
+            transform: translateY(-1px);
+        }
+        #prevBtn {
+            background-color: #6c757d; /* Grey for previous */
+        }
+        #prevBtn:hover {
+            background-color: #5a6268; /* Darker grey on hover */
+        }
+
+        /* Sub-Interests (nested selectable items) */
+        .sub-selectable-group {
+            margin-top: 15px;
+            padding-left: 20px; /* Indent */
+            border-left: 3px solid #fdf0e6; /* Subtle orange left border */
+        }
+        .sub-selectable-group .field-label {
+            font-size: 0.9em;
+            color: #e67e22;
+            margin-bottom: 8px;
+        }
+
+        /* Summary Text Styling */
+        #summaryTextContainer {
+            background-color: #fef8f2; /* Light orange background */
+            border-left: 5px solid #e67e22; /* Orange accent border */
+            padding: 20px; /* Increased padding */
+            margin-top: 20px;
+            border-radius: 6px;
+            line-height: 1.7;
+            color: #543c20; /* Darker text for readability on light orange */
+        }
+        #summaryTextContainer p { margin: 0; }
+
+        /* Map & Destination Detail Placeholders */
+        #mapPlaceholder {
+            width: 100%;
+            height: 250px;
+            background-color: #e9ecef;
+            display: flex;
+            flex-direction: column; /* Stack text */
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #6c757d;
+            border-radius: 8px; /* Softer radius */
+            margin-top: 20px;
+            font-size: 0.95em;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        #destinationDetail {
+            padding: 20px; /* Increased padding */
+            border: 1px solid #e9ecef; /* Lighter border */
+            border-radius: 8px;
+            background-color: #f8f9fa; /* Light grey background */
+            margin-top: 20px;
+        }
+        #destinationDetail h3 {
+            color: #e67e22;
+            margin-top: 0;
+            font-size: 1.4em; /* Adjusted size */
+        }
+        #destinationDetail ul { padding-left: 20px; }
+
+        /* Specific layout for items like in Page 11/12 of PDF */
+        .interest-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Responsive columns */
+            gap: 15px;
+        }
+        .interest-grid .selectable-item {
+            display: flex; /* To align text and potential future icons */
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 50px; /* Ensure items have some height */
+        }
+         /* For showing numbers above as in PDF (decorative for now) */
+        .selectable-item-wrapper {
+            position: relative;
+            text-align: center;
+        }
+        .item-meta-number {
+            position: absolute;
+            top: -12px; /* Adjust as needed */
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.75em;
+            color: #e67e22;
+            background-color: white;
+            padding: 0 3px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Destino</h1>
+
+        <div id="page2" class="page">
+            <h2>When are you planning to travel?</h2>
+            <div class="input-group">
+                <div class="field-label">Month:</div>
+                <div class="selectable-group" id="datesMonthGroup">
+                    </div>
+            </div>
+            <div class="input-group">
+                <div class="field-label">Certainty:</div>
+                <div class="selectable-group" id="datesCertaintyGroup">
+                    </div>
+            </div>
+        </div>
+
+        <div id="page3" class="page">
+            <h2>Trip Locations</h2>
+            <div class="input-group">
+                <label for="startLocation" class="field-label">Start in:</label>
+                <input type="text" id="startLocation" value="New York, NY">
+            </div>
+            <div class="input-group">
+                <label for="endLocation" class="field-label">End in:</label>
+                <input type="text" id="endLocation" value="New York, NY">
+            </div>
+            <div class="input-group">
+                <label for="placesInBetween" class="field-label">Places in between (approx.):</label>
+                <div id="placesInBetweenValue" class="slider-display">1</div>
+                <div class="slider-container">
+                    <input type="range" id="placesInBetween" min="0" max="10" value="1">
+                </div>
+            </div>
+        </div>
+
+        <div id="page4" class="page">
+            <h2>Budget & Travelers</h2>
+            <div class="input-group">
+                <label for="budgetPerDay" class="field-label">Budget Per Day (USD):</label>
+                <div id="budgetPerDayValue" class="slider-display">$200</div>
+                <div class="slider-container">
+                    <input type="range" id="budgetPerDay" min="20" max="1000" step="10" value="200">
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="budgetTotal" class="field-label">Total Budget (USD):</label>
+                 <div id="budgetTotalValue" class="slider-display">$1000</div>
+                <div class="slider-container">
+                    <input type="range" id="budgetTotal" min="100" max="10000" step="100" value="1000">
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="travelers" class="field-label">Travelers:</label>
+                <div id="travelersValue" class="slider-display">2</div>
+                <div class="slider-container">
+                    <input type="range" id="travelers" min="1" max="10" value="2">
+                </div>
+            </div>
+        </div>
+
+        <div id="page5" class="page">
+            <h2>Ideal Temperature</h2>
+            <div class="input-group">
+                <div id="idealTempValue" class="slider-display">70°F</div>
+                <div class="slider-container">
+                    <input type="range" id="idealTemp" min="0" max="40" value="21"> </div>
+                 <div class="field-label" for="tempUnit">Unit:</div>
+                <select id="tempUnit">
+                    <option value="C">Celsius</option>
+                    <option value="F">Fahrenheit</option>
+                </select>
+                <small style="display: block; text-align:center; margin-top: 5px;">(Slider internally uses Celsius, display converts)</small>
+            </div>
+        </div>
+
+        <div id="page6" class="page">
+            <h2>Your Language Preferences</h2>
+            <div class="input-group">
+                <div class="field-label">Select languages you speak or prefer:</div>
+                <div class="selectable-group interest-grid" id="languagesGroup">
+                    </div>
+                <label for="otherLanguage" class="field-label" style="margin-top:15px;">Other language:</label>
+                <input type="text" id="otherLanguage" placeholder="Specify if not listed">
+            </div>
+        </div>
+
+        <div id="page7" class="page">
+            <h2>Getting There</h2>
+            <div class="field-label">How do you prefer to reach your main destination?</div>
+            <div class="selectable-group" id="gettingThereGroup">
+                </div>
+        </div>
+
+        <div id="page8" class="page">
+            <h2>Getting Around (Inter-city/region)</h2>
+            <div class="field-label">Once at a destination region, how do you like to move between cities/areas?</div>
+            <div class="selectable-group interest-grid" id="gettingAroundGroup">
+                </div>
+        </div>
+
+        <div id="page9" class="page">
+            <h2>When You're There (Local Transport)</h2>
+            <div class="field-label">How do you prefer to get around locally within a city/town?</div>
+            <div class="selectable-group interest-grid" id="localTransportGroup">
+                 </div>
+        </div>
+
+        <div id="page10" class="page">
+            <h2>What's the Vibe?</h2>
+            <div class="field-label">Select the overall atmosphere you're looking for:</div>
+            <div class="selectable-group interest-grid" id="vibeGroup">
+                 </div>
+        </div>
+
+        <div id="page11" class="page">
+            <h2>Interests & Activities</h2>
+            <div class="field-label">Choose your main interests:</div>
+            <div class="selectable-group interest-grid" id="mainInterestsGroup">
+                </div>
+
+            <div id="subInterestsContainer" style="margin-top: 25px;">
+                </div>
+        </div>
+
+
+        <div id="page13" class="page">
+            <h2>Energy Level</h2>
+            <div class="field-label">What pace are you looking for on this trip?</div>
+            <div class="selectable-group" id="energyLevelGroup">
+                </div>
+        </div>
+
+        <div id="page14" class="page">
+            <h2>Preferred Continents</h2>
+            <div class="field-label">Which continents are you interested in exploring?</div>
+            <div class="selectable-group interest-grid" id="continentsGroup">
+                 </div>
+        </div>
+
+        <div id="page15" class="page">
+            <h2>Your Trip Profile</h2>
+            <div id="summaryTextContainer">
+                <p id="summaryText">Your summary will appear here once you've made your selections.</p>
+            </div>
+        </div>
+
+        <div id="page16" class="page">
+            <h2>Destination Ideas</h2>
+            <div id="mapPlaceholder">
+                <p>Interactive map with destination suggestions would appear here.</p>
+                <small>(e.g., showing Tenerife, Lisbon, Barcelona based on your preferences)</small>
+                <small style="margin-top:10px;">Filters like Weather, Events, Trending, Deals would be available.</small>
+            </div>
+        </div>
+
+        <div id="page17" class="page">
+            <h2>Destination Detail Example</h2>
+            <div id="destinationDetail">
+                <h3>Tenerife, Spain</h3>
+                <p><strong>Weather:</strong> Approx. 25°C (High) 17°C (Low) (example)</p>
+                <p><strong>Typical Meals:</strong>
+                    <ul>
+                        <li>Breakfast (7AM-9AM): Pan con Tomate at a Cafe</li>
+                        <li>Lunch (1PM-3PM): Fresh fish at a Cofradía (Canteen)</li>
+                        <li>Dinner (8PM-10PM): Tapas at a Taverna</li>
+                    </ul>
+                </p>
+                <p><strong>Language:</strong> Spanish (Canarian dialect)</p>
+                <p><strong>Credit Cards:</strong> Yes, widely accepted.</p>
+                <p><strong>Taxi:</strong> Hail on street.</p>
+                <p><strong>Rideshare:</strong> Limited availability.</p>
+                <p><strong>Public Transport:</strong> Bus (Guagua), Tram (Tranvía).</p>
+            </div>
+        </div>
+
+        <div class="navigation-buttons">
+            <button id="prevBtn" class="nav-button">Previous</button>
+            <button id="nextBtn" class="nav-button">Next</button>
+        </div>
+    </div>
+
+    <script>
+        // --- DATA STRUCTURES & OPTIONS ---
+        const tripData = {
+            dates: { month: 'May', certainty: 'Maybe' },
+            locations: { start: 'New York, NY', end: 'New York, NY', between: 1 },
+            budget: { perDay: 200, total: 1000, travelers: 2 },
+            temperature: { valueC: 21, unit: 'C' }, // Store internally in Celsius
+            languages: ['English'], otherLanguage: '',
+            gettingThere: 'Plane',
+            gettingAround: ['Train'],
+            localTransport: ['Walking', 'Metro / Public Bus'],
+            vibe: ['Old World', 'Seaside'],
+            interests: { main: ['Food'], art: [], sport: [], nature: [] },
+            energyLevel: 'Typical',
+            continents: ['Europe', 'North America']
+        };
+
+        const options = {
+            months: ['May', 'June', 'July', 'August', 'September'],
+            certainties: ['Maybe', 'Definitely'],
+            languages: ['English', 'Spanish', 'French', 'Mandarin', 'Hindi', 'Arabic', 'German', 'Portuguese'],
+            gettingThere: ['Plane', 'Train', 'Bus', 'Road Trip', 'Cruise'],
+            gettingAround: ['Plane (long dist.)', 'Train', 'Bus', 'Rental Car', 'Own Car', 'Ferry/Cruise'],
+            localTransport: ['Walking', 'Metro/Bus', 'Bicycle', 'Taxi/Rideshare', 'Local Rental'],
+            vibes: ['Modern', 'Old World', 'Countryside', 'Seaside', 'Luxury', 'Metropolis', 'Adventure', 'Relaxation'],
+            mainInterests: [
+                { name: 'Beach', pdfNum: 4 }, { name: 'Art', pdfNum: 1, sub: 'art' }, { name: 'Sport', pdfNum: 2, sub: 'sport' },
+                { name: 'History', pdfNum: 0 }, { name: 'Shopping', pdfNum: 0 }, { name: 'Nature', pdfNum: 3, sub: 'nature' },
+                { name: 'Music', pdfNum: 0 }, { name: 'Food', pdfNum: 5 }, { name: 'Architecture', pdfNum: 6 },
+                { name: 'Theater', pdfNum: 0 }, { name: 'Spiritual', pdfNum: 0 }, { name: 'Party', pdfNum: 7 }
+            ],
+            subInterests: {
+                art: ['Contemporary', 'Modern', 'Renaissance', 'Classical', 'Sculpture', 'Installation', 'Street Art'],
+                sport: ['Surf', 'Ski/Snowboard', 'Skate', 'Golf', 'Cycling', 'Kayak', 'Hiking', 'Diving'],
+                nature: ['Mountain', 'Field/Plains', 'Forest', 'Desert', 'Glacier', 'Lake', 'Coastal/Ocean', 'Volcanic']
+            },
+            energyLevels: [
+                { value: 'Sleepy', display: 'Sleepy (Relaxed, slow-paced)' },
+                { value: 'Typical', display: 'Typical (Mix of activity & downtime)' },
+                { value: 'Bustling', display: 'Bustling (Action-packed)' }
+            ],
+            continents: ['Europe', 'North America', 'South America', 'Asia', 'Africa', 'Oceania']
+        };
+
+
+        // --- DOM ELEMENTS ---
+        const pages = document.querySelectorAll('.page');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let currentPageIndex = 0;
+        const firstPage = 0;
+        const lastPage = pages.length - 1;
+
+        // --- HELPER FUNCTIONS ---
+        function createSelectableItem(text, value, groupName, type = 'checkbox', pdfNum = null) {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'selectable-item-wrapper'; // For potential meta number
+
+            const item = document.createElement('div');
+            item.className = 'selectable-item';
+            item.textContent = text;
+            item.dataset.value = value;
+            item.dataset.group = groupName;
+            item.dataset.type = type; // 'checkbox' or 'radio'
+
+            if (pdfNum !== null && pdfNum > 0) { // Add PDF number if available and > 0
+                const numDisplay = document.createElement('span');
+                numDisplay.className = 'item-meta-number';
+                numDisplay.textContent = pdfNum;
+                wrapper.appendChild(numDisplay);
+            }
+            wrapper.appendChild(item);
+            return wrapper;
+        }
+
+        function populateSelectableGroup(containerId, items, dataKey, groupName, type = 'checkbox', isSubInterest = false, defaultSelected = []) {
+            const container = document.getElementById(containerId);
+            container.innerHTML = ''; // Clear previous
+            items.forEach(itemObj => {
+                let text, value, pdfNum = null;
+                if (typeof itemObj === 'string') {
+                    text = value = itemObj;
+                } else { // For objects like mainInterests or energyLevels
+                    text = itemObj.display || itemObj.name;
+                    value = itemObj.value || itemObj.name;
+                    pdfNum = itemObj.pdfNum;
+                }
+
+                const selectableWrapper = createSelectableItem(text, value, groupName, type, !isSubInterest ? pdfNum : null);
+                const selectableItem = selectableWrapper.querySelector('.selectable-item');
+
+                if (type === 'checkbox' && defaultSelected.includes(value)) {
+                    selectableItem.classList.add('selected');
+                } else if (type === 'radio' && defaultSelected === value) {
+                     selectableItem.classList.add('selected');
+                }
+
+                selectableItem.addEventListener('click', function() {
+                    handleSelectableClick(this, dataKey, isSubInterest);
+                });
+                container.appendChild(selectableWrapper);
+            });
+        }
+
+        function handleSelectableClick(element, dataKey, isSubInterest = false) {
+            const value = element.dataset.value;
+            const type = element.dataset.type;
+            let dataLocation = tripData;
+
+            if (isSubInterest) { // e.g., tripData.interests.art
+                const [mainKey, subKey] = dataKey.split('.');
+                dataLocation = tripData[mainKey];
+                dataKey = subKey;
+            }
+
+            if (type === 'radio') {
+                // Deselect siblings
+                const groupName = element.dataset.group;
+                document.querySelectorAll(`.selectable-item[data-group="${groupName}"]`).forEach(sib => sib.classList.remove('selected'));
+                element.classList.add('selected');
+                dataLocation[dataKey] = value;
+            } else { // Checkbox
+                element.classList.toggle('selected');
+                if (!Array.isArray(dataLocation[dataKey])) dataLocation[dataKey] = []; // Ensure it's an array
+
+                if (element.classList.contains('selected')) {
+                    if (!dataLocation[dataKey].includes(value)) dataLocation[dataKey].push(value);
+                } else {
+                    dataLocation[dataKey] = dataLocation[dataKey].filter(v => v !== value);
+                }
+            }
+
+            // Handle sub-interest display for main interests
+            if (element.dataset.group === 'mainInterests') {
+                const mainInterestConfig = options.mainInterests.find(i => i.name === value);
+                if (mainInterestConfig && mainInterestConfig.sub) {
+                    toggleSubInterestGroup(mainInterestConfig.sub, element.classList.contains('selected'));
+                }
+            }
+            // console.log(tripData); // For debugging
+        }
+
+        function toggleSubInterestGroup(subInterestKey, show) {
+            let container = document.getElementById(`sub-${subInterestKey}-group`);
+            const subInterestsContainer = document.getElementById('subInterestsContainer');
+
+            if (show) {
+                if (!container) {
+                    container = document.createElement('div');
+                    container.id = `sub-${subInterestKey}-group`;
+                    container.className = 'sub-selectable-group input-group';
+
+                    const label = document.createElement('div');
+                    label.className = 'field-label';
+                    label.textContent = `Refine ${subInterestKey.charAt(0).toUpperCase() + subInterestKey.slice(1)}:`;
+                    container.appendChild(label);
+
+                    const itemsContainer = document.createElement('div');
+                    itemsContainer.className = 'selectable-group interest-grid';
+                    container.appendChild(itemsContainer);
+                    subInterestsContainer.appendChild(container);
+
+                    populateSelectableGroup(itemsContainer.id, options.subInterests[subInterestKey], `interests.${subInterestKey}`, `sub${subInterestKey}`, 'checkbox', true, tripData.interests[subInterestKey]);
+                }
+                container.style.display = 'block';
+            } else {
+                if (container) container.style.display = 'none';
+            }
+        }
+
+
+        // --- PAGE NAVIGATION & DATA COLLECTION ---
+        function showPage(index) {
+            pages.forEach((page, i) => page.classList.toggle('active', i === index));
+            prevBtn.style.display = index === firstPage ? 'none' : 'inline-block';
+            nextBtn.textContent = index === lastPage ? 'Finish & View Itinerary' : (index === lastPage -1 ? 'View Summary' : 'Next');
+            if (pages[index] && pages[index].id === 'page15') updateSummaryDisplay();
+
+            // Ensure sub-interest sections are correctly shown/hidden when navigating back to interests page
+            if (pages[index] && pages[index].id === 'page11') {
+                 options.mainInterests.forEach(interest => {
+                    if (interest.sub && tripData.interests.main.includes(interest.name)) {
+                        toggleSubInterestGroup(interest.sub, true);
+                    } else if (interest.sub) {
+                        toggleSubInterestGroup(interest.sub, false);
+                    }
+                });
+            }
+        }
+
+        function collectCoreData() { // Collect data from non-selectable-item inputs
+            tripData.locations.start = document.getElementById('startLocation').value;
+            tripData.locations.end = document.getElementById('endLocation').value;
+            tripData.locations.between = parseInt(document.getElementById('placesInBetween').value);
+            tripData.budget.perDay = parseInt(document.getElementById('budgetPerDay').value);
+            tripData.budget.total = parseInt(document.getElementById('budgetTotal').value);
+            tripData.budget.travelers = parseInt(document.getElementById('travelers').value);
+            // Temp is handled by its slider event
+            tripData.otherLanguage = document.getElementById('otherLanguage').value.trim();
+        }
+
+        function updateSummaryDisplay() {
+            collectCoreData(); // Ensure all data is current
+            let summary = `You are planning a trip `;
+            if (tripData.dates.month && tripData.dates.certainty) {
+                summary += `${tripData.dates.certainty.toLowerCase()} for ${tripData.dates.month}. `;
+            }
+            summary += `Starting in ${tripData.locations.start} and ending in ${tripData.locations.end}, with about ${tripData.locations.between} stop(s) in between. `;
+            summary += `There will be ${tripData.budget.travelers} traveler(s) with a total budget around $${tripData.budget.total} (approx. $${tripData.budget.perDay}/day). `;
+
+            const tempDisplayValue = tripData.temperature.unit === 'F' ? Math.round(tripData.temperature.valueC * 9/5 + 32) : tripData.temperature.valueC;
+            summary += `You prefer an ideal temperature of ${tempDisplayValue}°${tripData.temperature.unit}. `;
+
+            let languagesCombined = [...tripData.languages];
+            if (tripData.otherLanguage && !languagesCombined.includes(tripData.otherLanguage)) {
+                languagesCombined.push(tripData.otherLanguage);
+            }
+            if (languagesCombined.length > 0) summary += `Key languages: ${languagesCombined.join(', ')}. `;
+
+            summary += `You'd like to get there by ${tripData.gettingThere}. `;
+            if (tripData.gettingAround.length > 0) summary += `To get around between places, you prefer ${tripData.gettingAround.join(', ')}. `;
+            if (tripData.localTransport.length > 0) summary += `Locally, you'll use ${tripData.localTransport.join(', ')}. `;
+            if (tripData.vibe.length > 0) summary += `The desired vibe is ${tripData.vibe.join(', ')}. `;
+
+            let interestsStr = "";
+            if (tripData.interests.main.length > 0) {
+                interestsStr += tripData.interests.main.map(main => {
+                    let subStr = "";
+                    const mainInterestConfig = options.mainInterests.find(i => i.name === main);
+                    if (mainInterestConfig && mainInterestConfig.sub && tripData.interests[mainInterestConfig.sub].length > 0) {
+                        subStr = ` (${tripData.interests[mainInterestConfig.sub].join(", ")})`;
+                    }
+                    return main + subStr;
+                }).join(', ');
+            }
+            if (interestsStr) summary += `Your main interests include: ${interestsStr}. `;
+            summary += `The energy level for the trip is '${tripData.energyLevel}'. `;
+            if (tripData.continents.length > 0) summary += `You are considering destinations in ${tripData.continents.join(' or ')}.`;
+
+            document.getElementById('summaryText').textContent = summary.trim();
+        }
+
+        // --- EVENT LISTENERS ---
+        nextBtn.addEventListener('click', () => {
+            collectCoreData();
+            if (currentPageIndex < lastPage) {
+                currentPageIndex++;
+                showPage(currentPageIndex);
+            } else {
+                alert("You've reached the end! This is where the app would show you refined trip suggestions.");
+                showPage(pages.findIndex(p => p.id === 'page15')); // Show summary
+            }
+        });
+        prevBtn.addEventListener('click', () => {
+            collectCoreData();
+            if (currentPageIndex > firstPage) {
+                currentPageIndex--;
+                showPage(currentPageIndex);
+            }
+        });
+
+        // Slider Value Displays & Event Listeners
+        function setupSlider(sliderId, displayId, prefix = '', suffix = '') {
+            const slider = document.getElementById(sliderId);
+            const display = document.getElementById(displayId);
+            if (slider && display) {
+                const updateDisplay = () => display.textContent = prefix + slider.value + suffix;
+                updateDisplay(); // Initial
+                slider.addEventListener('input', updateDisplay);
+            }
+        }
+        setupSlider('placesInBetween', 'placesInBetweenValue');
+        setupSlider('budgetPerDay', 'budgetPerDayValue', '$');
+        setupSlider('budgetTotal', 'budgetTotalValue', '$');
+        setupSlider('travelers', 'travelersValue');
+
+        // Temperature Slider Logic (internal C, display C/F)
+        const idealTempSlider = document.getElementById('idealTemp');
+        const idealTempValueDisplay = document.getElementById('idealTempValue');
+        const tempUnitSelect = document.getElementById('tempUnit');
+
+        function updateTempDisplay() {
+            const tempC = parseInt(idealTempSlider.value);
+            tripData.temperature.valueC = tempC; // Store internal value
+            const unit = tempUnitSelect.value;
+            tripData.temperature.unit = unit;
+            let displayVal = tempC;
+            if (unit === 'F') displayVal = Math.round(tempC * 9/5 + 32);
+            idealTempValueDisplay.textContent = displayVal + '°' + unit;
+        }
+        idealTempSlider.addEventListener('input', updateTempDisplay);
+        tempUnitSelect.addEventListener('change', updateTempDisplay);
+
+
+        // --- INITIALIZATION ---
+        function initializeForm() {
+            // Populate selectable groups
+            populateSelectableGroup('datesMonthGroup', options.months, 'dates.month', 'datesMonth', 'radio', false, tripData.dates.month);
+            populateSelectableGroup('datesCertaintyGroup', options.certainties, 'dates.certainty', 'datesCertainty', 'radio', false, tripData.dates.certainty);
+            populateSelectableGroup('languagesGroup', options.languages, 'languages', 'languages', 'checkbox', false, tripData.languages);
+            populateSelectableGroup('gettingThereGroup', options.gettingThere, 'gettingThere', 'gettingThere', 'radio', false, tripData.gettingThere);
+            populateSelectableGroup('gettingAroundGroup', options.gettingAround, 'gettingAround', 'gettingAround', 'checkbox', false, tripData.gettingAround);
+            populateSelectableGroup('localTransportGroup', options.localTransport, 'localTransport', 'localTransport', 'checkbox', false, tripData.localTransport);
+            populateSelectableGroup('vibeGroup', options.vibes, 'vibe', 'vibe', 'checkbox', false, tripData.vibe);
+            populateSelectableGroup('mainInterestsGroup', options.mainInterests, 'interests.main', 'mainInterests', 'checkbox', false, tripData.interests.main);
+            populateSelectableGroup('energyLevelGroup', options.energyLevels, 'energyLevel', 'energyLevel', 'radio', false, tripData.energyLevel);
+            populateSelectableGroup('continentsGroup', options.continents, 'continents', 'continents', 'checkbox', false, tripData.continents);
+
+            updateTempDisplay(); // Initial temp display
+            showPage(currentPageIndex);
+
+            // Ensure initially selected main interests with subs show their sub-groups
+            tripData.interests.main.forEach(mainInterestName => {
+                const mainInterestConfig = options.mainInterests.find(i => i.name === mainInterestName);
+                if (mainInterestConfig && mainInterestConfig.sub) {
+                     toggleSubInterestGroup(mainInterestConfig.sub, true);
+                }
+            });
+        }
+
+        initializeForm();
+    </script>
+</body>
+</html>

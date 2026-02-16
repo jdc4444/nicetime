@@ -1,0 +1,22 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+
+# Local virtual environments
+.venv/
+.venv311/
+.venv_sun/
+
+# SQLite transient files
+*.db-shm
+*.db-wal
+
+# Local run artifacts
+*.lock
+backfill_run.out
+
+# Files above GitHub size limit (use LFS if needed)
+archive/allCountries.txt
+archive/weather_data.db
+working/weather_data_v2.db

@@ -1,0 +1,11 @@
+{
+  "run_id": "b6d1a8bc-3afe-45a1-b580-185b1146fbc9",
+  "state": "dry_run",
+  "finished_at": "2026-02-16T16:27:35.095247+00:00",
+  "total_cities": 3,
+  "done": 0,
+  "ok": 0,
+  "err": 0,
+  "last_message": "dry run complete",
+  "updated_at": "2026-02-16T16:27:35.095249+00:00"
+}

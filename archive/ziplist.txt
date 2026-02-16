@@ -1,0 +1,1001 @@
+City,Country,Continent,Zip Code
+Paris,France,Europe,75001
+London,United Kingdom,Europe,SW1A 0AA
+Rome,Italy,Europe,00100
+Barcelona,Spain,Europe,08002
+Berlin,Germany,Europe,10115
+Venice,Italy,Europe,30100
+Florence,Italy,Europe,50122
+Amsterdam,Netherlands,Europe,1012 AB
+Madrid,Spain,Europe,28001
+Vienna,Austria,Europe,1010
+Prague,Czech Republic,Europe,11000
+Munich,Germany,Europe,80331
+Edinburgh,United Kingdom,Europe,EH1 1BB
+Lisbon,Portugal,Europe,1100-202
+Budapest,Hungary,Europe,1051
+Dublin,Ireland,Europe,D01
+Athens,Greece,Europe,105 58
+Zurich,Switzerland,Europe,8001
+Stockholm,Sweden,Europe,111 20
+Copenhagen,Denmark,Europe,1050
+Geneva,Switzerland,Europe,1201
+Brussels,Belgium,Europe,1000
+Nice,France,Europe,06000
+Lyon,France,Europe,69001
+Porto,Portugal,Europe,4000-001
+Naples,Italy,Europe,80100
+Milan,Italy,Europe,20121
+Seville,Spain,Europe,41001
+Hamburg,Germany,Europe,20095
+Salzburg,Austria,Europe,5020
+Krakow,Poland,Europe,31-001
+Dubrovnik,Croatia,Europe,20000
+Split,Croatia,Europe,21000
+Bruges,Belgium,Europe,8000
+Ghent,Belgium,Europe,9000
+San Sebastian,Spain,Europe,20003
+Granada,Spain,Europe,18001
+Valencia,Spain,Europe,46001
+Lausanne,Switzerland,Europe,1003
+Interlaken,Switzerland,Europe,3800
+Lucerne,Switzerland,Europe,6003
+Innsbruck,Austria,Europe,6020
+Cologne,Germany,Europe,50667
+Frankfurt,Germany,Europe,60311
+Stuttgart,Germany,Europe,70173
+Palermo,Italy,Europe,90133
+Turin,Italy,Europe,10121
+Bologna,Italy,Europe,40121
+Pisa,Italy,Europe,56100
+Verona,Italy,Europe,37121
+Cannes,France,Europe,06400
+Marseille,France,Europe,13001
+Bordeaux,France,Europe,33000
+Toulouse,France,Europe,31000
+Bath,United Kingdom,Europe,BA1 1LP
+Manchester,United Kingdom,Europe,M2 5WD
+Liverpool,United Kingdom,Europe,L1 8JQ
+Oxford,United Kingdom,Europe,OX1 1AA
+Cambridge,United Kingdom,Europe,CB2 1AA
+York,United Kingdom,Europe,YO1 7HD
+Reykjavik,Iceland,Europe,101
+Helsinki,Finland,Europe,00100
+Tallinn,Estonia,Europe,10111
+Riga,Latvia,Europe,LV-1050
+Vilnius,Lithuania,Europe,LT-01100
+Warsaw,Poland,Europe,00-001
+Gdansk,Poland,Europe,80-001
+Wroclaw,Poland,Europe,50-001
+Belgrade,Serbia,Europe,11000
+Ljubljana,Slovenia,Europe,1000
+Sofia,Bulgaria,Europe,1000
+Bucharest,Romania,Europe,010011
+St. Petersburg,Russia,Europe,190000
+Moscow,Russia,Europe,101000
+Bergen,Norway,Europe,5003
+Oslo,Norway,Europe,0010
+Trondheim,Norway,Europe,7000
+Gothenburg,Sweden,Europe,411 01
+Malmo,Sweden,Europe,211 24
+Aarhus,Denmark,Europe,8000
+Antwerp,Belgium,Europe,2000
+Lille,France,Europe,59000
+Saint-Malo,France,Europe,35400
+Rovaniemi,Finland,Europe,96100
+Stavanger,Norway,Europe,4001
+Positano,Italy,Europe,84017
+Sorrento,Italy,Europe,80067
+Capri,Italy,Europe,80073
+Taormina,Italy,Europe,98039
+Siena,Italy,Europe,53100
+Amalfi,Italy,Europe,84011
+Cortina d'Ampezzo,Italy,Europe,32043
+Fira (Santorini),Greece,Europe,84700
+Mykonos Town,Greece,Europe,84600
+Rhodes Town,Greece,Europe,85100
+Corfu Town,Greece,Europe,49100
+Heraklion,Greece,Europe,71202
+Hallstatt,Austria,Europe,4830
+Zadar,Croatia,Europe,23000
+Bled,Slovenia,Europe,4260
+Tromsø,Norway,Europe,9008
+Flam,Norway,Europe,5743
+Lillehammer,Norway,Europe,2609
+Aalborg,Denmark,Europe,9000
+Odense,Denmark,Europe,5000
+Rothenburg ob der Tauber,Germany,Europe,91541
+Heidelberg,Germany,Europe,69117
+Nuremberg,Germany,Europe,90402
+Dresden,Germany,Europe,01067
+Leipzig,Germany,Europe,04109
+Bamberg,Germany,Europe,96047
+Lübeck,Germany,Europe,23552
+Potsdam,Germany,Europe,14467
+Chișinău,Moldova,Europe,MD-2001
+Tartu,Estonia,Europe,51003
+Kaunas,Lithuania,Europe,LT-44280
+Klaipeda,Lithuania,Europe,LT-91234
+Pärnu,Estonia,Europe,80011
+Turku,Finland,Europe,20100
+Tampere,Finland,Europe,33100
+Esbjerg,Denmark,Europe,6700
+Faro,Portugal,Europe,8000-079
+Coimbra,Portugal,Europe,3000-002
+Lagos (Portugal),Portugal,Europe,8600-315
+Sintra,Portugal,Europe,2710-523
+Funchal (Madeira),Portugal,Europe,9000-001
+Aveiro,Portugal,Europe,3800-001
+Braga,Portugal,Europe,4700-208
+Évora,Portugal,Europe,7000-531
+Guimarães,Portugal,Europe,4800-419
+Bari,Italy,Europe,70121
+Matera,Italy,Europe,75100
+Alberobello,Italy,Europe,70011
+Cagliari,Italy,Europe,09100
+Alghero,Italy,Europe,07041
+Trieste,Italy,Europe,34121
+Genoa,Italy,Europe,16121
+Perugia,Italy,Europe,06121
+Ravenna,Italy,Europe,48121
+Vernazza (Cinque Terre),Italy,Europe,19018
+Bergamo,Italy,Europe,24121
+Toledo,Spain,Europe,45001
+Zaragoza,Spain,Europe,50001
+Bilbao,Spain,Europe,48001
+Cordoba,Spain,Europe,14001
+Cadiz,Spain,Europe,11001
+Salamanca,Spain,Europe,37001
+Segovia,Spain,Europe,40001
+Santiago de Compostela,Spain,Europe,15701
+Ibiza Town,Spain,Europe,07800
+Pamplona,Spain,Europe,31001
+Burgos,Spain,Europe,09001
+Avignon,France,Europe,84000
+Carcassonne,France,Europe,11000
+Annecy,France,Europe,74000
+Colmar,France,Europe,68000
+Strasbourg,France,Europe,67000
+Chamonix,France,Europe,74400
+St. Tropez,France,Europe,83990
+Lourdes,France,Europe,65100
+Bayeux,France,Europe,14400
+Reims,France,Europe,51100
+Dijon,France,Europe,21000
+Nîmes,France,Europe,30000
+Arles,France,Europe,13200
+Rouen,France,Europe,76000
+Mont Saint-Michel,France,Europe,50170
+Zermatt,Switzerland,Europe,3920
+Montreux,Switzerland,Europe,1820
+Lugano,Switzerland,Europe,6900
+Locarno,Switzerland,Europe,6600
+Gstaad,Switzerland,Europe,3780
+Grindelwald,Switzerland,Europe,3818
+Garmisch-Partenkirchen,Germany,Europe,82467
+Regensburg,Germany,Europe,93047
+Trier,Germany,Europe,54290
+Baden-Baden,Germany,Europe,76530
+Mons,Belgium,Europe,7000
+Leuven,Belgium,Europe,3000
+Namur,Belgium,Europe,5000
+Ypres,Belgium,Europe,8900
+Skopje,North Macedonia,Europe,1000
+Sarajevo,Bosnia and Herzegovina,Europe,71000
+Mostar,Bosnia and Herzegovina,Europe,88000
+Kotor,Montenegro,Europe,85330
+Budva,Montenegro,Europe,85310
+Tirana,Albania,Europe,1001
+Shkodra,Albania,Europe,4001
+Pristina,Kosovo,Europe,10000
+Istanbul,Turkey,Europe/Asia,34110
+Antalya,Turkey,Asia,07100
+Bodrum,Turkey,Asia,48400
+Izmir,Turkey,Asia,35000
+Göreme (Cappadocia),Turkey,Asia,50180
+Bratislava,Slovakia,Europe,811 01
+Košice,Slovakia,Europe,04001
+Novi Sad,Serbia,Europe,21000
+Podgorica,Montenegro,Europe,81000
+Valletta,Malta,Europe,VLT 1110
+Batumi,Georgia,Europe/Asia,6000
+Tokyo,Japan,Asia,100-0001
+Kyoto,Japan,Asia,600-8001
+Osaka,Japan,Asia,530-0001
+Hiroshima,Japan,Asia,730-0011
+Nara,Japan,Asia,630-8212
+Sapporo,Japan,Asia,060-0001
+Yokohama,Japan,Asia,220-0005
+Fukuoka,Japan,Asia,810-0001
+Nagoya,Japan,Asia,450-0002
+Kanazawa,Japan,Asia,920-0853
+Seoul,South Korea,Asia,04524
+Busan,South Korea,Asia,600-011
+Jeju City,South Korea,Asia,63122
+Beijing,China,Asia,100000
+Shanghai,China,Asia,200000
+Guangzhou,China,Asia,510000
+Xi'an,China,Asia,710000
+Chengdu,China,Asia,610000
+Guilin,China,Asia,541000
+Hangzhou,China,Asia,310000
+Suzhou,China,Asia,215000
+Hong Kong,China (SAR),Asia,999077
+Macau,China (SAR),Asia,999078
+Taipei,Taiwan,Asia,100
+Kaohsiung,Taiwan,Asia,800
+Singapore,Singapore,Asia,049213
+Bangkok,Thailand,Asia,10200
+Chiang Mai,Thailand,Asia,50000
+Patong (Phuket),Thailand,Asia,83150
+Pattaya,Thailand,Asia,20150
+Koh Samui,Thailand,Asia,84320
+Krabi Town,Thailand,Asia,81000
+Ayutthaya,Thailand,Asia,13000
+Luang Prabang,Laos,Asia,06000
+Vientiane,Laos,Asia,01000
+Hanoi,Vietnam,Asia,100000
+Ho Chi Minh City,Vietnam,Asia,700000
+Hoi An,Vietnam,Asia,560000
+Halong,Vietnam,Asia,200000
+Siem Reap,Cambodia,Asia,17252
+Phnom Penh,Cambodia,Asia,12200
+Kuala Lumpur,Malaysia,Asia,50000
+George Town (Penang),Malaysia,Asia,10000
+Malacca,Malaysia,Asia,75000
+Langkawi,Malaysia,Asia,07000
+Kota Kinabalu,Malaysia,Asia,88000
+Jakarta,Indonesia,Asia,10110
+Denpasar (Bali),Indonesia,Asia,80221
+Yogyakarta,Indonesia,Asia,55111
+Ubud,Indonesia,Asia,80571
+Mataram (Lombok),Indonesia,Asia,83111
+Manila,Philippines,Asia,1000
+Cebu City,Philippines,Asia,6000
+Boracay (Malay),Philippines,Asia,5608
+El Nido,Philippines,Asia,5313
+Coron,Philippines,Asia,5316
+New Delhi,India,Asia,110001
+Mumbai,India,Asia,400001
+Jaipur,India,Asia,302001
+Agra,India,Asia,282001
+Varanasi,India,Asia,221001
+Udaipur,India,Asia,313001
+Kolkata,India,Asia,700001
+Chennai,India,Asia,600001
+Bengaluru,India,Asia,560001
+Goa (Panaji),India,Asia,403001
+Colombo,Sri Lanka,Asia,00100
+Kandy,Sri Lanka,Asia,20000
+Galle,Sri Lanka,Asia,80000
+Male,Maldives,Asia,20002
+Kathmandu,Nepal,Asia,44600
+Pokhara,Nepal,Asia,33700
+Thimphu,Bhutan,Asia,11001
+Paro,Bhutan,Asia,12001
+Islamabad,Pakistan,Asia,44000
+Lahore,Pakistan,Asia,54000
+Karachi,Pakistan,Asia,74000
+Dhaka,Bangladesh,Asia,1000
+Cox's Bazar,Bangladesh,Asia,4700
+Lhasa,Tibet (China),Asia,850000
+Ulaanbaatar,Mongolia,Asia,210646
+Nur-Sultan (Astana),Kazakhstan,Asia,010000
+Almaty,Kazakhstan,Asia,050000
+Tashkent,Uzbekistan,Asia,100000
+Samarkand,Uzbekistan,Asia,140100
+Bukhara,Uzbekistan,Asia,200100
+Ashgabat,Turkmenistan,Asia,744000
+Dushanbe,Tajikistan,Asia,734000
+Bishkek,Kyrgyzstan,Asia,720000
+Doha,Qatar,Asia,00000
+Dubai,UAE,Asia,00000
+Abu Dhabi,UAE,Asia,00000
+Sharjah,UAE,Asia,00000
+Muscat,Oman,Asia,100
+Salalah,Oman,Asia,211
+Manama,Bahrain,Asia,316
+Kuwait City,Kuwait,Asia,13000
+Riyadh,Saudi Arabia,Asia,11564
+Jeddah,Saudi Arabia,Asia,21577
+Mecca,Saudi Arabia,Asia,24231
+Medina,Saudi Arabia,Asia,42311
+Amman,Jordan,Asia,11118
+Petra (Wadi Musa),Jordan,Asia,71810
+Aqaba,Jordan,Asia,77110
+Jerusalem,Israel,Asia,91000
+Tel Aviv,Israel,Asia,61000
+Haifa,Israel,Asia,31000
+Eilat,Israel,Asia,88000
+Beirut,Lebanon,Asia,1100
+Byblos,Lebanon,Asia,1401
+Tehran,Iran,Asia,11369
+Isfahan,Iran,Asia,81465
+Shiraz,Iran,Asia,71364
+Yazd,Iran,Asia,89136
+Kashan,Iran,Asia,87135
+Mashhad,Iran,Asia,91731
+Erbil,Iraq,Asia,44001
+Baghdad,Iraq,Asia,10001
+Basra,Iraq,Asia,61001
+Damascus,Syria,Asia,01000
+Aleppo,Syria,Asia,21000
+Yerevan,Armenia,Asia,0010
+Tbilisi,Georgia,Europe/Asia,0105
+Mtskheta,Georgia,Europe/Asia,3300
+Baku,Azerbaijan,Asia,AZ1000
+Mandalay,Myanmar,Asia,05000
+Yangon,Myanmar,Asia,11011
+Bagan,Myanmar,Asia,05232
+Naypyidaw,Myanmar,Asia,15011
+Vang Vieng,Laos,Asia,01000
+Da Nang,Vietnam,Asia,550000
+Sapa,Vietnam,Asia,330000
+Ninh Binh,Vietnam,Asia,430000
+Gyeongju,South Korea,Asia,38100
+Incheon,South Korea,Asia,22300
+Jeonju,South Korea,Asia,54900
+Taichung,Taiwan,Asia,400
+Tainan,Taiwan,Asia,700
+Sun Moon Lake (Yuchi),Taiwan,Asia,555
+Zhuhai,China,Asia,519000
+Shenzhen,China,Asia,518000
+Zhangjiajie,China,Asia,427000
+Lijiang,China,Asia,674100
+Kunming,China,Asia,650000
+Harbin,China,Asia,150000
+Qingdao,China,Asia,266000
+Tianjin,China,Asia,300000
+Wuhan,China,Asia,430000
+Dalian,China,Asia,116000
+Changsha,China,Asia,410000
+Urumqi,China,Asia,830000
+Davao,Philippines,Asia,8000
+Vigan,Philippines,Asia,2700
+Tagaytay,Philippines,Asia,4120
+Puerto Princesa,Philippines,Asia,5300
+Bohol (Tagbilaran),Philippines,Asia,6300
+Siargao (General Luna),Philippines,Asia,8419
+Bandung,Indonesia,Asia,40111
+Surabaya,Indonesia,Asia,60119
+Medan,Indonesia,Asia,20112
+Makassar,Indonesia,Asia,90111
+Raja Ampat (Waisai),Indonesia,Asia,98482
+Chiang Rai,Thailand,Asia,57000
+Hua Hin,Thailand,Asia,77110
+Surat Thani,Thailand,Asia,84000
+Lampang,Thailand,Asia,52000
+Koh Phi Phi,Thailand,Asia,81000
+Koh Tao,Thailand,Asia,84360
+Kanchanaburi,Thailand,Asia,71000
+Sukhothai,Thailand,Asia,64000
+Pakse,Laos,Asia,01000
+Ngapali,Myanmar,Asia,07172
+Inle Lake (Nyaungshwe),Myanmar,Asia,06081
+Chittagong,Bangladesh,Asia,4000
+Sylhet,Bangladesh,Asia,3100
+Bhaktapur,Nepal,Asia,44800
+Patan (Lalitpur),Nepal,Asia,44700
+Ella,Sri Lanka,Asia,90090
+Nuwara Eliya,Sri Lanka,Asia,22200
+Jaffna,Sri Lanka,Asia,40000
+Hulhumalé,Maldives,Asia,23000
+Al Wakrah,Qatar,Asia,00000
+Al Ain,UAE,Asia,00000
+Ras Al Khaimah,UAE,Asia,00000
+Nizwa,Oman,Asia,611
+Sur (Oman),Oman,Asia,411
+Muharraq,Bahrain,Asia,214
+Al Jahra,Kuwait,Asia,00000
+Dammam,Saudi Arabia,Asia,31422
+Al Khobar,Saudi Arabia,Asia,31952
+Taif,Saudi Arabia,Asia,21944
+Al Ula,Saudi Arabia,Asia,43512
+Wadi Rum,Jordan,Asia,76269
+Jerash,Jordan,Asia,26173
+Dead Sea (Jordan side),Jordan,Asia,18186
+Bethlehem,Palestinian Territories,Asia,90907
+Nazareth,Israel,Asia,16000
+Acre (Akko),Israel,Asia,24100
+Tartus,Syria,Asia,21000
+Homs,Syria,Asia,30000
+New York City,United States,North America,10001
+Los Angeles,United States,North America,90001
+San Francisco,United States,North America,94102
+Las Vegas,United States,North America,89101
+Chicago,United States,North America,60601
+Miami,United States,North America,33131
+Orlando,United States,North America,32801
+Washington D.C.,United States,North America,20001
+Boston,United States,North America,02108
+Seattle,United States,North America,98101
+New Orleans,United States,North America,70130
+Philadelphia,United States,North America,19106
+San Diego,United States,North America,92101
+San Antonio,United States,North America,78205
+Dallas,United States,North America,75201
+Houston,United States,North America,77002
+Atlanta,United States,North America,30303
+Denver,United States,North America,80202
+Portland (Oregon),United States,North America,97201
+Phoenix,United States,North America,85004
+Salt Lake City,United States,North America,84101
+Honolulu,United States,North America,96813
+Anchorage,United States,North America,99501
+Detroit,United States,North America,48226
+Nashville,United States,North America,37219
+Memphis,United States,North America,38103
+Minneapolis,United States,North America,55401
+St. Louis,United States,North America,63101
+Kansas City,United States,North America,64105
+Charlotte,United States,North America,28202
+Savannah,United States,North America,31401
+Charleston,United States,North America,29401
+Asheville,United States,North America,28801
+Austin,United States,North America,78701
+Fort Lauderdale,United States,North America,33301
+Tampa,United States,North America,33602
+Jacksonville,United States,North America,32202
+Cleveland,United States,North America,44114
+Cincinnati,United States,North America,45202
+Pittsburgh,United States,North America,15222
+Indianapolis,United States,North America,46204
+Albuquerque,United States,North America,87102
+Santa Fe,United States,North America,87501
+Sedona,United States,North America,86336
+Grand Canyon Village,United States,North America,86023
+Yosemite Village,United States,North America,95389
+South Lake Tahoe,United States,North America,96150
+Napa,United States,North America,94559
+Sonoma,United States,North America,95476
+Monterey,United States,North America,93940
+Key West,United States,North America,33040
+Palm Springs,United States,North America,92262
+Carmel-by-the-Sea,United States,North America,93921
+Salem (Massachusetts),United States,North America,01970
+Portland (Maine),United States,North America,04101
+Bar Harbor,United States,North America,04609
+Burlington (Vermont),United States,North America,05401
+Niagara Falls (NY),United States,North America,14303
+Buffalo,United States,North America,14202
+Toronto,Canada,North America,M5H
+Vancouver,Canada,North America,V6B
+Montreal,Canada,North America,H2Y
+Quebec City,Canada,North America,G1R
+Ottawa,Canada,North America,K1A
+Calgary,Canada,North America,T2P
+Edmonton,Canada,North America,T5J
+Banff,Canada,North America,T1L
+Whistler,Canada,North America,V0N 1B4
+Victoria,Canada,North America,V8W
+Halifax,Canada,North America,B3J
+St. John's,Canada,North America,A1C
+Winnipeg,Canada,North America,R3C
+Whitehorse,Canada,North America,Y1A
+Dawson City,Canada,North America,Y0B 1G0
+Churchill,Canada,North America,R0B 0E0
+Tijuana,Mexico,North America,22000
+Mexico City,Mexico,North America,06000
+Cancun,Mexico,North America,77500
+Playa del Carmen,Mexico,North America,77710
+Tulum,Mexico,North America,77780
+Cozumel,Mexico,North America,77600
+Puerto Vallarta,Mexico,North America,48300
+Cabo San Lucas,Mexico,North America,23450
+Guadalajara,Mexico,North America,44100
+Monterrey,Mexico,North America,64000
+Merida,Mexico,North America,97000
+Oaxaca,Mexico,North America,68000
+San Miguel de Allende,Mexico,North America,37700
+Guanajuato,Mexico,North America,36000
+Puebla,Mexico,North America,72000
+Acapulco,Mexico,North America,39670
+Mazatlan,Mexico,North America,82000
+Puerto Escondido,Mexico,North America,71980
+Leon (Mexico),Mexico,North America,37000
+Zacatecas,Mexico,North America,98000
+Queretaro,Mexico,North America,76000
+Havana,Cuba,North America,10100
+Varadero,Cuba,North America,42200
+Trinidad (Cuba),Cuba,North America,62600
+Santiago de Cuba,Cuba,North America,90100
+Kingston,Jamaica,North America,JMAKN01
+Montego Bay,Jamaica,North America,JMCJS12
+Ocho Rios,Jamaica,North America,JMXXX
+Negril,Jamaica,North America,JMXXX
+Nassau,Bahamas,North America,N-7140
+Paradise Island,Bahamas,North America,00000
+Freeport,Bahamas,North America,F-40037
+Punta Cana,Dominican Republic,North America,23000
+Santo Domingo,Dominican Republic,North America,10210
+Puerto Plata,Dominican Republic,North America,57000
+La Romana,Dominican Republic,North America,22000
+San Juan,Puerto Rico (US),North America,00901
+Ponce,Puerto Rico (US),North America,00731
+Charlotte Amalie,U.S. Virgin Islands,North America,00802
+Road Town,British Virgin Islands,North America,VG1110
+Hamilton,Bermuda,North America,HM 11
+Bridgetown,Barbados,North America,BB11114
+Castries,St. Lucia,North America,LC04 301
+Kingstown,St. Vincent & Grenadines,North America,VC0100
+St. George's,Grenada,North America,00000
+Roseau,Dominica,North America,00000
+St. John's (Antigua),Antigua and Barbuda,North America,00000
+Philipsburg,St. Maarten,North America,00000
+Marigot (St. Martin),St. Martin (French),North America,97150
+Port of Spain,Trinidad and Tobago,North America,00000
+Holguin,Cuba,North America,80100
+Willemstad,Curaçao,North America,00000
+Oranjestad,Aruba,North America,00000
+San José,Costa Rica,North America,10101
+Manuel Antonio,Costa Rica,North America,60601
+La Fortuna (Arenal),Costa Rica,North America,21007
+Liberia (Costa Rica),Costa Rica,North America,50101
+Panama City,Panama,North America,0801
+Bocas del Toro,Panama,North America,0101
+Boquete,Panama,North America,0413
+Belize City,Belize,North America,00000
+San Pedro (Ambergris Caye),Belize,North America,00000
+Guatemala City,Guatemala,North America,01001
+Antigua Guatemala,Guatemala,North America,03001
+Flores (Tikal),Guatemala,North America,17001
+Tegucigalpa,Honduras,North America,11101
+Roatan,Honduras,North America,34101
+San Salvador,El Salvador,North America,1101
+Santa Ana (El Salvador),El Salvador,North America,2201
+Leon (Nicaragua),Nicaragua,North America,21000
+Granada (Nicaragua),Nicaragua,North America,43000
+Managua,Nicaragua,North America,11001
+San José del Cabo,Mexico,North America,23400
+Caye Caulker,Belize,North America,00000
+Holbox,Mexico,North America,77310
+Copan Ruinas,Honduras,North America,41101
+Utila,Honduras,North America,34201
+Bluefields (Nicaragua),Nicaragua,North America,82000
+Corn Islands (Nicaragua),Nicaragua,North America,82100
+San Ignacio (Belize),Belize,North America,00000
+Tamarindo,Costa Rica,North America,50309
+Monteverde (Costa Rica),Costa Rica,North America,60109
+David (Panama),Panama,North America,0426
+Colon (Panama),Panama,North America,0301
+Port Antonio,Jamaica,North America,JMXXX
+Falmouth (Jamaica),Jamaica,North America,JMXXX
+George Town (Cayman Islands),Cayman Islands,North America,KY1-1100
+Little Cayman (Cayman Islands),Cayman Islands,North America,KY3-2501
+San Fernando (Trinidad),Trinidad and Tobago,North America,00000
+Scarborough (Tobago),Trinidad and Tobago,North America,00000
+Basseterre,St. Kitts and Nevis,North America,00000
+Charlestown (Nevis),St. Kitts and Nevis,North America,00000
+Gustavia (St. Barthelemy),St. Barthelemy,North America,97133
+Port-au-Prince,Haiti,North America,HT 6120
+Cap-Haïtien,Haiti,North America,HT 1110
+Providenciales (Turks & Caicos),Turks & Caicos,North America,TKCA 1ZZ
+Cockburn Town (Turks & Caicos),Turks & Caicos,North America,TKCA 1ZZ
+Morelia,Mexico,North America,58000
+Toluca,Mexico,North America,50000
+Villahermosa,Mexico,North America,86000
+Puerto Morelos,Mexico,North America,77580
+Loreto (Mexico),Mexico,North America,23880
+La Paz (Mexico),Mexico,North America,23000
+Durango (Mexico),Mexico,North America,34000
+Chihuahua,Mexico,North America,31000
+Hermosillo,Mexico,North America,83000
+Colima,Mexico,North America,28000
+Kelowna,Canada,North America,V1Y
+Saskatoon,Canada,North America,S7K
+Regina,Canada,North America,S4P
+Thunder Bay,Canada,North America,P7E
+Sudbury,Canada,North America,P3E
+Gander,Canada,North America,A1V
+Iqaluit,Canada,North America,X0A 0H0
+Yellowknife,Canada,North America,X1A
+Charlottetown (PEI),Canada,North America,C1A
+Gaspé,Canada,North America,G4X
+Revelstoke,Canada,North America,V0E
+Utqiagvik (Barrow),United States,North America,99723
+Juneau,United States,North America,99801
+Martha's Vineyard (Edgartown),United States,North America,02539
+Nantucket,United States,North America,02554
+Lake Placid,United States,North America,12946
+Mont Tremblant,Canada,North America,J8E 1C6
+Squamish,Canada,North America,V8B
+Rio de Janeiro,Brazil,South America,20000-000
+São Paulo,Brazil,South America,01000-000
+Salvador,Brazil,South America,40000-000
+Brasília,Brazil,South America,70000-000
+Curitiba,Brazil,South America,80000-000
+Recife,Brazil,South America,50000-000
+Fortaleza,Brazil,South America,60000-000
+Manaus,Brazil,South America,69000-000
+Belém,Brazil,South America,66000-000
+Belo Horizonte,Brazil,South America,30000-000
+Florianópolis,Brazil,South America,88000-000
+Foz do Iguaçu,Brazil,South America,85851-000
+Ouro Preto,Brazil,South America,35400-000
+Paraty,Brazil,South America,23970-000
+Porto Alegre,Brazil,South America,90000-000
+Santiago,Chile,South America,8320000
+Valparaíso,Chile,South America,2340000
+Viña del Mar,Chile,South America,2520000
+San Pedro de Atacama,Chile,South America,1410000
+Puerto Varas,Chile,South America,5550000
+Punta Arenas,Chile,South America,6200000
+Easter Island (Hanga Roa),Chile,South America,2770000
+Buenos Aires,Argentina,South America,C1000
+Mendoza,Argentina,South America,M5500
+Bariloche,Argentina,South America,R8400
+Ushuaia,Argentina,South America,V9410
+El Calafate,Argentina,South America,Z9405
+Salta,Argentina,South America,A4400
+Córdoba (Argentina),Argentina,South America,X5000
+Puerto Iguazú,Argentina,South America,N3370
+La Paz,Bolivia,South America,00000
+Uyuni,Bolivia,South America,00000
+Sucre,Bolivia,South America,00000
+Potosí,Bolivia,South America,00000
+Lima,Peru,South America,15001
+Cusco,Peru,South America,08002
+Arequipa,Peru,South America,04000
+Trujillo,Peru,South America,13001
+Puno,Peru,South America,21001
+Iquitos,Peru,South America,16001
+Aguas Calientes (Machu Picchu),Peru,South America,08681
+Quito,Ecuador,South America,170101
+Guayaquil,Ecuador,South America,090101
+Cuenca,Ecuador,South America,010150
+Baños (Ecuador),Ecuador,South America,180250
+Puerto Ayora (Galapagos),Ecuador,South America,200350
+Bogotá,Colombia,South America,110111
+Cartagena,Colombia,South America,130001
+Medellín,Colombia,South America,050001
+Cali,Colombia,South America,760001
+Santa Marta,Colombia,South America,470001
+San Andres Island,Colombia,South America,880001
+Leticia,Colombia,South America,910001
+Barranquilla,Colombia,South America,080001
+Minca,Colombia,South America,470008
+Villa de Leyva,Colombia,South America,154001
+Caracas,Venezuela,South America,1010
+Porlamar (Margarita Island),Venezuela,South America,6301
+Canaima (Angel Falls),Venezuela,South America,00000
+Maracaibo,Venezuela,South America,4001
+Ciudad Bolívar,Venezuela,South America,8001
+Paramaribo,Suriname,South America,00000
+Georgetown,Guyana,South America,00000
+Cayenne,French Guiana,South America,97300
+Montevideo,Uruguay,South America,11000
+Punta del Este,Uruguay,South America,20100
+Colonia del Sacramento,Uruguay,South America,70000
+Asunción,Paraguay,South America,1209
+Encarnación,Paraguay,South America,6000
+Ciudad del Este,Paraguay,South America,7000
+Cochabamba,Bolivia,South America,00000
+Tarija,Bolivia,South America,00000
+Copacabana (Bolivia),Bolivia,South America,00000
+Chiclayo,Peru,South America,14001
+Huaraz,Peru,South America,02001
+Nazca,Peru,South America,11401
+Manta,Ecuador,South America,130802
+Otavalo,Ecuador,South America,100450
+Popayán,Colombia,South America,190001
+Tayrona (El Zaino),Colombia,South America,470007
+Guatapé,Colombia,South America,053840
+San Gil,Colombia,South America,684031
+Puerto Baquerizo Moreno (Galapagos),Ecuador,South America,200150
+Puerto Lopez,Ecuador,South America,130315
+Rosario,Argentina,South America,S2000
+Mar del Plata,Argentina,South America,B7600
+Trelew,Argentina,South America,U9100
+Puerto Madryn,Argentina,South America,U9120
+El Chaltén,Argentina,South America,Z9301
+Cafayate,Argentina,South America,A4427
+Tilcara,Argentina,South America,Y4624
+Colonia Tovar,Venezuela,South America,1030
+Mérida,Venezuela,South America,5101
+Arica,Chile,South America,1000000
+Puerto Montt,Chile,South America,5480000
+Coyhaique,Chile,South America,5950000
+Iquique,Chile,South America,1100000
+Valdivia,Chile,South America,5090000
+Natal,Brazil,South America,59000-000
+Maceió,Brazil,South America,57000-000
+Búzios (Armação dos Búzios),Brazil,South America,28950-000
+Angra dos Reis,Brazil,South America,23900-000
+Gramado,Brazil,South America,95670-000
+Campo Grande,Brazil,South America,79000-000
+João Pessoa,Brazil,South America,58000-000
+Ribeirão Preto,Brazil,South America,14000-000
+Goiânia,Brazil,South America,74000-000
+Aracaju,Brazil,South America,49000-000
+Porto Seguro,Brazil,South America,45810-000
+São Luís,Brazil,South America,65000-000
+Macapá,Brazil,South America,68900-000
+Palmas,Brazil,South America,77000-000
+Boa Vista,Brazil,South America,69300-000
+Tena,Ecuador,South America,150101
+Lago Agrio,Ecuador,South America,210201
+Tarapoto,Peru,South America,22200
+Piura,Peru,South America,20001
+Tacna,Peru,South America,23001
+Cajamarca,Peru,South America,06000
+Tarma,Peru,South America,12851
+Guaranda,Ecuador,South America,020150
+Riobamba,Ecuador,South America,060150
+Machala,Ecuador,South America,070102
+Pasto,Colombia,South America,520001
+Bucaramanga,Colombia,South America,680001
+Armenia (Colombia),Colombia,South America,630001
+Pereira,Colombia,South America,660001
+Ipiales,Colombia,South America,524060
+Maracay,Venezuela,South America,2101
+Puerto Ordaz,Venezuela,South America,8050
+Choroní,Venezuela,South America,2110
+Bahía Blanca,Argentina,South America,B8000
+Rio Gallegos,Argentina,South America,Z9400
+El Bolsón,Argentina,South America,R8430
+Villa La Angostura,Argentina,South America,Q8407
+Neuquén,Argentina,South America,Q8300
+San Rafael (Argentina),Argentina,South America,M5600
+General Roca (Argentina),Argentina,South America,R8332
+Santa Cruz de la Sierra,Bolivia,South America,00000
+Rurrenabaque,Bolivia,South America,00000
+Guiria,Venezuela,South America,6161
+Puerto La Cruz,Venezuela,South America,6023
+Santa Elena de Uairén,Venezuela,South America,8011
+Ilhéus,Brazil,South America,45650-000
+Maragogi,Brazil,South America,57955-000
+Jericoacoara,Brazil,South America,62598-000
+Fernando de Noronha,Brazil,South America,53990-000
+Alter do Chão,Brazil,South America,68109-000
+Porto Velho,Brazil,South America,76800-000
+Teresina,Brazil,South America,64000-000
+Juazeiro do Norte,Brazil,South America,63000-000
+Kourou,French Guiana,South America,97310
+Nieuw Nickerie,Suriname,South America,00000
+Lethem (Guyana),Guyana,South America,00000
+Santa Fe de Antioquia,Colombia,South America,057050
+Puerto Carreño,Colombia,South America,990001
+Ica,Peru,South America,11001
+Moquegua,Peru,South America,18001
+Puerto Maldonado,Peru,South America,17001
+Los Roques (Gran Roque),Venezuela,South America,1160
+Santa Fe (Argentina),Argentina,South America,S3000
+Gualeguaychú,Argentina,South America,E2820
+Posadas,Argentina,South America,N3300
+Formosa (Argentina),Argentina,South America,P3600
+Puerto Natales,Chile,South America,6160000
+Punta del Diablo,Uruguay,South America,27204
+Cabo Polonio,Uruguay,South America,27202
+Carmelo,Uruguay,South America,70100
+Filadelfia (Paraguay),Paraguay,South America,9300
+Villarrica (Paraguay),Paraguay,South America,5000
+Pilar (Paraguay),Paraguay,South America,2800
+Cobija (Bolivia),Bolivia,South America,00000
+Trinidad (Bolivia),Bolivia,South America,00000
+Puerto Quito,Ecuador,South America,170750
+Latacunga,Ecuador,South America,050150
+Tumbes,Peru,South America,24001
+Chicama,Peru,South America,13710
+Juliaca,Peru,South America,21101
+Riberalta,Bolivia,South America,00000
+Oruro,Bolivia,South America,00000
+Barcelona (Venezuela),Venezuela,South America,6001
+Corrientes,Argentina,South America,W3400
+Resistencia,Argentina,South America,H3500
+Concordia,Argentina,South America,E3200
+Comodoro Rivadavia,Argentina,South America,U9000
+Río Grande (Argentina),Argentina,South America,V9420
+Bahía Inglesa,Chile,South America,1570000
+Canoa (Ecuador),Ecuador,South America,131203
+Salinas (Ecuador),Ecuador,South America,241550
+Mompox,Colombia,South America,132560
+Barichara,Colombia,South America,684041
+San Agustín (Colombia),Colombia,South America,418060
+Tierradentro,Colombia,South America,193530
+Neiva,Colombia,South America,410001
+Montería,Colombia,South America,230001
+Valledupar,Colombia,South America,200001
+Guaduas,Colombia,South America,253440
+Taganga,Colombia,South America,470001
+Honda,Colombia,South America,732040
+Pucón,Chile,South America,4920000
+Cairo,Egypt,Africa,11511
+Alexandria,Egypt,Africa,21500
+Luxor,Egypt,Africa,85951
+Aswan,Egypt,Africa,81111
+Sharm El Sheikh,Egypt,Africa,46619
+Hurghada,Egypt,Africa,84511
+Marrakesh,Morocco,Africa,40000
+Casablanca,Morocco,Africa,20000
+Fez,Morocco,Africa,30000
+Chefchaouen,Morocco,Africa,91000
+Rabat,Morocco,Africa,10000
+Tangier,Morocco,Africa,90000
+Cape Town,South Africa,Africa,8001
+Johannesburg,South Africa,Africa,2000
+Durban,South Africa,Africa,4001
+Pretoria,South Africa,Africa,0002
+Port Elizabeth,South Africa,Africa,6001
+Nelspruit (Mbombela),South Africa,Africa,1200
+Soweto,South Africa,Africa,1804
+Giza,Egypt,Africa,12511
+Tunis,Tunisia,Africa,1000
+Sousse,Tunisia,Africa,4000
+Hammamet,Tunisia,Africa,8050
+Carthage,Tunisia,Africa,2016
+Douz,Tunisia,Africa,4260
+Douala,Cameroon,Africa,00000
+Yaoundé,Cameroon,Africa,00000
+Nairobi,Kenya,Africa,00100
+Mombasa,Kenya,Africa,80100
+Malindi,Kenya,Africa,80200
+Lamu,Kenya,Africa,80500
+Narok,Kenya,Africa,20500
+Kampala,Uganda,Africa,00000
+Entebbe,Uganda,Africa,00000
+Jinja,Uganda,Africa,00000
+Kigali,Rwanda,Africa,00000
+Gisenyi,Rwanda,Africa,00000
+Arusha,Tanzania,Africa,23100
+Dar es Salaam,Tanzania,Africa,11000
+Stone Town (Zanzibar),Tanzania,Africa,71100
+Mwanza,Tanzania,Africa,00000
+Moshi,Tanzania,Africa,00000
+Addis Ababa,Ethiopia,Africa,1000
+Lalibela,Ethiopia,Africa,00000
+Gondar,Ethiopia,Africa,00000
+Bahir Dar,Ethiopia,Africa,00000
+Harar,Ethiopia,Africa,00000
+Djibouti City,Djibouti,Africa,00000
+Asmara,Eritrea,Africa,00000
+Khartoum,Sudan,Africa,11111
+Port Sudan,Sudan,Africa,00000
+Meknes,Morocco,Africa,50000
+Ouarzazate,Morocco,Africa,45000
+Essaouira,Morocco,Africa,44000
+Maputo,Mozambique,Africa,1100
+Vilankulo,Mozambique,Africa,1304
+Beira,Mozambique,Africa,2100
+Windhoek,Namibia,Africa,9000
+Swakopmund,Namibia,Africa,9000
+Lüderitz,Namibia,Africa,9000
+Walvis Bay,Namibia,Africa,9000
+Victoria Falls (Zimbabwe),Zimbabwe,Africa,00000
+Harare,Zimbabwe,Africa,00000
+Bulawayo,Zimbabwe,Africa,00000
+Lusaka,Zambia,Africa,10101
+Livingstone,Zambia,Africa,20100
+Bloemfontein,South Africa,Africa,9301
+Franschhoek,South Africa,Africa,7690
+Stellenbosch,South Africa,Africa,7600
+Gaborone,Botswana,Africa,00000
+Maun,Botswana,Africa,00000
+Kasane,Botswana,Africa,00000
+Dahab,Egypt,Africa,46617
+Siwa,Egypt,Africa,51714
+Dakhla Oasis,Egypt,Africa,00000
+Algiers,Algeria,Africa,16000
+Oran,Algeria,Africa,31000
+Constantine,Algeria,Africa,25000
+Tripoli,Libya,Africa,00000
+Ghadames,Libya,Africa,00000
+Monrovia,Liberia,Africa,1000
+Freetown,Sierra Leone,Africa,00000
+Accra,Ghana,Africa,GA000
+Kumasi,Ghana,Africa,00000
+Abidjan,Côte d'Ivoire,Africa,00000
+Yamoussoukro,Côte d'Ivoire,Africa,00000
+Dakar,Senegal,Africa,00000
+Saint-Louis (Senegal),Senegal,Africa,00000
+Banjul,The Gambia,Africa,00000
+Bissau,Guinea-Bissau,Africa,00000
+Conakry,Guinea,Africa,00000
+Bamako,Mali,Africa,00000
+Timbuktu,Mali,Africa,00000
+Ouagadougou,Burkina Faso,Africa,00000
+Niamey,Niger,Africa,00000
+Lagos,Nigeria,Africa,100001
+Abuja,Nigeria,Africa,900001
+Kano,Nigeria,Africa,700001
+Moroni,Comoros,Africa,00000
+Antananarivo,Madagascar,Africa,101
+Sydney,Australia,Oceania,2000
+Melbourne,Australia,Oceania,3000
+Brisbane,Australia,Oceania,4000
+Perth,Australia,Oceania,6000
+Adelaide,Australia,Oceania,5000
+Cairns,Australia,Oceania,4870
+Hobart,Australia,Oceania,7000
+Darwin,Australia,Oceania,0800
+Alice Springs,Australia,Oceania,0870
+Gold Coast,Australia,Oceania,4217
+Canberra,Australia,Oceania,2600
+Newcastle (Australia),Australia,Oceania,2300
+Byron Bay,Australia,Oceania,2481
+Townsville,Australia,Oceania,4810
+Airlie Beach,Australia,Oceania,4802
+Broome,Australia,Oceania,6725
+Wellington,New Zealand,Oceania,6011
+Auckland,New Zealand,Oceania,1010
+Christchurch,New Zealand,Oceania,8011
+Queenstown,New Zealand,Oceania,9300
+Dunedin,New Zealand,Oceania,9016
+Rotorua,New Zealand,Oceania,3010
+Taupo,New Zealand,Oceania,3330
+Napier,New Zealand,Oceania,4110
+Nelson,New Zealand,Oceania,7010
+Tauranga,New Zealand,Oceania,3110
+Suva,Fiji,Oceania,00000
+Nadi,Fiji,Oceania,00000
+Apia,Samoa,Oceania,00000
+Papeete (Tahiti),French Polynesia,Oceania,98714
+Vaitape (Bora Bora),French Polynesia,Oceania,98730
+Rarotonga,Cook Islands,Oceania,00000
+Avarua (Cook Islands),Cook Islands,Oceania,00000
+Port Vila,Vanuatu,Oceania,00000
+Luganville (Espiritu Santo),Vanuatu,Oceania,00000
+Port Moresby,Papua New Guinea,Oceania,121
+Madang,Papua New Guinea,Oceania,511
+Lae,Papua New Guinea,Oceania,411
+Honiara,Solomon Islands,Oceania,00000
+Auki,Solomon Islands,Oceania,00000
+Nukuʻalofa,Tonga,Oceania,00000
+Funafuti,Tuvalu,Oceania,00000
+Tarawa,Kiribati,Oceania,00000
+Majuro,Marshall Islands,Oceania,96960
+Palikir,Fed. States of Micronesia,Oceania,96941
+Colonia (Yap),Micronesia,Oceania,96943
+Koror,Palau,Oceania,96940
+Yaren,Nauru,Oceania,00000
+Noumea,New Caledonia,Oceania,98800
+Savusavu,Fiji,Oceania,00000
+Khasab (Musandam),Oman,Asia,811
+Fujairah,UAE,Asia,00000
+Tabuk,Saudi Arabia,Asia,47311
+Hail,Saudi Arabia,Asia,55425
+Yanbu,Saudi Arabia,Asia,46422
+Al Jubail,Saudi Arabia,Asia,31951
+Adana,Turkey,Asia,01000
+Bursa,Turkey,Asia,16010
+Konya,Turkey,Asia,42000
+Ankara,Turkey,Asia,06000
+Trabzon,Turkey,Asia,61000
+Şanlıurfa,Turkey,Asia,63000
+Gaziantep,Turkey,Asia,27000
+Mardin,Turkey,Asia,47100
+Van,Turkey,Asia,65000
+Erzurum,Turkey,Asia,25000
+Samsun,Turkey,Asia,55000
+Kayseri,Turkey,Asia,38000
+Malatya,Turkey,Asia,44000
+Alanya,Turkey,Asia,07400
+Marmaris,Turkey,Asia,48700
+Kuşadası,Turkey,Asia,09400
+Pamukkale,Turkey,Asia,20190
+Fethiye,Turkey,Asia,48300
+Kaş,Turkey,Asia,07580
+Rize,Turkey,Asia,53100
+Tabriz,Iran,Asia,51368
+Qom,Iran,Asia,37156
+Kish Island,Iran,Asia,79417
+Qeshm,Iran,Asia,79518
+Bandar Abbas,Iran,Asia,79177
+Hillah (Babylon),Iraq,Asia,56001
+Karbala,Iraq,Asia,56001
+Najaf,Iraq,Asia,54001
+Mosul,Iraq,Asia,41001
+Sulaymaniyah,Iraq,Asia,46001
+Tyre,Lebanon,Asia,1601
+Tripoli (Lebanon),Lebanon,Asia,1300
+Zahle,Lebanon,Asia,1801
+Sidon,Lebanon,Asia,1600
+Tartus (Syria),Syria,Asia,21000
+Homs (Syria),Syria,Asia,30000
+Kerman,Iran,Asia,76131
+Bahla,Oman,Asia,612
+Ibri,Oman,Asia,516
+Duqm,Oman,Asia,800
+Al Khor,Qatar,Asia,00000
+Ajman,UAE,Asia,00000
+Umm Al Quwain,UAE,Asia,00000
+Rasht,Iran,Asia,41357

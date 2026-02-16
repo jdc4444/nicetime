@@ -1,0 +1,3802 @@
+[
+  {
+    "city": "New York City",
+    "state": "New York",
+    "postal_code": "10001",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 40.71427,
+    "longitude": -74.00597
+  },
+  {
+    "city": "Los Angeles",
+    "state": "California",
+    "postal_code": "90012",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 34.05223,
+    "longitude": -118.24368
+  },
+  {
+    "city": "San Francisco",
+    "state": "California",
+    "postal_code": "94102",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 37.77493,
+    "longitude": -122.41942
+  },
+  {
+    "city": "Las Vegas",
+    "state": "Nevada",
+    "postal_code": "89109",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 36.17497,
+    "longitude": -115.13722
+  },
+  {
+    "city": "Orlando",
+    "state": "Florida",
+    "postal_code": "32801",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 28.53834,
+    "longitude": -81.37924
+  },
+  {
+    "city": "Miami",
+    "state": "Florida",
+    "postal_code": "33139",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 25.77427,
+    "longitude": -80.19366
+  },
+  {
+    "city": "Washington D.C.",
+    "state": "District of Columbia",
+    "postal_code": "20001",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 38.89511,
+    "longitude": -77.03637
+  },
+  {
+    "city": "Chicago",
+    "state": "Illinois",
+    "postal_code": "60603",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 41.85003,
+    "longitude": -87.65005
+  },
+  {
+    "city": "Boston",
+    "state": "Massachusetts",
+    "postal_code": "02108",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 42.35843,
+    "longitude": -71.05977
+  },
+  {
+    "city": "New Orleans",
+    "state": "Louisiana",
+    "postal_code": "70130",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 29.95465,
+    "longitude": -90.07507
+  },
+  {
+    "city": "Seattle",
+    "state": "Washington",
+    "postal_code": "98101",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 47.60621,
+    "longitude": -122.33207
+  },
+  {
+    "city": "Philadelphia",
+    "state": "Pennsylvania",
+    "postal_code": "19106",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 39.95238,
+    "longitude": -75.16362
+  },
+  {
+    "city": "Nashville",
+    "state": "Tennessee",
+    "postal_code": "37203",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 36.16589,
+    "longitude": -86.78444
+  },
+  {
+    "city": "San Diego",
+    "state": "California",
+    "postal_code": "92101",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 32.71571,
+    "longitude": -117.16472
+  },
+  {
+    "city": "Key West",
+    "state": "Florida",
+    "postal_code": "33040",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 24.565176,
+    "longitude": -81.775794
+  },
+  {
+    "city": "Dallas",
+    "state": "Texas",
+    "postal_code": "75201",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 32.78306,
+    "longitude": -96.80667
+  },
+  {
+    "city": "Houston",
+    "state": "Texas",
+    "postal_code": "77002",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 29.76328,
+    "longitude": -95.36327
+  },
+  {
+    "city": "Atlanta",
+    "state": "Georgia",
+    "postal_code": "30303",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 33.74899,
+    "longitude": -84.38798
+  },
+  {
+    "city": "Phoenix",
+    "state": "Arizona",
+    "postal_code": "85004",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 33.44838,
+    "longitude": -112.07404
+  },
+  {
+    "city": "Austin",
+    "state": "Texas",
+    "postal_code": "78701",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 30.26715,
+    "longitude": -97.74306
+  },
+  {
+    "city": "San Antonio",
+    "state": "Texas",
+    "postal_code": "78205",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 29.42412,
+    "longitude": -98.49363
+  },
+  {
+    "city": "Memphis",
+    "state": "Tennessee",
+    "postal_code": "38103",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 35.14953,
+    "longitude": -90.04898
+  },
+  {
+    "city": "Charleston",
+    "state": "South Carolina",
+    "postal_code": "29401",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 32.77660,
+    "longitude": -79.93090
+  },
+  {
+    "city": "Denver",
+    "state": "Colorado",
+    "postal_code": "80202",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 39.73915,
+    "longitude": -104.98470
+  },
+  {
+    "city": "Honolulu",
+    "state": "Hawaii",
+    "postal_code": "96815",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 21.30694,
+    "longitude": -157.85833
+  },
+  {
+    "city": "Toronto",
+    "state": "Ontario",
+    "postal_code": "M5H 2N2",
+    "country": "Canada",
+    "continent": "North America",
+    "official_language": "English, French",
+    "latitude": 43.65323,
+    "longitude": -79.38318
+  },
+  {
+    "city": "Vancouver",
+    "state": "British Columbia",
+    "postal_code": "V6B 1A1",
+    "country": "Canada",
+    "continent": "North America",
+    "official_language": "English, French",
+    "latitude": 49.28273,
+    "longitude": -123.12074
+  },
+  {
+    "city": "Montreal",
+    "state": "Quebec",
+    "postal_code": "H2Y 1C6",
+    "country": "Canada",
+    "continent": "North America",
+    "official_language": "French",
+    "latitude": 45.50169,
+    "longitude": -73.56725
+  },
+  {
+    "city": "Quebec City",
+    "state": "Quebec",
+    "postal_code": "G1R 5M1",
+    "country": "Canada",
+    "continent": "North America",
+    "official_language": "French",
+    "latitude": 46.81388,
+    "longitude": -71.20798
+  },
+  {
+    "city": "Niagara Falls",
+    "state": "Ontario",
+    "postal_code": "L2G 3Y5",
+    "country": "Canada",
+    "continent": "North America",
+    "official_language": "English, French",
+    "latitude": 43.08956,
+    "longitude": -79.08494
+  },
+  {
+    "city": "Banff",
+    "state": "Alberta",
+    "postal_code": "T1L 1A2",
+    "country": "Canada",
+    "continent": "North America",
+    "official_language": "English, French",
+    "latitude": 51.17836,
+    "longitude": -115.57077
+  },
+  {
+    "city": "Ottawa",
+    "state": "Ontario",
+    "postal_code": "K1A 0A4",
+    "country": "Canada",
+    "continent": "North America",
+    "official_language": "English, French",
+    "latitude": 45.42153,
+    "longitude": -75.69719
+  },
+  {
+    "city": "Mexico City",
+    "state": "Mexico City",
+    "postal_code": "06000",
+    "country": "Mexico",
+    "continent": "North America",
+    "official_language": "Spanish",
+    "latitude": 19.43261,
+    "longitude": -99.13321
+  },
+  {
+    "city": "Cancún",
+    "state": "Quintana Roo",
+    "postal_code": "77500",
+    "country": "Mexico",
+    "continent": "North America",
+    "official_language": "Spanish",
+    "latitude": 21.17429,
+    "longitude": -86.84656
+  },
+  {
+    "city": "Tulum",
+    "state": "Quintana Roo",
+    "postal_code": "77780",
+    "country": "Mexico",
+    "continent": "North America",
+    "official_language": "Spanish",
+    "latitude": 20.21132,
+    "longitude": -87.46556
+  },
+  {
+    "city": "Puerto Vallarta",
+    "state": "Jalisco",
+    "postal_code": "48300",
+    "country": "Mexico",
+    "continent": "North America",
+    "official_language": "Spanish",
+    "latitude": 20.65300,
+    "longitude": -105.22533
+  },
+  {
+    "city": "Cabo San Lucas",
+    "state": "Baja California Sur",
+    "postal_code": "23450",
+    "country": "Mexico",
+    "continent": "North America",
+    "official_language": "Spanish",
+    "latitude": 22.89053,
+    "longitude": -109.91674
+  },
+  {
+    "city": "Guadalajara",
+    "state": "Jalisco",
+    "postal_code": "44100",
+    "country": "Mexico",
+    "continent": "North America",
+    "official_language": "Spanish",
+    "latitude": 20.67359,
+    "longitude": -103.34472
+  },
+  {
+    "city": "Oaxaca",
+    "state": "Oaxaca",
+    "postal_code": "68000",
+    "country": "Mexico",
+    "continent": "North America",
+    "official_language": "Spanish",
+    "latitude": 17.05942,
+    "longitude": -96.72162
+  },
+  {
+    "city": "Mérida",
+    "state": "Yucatán",
+    "postal_code": "97000",
+    "country": "Mexico",
+    "continent": "North America",
+    "official_language": "Spanish",
+    "latitude": 20.96737,
+    "longitude": -89.59259
+  },
+  {
+    "city": "Acapulco",
+    "state": "Guerrero",
+    "postal_code": "39300",
+    "country": "Mexico",
+    "continent": "North America",
+    "official_language": "Spanish",
+    "latitude": 16.86338,
+    "longitude": -99.89010
+  },
+  {
+    "city": "Antigua Guatemala",
+    "state": "Sacatepéquez",
+    "postal_code": "",
+    "country": "Guatemala",
+    "continent": "North America",
+    "official_language": "Spanish",
+    "latitude": 14.56111,
+    "longitude": -90.73444
+  },
+  {
+    "city": "Panama City",
+    "state": "",
+    "postal_code": "",
+    "country": "Panama",
+    "continent": "North America",
+    "official_language": "Spanish",
+    "latitude": 8.98238,
+    "longitude": -79.51987
+  },
+  {
+    "city": "Granada",
+    "state": "",
+    "postal_code": "",
+    "country": "Nicaragua",
+    "continent": "North America",
+    "official_language": "Spanish",
+    "latitude": 11.92988,
+    "longitude": -85.95602
+  },
+  {
+    "city": "San José",
+    "state": "",
+    "postal_code": "",
+    "country": "Costa Rica",
+    "continent": "North America",
+    "official_language": "Spanish",
+    "latitude": 9.92807,
+    "longitude": -84.09072
+  },
+  {
+    "city": "Roatán",
+    "state": "Bay Islands",
+    "postal_code": "",
+    "country": "Honduras",
+    "continent": "North America",
+    "official_language": "Spanish",
+    "latitude": 16.31730,
+    "longitude": -86.53730
+  },
+  {
+    "city": "San Salvador",
+    "state": "",
+    "postal_code": "",
+    "country": "El Salvador",
+    "continent": "North America",
+    "official_language": "Spanish",
+    "latitude": 13.69294,
+    "longitude": -89.21819
+  },
+  {
+    "city": "San Pedro (Ambergris Caye)",
+    "state": "Belize",
+    "postal_code": "",
+    "country": "Belize",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 17.92450,
+    "longitude": -87.96109
+  },
+  {
+    "city": "Havana",
+    "state": "La Habana",
+    "postal_code": "",
+    "country": "Cuba",
+    "continent": "North America",
+    "official_language": "Spanish",
+    "latitude": 23.11359,
+    "longitude": -82.36660
+  },
+  {
+    "city": "Varadero",
+    "state": "Matanzas",
+    "postal_code": "",
+    "country": "Cuba",
+    "continent": "North America",
+    "official_language": "Spanish",
+    "latitude": 23.15798,
+    "longitude": -81.24436
+  },
+  {
+    "city": "Santo Domingo",
+    "state": "Distrito Nacional",
+    "postal_code": "",
+    "country": "Dominican Republic",
+    "continent": "North America",
+    "official_language": "Spanish",
+    "latitude": 18.47333,
+    "longitude": -69.89083
+  },
+  {
+    "city": "Punta Cana",
+    "state": "La Altagracia",
+    "postal_code": "",
+    "country": "Dominican Republic",
+    "continent": "North America",
+    "official_language": "Spanish",
+    "latitude": 18.56010,
+    "longitude": -68.37254
+  },
+  {
+    "city": "Montego Bay",
+    "state": "Saint James",
+    "postal_code": "",
+    "country": "Jamaica",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 18.47116,
+    "longitude": -77.91883
+  },
+  {
+    "city": "Kingston",
+    "state": "Kingston",
+    "postal_code": "",
+    "country": "Jamaica",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 17.97122,
+    "longitude": -76.79358
+  },
+  {
+    "city": "Nassau",
+    "state": "",
+    "postal_code": "",
+    "country": "Bahamas",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 25.05823,
+    "longitude": -77.34306
+  },
+  {
+    "city": "Bridgetown",
+    "state": "",
+    "postal_code": "",
+    "country": "Barbados",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 13.10500,
+    "longitude": -59.61315
+  },
+  {
+    "city": "San Juan",
+    "state": "Puerto Rico",
+    "postal_code": "00901",
+    "country": "United States",
+    "continent": "North America",
+    "official_language": "Spanish, English",
+    "latitude": 18.46633,
+    "longitude": -66.10572
+  },
+  {
+    "city": "Willemstad",
+    "state": "",
+    "postal_code": "",
+    "country": "Curaçao",
+    "continent": "North America",
+    "official_language": "Dutch",
+    "latitude": 12.12242,
+    "longitude": -68.88242
+  },
+  {
+    "city": "Oranjestad",
+    "state": "",
+    "postal_code": "",
+    "country": "Aruba",
+    "continent": "North America",
+    "official_language": "Dutch",
+    "latitude": 12.50920,
+    "longitude": -70.00863
+  },
+  {
+    "city": "George Town",
+    "state": "",
+    "postal_code": "",
+    "country": "Cayman Islands",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 19.28660,
+    "longitude": -81.37436
+  },
+  {
+    "city": "Hamilton",
+    "state": "",
+    "postal_code": "",
+    "country": "Bermuda",
+    "continent": "North America",
+    "official_language": "English",
+    "latitude": 32.29420,
+    "longitude": -64.78393
+  },
+  {
+    "city": "Philipsburg",
+    "state": "",
+    "postal_code": "",
+    "country": "Sint Maarten",
+    "continent": "North America",
+    "official_language": "Dutch",
+    "latitude": 18.02699,
+    "longitude": -63.04581
+  },
+  {
+    "city": "Buenos Aires",
+    "state": "Buenos Aires",
+    "postal_code": "C1001",
+    "country": "Argentina",
+    "continent": "South America",
+    "official_language": "Spanish",
+    "latitude": -34.60372,
+    "longitude": -58.38162
+  },
+  {
+    "city": "Mendoza",
+    "state": "Mendoza",
+    "postal_code": "M5500",
+    "country": "Argentina",
+    "continent": "South America",
+    "official_language": "Spanish",
+    "latitude": -32.88946,
+    "longitude": -68.84584
+  },
+  {
+    "city": "San Carlos de Bariloche",
+    "state": "Río Negro",
+    "postal_code": "8400",
+    "country": "Argentina",
+    "continent": "South America",
+    "official_language": "Spanish",
+    "latitude": -41.13347,
+    "longitude": -71.31028
+  },
+  {
+    "city": "Ushuaia",
+    "state": "Tierra del Fuego",
+    "postal_code": "V9410",
+    "country": "Argentina",
+    "continent": "South America",
+    "official_language": "Spanish",
+    "latitude": -54.80191,
+    "longitude": -68.30300
+  },
+  {
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
+    "postal_code": "20000-000",
+    "country": "Brazil",
+    "continent": "South America",
+    "official_language": "Portuguese",
+    "latitude": -22.90685,
+    "longitude": -43.17290
+  },
+  {
+    "city": "São Paulo",
+    "state": "São Paulo",
+    "postal_code": "01000-000",
+    "country": "Brazil",
+    "continent": "South America",
+    "official_language": "Portuguese",
+    "latitude": -23.55052,
+    "longitude": -46.63331
+  },
+  {
+    "city": "Salvador",
+    "state": "Bahia",
+    "postal_code": "40000-000",
+    "country": "Brazil",
+    "continent": "South America",
+    "official_language": "Portuguese",
+    "latitude": -12.97775,
+    "longitude": -38.50163
+  },
+  {
+    "city": "Brasília",
+    "state": "Distrito Federal",
+    "postal_code": "70000-000",
+    "country": "Brazil",
+    "continent": "South America",
+    "official_language": "Portuguese",
+    "latitude": -15.79389,
+    "longitude": -47.88278
+  },
+  {
+    "city": "Manaus",
+    "state": "Amazonas",
+    "postal_code": "69000-000",
+    "country": "Brazil",
+    "continent": "South America",
+    "official_language": "Portuguese",
+    "latitude": -3.11903,
+    "longitude": -60.02173
+  },
+  {
+    "city": "Paris",
+    "state": "Île-de-France",
+    "postal_code": "75001",
+    "country": "France",
+    "continent": "Europe",
+    "official_language": "French",
+    "latitude": 48.85341,
+    "longitude": 2.34880
+  },
+  {
+    "city": "Nice",
+    "state": "Provence-Alpes-Côte d'Azur",
+    "postal_code": "06000",
+    "country": "France",
+    "continent": "Europe",
+    "official_language": "French",
+    "latitude": 43.70313,
+    "longitude": 7.26608
+  },
+  {
+    "city": "Lyon",
+    "state": "Auvergne-Rhône-Alpes",
+    "postal_code": "69001",
+    "country": "France",
+    "continent": "Europe",
+    "official_language": "French",
+    "latitude": 45.74846,
+    "longitude": 4.84671
+  },
+  {
+    "city": "Marseille",
+    "state": "Provence-Alpes-Côte d'Azur",
+    "postal_code": "13001",
+    "country": "France",
+    "continent": "Europe",
+    "official_language": "French",
+    "latitude": 43.29695,
+    "longitude": 5.38107
+  },
+  {
+    "city": "Bordeaux",
+    "state": "Nouvelle-Aquitaine",
+    "postal_code": "33000",
+    "country": "France",
+    "continent": "Europe",
+    "official_language": "French",
+    "latitude": 44.84044,
+    "longitude": -0.58050
+  },
+  {
+    "city": "Strasbourg",
+    "state": "Grand Est",
+    "postal_code": "67000",
+    "country": "France",
+    "continent": "Europe",
+    "official_language": "French",
+    "latitude": 48.58392,
+    "longitude": 7.74553
+  },
+  {
+    "city": "Cannes",
+    "state": "Provence-Alpes-Côte d'Azur",
+    "postal_code": "06400",
+    "country": "France",
+    "continent": "Europe",
+    "official_language": "French",
+    "latitude": 43.55285,
+    "longitude": 7.01737
+  },
+  {
+    "city": "Saint-Tropez",
+    "state": "Provence-Alpes-Côte d'Azur",
+    "postal_code": "83990",
+    "country": "France",
+    "continent": "Europe",
+    "official_language": "French",
+    "latitude": 43.26725,
+    "longitude": 6.64074
+  },
+  {
+    "city": "Carcassonne",
+    "state": "Occitanie",
+    "postal_code": "11000",
+    "country": "France",
+    "continent": "Europe",
+    "official_language": "French",
+    "latitude": 43.21222,
+    "longitude": 2.35366
+  },
+  {
+    "city": "Avignon",
+    "state": "Provence-Alpes-Côte d'Azur",
+    "postal_code": "84000",
+    "country": "France",
+    "continent": "Europe",
+    "official_language": "French",
+    "latitude": 43.94932,
+    "longitude": 4.80553
+  },
+  {
+    "city": "Lourdes",
+    "state": "Occitanie",
+    "postal_code": "65100",
+    "country": "France",
+    "continent": "Europe",
+    "official_language": "French",
+    "latitude": 43.09550,
+    "longitude": -0.04795
+  },
+  {
+    "city": "Nîmes",
+    "state": "Occitanie",
+    "postal_code": "30000",
+    "country": "France",
+    "continent": "Europe",
+    "official_language": "French",
+    "latitude": 43.83670,
+    "longitude": 4.36005
+  },
+  {
+    "city": "Arles",
+    "state": "Provence-Alpes-Côte d'Azur",
+    "postal_code": "13200",
+    "country": "France",
+    "continent": "Europe",
+    "official_language": "French",
+    "latitude": 43.67665,
+    "longitude": 4.62780
+  },
+  {
+    "city": "Reims",
+    "state": "Grand Est",
+    "postal_code": "51100",
+    "country": "France",
+    "continent": "Europe",
+    "official_language": "French",
+    "latitude": 49.25833,
+    "longitude": 4.03170
+  },
+  {
+    "city": "Colmar",
+    "state": "Grand Est",
+    "postal_code": "68000",
+    "country": "France",
+    "continent": "Europe",
+    "official_language": "French",
+    "latitude": 48.08000,
+    "longitude": 7.35500
+  },
+  {
+    "city": "Annecy",
+    "state": "Auvergne-Rhône-Alpes",
+    "postal_code": "74000",
+    "country": "France",
+    "continent": "Europe",
+    "official_language": "French",
+    "latitude": 45.89924,
+    "longitude": 6.12938
+  },
+  {
+    "city": "London",
+    "state": "England",
+    "postal_code": "SW1A 1AA",
+    "country": "United Kingdom",
+    "continent": "Europe",
+    "official_language": "English",
+    "latitude": 51.50740,
+    "longitude": -0.12780
+  },
+  {
+    "city": "Edinburgh",
+    "state": "Scotland",
+    "postal_code": "EH1 1YZ",
+    "country": "United Kingdom",
+    "continent": "Europe",
+    "official_language": "English",
+    "latitude": 55.95330,
+    "longitude": -3.18830
+  },
+  {
+    "city": "Oxford",
+    "state": "England",
+    "postal_code": "OX1 2JD",
+    "country": "United Kingdom",
+    "continent": "Europe",
+    "official_language": "English",
+    "latitude": 51.75202,
+    "longitude": -1.25773
+  },
+  {
+    "city": "Cambridge",
+    "state": "England",
+    "postal_code": "CB2 3PX",
+    "country": "United Kingdom",
+    "continent": "Europe",
+    "official_language": "English",
+    "latitude": 52.20534,
+    "longitude": 0.12182
+  },
+  {
+    "city": "Bath",
+    "state": "England",
+    "postal_code": "BA1 1LT",
+    "country": "United Kingdom",
+    "continent": "Europe",
+    "official_language": "English",
+    "latitude": 51.37510,
+    "longitude": -2.36172
+  },
+  {
+    "city": "York",
+    "state": "England",
+    "postal_code": "YO1 9WT",
+    "country": "United Kingdom",
+    "continent": "Europe",
+    "official_language": "English",
+    "latitude": 53.95900,
+    "longitude": -1.08154
+  },
+  {
+    "city": "Liverpool",
+    "state": "England",
+    "postal_code": "L1 4LN",
+    "country": "United Kingdom",
+    "continent": "Europe",
+    "official_language": "English",
+    "latitude": 53.40837,
+    "longitude": -2.99157
+  },
+  {
+    "city": "Manchester",
+    "state": "England",
+    "postal_code": "M2 5DB",
+    "country": "United Kingdom",
+    "continent": "Europe",
+    "official_language": "English",
+    "latitude": 53.48076,
+    "longitude": -2.24263
+  },
+  {
+    "city": "Brighton",
+    "state": "England",
+    "postal_code": "BN1 1EE",
+    "country": "United Kingdom",
+    "continent": "Europe",
+    "official_language": "English",
+    "latitude": 50.82253,
+    "longitude": -0.13716
+  },
+  {
+    "city": "Glasgow",
+    "state": "Scotland",
+    "postal_code": "G1 2FF",
+    "country": "United Kingdom",
+    "continent": "Europe",
+    "official_language": "English",
+    "latitude": 55.86515,
+    "longitude": -4.25763
+  },
+  {
+    "city": "Belfast",
+    "state": "Northern Ireland",
+    "postal_code": "BT1 5GS",
+    "country": "United Kingdom",
+    "continent": "Europe",
+    "official_language": "English",
+    "latitude": 54.59729,
+    "longitude": -5.93012
+  },
+  {
+    "city": "Cardiff",
+    "state": "Wales",
+    "postal_code": "CF10 1AH",
+    "country": "United Kingdom",
+    "continent": "Europe",
+    "official_language": "English, Welsh",
+    "latitude": 51.48158,
+    "longitude": -3.17909
+  },
+  {
+    "city": "Dublin",
+    "state": "",
+    "postal_code": "D01 Y006",
+    "country": "Ireland",
+    "continent": "Europe",
+    "official_language": "Irish, English",
+    "latitude": 53.34980,
+    "longitude": -6.26030
+  },
+  {
+    "city": "Galway",
+    "state": "",
+    "postal_code": "H91 YX33",
+    "country": "Ireland",
+    "continent": "Europe",
+    "official_language": "Irish, English",
+    "latitude": 53.27067,
+    "longitude": -9.05679
+  },
+  {
+    "city": "Rome",
+    "state": "Lazio",
+    "postal_code": "00100",
+    "country": "Italy",
+    "continent": "Europe",
+    "official_language": "Italian",
+    "latitude": 41.90278,
+    "longitude": 12.49636
+  },
+  {
+    "city": "Venice",
+    "state": "Veneto",
+    "postal_code": "30124",
+    "country": "Italy",
+    "continent": "Europe",
+    "official_language": "Italian",
+    "latitude": 45.44080,
+    "longitude": 12.31550
+  },
+  {
+    "city": "Florence",
+    "state": "Tuscany",
+    "postal_code": "50122",
+    "country": "Italy",
+    "continent": "Europe",
+    "official_language": "Italian",
+    "latitude": 43.76956,
+    "longitude": 11.25584
+  },
+  {
+    "city": "Milan",
+    "state": "Lombardy",
+    "postal_code": "20121",
+    "country": "Italy",
+    "continent": "Europe",
+    "official_language": "Italian",
+    "latitude": 45.46420,
+    "longitude": 9.18998
+  },
+  {
+    "city": "Naples",
+    "state": "Campania",
+    "postal_code": "80133",
+    "country": "Italy",
+    "continent": "Europe",
+    "official_language": "Italian",
+    "latitude": 40.85179,
+    "longitude": 14.26812
+  },
+  {
+    "city": "Pisa",
+    "state": "Tuscany",
+    "postal_code": "56126",
+    "country": "Italy",
+    "continent": "Europe",
+    "official_language": "Italian",
+    "latitude": 43.72284,
+    "longitude": 10.40169
+  },
+  {
+    "city": "Siena",
+    "state": "Tuscany",
+    "postal_code": "53100",
+    "country": "Italy",
+    "continent": "Europe",
+    "official_language": "Italian",
+    "latitude": 43.31881,
+    "longitude": 11.33076
+  },
+  {
+    "city": "Verona",
+    "state": "Veneto",
+    "postal_code": "37121",
+    "country": "Italy",
+    "continent": "Europe",
+    "official_language": "Italian",
+    "latitude": 45.43838,
+    "longitude": 10.99162
+  },
+  {
+    "city": "Turin",
+    "state": "Piedmont",
+    "postal_code": "10121",
+    "country": "Italy",
+    "continent": "Europe",
+    "official_language": "Italian",
+    "latitude": 45.07034,
+    "longitude": 7.68686
+  },
+  {
+    "city": "Bologna",
+    "state": "Emilia-Romagna",
+    "postal_code": "40126",
+    "country": "Italy",
+    "continent": "Europe",
+    "official_language": "Italian",
+    "latitude": 44.49489,
+    "longitude": 11.34262
+  },
+  {
+    "city": "Genoa",
+    "state": "Liguria",
+    "postal_code": "16121",
+    "country": "Italy",
+    "continent": "Europe",
+    "official_language": "Italian",
+    "latitude": 44.40565,
+    "longitude": 8.94626
+  },
+  {
+    "city": "Amalfi",
+    "state": "Campania",
+    "postal_code": "84011",
+    "country": "Italy",
+    "continent": "Europe",
+    "official_language": "Italian",
+    "latitude": 40.63400,
+    "longitude": 14.60235
+  },
+  {
+    "city": "Positano",
+    "state": "Campania",
+    "postal_code": "84017",
+    "country": "Italy",
+    "continent": "Europe",
+    "official_language": "Italian",
+    "latitude": 40.62806,
+    "longitude": 14.48957
+  },
+  {
+    "city": "Capri",
+    "state": "Campania",
+    "postal_code": "80073",
+    "country": "Italy",
+    "continent": "Europe",
+    "official_language": "Italian",
+    "latitude": 40.55322,
+    "longitude": 14.22250
+  },
+  {
+    "city": "Matera",
+    "state": "Basilicata",
+    "postal_code": "75100",
+    "country": "Italy",
+    "continent": "Europe",
+    "official_language": "Italian",
+    "latitude": 40.66621,
+    "longitude": 16.60428
+  },
+  {
+    "city": "Taormina",
+    "state": "Sicily",
+    "postal_code": "98039",
+    "country": "Italy",
+    "continent": "Europe",
+    "official_language": "Italian",
+    "latitude": 37.85170,
+    "longitude": 15.28560
+  },
+  {
+    "city": "Palermo",
+    "state": "Sicily",
+    "postal_code": "90133",
+    "country": "Italy",
+    "continent": "Europe",
+    "official_language": "Italian",
+    "latitude": 38.11569,
+    "longitude": 13.36149
+  },
+  {
+    "city": "Assisi",
+    "state": "Umbria",
+    "postal_code": "06081",
+    "country": "Italy",
+    "continent": "Europe",
+    "official_language": "Italian",
+    "latitude": 43.07070,
+    "longitude": 12.61960
+  },
+  {
+    "city": "Ravenna",
+    "state": "Emilia-Romagna",
+    "postal_code": "48121",
+    "country": "Italy",
+    "continent": "Europe",
+    "official_language": "Italian",
+    "latitude": 44.41836,
+    "longitude": 12.20353
+  },
+  {
+    "city": "Berlin",
+    "state": "Berlin",
+    "postal_code": "10117",
+    "country": "Germany",
+    "continent": "Europe",
+    "official_language": "German",
+    "latitude": 52.52000,
+    "longitude": 13.40500
+  },
+  {
+    "city": "Munich",
+    "state": "Bavaria",
+    "postal_code": "80331",
+    "country": "Germany",
+    "continent": "Europe",
+    "official_language": "German",
+    "latitude": 48.13513,
+    "longitude": 11.58200
+  },
+  {
+    "city": "Frankfurt",
+    "state": "Hesse",
+    "postal_code": "60311",
+    "country": "Germany",
+    "continent": "Europe",
+    "official_language": "German",
+    "latitude": 50.11092,
+    "longitude": 8.68213
+  },
+  {
+    "city": "Hamburg",
+    "state": "Hamburg",
+    "postal_code": "20095",
+    "country": "Germany",
+    "continent": "Europe",
+    "official_language": "German",
+    "latitude": 53.55108,
+    "longitude": 9.99368
+  },
+  {
+    "city": "Cologne",
+    "state": "North Rhine-Westphalia",
+    "postal_code": "50667",
+    "country": "Germany",
+    "continent": "Europe",
+    "official_language": "German",
+    "latitude": 50.93753,
+    "longitude": 6.96028
+  },
+  {
+    "city": "Heidelberg",
+    "state": "Baden-Württemberg",
+    "postal_code": "69117",
+    "country": "Germany",
+    "continent": "Europe",
+    "official_language": "German",
+    "latitude": 49.39875,
+    "longitude": 8.67243
+  },
+  {
+    "city": "Dresden",
+    "state": "Saxony",
+    "postal_code": "01067",
+    "country": "Germany",
+    "continent": "Europe",
+    "official_language": "German",
+    "latitude": 51.05041,
+    "longitude": 13.73726
+  },
+  {
+    "city": "Rothenburg ob der Tauber",
+    "state": "Bavaria",
+    "postal_code": "91541",
+    "country": "Germany",
+    "continent": "Europe",
+    "official_language": "German",
+    "latitude": 49.37849,
+    "longitude": 10.17965
+  },
+  {
+    "city": "Nuremberg",
+    "state": "Bavaria",
+    "postal_code": "90403",
+    "country": "Germany",
+    "continent": "Europe",
+    "official_language": "German",
+    "latitude": 49.45210,
+    "longitude": 11.07667
+  },
+  {
+    "city": "Amsterdam",
+    "state": "North Holland",
+    "postal_code": "1012",
+    "country": "Netherlands",
+    "continent": "Europe",
+    "official_language": "Dutch",
+    "latitude": 52.36757,
+    "longitude": 4.90410
+  },
+  {
+    "city": "Rotterdam",
+    "state": "South Holland",
+    "postal_code": "3011",
+    "country": "Netherlands",
+    "continent": "Europe",
+    "official_language": "Dutch",
+    "latitude": 51.92442,
+    "longitude": 4.47773
+  },
+  {
+    "city": "The Hague",
+    "state": "South Holland",
+    "postal_code": "2511",
+    "country": "Netherlands",
+    "continent": "Europe",
+    "official_language": "Dutch",
+    "latitude": 52.07050,
+    "longitude": 4.30070
+  },
+  {
+    "city": "Utrecht",
+    "state": "Utrecht",
+    "postal_code": "3511",
+    "country": "Netherlands",
+    "continent": "Europe",
+    "official_language": "Dutch",
+    "latitude": 52.09074,
+    "longitude": 5.12142
+  },
+  {
+    "city": "Delft",
+    "state": "South Holland",
+    "postal_code": "2611",
+    "country": "Netherlands",
+    "continent": "Europe",
+    "official_language": "Dutch",
+    "latitude": 52.01158,
+    "longitude": 4.35707
+  },
+  {
+    "city": "Brussels",
+    "state": "Brussels-Capital",
+    "postal_code": "1000",
+    "country": "Belgium",
+    "continent": "Europe",
+    "official_language": "French, Dutch",
+    "latitude": 50.85034,
+    "longitude": 4.35171
+  },
+  {
+    "city": "Bruges",
+    "state": "West Flanders",
+    "postal_code": "8000",
+    "country": "Belgium",
+    "continent": "Europe",
+    "official_language": "Dutch, French",
+    "latitude": 51.20935,
+    "longitude": 3.22470
+  },
+  {
+    "city": "Ghent",
+    "state": "East Flanders",
+    "postal_code": "9000",
+    "country": "Belgium",
+    "continent": "Europe",
+    "official_language": "Dutch",
+    "latitude": 51.05434,
+    "longitude": 3.71742
+  },
+  {
+    "city": "Antwerp",
+    "state": "Antwerp",
+    "postal_code": "2000",
+    "country": "Belgium",
+    "continent": "Europe",
+    "official_language": "Dutch",
+    "latitude": 51.21945,
+    "longitude": 4.40246
+  },
+  {
+    "city": "Zürich",
+    "state": "Zurich",
+    "postal_code": "8001",
+    "country": "Switzerland",
+    "continent": "Europe",
+    "official_language": "German",
+    "latitude": 47.37689,
+    "longitude": 8.54169
+  },
+  {
+    "city": "Geneva",
+    "state": "Geneva",
+    "postal_code": "1201",
+    "country": "Switzerland",
+    "continent": "Europe",
+    "official_language": "French",
+    "latitude": 46.20439,
+    "longitude": 6.14316
+  },
+  {
+    "city": "Lucerne",
+    "state": "Lucerne",
+    "postal_code": "6003",
+    "country": "Switzerland",
+    "continent": "Europe",
+    "official_language": "German",
+    "latitude": 47.05017,
+    "longitude": 8.30931
+  },
+  {
+    "city": "Bern",
+    "state": "Bern",
+    "postal_code": "3005",
+    "country": "Switzerland",
+    "continent": "Europe",
+    "official_language": "German, French",
+    "latitude": 46.94797,
+    "longitude": 7.44745
+  },
+  {
+    "city": "Interlaken",
+    "state": "Bern",
+    "postal_code": "3800",
+    "country": "Switzerland",
+    "continent": "Europe",
+    "official_language": "German",
+    "latitude": 46.68630,
+    "longitude": 7.86320
+  },
+  {
+    "city": "Zermatt",
+    "state": "Valais",
+    "postal_code": "3920",
+    "country": "Switzerland",
+    "continent": "Europe",
+    "official_language": "German",
+    "latitude": 46.02071,
+    "longitude": 7.74912
+  },
+  {
+    "city": "Vienna",
+    "state": "Vienna",
+    "postal_code": "1010",
+    "country": "Austria",
+    "continent": "Europe",
+    "official_language": "German",
+    "latitude": 48.20817,
+    "longitude": 16.37382
+  },
+  {
+    "city": "Salzburg",
+    "state": "Salzburg",
+    "postal_code": "5020",
+    "country": "Austria",
+    "continent": "Europe",
+    "official_language": "German",
+    "latitude": 47.80949,
+    "longitude": 13.05501
+  },
+  {
+    "city": "Innsbruck",
+    "state": "Tyrol",
+    "postal_code": "6020",
+    "country": "Austria",
+    "continent": "Europe",
+    "official_language": "German",
+    "latitude": 47.26921,
+    "longitude": 11.40410
+  },
+  {
+    "city": "Hallstatt",
+    "state": "Upper Austria",
+    "postal_code": "4830",
+    "country": "Austria",
+    "continent": "Europe",
+    "official_language": "German",
+    "latitude": 47.56150,
+    "longitude": 13.64800
+  },
+  {
+    "city": "Graz",
+    "state": "Styria",
+    "postal_code": "8010",
+    "country": "Austria",
+    "continent": "Europe",
+    "official_language": "German",
+    "latitude": 47.07071,
+    "longitude": 15.43950
+  },
+  {
+    "city": "Warsaw",
+    "state": "Mazovia",
+    "postal_code": "00-001",
+    "country": "Poland",
+    "continent": "Europe",
+    "official_language": "Polish",
+    "latitude": 52.22977,
+    "longitude": 21.01178
+  },
+  {
+    "city": "Kraków",
+    "state": "Lesser Poland",
+    "postal_code": "31-042",
+    "country": "Poland",
+    "continent": "Europe",
+    "official_language": "Polish",
+    "latitude": 50.06465,
+    "longitude": 19.94500
+  },
+  {
+    "city": "Gdańsk",
+    "state": "Pomerania",
+    "postal_code": "80-835",
+    "country": "Poland",
+    "continent": "Europe",
+    "official_language": "Polish",
+    "latitude": 54.35203,
+    "longitude": 18.64664
+  },
+  {
+    "city": "Wrocław",
+    "state": "Lower Silesia",
+    "postal_code": "50-106",
+    "country": "Poland",
+    "continent": "Europe",
+    "official_language": "Polish",
+    "latitude": 51.10789,
+    "longitude": 17.03854
+  },
+  {
+    "city": "Poznań",
+    "state": "Greater Poland",
+    "postal_code": "61-755",
+    "country": "Poland",
+    "continent": "Europe",
+    "official_language": "Polish",
+    "latitude": 52.40638,
+    "longitude": 16.92517
+  },
+  {
+    "city": "Zakopane",
+    "state": "Lesser Poland",
+    "postal_code": "34-500",
+    "country": "Poland",
+    "continent": "Europe",
+    "official_language": "Polish",
+    "latitude": 49.29918,
+    "longitude": 19.94956
+  },
+  {
+    "city": "Prague",
+    "state": "Prague",
+    "postal_code": "110 00",
+    "country": "Czech Republic",
+    "continent": "Europe",
+    "official_language": "Czech",
+    "latitude": 50.07554,
+    "longitude": 14.43780
+  },
+  {
+    "city": "Český Krumlov",
+    "state": "South Bohemia",
+    "postal_code": "381 01",
+    "country": "Czech Republic",
+    "continent": "Europe",
+    "official_language": "Czech",
+    "latitude": 48.81050,
+    "longitude": 14.31550
+  },
+  {
+    "city": "Budapest",
+    "state": "",
+    "postal_code": "1051",
+    "country": "Hungary",
+    "continent": "Europe",
+    "official_language": "Hungarian",
+    "latitude": 47.49791,
+    "longitude": 19.04023
+  },
+  {
+    "city": "Bratislava",
+    "state": "",
+    "postal_code": "811 01",
+    "country": "Slovakia",
+    "continent": "Europe",
+    "official_language": "Slovak",
+    "latitude": 48.14860,
+    "longitude": 17.10775
+  },
+  {
+    "city": "Ljubljana",
+    "state": "",
+    "postal_code": "1000",
+    "country": "Slovenia",
+    "continent": "Europe",
+    "official_language": "Slovene",
+    "latitude": 46.05695,
+    "longitude": 14.50575
+  },
+  {
+    "city": "Bled",
+    "state": "",
+    "postal_code": "4260",
+    "country": "Slovenia",
+    "continent": "Europe",
+    "official_language": "Slovene",
+    "latitude": 46.36833,
+    "longitude": 14.11375
+  },
+  {
+    "city": "Piran",
+    "state": "",
+    "postal_code": "6330",
+    "country": "Slovenia",
+    "continent": "Europe",
+    "official_language": "Slovene",
+    "latitude": 45.52850,
+    "longitude": 13.56815
+  },
+  {
+    "city": "Dubrovnik",
+    "state": "Dalmatia",
+    "postal_code": "20000",
+    "country": "Croatia",
+    "continent": "Europe",
+    "official_language": "Croatian",
+    "latitude": 42.65066,
+    "longitude": 18.09442
+  },
+  {
+    "city": "Split",
+    "state": "Dalmatia",
+    "postal_code": "21000",
+    "country": "Croatia",
+    "continent": "Europe",
+    "official_language": "Croatian",
+    "latitude": 43.50813,
+    "longitude": 16.44019
+  },
+  {
+    "city": "Zagreb",
+    "state": "",
+    "postal_code": "10000",
+    "country": "Croatia",
+    "continent": "Europe",
+    "official_language": "Croatian",
+    "latitude": 45.81501,
+    "longitude": 15.98192
+  },
+  {
+    "city": "Pula",
+    "state": "Istria",
+    "postal_code": "52100",
+    "country": "Croatia",
+    "continent": "Europe",
+    "official_language": "Croatian",
+    "latitude": 44.86662,
+    "longitude": 13.84958
+  },
+  {
+    "city": "Zadar",
+    "state": "Dalmatia",
+    "postal_code": "23000",
+    "country": "Croatia",
+    "continent": "Europe",
+    "official_language": "Croatian",
+    "latitude": 44.11937,
+    "longitude": 15.23136
+  },
+  {
+    "city": "Hvar",
+    "state": "Dalmatia",
+    "postal_code": "21450",
+    "country": "Croatia",
+    "continent": "Europe",
+    "official_language": "Croatian",
+    "latitude": 43.17294,
+    "longitude": 16.44197
+  },
+  {
+    "city": "Sarajevo",
+    "state": "",
+    "postal_code": "71000",
+    "country": "Bosnia and Herzegovina",
+    "continent": "Europe",
+    "official_language": "Bosnian, Croatian, Serbian",
+    "latitude": 43.85626,
+    "longitude": 18.41308
+  },
+  {
+    "city": "Mostar",
+    "state": "",
+    "postal_code": "88000",
+    "country": "Bosnia and Herzegovina",
+    "continent": "Europe",
+    "official_language": "Bosnian, Croatian, Serbian",
+    "latitude": 43.34333,
+    "longitude": 17.80778
+  },
+  {
+    "city": "Belgrade",
+    "state": "",
+    "postal_code": "11000",
+    "country": "Serbia",
+    "continent": "Europe",
+    "official_language": "Serbian",
+    "latitude": 44.78657,
+    "longitude": 20.44892
+  },
+  {
+    "city": "Novi Sad",
+    "state": "",
+    "postal_code": "21000",
+    "country": "Serbia",
+    "continent": "Europe",
+    "official_language": "Serbian",
+    "latitude": 45.26714,
+    "longitude": 19.83355
+  },
+  {
+    "city": "Kotor",
+    "state": "",
+    "postal_code": "85330",
+    "country": "Montenegro",
+    "continent": "Europe",
+    "official_language": "Montenegrin",
+    "latitude": 42.42466,
+    "longitude": 18.77123
+  },
+  {
+    "city": "Budva",
+    "state": "",
+    "postal_code": "85310",
+    "country": "Montenegro",
+    "continent": "Europe",
+    "official_language": "Montenegrin",
+    "latitude": 42.28600,
+    "longitude": 18.84000
+  },
+  {
+    "city": "Tirana",
+    "state": "",
+    "postal_code": "1001",
+    "country": "Albania",
+    "continent": "Europe",
+    "official_language": "Albanian",
+    "latitude": 41.32755,
+    "longitude": 19.81870
+  },
+  {
+    "city": "Berat",
+    "state": "",
+    "postal_code": "5001",
+    "country": "Albania",
+    "continent": "Europe",
+    "official_language": "Albanian",
+    "latitude": 40.70800,
+    "longitude": 19.94400
+  },
+  {
+    "city": "Sarandë",
+    "state": "",
+    "postal_code": "9701",
+    "country": "Albania",
+    "continent": "Europe",
+    "official_language": "Albanian",
+    "latitude": 39.87500,
+    "longitude": 20.00000
+  },
+  {
+    "city": "Skopje",
+    "state": "",
+    "postal_code": "1000",
+    "country": "North Macedonia",
+    "continent": "Europe",
+    "official_language": "Macedonian",
+    "latitude": 41.99735,
+    "longitude": 21.42800
+  },
+  {
+    "city": "Ohrid",
+    "state": "",
+    "postal_code": "6000",
+    "country": "North Macedonia",
+    "continent": "Europe",
+    "official_language": "Macedonian",
+    "latitude": 41.11722,
+    "longitude": 20.80164
+  },
+  {
+    "city": "Athens",
+    "state": "Attica",
+    "postal_code": "105 52",
+    "country": "Greece",
+    "continent": "Europe",
+    "official_language": "Greek",
+    "latitude": 37.98380,
+    "longitude": 23.72750
+  },
+  {
+    "city": "Thessaloniki",
+    "state": "Central Macedonia",
+    "postal_code": "546 23",
+    "country": "Greece",
+    "continent": "Europe",
+    "official_language": "Greek",
+    "latitude": 40.64006,
+    "longitude": 22.94442
+  },
+  {
+    "city": "Santorini",
+    "state": "South Aegean",
+    "postal_code": "847 00",
+    "country": "Greece",
+    "continent": "Europe",
+    "official_language": "Greek",
+    "latitude": 36.41670,
+    "longitude": 25.43330
+  },
+  {
+    "city": "Mykonos",
+    "state": "South Aegean",
+    "postal_code": "846 00",
+    "country": "Greece",
+    "continent": "Europe",
+    "official_language": "Greek",
+    "latitude": 37.44587,
+    "longitude": 25.32889
+  },
+  {
+    "city": "Heraklion",
+    "state": "Crete",
+    "postal_code": "712 02",
+    "country": "Greece",
+    "continent": "Europe",
+    "official_language": "Greek",
+    "latitude": 35.33874,
+    "longitude": 25.14422
+  },
+  {
+    "city": "Rhodes",
+    "state": "South Aegean",
+    "postal_code": "851 00",
+    "country": "Greece",
+    "continent": "Europe",
+    "official_language": "Greek",
+    "latitude": 36.43496,
+    "longitude": 28.21707
+  },
+  {
+    "city": "Corfu",
+    "state": "Ionian Islands",
+    "postal_code": "491 00",
+    "country": "Greece",
+    "continent": "Europe",
+    "official_language": "Greek",
+    "latitude": 39.62433,
+    "longitude": 19.92167
+  },
+  {
+    "city": "Chania",
+    "state": "Crete",
+    "postal_code": "731 32",
+    "country": "Greece",
+    "continent": "Europe",
+    "official_language": "Greek",
+    "latitude": 35.51383,
+    "longitude": 24.01801
+  },
+  {
+    "city": "Nicosia",
+    "state": "",
+    "postal_code": "1011",
+    "country": "Cyprus",
+    "continent": "Europe",
+    "official_language": "Greek, Turkish",
+    "latitude": 35.18557,
+    "longitude": 33.38228
+  },
+  {
+    "city": "Ayia Napa",
+    "state": "",
+    "postal_code": "5330",
+    "country": "Cyprus",
+    "continent": "Europe",
+    "official_language": "Greek, Turkish",
+    "latitude": 34.98850,
+    "longitude": 34.00290
+  },
+  {
+    "city": "Paphos",
+    "state": "",
+    "postal_code": "8047",
+    "country": "Cyprus",
+    "continent": "Europe",
+    "official_language": "Greek, Turkish",
+    "latitude": 34.77200,
+    "longitude": 32.42970
+  },
+  {
+    "city": "Moscow",
+    "state": "",
+    "postal_code": "101000",
+    "country": "Russia",
+    "continent": "Europe",
+    "official_language": "Russian",
+    "latitude": 55.75583,
+    "longitude": 37.61730
+  },
+  {
+    "city": "Saint Petersburg",
+    "state": "",
+    "postal_code": "190000",
+    "country": "Russia",
+    "continent": "Europe",
+    "official_language": "Russian",
+    "latitude": 59.93428,
+    "longitude": 30.33510
+  },
+  {
+    "city": "Sochi",
+    "state": "Krasnodar Krai",
+    "postal_code": "354000",
+    "country": "Russia",
+    "continent": "Europe",
+    "official_language": "Russian",
+    "latitude": 43.60281,
+    "longitude": 39.73415
+  },
+  {
+    "city": "Kazan",
+    "state": "Tatarstan",
+    "postal_code": "420111",
+    "country": "Russia",
+    "continent": "Europe",
+    "official_language": "Russian",
+    "latitude": 55.83043,
+    "longitude": 49.06608
+  },
+  {
+    "city": "Tallinn",
+    "state": "",
+    "postal_code": "10130",
+    "country": "Estonia",
+    "continent": "Europe",
+    "official_language": "Estonian",
+    "latitude": 59.43696,
+    "longitude": 24.75353
+  },
+  {
+    "city": "Riga",
+    "state": "",
+    "postal_code": "LV-1050",
+    "country": "Latvia",
+    "continent": "Europe",
+    "official_language": "Latvian",
+    "latitude": 56.94965,
+    "longitude": 24.10519
+  },
+  {
+    "city": "Vilnius",
+    "state": "",
+    "postal_code": "LT-01100",
+    "country": "Lithuania",
+    "continent": "Europe",
+    "official_language": "Lithuanian",
+    "latitude": 54.68716,
+    "longitude": 25.27980
+  },
+  {
+    "city": "Kyiv",
+    "state": "",
+    "postal_code": "01001",
+    "country": "Ukraine",
+    "continent": "Europe",
+    "official_language": "Ukrainian",
+    "latitude": 50.45010,
+    "longitude": 30.52340
+  },
+  {
+    "city": "Lviv",
+    "state": "",
+    "postal_code": "79000",
+    "country": "Ukraine",
+    "continent": "Europe",
+    "official_language": "Ukrainian",
+    "latitude": 49.83968,
+    "longitude": 24.02972
+  },
+  {
+    "city": "Odessa",
+    "state": "",
+    "postal_code": "65000",
+    "country": "Ukraine",
+    "continent": "Europe",
+    "official_language": "Ukrainian",
+    "latitude": 46.48253,
+    "longitude": 30.72331
+  },
+  {
+    "city": "Bucharest",
+    "state": "",
+    "postal_code": "010071",
+    "country": "Romania",
+    "continent": "Europe",
+    "official_language": "Romanian",
+    "latitude": 44.42677,
+    "longitude": 26.10254
+  },
+  {
+    "city": "Brașov",
+    "state": "",
+    "postal_code": "500025",
+    "country": "Romania",
+    "continent": "Europe",
+    "official_language": "Romanian",
+    "latitude": 45.65797,
+    "longitude": 25.60120
+  },
+  {
+    "city": "Sibiu",
+    "state": "",
+    "postal_code": "550020",
+    "country": "Romania",
+    "continent": "Europe",
+    "official_language": "Romanian",
+    "latitude": 45.79300,
+    "longitude": 24.15207
+  },
+  {
+    "city": "Sighișoara",
+    "state": "",
+    "postal_code": "545400",
+    "country": "Romania",
+    "continent": "Europe",
+    "official_language": "Romanian",
+    "latitude": 46.21966,
+    "longitude": 24.79216
+  },
+  {
+    "city": "Sofia",
+    "state": "",
+    "postal_code": "1000",
+    "country": "Bulgaria",
+    "continent": "Europe",
+    "official_language": "Bulgarian",
+    "latitude": 42.69771,
+    "longitude": 23.32187
+  },
+  {
+    "city": "Plovdiv",
+    "state": "",
+    "postal_code": "4000",
+    "country": "Bulgaria",
+    "continent": "Europe",
+    "official_language": "Bulgarian",
+    "latitude": 42.13541,
+    "longitude": 24.74529
+  },
+  {
+    "city": "Varna",
+    "state": "",
+    "postal_code": "9000",
+    "country": "Bulgaria",
+    "continent": "Europe",
+    "official_language": "Bulgarian",
+    "latitude": 43.21405,
+    "longitude": 27.91473
+  },
+  {
+    "city": "Veliko Tarnovo",
+    "state": "",
+    "postal_code": "5000",
+    "country": "Bulgaria",
+    "continent": "Europe",
+    "official_language": "Bulgarian",
+    "latitude": 43.08460,
+    "longitude": 25.63716
+  },
+  {
+    "city": "Tbilisi",
+    "state": "",
+    "postal_code": "",
+    "country": "Georgia",
+    "continent": "Asia",
+    "official_language": "Georgian",
+    "latitude": 41.71514,
+    "longitude": 44.82709
+  },
+  {
+    "city": "Batumi",
+    "state": "",
+    "postal_code": "",
+    "country": "Georgia",
+    "continent": "Asia",
+    "official_language": "Georgian",
+    "latitude": 41.61675,
+    "longitude": 41.63674
+  },
+  {
+    "city": "Yerevan",
+    "state": "",
+    "postal_code": "0010",
+    "country": "Armenia",
+    "continent": "Asia",
+    "official_language": "Armenian",
+    "latitude": 40.17919,
+    "longitude": 44.49910
+  },
+  {
+    "city": "Baku",
+    "state": "",
+    "postal_code": "AZ1000",
+    "country": "Azerbaijan",
+    "continent": "Asia",
+    "official_language": "Azerbaijani",
+    "latitude": 40.40926,
+    "longitude": 49.86709
+  },
+  {
+    "city": "Sheki",
+    "state": "",
+    "postal_code": "AZ5500",
+    "country": "Azerbaijan",
+    "continent": "Asia",
+    "official_language": "Azerbaijani",
+    "latitude": 41.19194,
+    "longitude": 47.17056
+  },
+  {
+    "city": "Istanbul",
+    "state": "",
+    "postal_code": "34122",
+    "country": "Turkey",
+    "continent": "Europe/Asia",
+    "official_language": "Turkish",
+    "latitude": 41.00824,
+    "longitude": 28.97836
+  },
+  {
+    "city": "Antalya",
+    "state": "",
+    "postal_code": "07100",
+    "country": "Turkey",
+    "continent": "Asia",
+    "official_language": "Turkish",
+    "latitude": 36.89689,
+    "longitude": 30.71332
+  },
+  {
+    "city": "Göreme",
+    "state": "Nevşehir",
+    "postal_code": "50180",
+    "country": "Turkey",
+    "continent": "Asia",
+    "official_language": "Turkish",
+    "latitude": 38.64300,
+    "longitude": 34.82700
+  },
+  {
+    "city": "Ankara",
+    "state": "",
+    "postal_code": "06000",
+    "country": "Turkey",
+    "continent": "Asia",
+    "official_language": "Turkish",
+    "latitude": 39.92077,
+    "longitude": 32.85411
+  },
+  {
+    "city": "İzmir",
+    "state": "",
+    "postal_code": "35210",
+    "country": "Turkey",
+    "continent": "Asia",
+    "official_language": "Turkish",
+    "latitude": 38.42373,
+    "longitude": 27.14282
+  },
+  {
+    "city": "Bursa",
+    "state": "",
+    "postal_code": "16010",
+    "country": "Turkey",
+    "continent": "Asia",
+    "official_language": "Turkish",
+    "latitude": 40.18853,
+    "longitude": 29.06100
+  },
+  {
+    "city": "Bodrum",
+    "state": "",
+    "postal_code": "48400",
+    "country": "Turkey",
+    "continent": "Asia",
+    "official_language": "Turkish",
+    "latitude": 37.03441,
+    "longitude": 27.43029
+  },
+  {
+    "city": "Jerusalem",
+    "state": "",
+    "postal_code": "91000",
+    "country": "Israel",
+    "continent": "Asia",
+    "official_language": "Hebrew, Arabic",
+    "latitude": 31.76832,
+    "longitude": 35.21371
+  },
+  {
+    "city": "Tel Aviv",
+    "state": "",
+    "postal_code": "",
+    "country": "Israel",
+    "continent": "Asia",
+    "official_language": "Hebrew, Arabic",
+    "latitude": 32.08530,
+    "longitude": 34.78177
+  },
+  {
+    "city": "Bethlehem",
+    "state": "",
+    "postal_code": "",
+    "country": "Palestine",
+    "continent": "Asia",
+    "official_language": "Arabic",
+    "latitude": 31.70540,
+    "longitude": 35.20238
+  },
+  {
+    "city": "Haifa",
+    "state": "",
+    "postal_code": "",
+    "country": "Israel",
+    "continent": "Asia",
+    "official_language": "Hebrew, Arabic",
+    "latitude": 32.79405,
+    "longitude": 34.98957
+  },
+  {
+    "city": "Eilat",
+    "state": "",
+    "postal_code": "",
+    "country": "Israel",
+    "continent": "Asia",
+    "official_language": "Hebrew, Arabic",
+    "latitude": 29.55767,
+    "longitude": 34.95193
+  },
+  {
+    "city": "Amman",
+    "state": "",
+    "postal_code": "11180",
+    "country": "Jordan",
+    "continent": "Asia",
+    "official_language": "Arabic",
+    "latitude": 31.95395,
+    "longitude": 35.91063
+  },
+  {
+    "city": "Wadi Musa (Petra)",
+    "state": "",
+    "postal_code": "71810",
+    "country": "Jordan",
+    "continent": "Asia",
+    "official_language": "Arabic",
+    "latitude": 30.32150,
+    "longitude": 35.47880
+  },
+  {
+    "city": "Riyadh",
+    "state": "",
+    "postal_code": "12271",
+    "country": "Saudi Arabia",
+    "continent": "Asia",
+    "official_language": "Arabic",
+    "latitude": 24.71355,
+    "longitude": 46.67530
+  },
+  {
+    "city": "Mecca",
+    "state": "Makkah",
+    "postal_code": "24231",
+    "country": "Saudi Arabia",
+    "continent": "Asia",
+    "official_language": "Arabic",
+    "latitude": 21.38908,
+    "longitude": 39.85791
+  },
+  {
+    "city": "Medina",
+    "state": "Al Madinah",
+    "postal_code": "42311",
+    "country": "Saudi Arabia",
+    "continent": "Asia",
+    "official_language": "Arabic",
+    "latitude": 24.52465,
+    "longitude": 39.56918
+  },
+  {
+    "city": "Jeddah",
+    "state": "Makkah",
+    "postal_code": "22237",
+    "country": "Saudi Arabia",
+    "continent": "Asia",
+    "official_language": "Arabic",
+    "latitude": 21.48581,
+    "longitude": 39.19250
+  },
+  {
+    "city": "Al-'Ula",
+    "state": "Al Madinah",
+    "postal_code": "43534",
+    "country": "Saudi Arabia",
+    "continent": "Asia",
+    "official_language": "Arabic",
+    "latitude": 26.90950,
+    "longitude": 37.97400
+  },
+  {
+    "city": "Dubai",
+    "state": "",
+    "postal_code": "00000",
+    "country": "United Arab Emirates",
+    "continent": "Asia",
+    "official_language": "Arabic",
+    "latitude": 25.20485,
+    "longitude": 55.27078
+  },
+  {
+    "city": "Abu Dhabi",
+    "state": "",
+    "postal_code": "00000",
+    "country": "United Arab Emirates",
+    "continent": "Asia",
+    "official_language": "Arabic",
+    "latitude": 24.45389,
+    "longitude": 54.37734
+  },
+  {
+    "city": "Sharjah",
+    "state": "",
+    "postal_code": "00000",
+    "country": "United Arab Emirates",
+    "continent": "Asia",
+    "official_language": "Arabic",
+    "latitude": 25.34626,
+    "longitude": 55.42093
+  },
+  {
+    "city": "Doha",
+    "state": "",
+    "postal_code": "00000",
+    "country": "Qatar",
+    "continent": "Asia",
+    "official_language": "Arabic",
+    "latitude": 25.28545,
+    "longitude": 51.53104
+  },
+  {
+    "city": "Manama",
+    "state": "",
+    "postal_code": "000",
+    "country": "Bahrain",
+    "continent": "Asia",
+    "official_language": "Arabic",
+    "latitude": 26.22852,
+    "longitude": 50.58605
+  },
+  {
+    "city": "Muscat",
+    "state": "",
+    "postal_code": "100",
+    "country": "Oman",
+    "continent": "Asia",
+    "official_language": "Arabic",
+    "latitude": 23.58800,
+    "longitude": 58.38290
+  },
+  {
+    "city": "Salalah",
+    "state": "",
+    "postal_code": "211",
+    "country": "Oman",
+    "continent": "Asia",
+    "official_language": "Arabic",
+    "latitude": 17.02028,
+    "longitude": 54.98583
+  },
+  {
+    "city": "Nizwa",
+    "state": "",
+    "postal_code": "611",
+    "country": "Oman",
+    "continent": "Asia",
+    "official_language": "Arabic",
+    "latitude": 22.93333,
+    "longitude": 57.53333
+  },
+  {
+    "city": "Kuwait City",
+    "state": "",
+    "postal_code": "13001",
+    "country": "Kuwait",
+    "continent": "Asia",
+    "official_language": "Arabic",
+    "latitude": 29.37586,
+    "longitude": 47.97740
+  },
+  {
+    "city": "Beirut",
+    "state": "",
+    "postal_code": "1100",
+    "country": "Lebanon",
+    "continent": "Asia",
+    "official_language": "Arabic",
+    "latitude": 33.89379,
+    "longitude": 35.50178
+  },
+  {
+    "city": "Byblos",
+    "state": "",
+    "postal_code": "1400",
+    "country": "Lebanon",
+    "continent": "Asia",
+    "official_language": "Arabic",
+    "latitude": 34.12300,
+    "longitude": 35.65190
+  },
+  {
+    "city": "Baalbek",
+    "state": "",
+    "postal_code": "1800",
+    "country": "Lebanon",
+    "continent": "Asia",
+    "official_language": "Arabic",
+    "latitude": 34.00603,
+    "longitude": 36.20404
+  },
+  {
+    "city": "Tehran",
+    "state": "",
+    "postal_code": "11369",
+    "country": "Iran",
+    "continent": "Asia",
+    "official_language": "Persian",
+    "latitude": 35.68920,
+    "longitude": 51.38900
+  },
+  {
+    "city": "Isfahan",
+    "state": "",
+    "postal_code": "81464",
+    "country": "Iran",
+    "continent": "Asia",
+    "official_language": "Persian",
+    "latitude": 32.65463,
+    "longitude": 51.66798
+  },
+  {
+    "city": "Shiraz",
+    "state": "",
+    "postal_code": "71364",
+    "country": "Iran",
+    "continent": "Asia",
+    "official_language": "Persian",
+    "latitude": 29.59177,
+    "longitude": 52.58370
+  },
+  {
+    "city": "Yazd",
+    "state": "",
+    "postal_code": "89136",
+    "country": "Iran",
+    "continent": "Asia",
+    "official_language": "Persian",
+    "latitude": 31.89742,
+    "longitude": 54.35686
+  },
+  {
+    "city": "Mashhad",
+    "state": "",
+    "postal_code": "91750",
+    "country": "Iran",
+    "continent": "Asia",
+    "official_language": "Persian",
+    "latitude": 36.26046,
+    "longitude": 59.61675
+  },
+  {
+    "city": "Tabriz",
+    "state": "",
+    "postal_code": "51368",
+    "country": "Iran",
+    "continent": "Asia",
+    "official_language": "Persian",
+    "latitude": 38.09622,
+    "longitude": 46.27380
+  },
+  {
+    "city": "Samarkand",
+    "state": "",
+    "postal_code": "140100",
+    "country": "Uzbekistan",
+    "continent": "Asia",
+    "official_language": "Uzbek",
+    "latitude": 39.65417,
+    "longitude": 66.95972
+  },
+  {
+    "city": "Bukhara",
+    "state": "",
+    "postal_code": "200100",
+    "country": "Uzbekistan",
+    "continent": "Asia",
+    "official_language": "Uzbek",
+    "latitude": 39.77495,
+    "longitude": 64.42867
+  },
+  {
+    "city": "Tashkent",
+    "state": "",
+    "postal_code": "100000",
+    "country": "Uzbekistan",
+    "continent": "Asia",
+    "official_language": "Uzbek",
+    "latitude": 41.29950,
+    "longitude": 69.24007
+  },
+  {
+    "city": "Khiva",
+    "state": "",
+    "postal_code": "220900",
+    "country": "Uzbekistan",
+    "continent": "Asia",
+    "official_language": "Uzbek",
+    "latitude": 41.37834,
+    "longitude": 60.36307
+  },
+  {
+    "city": "Nur-Sultan (Astana)",
+    "state": "",
+    "postal_code": "010000",
+    "country": "Kazakhstan",
+    "continent": "Asia",
+    "official_language": "Kazakh, Russian",
+    "latitude": 51.16052,
+    "longitude": 71.47036
+  },
+  {
+    "city": "Almaty",
+    "state": "",
+    "postal_code": "050000",
+    "country": "Kazakhstan",
+    "continent": "Asia",
+    "official_language": "Kazakh, Russian",
+    "latitude": 43.22202,
+    "longitude": 76.85125
+  },
+  {
+    "city": "Bishkek",
+    "state": "",
+    "postal_code": "720000",
+    "country": "Kyrgyzstan",
+    "continent": "Asia",
+    "official_language": "Kyrgyz, Russian",
+    "latitude": 42.87462,
+    "longitude": 74.56976
+  },
+  {
+    "city": "Dushanbe",
+    "state": "",
+    "postal_code": "734000",
+    "country": "Tajikistan",
+    "continent": "Asia",
+    "official_language": "Tajik",
+    "latitude": 38.55977,
+    "longitude": 68.78703
+  },
+  {
+    "city": "Ashgabat",
+    "state": "",
+    "postal_code": "744000",
+    "country": "Turkmenistan",
+    "continent": "Asia",
+    "official_language": "Turkmen",
+    "latitude": 37.96008,
+    "longitude": 58.32606
+  },
+  {
+    "city": "Delhi",
+    "state": "Delhi",
+    "postal_code": "110001",
+    "country": "India",
+    "continent": "Asia",
+    "official_language": "Hindi",
+    "latitude": 28.70406,
+    "longitude": 77.10249
+  },
+  {
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "postal_code": "400001",
+    "country": "India",
+    "continent": "Asia",
+    "official_language": "Marathi",
+    "latitude": 19.07600,
+    "longitude": 72.87766
+  },
+  {
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "postal_code": "302001",
+    "country": "India",
+    "continent": "Asia",
+    "official_language": "Hindi",
+    "latitude": 26.91243,
+    "longitude": 75.78727
+  },
+  {
+    "city": "Agra",
+    "state": "Uttar Pradesh",
+    "postal_code": "282001",
+    "country": "India",
+    "continent": "Asia",
+    "official_language": "Hindi",
+    "latitude": 27.17667,
+    "longitude": 78.00807
+  },
+  {
+    "city": "Varanasi",
+    "state": "Uttar Pradesh",
+    "postal_code": "221001",
+    "country": "India",
+    "continent": "Asia",
+    "official_language": "Hindi",
+    "latitude": 25.31765,
+    "longitude": 82.97391
+  },
+  {
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "postal_code": "700001",
+    "country": "India",
+    "continent": "Asia",
+    "official_language": "Bengali",
+    "latitude": 22.57265,
+    "longitude": 88.36304
+  },
+  {
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "postal_code": "600001",
+    "country": "India",
+    "continent": "Asia",
+    "official_language": "Tamil",
+    "latitude": 13.08268,
+    "longitude": 80.27072
+  },
+  {
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "postal_code": "560001",
+    "country": "India",
+    "continent": "Asia",
+    "official_language": "Kannada",
+    "latitude": 12.97160,
+    "longitude": 77.59457
+  },
+  {
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "postal_code": "500001",
+    "country": "India",
+    "continent": "Asia",
+    "official_language": "Telugu, Urdu",
+    "latitude": 17.38504,
+    "longitude": 78.48667
+  },
+  {
+    "city": "Panaji (Goa)",
+    "state": "Goa",
+    "postal_code": "403001",
+    "country": "India",
+    "continent": "Asia",
+    "official_language": "Konkani",
+    "latitude": 15.49093,
+    "longitude": 73.82785
+  },
+  {
+    "city": "Amritsar",
+    "state": "Punjab",
+    "postal_code": "143001",
+    "country": "India",
+    "continent": "Asia",
+    "official_language": "Punjabi",
+    "latitude": 31.63400,
+    "longitude": 74.87226
+  },
+  {
+    "city": "Udaipur",
+    "state": "Rajasthan",
+    "postal_code": "313001",
+    "country": "India",
+    "continent": "Asia",
+    "official_language": "Hindi",
+    "latitude": 24.58544,
+    "longitude": 73.71248
+  },
+  {
+    "city": "Jodhpur",
+    "state": "Rajasthan",
+    "postal_code": "342001",
+    "country": "India",
+    "continent": "Asia",
+    "official_language": "Hindi",
+    "latitude": 26.23895,
+    "longitude": 73.02431
+  },
+  {
+    "city": "Jaisalmer",
+    "state": "Rajasthan",
+    "postal_code": "345001",
+    "country": "India",
+    "continent": "Asia",
+    "official_language": "Hindi",
+    "latitude": 26.91567,
+    "longitude": 70.90834
+  },
+  {
+    "city": "Kochi",
+    "state": "Kerala",
+    "postal_code": "682001",
+    "country": "India",
+    "continent": "Asia",
+    "official_language": "Malayalam",
+    "latitude": 9.93123,
+    "longitude": 76.26730
+  },
+  {
+    "city": "Rishikesh",
+    "state": "Uttarakhand",
+    "postal_code": "249201",
+    "country": "India",
+    "continent": "Asia",
+    "official_language": "Hindi",
+    "latitude": 30.08692,
+    "longitude": 78.26756
+  },
+  {
+    "city": "Darjeeling",
+    "state": "West Bengal",
+    "postal_code": "734101",
+    "country": "India",
+    "continent": "Asia",
+    "official_language": "Bengali, Nepali",
+    "latitude": 27.04102,
+    "longitude": 88.26630
+  },
+  {
+    "city": "Leh",
+    "state": "Ladakh",
+    "postal_code": "194101",
+    "country": "India",
+    "continent": "Asia",
+    "official_language": "Ladakhi",
+    "latitude": 34.16420,
+    "longitude": 77.58480
+  },
+  {
+    "city": "Madurai",
+    "state": "Tamil Nadu",
+    "postal_code": "625001",
+    "country": "India",
+    "continent": "Asia",
+    "official_language": "Tamil",
+    "latitude": 9.92520,
+    "longitude": 78.11978
+  },
+  {
+    "city": "Khajuraho",
+    "state": "Madhya Pradesh",
+    "postal_code": "471606",
+    "country": "India",
+    "continent": "Asia",
+    "official_language": "Hindi",
+    "latitude": 24.83184,
+    "longitude": 79.91991
+  },
+  {
+    "city": "Shimla",
+    "state": "Himachal Pradesh",
+    "postal_code": "171001",
+    "country": "India",
+    "continent": "Asia",
+    "official_language": "Hindi",
+    "latitude": 31.10482,
+    "longitude": 77.17339
+  },
+  {
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "postal_code": "380001",
+    "country": "India",
+    "continent": "Asia",
+    "official_language": "Gujarati",
+    "latitude": 23.02250,
+    "longitude": 72.57136
+  },
+  {
+    "city": "Mysuru (Mysore)",
+    "state": "Karnataka",
+    "postal_code": "570001",
+    "country": "India",
+    "continent": "Asia",
+    "official_language": "Kannada",
+    "latitude": 12.29581,
+    "longitude": 76.63938
+  },
+  {
+    "city": "Bodh Gaya",
+    "state": "Bihar",
+    "postal_code": "824231",
+    "country": "India",
+    "continent": "Asia",
+    "official_language": "Hindi",
+    "latitude": 24.69533,
+    "longitude": 84.99145
+  },
+  {
+    "city": "Karachi",
+    "state": "Sindh",
+    "postal_code": "74000",
+    "country": "Pakistan",
+    "continent": "Asia",
+    "official_language": "Urdu",
+    "latitude": 24.86073,
+    "longitude": 67.00114
+  },
+  {
+    "city": "Lahore",
+    "state": "Punjab",
+    "postal_code": "54000",
+    "country": "Pakistan",
+    "continent": "Asia",
+    "official_language": "Punjabi",
+    "latitude": 31.52037,
+    "longitude": 74.35875
+  },
+  {
+    "city": "Islamabad",
+    "state": "Islamabad Capital Territory",
+    "postal_code": "44000",
+    "country": "Pakistan",
+    "continent": "Asia",
+    "official_language": "Urdu",
+    "latitude": 33.68442,
+    "longitude": 73.04788
+  },
+  {
+    "city": "Hunza (Karimabad)",
+    "state": "Gilgit-Baltistan",
+    "postal_code": "",
+    "country": "Pakistan",
+    "continent": "Asia",
+    "official_language": "Urdu",
+    "latitude": 36.31667,
+    "longitude": 74.65000
+  },
+  {
+    "city": "Kathmandu",
+    "state": "",
+    "postal_code": "44600",
+    "country": "Nepal",
+    "continent": "Asia",
+    "official_language": "Nepali",
+    "latitude": 27.71725,
+    "longitude": 85.32396
+  },
+  {
+    "city": "Pokhara",
+    "state": "",
+    "postal_code": "33700",
+    "country": "Nepal",
+    "continent": "Asia",
+    "official_language": "Nepali",
+    "latitude": 28.20959,
+    "longitude": 83.98554
+  },
+  {
+    "city": "Bhaktapur",
+    "state": "",
+    "postal_code": "44800",
+    "country": "Nepal",
+    "continent": "Asia",
+    "official_language": "Nepali",
+    "latitude": 27.67389,
+    "longitude": 85.42971
+  },
+  {
+    "city": "Thimphu",
+    "state": "",
+    "postal_code": "11001",
+    "country": "Bhutan",
+    "continent": "Asia",
+    "official_language": "Dzongkha",
+    "latitude": 27.47280,
+    "longitude": 89.63386
+  },
+  {
+    "city": "Paro",
+    "state": "",
+    "postal_code": "12001",
+    "country": "Bhutan",
+    "continent": "Asia",
+    "official_language": "Dzongkha",
+    "latitude": 27.43050,
+    "longitude": 89.41310
+  },
+  {
+    "city": "Dhaka",
+    "state": "",
+    "postal_code": "1000",
+    "country": "Bangladesh",
+    "continent": "Asia",
+    "official_language": "Bengali",
+    "latitude": 23.81033,
+    "longitude": 90.41252
+  },
+  {
+    "city": "Cox's Bazar",
+    "state": "",
+    "postal_code": "4700",
+    "country": "Bangladesh",
+    "continent": "Asia",
+    "official_language": "Bengali",
+    "latitude": 21.43348,
+    "longitude": 91.98769
+  },
+  {
+    "city": "Colombo",
+    "state": "",
+    "postal_code": "00100",
+    "country": "Sri Lanka",
+    "continent": "Asia",
+    "official_language": "Sinhala, Tamil",
+    "latitude": 6.92708,
+    "longitude": 79.86124
+  },
+  {
+    "city": "Kandy",
+    "state": "",
+    "postal_code": "20000",
+    "country": "Sri Lanka",
+    "continent": "Asia",
+    "official_language": "Sinhala, Tamil",
+    "latitude": 7.29057,
+    "longitude": 80.63373
+  },
+  {
+    "city": "Galle",
+    "state": "",
+    "postal_code": "80000",
+    "country": "Sri Lanka",
+    "continent": "Asia",
+    "official_language": "Sinhala, Tamil",
+    "latitude": 6.03200,
+    "longitude": 80.21690
+  },
+  {
+    "city": "Malé",
+    "state": "",
+    "postal_code": "20001",
+    "country": "Maldives",
+    "continent": "Asia",
+    "official_language": "Dhivehi",
+    "latitude": 4.17550,
+    "longitude": 73.50935
+  },
+  {
+    "city": "Beijing",
+    "state": "",
+    "postal_code": "100000",
+    "country": "China",
+    "continent": "Asia",
+    "official_language": "Chinese (Mandarin)",
+    "latitude": 39.90420,
+    "longitude": 116.40740
+  },
+  {
+    "city": "Shanghai",
+    "state": "",
+    "postal_code": "200000",
+    "country": "China",
+    "continent": "Asia",
+    "official_language": "Chinese (Mandarin)",
+    "latitude": 31.23042,
+    "longitude": 121.47370
+  },
+  {
+    "city": "Xi'an",
+    "state": "Shaanxi",
+    "postal_code": "710000",
+    "country": "China",
+    "continent": "Asia",
+    "official_language": "Chinese (Mandarin)",
+    "latitude": 34.34157,
+    "longitude": 108.93977
+  },
+  {
+    "city": "Guilin",
+    "state": "Guangxi",
+    "postal_code": "541000",
+    "country": "China",
+    "continent": "Asia",
+    "official_language": "Chinese (Mandarin)",
+    "latitude": 25.27500,
+    "longitude": 110.29600
+  },
+  {
+    "city": "Chengdu",
+    "state": "Sichuan",
+    "postal_code": "610000",
+    "country": "China",
+    "continent": "Asia",
+    "official_language": "Chinese (Mandarin)",
+    "latitude": 30.57281,
+    "longitude": 104.06680
+  },
+  {
+    "city": "Hangzhou",
+    "state": "Zhejiang",
+    "postal_code": "310000",
+    "country": "China",
+    "continent": "Asia",
+    "official_language": "Chinese (Mandarin)",
+    "latitude": 30.27408,
+    "longitude": 120.15507
+  },
+  {
+    "city": "Suzhou",
+    "state": "Jiangsu",
+    "postal_code": "215000",
+    "country": "China",
+    "continent": "Asia",
+    "official_language": "Chinese (Mandarin)",
+    "latitude": 31.29834,
+    "longitude": 120.58319
+  },
+  {
+    "city": "Guangzhou",
+    "state": "Guangdong",
+    "postal_code": "510000",
+    "country": "China",
+    "continent": "Asia",
+    "official_language": "Chinese (Mandarin)",
+    "latitude": 23.12911,
+    "longitude": 113.26439
+  },
+  {
+    "city": "Shenzhen",
+    "state": "Guangdong",
+    "postal_code": "518000",
+    "country": "China",
+    "continent": "Asia",
+    "official_language": "Chinese (Mandarin)",
+    "latitude": 22.54310,
+    "longitude": 114.05786
+  },
+  {
+    "city": "Hong Kong",
+    "state": "",
+    "postal_code": "",
+    "country": "China (Hong Kong SAR)",
+    "continent": "Asia",
+    "official_language": "Chinese, English",
+    "latitude": 22.31930,
+    "longitude": 114.16936
+  },
+  {
+    "city": "Macau",
+    "state": "",
+    "postal_code": "",
+    "country": "China (Macau SAR)",
+    "continent": "Asia",
+    "official_language": "Chinese, Portuguese",
+    "latitude": 22.19875,
+    "longitude": 113.54387
+  },
+  {
+    "city": "Lhasa",
+    "state": "Tibet",
+    "postal_code": "850000",
+    "country": "China",
+    "continent": "Asia",
+    "official_language": "Chinese (Mandarin)",
+    "latitude": 29.64556,
+    "longitude": 91.14083
+  },
+  {
+    "city": "Harbin",
+    "state": "Heilongjiang",
+    "postal_code": "150000",
+    "country": "China",
+    "continent": "Asia",
+    "official_language": "Chinese (Mandarin)",
+    "latitude": 45.80377,
+    "longitude": 126.53471
+  },
+  {
+    "city": "Nanjing",
+    "state": "Jiangsu",
+    "postal_code": "210000",
+    "country": "China",
+    "continent": "Asia",
+    "official_language": "Chinese (Mandarin)",
+    "latitude": 32.06025,
+    "longitude": 118.79687
+  },
+  {
+    "city": "Lijiang",
+    "state": "Yunnan",
+    "postal_code": "674100",
+    "country": "China",
+    "continent": "Asia",
+    "official_language": "Chinese (Mandarin)",
+    "latitude": 26.87208,
+    "longitude": 100.23432
+  },
+  {
+    "city": "Chongqing",
+    "state": "Chongqing",
+    "postal_code": "400000",
+    "country": "China",
+    "continent": "Asia",
+    "official_language": "Chinese (Mandarin)",
+    "latitude": 29.56301,
+    "longitude": 106.55156
+  },
+  {
+    "city": "Zhangjiajie",
+    "state": "Hunan",
+    "postal_code": "427000",
+    "country": "China",
+    "continent": "Asia",
+    "official_language": "Chinese (Mandarin)",
+    "latitude": 29.11710,
+    "longitude": 110.47917
+  },
+  {
+    "city": "Kunming",
+    "state": "Yunnan",
+    "postal_code": "650000",
+    "country": "China",
+    "continent": "Asia",
+    "official_language": "Chinese (Mandarin)",
+    "latitude": 25.03889,
+    "longitude": 102.71825
+  },
+  {
+    "city": "Wuhan",
+    "state": "Hubei",
+    "postal_code": "430000",
+    "country": "China",
+    "continent": "Asia",
+    "official_language": "Chinese (Mandarin)",
+    "latitude": 30.59285,
+    "longitude": 114.30554
+  },
+  {
+    "city": "Xiamen",
+    "state": "Fujian",
+    "postal_code": "361000",
+    "country": "China",
+    "continent": "Asia",
+    "official_language": "Chinese (Mandarin)",
+    "latitude": 24.47983,
+    "longitude": 118.08942
+  },
+  {
+    "city": "Qingdao",
+    "state": "Shandong",
+    "postal_code": "266000",
+    "country": "China",
+    "continent": "Asia",
+    "official_language": "Chinese (Mandarin)",
+    "latitude": 36.06488,
+    "longitude": 120.38042
+  },
+  {
+    "city": "Kashgar",
+    "state": "Xinjiang",
+    "postal_code": "844000",
+    "country": "China",
+    "continent": "Asia",
+    "official_language": "Chinese (Mandarin)",
+    "latitude": 39.47040,
+    "longitude": 75.98976
+  },
+  {
+    "city": "Sanya",
+    "state": "Hainan",
+    "postal_code": "572000",
+    "country": "China",
+    "continent": "Asia",
+    "official_language": "Chinese (Mandarin)",
+    "latitude": 18.25285,
+    "longitude": 109.51191
+  },
+  {
+    "city": "Pingyao",
+    "state": "Shanxi",
+    "postal_code": "031100",
+    "country": "China",
+    "continent": "Asia",
+    "official_language": "Chinese (Mandarin)",
+    "latitude": 37.20194,
+    "longitude": 112.17573
+  },
+  {
+    "city": "Dali",
+    "state": "Yunnan",
+    "postal_code": "671000",
+    "country": "China",
+    "continent": "Asia",
+    "official_language": "Chinese (Mandarin)",
+    "latitude": 25.69397,
+    "longitude": 100.16809
+  },
+  {
+    "city": "Tokyo",
+    "state": "Tokyo",
+    "postal_code": "100-0001",
+    "country": "Japan",
+    "continent": "Asia",
+    "official_language": "Japanese",
+    "latitude": 35.68950,
+    "longitude": 139.69171
+  },
+  {
+    "city": "Kyoto",
+    "state": "Kyoto",
+    "postal_code": "600-0001",
+    "country": "Japan",
+    "continent": "Asia",
+    "official_language": "Japanese",
+    "latitude": 35.01164,
+    "longitude": 135.76803
+  },
+  {
+    "city": "Osaka",
+    "state": "Osaka",
+    "postal_code": "530-0001",
+    "country": "Japan",
+    "continent": "Asia",
+    "official_language": "Japanese",
+    "latitude": 34.69374,
+    "longitude": 135.50225
+  },
+  {
+    "city": "Hiroshima",
+    "state": "Hiroshima",
+    "postal_code": "730-0011",
+    "country": "Japan",
+    "continent": "Asia",
+    "official_language": "Japanese",
+    "latitude": 34.38528,
+    "longitude": 132.45529
+  },
+  {
+    "city": "Sapporo",
+    "state": "Hokkaido",
+    "postal_code": "060-0001",
+    "country": "Japan",
+    "continent": "Asia",
+    "official_language": "Japanese",
+    "latitude": 43.06181,
+    "longitude": 141.35450
+  },
+  {
+    "city": "Nara",
+    "state": "Nara",
+    "postal_code": "630-8212",
+    "country": "Japan",
+    "continent": "Asia",
+    "official_language": "Japanese",
+    "latitude": 34.68509,
+    "longitude": 135.80485
+  },
+  {
+    "city": "Kanazawa",
+    "state": "Ishikawa",
+    "postal_code": "920-0855",
+    "country": "Japan",
+    "continent": "Asia",
+    "official_language": "Japanese",
+    "latitude": 36.56130,
+    "longitude": 136.65620
+  },
+  {
+    "city": "Nikkō",
+    "state": "Tochigi",
+    "postal_code": "321-1431",
+    "country": "Japan",
+    "continent": "Asia",
+    "official_language": "Japanese",
+    "latitude": 36.71980,
+    "longitude": 139.69830
+  },
+  {
+    "city": "Hakone",
+    "state": "Kanagawa",
+    "postal_code": "250-0521",
+    "country": "Japan",
+    "continent": "Asia",
+    "official_language": "Japanese",
+    "latitude": 35.19107,
+    "longitude": 139.02318
+  },
+  {
+    "city": "Seoul",
+    "state": "",
+    "postal_code": "04524",
+    "country": "South Korea",
+    "continent": "Asia",
+    "official_language": "Korean",
+    "latitude": 37.56654,
+    "longitude": 126.97800
+  },
+  {
+    "city": "Busan",
+    "state": "",
+    "postal_code": "48936",
+    "country": "South Korea",
+    "continent": "Asia",
+    "official_language": "Korean",
+    "latitude": 35.17955,
+    "longitude": 129.07564
+  },
+  {
+    "city": "Jeju City",
+    "state": "Jeju",
+    "postal_code": "63240",
+    "country": "South Korea",
+    "continent": "Asia",
+    "official_language": "Korean",
+    "latitude": 33.49962,
+    "longitude": 126.53119
+  },
+  {
+    "city": "Gyeongju",
+    "state": "Gyeongbuk",
+    "postal_code": "38100",
+    "country": "South Korea",
+    "continent": "Asia",
+    "official_language": "Korean",
+    "latitude": 35.84277,
+    "longitude": 129.21167
+  },
+  {
+    "city": "Pyongyang",
+    "state": "",
+    "postal_code": "",
+    "country": "North Korea",
+    "continent": "Asia",
+    "official_language": "Korean",
+    "latitude": 39.03922,
+    "longitude": 125.76252
+  },
+  {
+    "city": "Taipei",
+    "state": "",
+    "postal_code": "100",
+    "country": "Taiwan",
+    "continent": "Asia",
+    "official_language": "Mandarin Chinese",
+    "latitude": 25.03297,
+    "longitude": 121.56541
+  },
+  {
+    "city": "Kaohsiung",
+    "state": "",
+    "postal_code": "800",
+    "country": "Taiwan",
+    "continent": "Asia",
+    "official_language": "Mandarin Chinese",
+    "latitude": 22.62728,
+    "longitude": 120.30144
+  },
+  {
+    "city": "Tainan",
+    "state": "",
+    "postal_code": "700",
+    "country": "Taiwan",
+    "continent": "Asia",
+    "official_language": "Mandarin Chinese",
+    "latitude": 22.99973,
+    "longitude": 120.22703
+  },
+  {
+    "city": "Jiufen",
+    "state": "",
+    "postal_code": "224",
+    "country": "Taiwan",
+    "continent": "Asia",
+    "official_language": "Mandarin Chinese",
+    "latitude": 25.10970,
+    "longitude": 121.84370
+  },
+  {
+    "city": "Bangkok",
+    "state": "",
+    "postal_code": "10200",
+    "country": "Thailand",
+    "continent": "Asia",
+    "official_language": "Thai",
+    "latitude": 13.75633,
+    "longitude": 100.50177
+  },
+  {
+    "city": "Phuket",
+    "state": "",
+    "postal_code": "83000",
+    "country": "Thailand",
+    "continent": "Asia",
+    "official_language": "Thai",
+    "latitude": 7.88045,
+    "longitude": 98.39226
+  },
+  {
+    "city": "Chiang Mai",
+    "state": "",
+    "postal_code": "50100",
+    "country": "Thailand",
+    "continent": "Asia",
+    "official_language": "Thai",
+    "latitude": 18.78834,
+    "longitude": 98.98530
+  },
+  {
+    "city": "Pattaya",
+    "state": "",
+    "postal_code": "20150",
+    "country": "Thailand",
+    "continent": "Asia",
+    "official_language": "Thai",
+    "latitude": 12.92356,
+    "longitude": 100.88246
+  },
+  {
+    "city": "Ayutthaya",
+    "state": "",
+    "postal_code": "13000",
+    "country": "Thailand",
+    "continent": "Asia",
+    "official_language": "Thai",
+    "latitude": 14.35321,
+    "longitude": 100.56896
+  },
+  {
+    "city": "Krabi",
+    "state": "",
+    "postal_code": "81000",
+    "country": "Thailand",
+    "continent": "Asia",
+    "official_language": "Thai",
+    "latitude": 8.03400,
+    "longitude": 98.82270
+  },
+  {
+    "city": "Ko Samui",
+    "state": "",
+    "postal_code": "84320",
+    "country": "Thailand",
+    "continent": "Asia",
+    "official_language": "Thai",
+    "latitude": 9.53900,
+    "longitude": 99.93567
+  },
+  {
+    "city": "Hanoi",
+    "state": "",
+    "postal_code": "100000",
+    "country": "Vietnam",
+    "continent": "Asia",
+    "official_language": "Vietnamese",
+    "latitude": 21.02776,
+    "longitude": 105.83416
+  },
+  {
+    "city": "Ho Chi Minh City",
+    "state": "",
+    "postal_code": "700000",
+    "country": "Vietnam",
+    "continent": "Asia",
+    "official_language": "Vietnamese",
+    "latitude": 10.82310,
+    "longitude": 106.62966
+  },
+  {
+    "city": "Hội An",
+    "state": "",
+    "postal_code": "560000",
+    "country": "Vietnam",
+    "continent": "Asia",
+    "official_language": "Vietnamese",
+    "latitude": 15.88005,
+    "longitude": 108.33805
+  },
+  {
+    "city": "Huế",
+    "state": "",
+    "postal_code": "530000",
+    "country": "Vietnam",
+    "continent": "Asia",
+    "official_language": "Vietnamese",
+    "latitude": 16.46371,
+    "longitude": 107.59086
+  },
+  {
+    "city": "Nha Trang",
+    "state": "",
+    "postal_code": "650000",
+    "country": "Vietnam",
+    "continent": "Asia",
+    "official_language": "Vietnamese",
+    "latitude": 12.23879,
+    "longitude": 109.19675
+  },
+  {
+    "city": "Sa Pa",
+    "state": "",
+    "postal_code": "333100",
+    "country": "Vietnam",
+    "continent": "Asia",
+    "official_language": "Vietnamese",
+    "latitude": 22.34025,
+    "longitude": 103.84459
+  },
+  {
+    "city": "Phnom Penh",
+    "state": "",
+    "postal_code": "120000",
+    "country": "Cambodia",
+    "continent": "Asia",
+    "official_language": "Khmer",
+    "latitude": 11.55637,
+    "longitude": 104.92821
+  },
+  {
+    "city": "Siem Reap",
+    "state": "",
+    "postal_code": "17252",
+    "country": "Cambodia",
+    "continent": "Asia",
+    "official_language": "Khmer",
+    "latitude": 13.36710,
+    "longitude": 103.84480
+  },
+  {
+    "city": "Luang Prabang",
+    "state": "",
+    "postal_code": "06000",
+    "country": "Laos",
+    "continent": "Asia",
+    "official_language": "Lao",
+    "latitude": 19.88590,
+    "longitude": 102.14255
+  },
+  {
+    "city": "Vientiane",
+    "state": "",
+    "postal_code": "01000",
+    "country": "Laos",
+    "continent": "Asia",
+    "official_language": "Lao",
+    "latitude": 17.97571,
+    "longitude": 102.63310
+  },
+  {
+    "city": "Vang Vieng",
+    "state": "",
+    "postal_code": "",
+    "country": "Laos",
+    "continent": "Asia",
+    "official_language": "Lao",
+    "latitude": 18.94190,
+    "longitude": 102.44794
+  },
+  {
+    "city": "Yangon",
+    "state": "",
+    "postal_code": "11181",
+    "country": "Myanmar",
+    "continent": "Asia",
+    "official_language": "Burmese",
+    "latitude": 16.84086,
+    "longitude": 96.17352
+  },
+  {
+    "city": "Mandalay",
+    "state": "",
+    "postal_code": "",
+    "country": "Myanmar",
+    "continent": "Asia",
+    "official_language": "Burmese",
+    "latitude": 21.91622,
+    "longitude": 96.11100
+  },
+  {
+    "city": "Bagan",
+    "state": "",
+    "postal_code": "",
+    "country": "Myanmar",
+    "continent": "Asia",
+    "official_language": "Burmese",
+    "latitude": 21.17170,
+    "longitude": 94.85850
+  },
+  {
+    "city": "Nyaungshwe (Inle Lake)",
+    "state": "",
+    "postal_code": "06081",
+    "country": "Myanmar",
+    "continent": "Asia",
+    "official_language": "Burmese",
+    "latitude": 20.66140,
+    "longitude": 96.93110
+  },
+  {
+    "city": "Manila",
+    "state": "Metro Manila",
+    "postal_code": "1000",
+    "country": "Philippines",
+    "continent": "Asia",
+    "official_language": "Filipino, English",
+    "latitude": 14.59951,
+    "longitude": 120.98422
+  },
+  {
+    "city": "Cebu City",
+    "state": "Cebu",
+    "postal_code": "6000",
+    "country": "Philippines",
+    "continent": "Asia",
+    "official_language": "Filipino, English",
+    "latitude": 10.31570,
+    "longitude": 123.88544
+  },
+  {
+    "city": "Boracay (Malay)",
+    "state": "Aklan",
+    "postal_code": "5608",
+    "country": "Philippines",
+    "continent": "Asia",
+    "official_language": "Filipino, English",
+    "latitude": 11.96740,
+    "longitude": 121.92500
+  },
+  {
+    "city": "El Nido",
+    "state": "Palawan",
+    "postal_code": "5313",
+    "country": "Philippines",
+    "continent": "Asia",
+    "official_language": "Filipino, English",
+    "latitude": 11.20374,
+    "longitude": 119.41103
+  },
+  {
+    "city": "Tagbilaran",
+    "state": "Bohol",
+    "postal_code": "6300",
+    "country": "Philippines",
+    "continent": "Asia",
+    "official_language": "Filipino, English",
+    "latitude": 9.65250,
+    "longitude": 123.85338
+  },
+  {
+    "city": "Bandar Seri Begawan",
+    "state": "",
+    "postal_code": "BA1111",
+    "country": "Brunei",
+    "continent": "Asia",
+    "official_language": "Malay",
+    "latitude": 4.90305,
+    "longitude": 114.93982
+  },
+  {
+    "city": "Kuala Lumpur",
+    "state": "",
+    "postal_code": "50000",
+    "country": "Malaysia",
+    "continent": "Asia",
+    "official_language": "Malay",
+    "latitude": 3.13900,
+    "longitude": 101.68685
+  },
+  {
+    "city": "George Town",
+    "state": "Penang",
+    "postal_code": "10200",
+    "country": "Malaysia",
+    "continent": "Asia",
+    "official_language": "Malay",
+    "latitude": 5.41415,
+    "longitude": 100.32875
+  },
+  {
+    "city": "Malacca City",
+    "state": "Melaka",
+    "postal_code": "75000",
+    "country": "Malaysia",
+    "continent": "Asia",
+    "official_language": "Malay",
+    "latitude": 2.18960,
+    "longitude": 102.25008
+  },
+  {
+    "city": "Kota Kinabalu",
+    "state": "Sabah",
+    "postal_code": "88000",
+    "country": "Malaysia",
+    "continent": "Asia",
+    "official_language": "Malay",
+    "latitude": 5.98041,
+    "longitude": 116.07346
+  },
+  {
+    "city": "Langkawi",
+    "state": "Kedah",
+    "postal_code": "07000",
+    "country": "Malaysia",
+    "continent": "Asia",
+    "official_language": "Malay",
+    "latitude": 6.32649,
+    "longitude": 99.84320
+  },
+  {
+    "city": "Singapore",
+    "state": "",
+    "postal_code": "049853",
+    "country": "Singapore",
+    "continent": "Asia",
+    "official_language": "Malay, Chinese, Tamil, English",
+    "latitude": 1.35208,
+    "longitude": 103.81984
+  },
+  {
+    "city": "Jakarta",
+    "state": "",
+    "postal_code": "10110",
+    "country": "Indonesia",
+    "continent": "Asia",
+    "official_language": "Indonesian",
+    "latitude": -6.20876,
+    "longitude": 106.84560
+  },
+  {
+    "city": "Denpasar",
+    "state": "Bali",
+    "postal_code": "80227",
+    "country": "Indonesia",
+    "continent": "Asia",
+    "official_language": "Indonesian",
+    "latitude": -8.65000,
+    "longitude": 115.21667
+  },
+  {
+    "city": "Yogyakarta",
+    "state": "Yogyakarta",
+    "postal_code": "55111",
+    "country": "Indonesia",
+    "continent": "Asia",
+    "official_language": "Indonesian",
+    "latitude": -7.79558,
+    "longitude": 110.36949
+  },
+  {
+    "city": "Ubud",
+    "state": "Bali",
+    "postal_code": "80571",
+    "country": "Indonesia",
+    "continent": "Asia",
+    "official_language": "Indonesian",
+    "latitude": -8.50694,
+    "longitude": 115.26250
+  },
+  {
+    "city": "Paris (again)", 
+    "state": "Test", 
+    "postal_code": "12345", 
+    "country": "Testing", 
+    "continent": "Testland", 
+    "official_language": "Test", 
+    "latitude": 0.0, 
+    "longitude": 0.0
+  }
+]

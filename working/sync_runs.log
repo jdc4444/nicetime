@@ -1,0 +1,445 @@
+[2026-02-16 06:04:11 UTC] Using DB: weather_data_v2.db
+[2026-02-16 06:04:11 UTC] Provider: visualcrossing (workers=1, min_interval=0.75s)
+[2026-02-16 06:04:11 UTC] History window: 2024-02-17 .. 2026-02-16
+[2026-02-16 06:04:11 UTC] Target cities: 2431
+[2026-02-16 06:04:11 UTC] Before sync: historical complete=0, missing=2431; forecast fresh=0, stale=2431
+[2026-02-16 06:04:11 UTC] Daily sync: enabled (not yet run today).
+[2026-02-16 06:09:04 UTC] Using DB: weather_data_v2.db
+[2026-02-16 06:09:04 UTC] Provider: visualcrossing (workers=1, min_interval=0.75s)
+[2026-02-16 06:09:04 UTC] History window: 2024-02-17 .. 2026-02-16
+[2026-02-16 06:09:04 UTC] Target cities: 2431
+[2026-02-16 06:09:04 UTC] Before sync: historical complete=1, missing=2430; forecast fresh=0, stale=2431
+[2026-02-16 06:09:04 UTC] Daily sync: enabled (not yet run today).
+[2026-02-16 06:17:35 UTC] Using DB: weather_data_v2.db
+[2026-02-16 06:17:35 UTC] Provider: visualcrossing (workers=1, min_interval=0.75s)
+[2026-02-16 06:17:35 UTC] Estimated window: 2026-02-16 .. 2027-02-15
+[2026-02-16 06:17:35 UTC] Target cities: 2431
+[2026-02-16 06:17:35 UTC] Before sync: estimated complete=0, missing=2431; forecast fresh=0, stale=2431
+[2026-02-16 06:17:35 UTC] Daily sync: enabled (not yet run today).
+[2026-02-16 06:18:16 UTC] Using DB: weather_data_v2.db
+[2026-02-16 06:18:16 UTC] Provider: visualcrossing (workers=1, min_interval=0.75s)
+[2026-02-16 06:18:16 UTC] Estimated window: 2026-02-16 .. 2027-02-15
+[2026-02-16 06:18:16 UTC] Target cities: 2431
+[2026-02-16 06:18:16 UTC] Before sync: estimated complete=0, missing=2431; forecast fresh=0, stale=2431
+[2026-02-16 06:18:16 UTC] Daily sync: enabled (not yet run today).
+[2026-02-16 06:23:07 UTC] Estimated progress: 50/2431
+[2026-02-16 06:23:59 UTC] Using DB: weather_data_v2.db
+[2026-02-16 06:23:59 UTC] Provider: visualcrossing (workers=1, min_interval=0.75s)
+[2026-02-16 06:23:59 UTC] Estimated window: 2026-02-16 .. 2027-02-15
+[2026-02-16 06:23:59 UTC] Target cities: 2431
+[2026-02-16 06:23:59 UTC] Before sync: estimated complete=1, missing=2430; forecast fresh=0, stale=2431
+[2026-02-16 06:23:59 UTC] Daily sync: enabled (not yet run today).
+[2026-02-16 06:28:42 UTC] Estimated progress: 50/2431
+[2026-02-16 06:33:59 UTC] Estimated progress: 100/2431
+[2026-02-16 06:39:23 UTC] Estimated progress: 150/2431
+[2026-02-16 06:44:39 UTC] Estimated progress: 200/2431
+[2026-02-16 06:49:42 UTC] Estimated progress: 250/2431
+[2026-02-16 06:55:04 UTC] Estimated progress: 300/2431
+[2026-02-16 07:00:29 UTC] Estimated progress: 350/2431
+[2026-02-16 07:05:42 UTC] Estimated progress: 400/2431
+[2026-02-16 07:10:55 UTC] Estimated progress: 450/2431
+[2026-02-16 07:16:17 UTC] Estimated progress: 500/2431
+[2026-02-16 07:21:29 UTC] Estimated progress: 550/2431
+[2026-02-16 07:26:40 UTC] Estimated progress: 600/2431
+[2026-02-16 07:31:41 UTC] Estimated progress: 650/2431
+[2026-02-16 07:36:35 UTC] Estimated progress: 700/2431
+[2026-02-16 07:41:37 UTC] Estimated progress: 750/2431
+[2026-02-16 07:46:31 UTC] Estimated progress: 800/2431
+[2026-02-16 07:51:27 UTC] Estimated progress: 850/2431
+[2026-02-16 07:56:38 UTC] Estimated progress: 900/2431
+[2026-02-16 08:02:15 UTC] Estimated progress: 950/2431
+[2026-02-16 08:07:11 UTC] Estimated progress: 1000/2431
+[2026-02-16 08:12:24 UTC] Estimated progress: 1050/2431
+[2026-02-16 08:17:42 UTC] Estimated progress: 1100/2431
+[2026-02-16 08:22:47 UTC] Estimated progress: 1150/2431
+[2026-02-16 08:27:52 UTC] Estimated progress: 1200/2431
+[2026-02-16 08:32:54 UTC] Estimated progress: 1250/2431
+[2026-02-16 08:37:55 UTC] Estimated progress: 1300/2431
+[2026-02-16 08:42:55 UTC] Estimated progress: 1350/2431
+[2026-02-16 08:47:55 UTC] Estimated progress: 1400/2431
+[2026-02-16 08:52:54 UTC] Estimated progress: 1450/2431
+[2026-02-16 08:57:55 UTC] Estimated progress: 1500/2431
+[2026-02-16 09:03:36 UTC] Estimated progress: 1550/2431
+[2026-02-16 09:09:14 UTC] Estimated progress: 1600/2431
+[2026-02-16 09:14:18 UTC] Estimated progress: 1650/2431
+[2026-02-16 09:19:20 UTC] Estimated progress: 1700/2431
+[2026-02-16 09:26:21 UTC] Estimated progress: 1750/2431
+[2026-02-16 09:31:26 UTC] Estimated progress: 1800/2431
+[2026-02-16 09:36:20 UTC] Estimated progress: 1850/2431
+[2026-02-16 09:41:22 UTC] Estimated progress: 1900/2431
+[2026-02-16 09:46:25 UTC] Estimated progress: 1950/2431
+[2026-02-16 09:51:38 UTC] Estimated progress: 2000/2431
+[2026-02-16 09:56:38 UTC] Estimated progress: 2050/2431
+[2026-02-16 10:01:48 UTC] Estimated progress: 2100/2431
+[2026-02-16 10:07:04 UTC] Estimated progress: 2150/2431
+[2026-02-16 10:13:01 UTC] Estimated progress: 2200/2431
+[2026-02-16 10:19:01 UTC] Estimated progress: 2250/2431
+[2026-02-16 10:24:33 UTC] Estimated progress: 2300/2431
+[2026-02-16 10:30:05 UTC] Estimated progress: 2350/2431
+[2026-02-16 10:35:37 UTC] Estimated progress: 2400/2431
+[2026-02-16 10:39:24 UTC] Forecast progress: 50/2431
+[2026-02-16 10:40:02 UTC] Forecast progress: 100/2431
+[2026-02-16 10:40:39 UTC] Forecast progress: 150/2431
+[2026-02-16 10:41:17 UTC] Forecast progress: 200/2431
+[2026-02-16 10:41:55 UTC] Forecast progress: 250/2431
+[2026-02-16 10:42:33 UTC] Forecast progress: 300/2431
+[2026-02-16 10:43:10 UTC] Forecast progress: 350/2431
+[2026-02-16 10:43:48 UTC] Forecast progress: 400/2431
+[2026-02-16 10:44:26 UTC] Forecast progress: 450/2431
+[2026-02-16 10:45:04 UTC] Forecast progress: 500/2431
+[2026-02-16 10:45:43 UTC] Forecast progress: 550/2431
+[2026-02-16 10:46:21 UTC] Forecast progress: 600/2431
+[2026-02-16 10:46:59 UTC] Forecast progress: 650/2431
+[2026-02-16 10:47:36 UTC] Forecast progress: 700/2431
+[2026-02-16 10:48:15 UTC] Forecast progress: 750/2431
+[2026-02-16 10:48:52 UTC] Forecast progress: 800/2431
+[2026-02-16 10:49:30 UTC] Forecast progress: 850/2431
+[2026-02-16 10:50:08 UTC] Forecast progress: 900/2431
+[2026-02-16 10:50:46 UTC] Forecast progress: 950/2431
+[2026-02-16 10:51:24 UTC] Forecast progress: 1000/2431
+[2026-02-16 10:52:02 UTC] Forecast progress: 1050/2431
+[2026-02-16 10:52:40 UTC] Forecast progress: 1100/2431
+[2026-02-16 10:53:17 UTC] Forecast progress: 1150/2431
+[2026-02-16 10:53:55 UTC] Forecast progress: 1200/2431
+[2026-02-16 10:54:33 UTC] Forecast progress: 1250/2431
+[2026-02-16 10:55:11 UTC] Forecast progress: 1300/2431
+[2026-02-16 10:55:48 UTC] Forecast progress: 1350/2431
+[2026-02-16 10:56:26 UTC] Forecast progress: 1400/2431
+[2026-02-16 10:57:04 UTC] Forecast progress: 1450/2431
+[2026-02-16 10:57:42 UTC] Forecast progress: 1500/2431
+[2026-02-16 10:58:20 UTC] Forecast progress: 1550/2431
+[2026-02-16 10:58:58 UTC] Forecast progress: 1600/2431
+[2026-02-16 10:59:36 UTC] Forecast progress: 1650/2431
+[2026-02-16 11:00:14 UTC] Forecast progress: 1700/2431
+[2026-02-16 11:00:54 UTC] Forecast progress: 1750/2431
+[2026-02-16 11:01:32 UTC] Forecast progress: 1800/2431
+[2026-02-16 11:02:09 UTC] Forecast progress: 1850/2431
+[2026-02-16 11:02:47 UTC] Forecast progress: 1900/2431
+[2026-02-16 11:03:25 UTC] Forecast progress: 1950/2431
+[2026-02-16 11:04:03 UTC] Forecast progress: 2000/2431
+[2026-02-16 11:04:41 UTC] Forecast progress: 2050/2431
+[2026-02-16 11:05:19 UTC] Forecast progress: 2100/2431
+[2026-02-16 11:05:56 UTC] Forecast progress: 2150/2431
+[2026-02-16 11:06:34 UTC] Forecast progress: 2200/2431
+[2026-02-16 11:07:12 UTC] Forecast progress: 2250/2431
+[2026-02-16 11:07:50 UTC] Forecast progress: 2300/2431
+[2026-02-16 11:08:28 UTC] Forecast progress: 2350/2431
+[2026-02-16 11:09:06 UTC] Forecast progress: 2400/2431
+[2026-02-16 11:09:30 UTC] After sync: estimated complete=1, missing=2430; forecast fresh=2431, stale=0
+[2026-02-16 11:09:30 UTC] Daily sync marker NOT set (estimated backfill still incomplete; resume allowed).
+[2026-02-16 13:09:20 UTC] Using DB: weather_data_v2.db
+[2026-02-16 13:09:20 UTC] Provider: visualcrossing (workers=1, min_interval=0.75s)
+[2026-02-16 13:09:20 UTC] Estimated window: 2026-02-16 .. 2027-02-15
+[2026-02-16 13:09:20 UTC] Target cities: 2431
+[2026-02-16 13:09:21 UTC] Before sync: estimated complete=1, missing=2430; forecast fresh=2431, stale=0
+[2026-02-16 13:09:21 UTC] Daily sync: enabled (not yet run today).
+[2026-02-16 13:09:58 UTC] Estimated progress: 50/2431
+[2026-02-16 13:10:36 UTC] Estimated progress: 100/2431
+[2026-02-16 13:11:14 UTC] Estimated progress: 150/2431
+[2026-02-16 13:11:52 UTC] Estimated progress: 200/2431
+[2026-02-16 13:12:30 UTC] Estimated progress: 250/2431
+[2026-02-16 13:13:08 UTC] Estimated progress: 300/2431
+[2026-02-16 13:13:46 UTC] Estimated progress: 350/2431
+[2026-02-16 13:14:25 UTC] Estimated progress: 400/2431
+[2026-02-16 13:15:03 UTC] Estimated progress: 450/2431
+[2026-02-16 13:15:41 UTC] Estimated progress: 500/2431
+[2026-02-16 13:16:19 UTC] Estimated progress: 550/2431
+[2026-02-16 13:16:58 UTC] Estimated progress: 600/2431
+[2026-02-16 13:17:36 UTC] Estimated progress: 650/2431
+[2026-02-16 13:18:14 UTC] Estimated progress: 700/2431
+[2026-02-16 13:18:53 UTC] Estimated progress: 750/2431
+[2026-02-16 13:19:32 UTC] Estimated progress: 800/2431
+[2026-02-16 13:20:10 UTC] Estimated progress: 850/2431
+[2026-02-16 13:20:47 UTC] Estimated progress: 900/2431
+[2026-02-16 13:21:26 UTC] Estimated progress: 950/2431
+[2026-02-16 13:22:04 UTC] Estimated progress: 1000/2431
+[2026-02-16 13:22:42 UTC] Estimated progress: 1050/2431
+[2026-02-16 13:23:20 UTC] Estimated progress: 1100/2431
+[2026-02-16 13:23:58 UTC] Estimated progress: 1150/2431
+[2026-02-16 13:24:37 UTC] Estimated progress: 1200/2431
+[2026-02-16 13:25:15 UTC] Estimated progress: 1250/2431
+[2026-02-16 13:25:53 UTC] Estimated progress: 1300/2431
+[2026-02-16 13:26:32 UTC] Estimated progress: 1350/2431
+[2026-02-16 13:27:11 UTC] Estimated progress: 1400/2431
+[2026-02-16 13:27:49 UTC] Estimated progress: 1450/2431
+[2026-02-16 13:28:27 UTC] Estimated progress: 1500/2431
+[2026-02-16 13:29:05 UTC] Estimated progress: 1550/2431
+[2026-02-16 13:29:43 UTC] Estimated progress: 1600/2431
+[2026-02-16 13:30:24 UTC] Estimated progress: 1650/2431
+[2026-02-16 13:31:02 UTC] Estimated progress: 1700/2431
+[2026-02-16 13:31:40 UTC] Estimated progress: 1750/2431
+[2026-02-16 13:32:22 UTC] Using DB: weather_data_v2.db
+[2026-02-16 13:32:22 UTC] Provider: visualcrossing (workers=1, min_interval=0.75s)
+[2026-02-16 13:32:22 UTC] Estimated window: 2026-02-16 .. 2027-02-15
+[2026-02-16 13:32:22 UTC] Target cities: 2431
+[2026-02-16 13:32:22 UTC] Before sync: estimated complete=1791, missing=640; forecast fresh=2431, stale=0
+[2026-02-16 13:32:22 UTC] Daily sync: enabled (not yet run today).
+[2026-02-16 13:32:22 UTC] Estimated progress: 50/2431
+[2026-02-16 13:32:22 UTC] Estimated progress: 100/2431
+[2026-02-16 13:32:22 UTC] Estimated progress: 150/2431
+[2026-02-16 13:32:22 UTC] Estimated progress: 200/2431
+[2026-02-16 13:32:22 UTC] Estimated progress: 250/2431
+[2026-02-16 13:32:22 UTC] Estimated progress: 300/2431
+[2026-02-16 13:32:22 UTC] Estimated progress: 350/2431
+[2026-02-16 13:32:22 UTC] Estimated progress: 400/2431
+[2026-02-16 13:32:22 UTC] Estimated progress: 450/2431
+[2026-02-16 13:32:22 UTC] Estimated progress: 500/2431
+[2026-02-16 13:32:22 UTC] Estimated progress: 550/2431
+[2026-02-16 13:32:23 UTC] Estimated progress: 600/2431
+[2026-02-16 13:32:23 UTC] Estimated progress: 650/2431
+[2026-02-16 13:32:23 UTC] Estimated progress: 700/2431
+[2026-02-16 13:32:23 UTC] Estimated progress: 750/2431
+[2026-02-16 13:32:23 UTC] Estimated progress: 800/2431
+[2026-02-16 13:32:23 UTC] Estimated progress: 850/2431
+[2026-02-16 13:32:23 UTC] Estimated progress: 900/2431
+[2026-02-16 13:32:23 UTC] Estimated progress: 950/2431
+[2026-02-16 13:32:23 UTC] Estimated progress: 1000/2431
+[2026-02-16 13:32:23 UTC] Estimated progress: 1050/2431
+[2026-02-16 13:32:23 UTC] Estimated progress: 1100/2431
+[2026-02-16 13:32:23 UTC] Estimated progress: 1150/2431
+[2026-02-16 13:32:23 UTC] Estimated progress: 1200/2431
+[2026-02-16 13:32:23 UTC] Estimated progress: 1250/2431
+[2026-02-16 13:32:23 UTC] Estimated progress: 1300/2431
+[2026-02-16 13:32:24 UTC] Estimated progress: 1350/2431
+[2026-02-16 13:32:24 UTC] Estimated progress: 1400/2431
+[2026-02-16 13:32:24 UTC] Estimated progress: 1450/2431
+[2026-02-16 13:32:24 UTC] Estimated progress: 1500/2431
+[2026-02-16 13:32:24 UTC] Estimated progress: 1550/2431
+[2026-02-16 13:32:24 UTC] Estimated progress: 1600/2431
+[2026-02-16 13:32:24 UTC] Estimated progress: 1650/2431
+[2026-02-16 13:32:24 UTC] Estimated progress: 1700/2431
+[2026-02-16 13:32:24 UTC] Estimated progress: 1750/2431
+[2026-02-16 13:32:29 UTC] Estimated progress: 1800/2431
+[2026-02-16 13:33:07 UTC] Estimated progress: 1850/2431
+[2026-02-16 13:33:45 UTC] Estimated progress: 1900/2431
+[2026-02-16 13:34:24 UTC] Estimated progress: 1950/2431
+[2026-02-16 13:35:02 UTC] Estimated progress: 2000/2431
+[2026-02-16 13:35:40 UTC] Estimated progress: 2050/2431
+[2026-02-16 13:36:19 UTC] Estimated progress: 2100/2431
+[2026-02-16 13:36:57 UTC] Estimated progress: 2150/2431
+[2026-02-16 13:37:35 UTC] Estimated progress: 2200/2431
+[2026-02-16 13:38:13 UTC] Estimated progress: 2250/2431
+[2026-02-16 13:38:51 UTC] Estimated progress: 2300/2431
+[2026-02-16 13:39:29 UTC] Estimated progress: 2350/2431
+[2026-02-16 13:40:08 UTC] Estimated progress: 2400/2431
+[2026-02-16 13:40:45 UTC] Forecast progress: 50/2431
+[2026-02-16 13:40:45 UTC] Forecast progress: 100/2431
+[2026-02-16 13:40:45 UTC] Forecast progress: 150/2431
+[2026-02-16 13:40:46 UTC] Forecast progress: 200/2431
+[2026-02-16 13:40:46 UTC] Forecast progress: 250/2431
+[2026-02-16 13:40:46 UTC] Forecast progress: 300/2431
+[2026-02-16 13:40:46 UTC] Forecast progress: 350/2431
+[2026-02-16 13:40:46 UTC] Forecast progress: 400/2431
+[2026-02-16 13:40:46 UTC] Forecast progress: 450/2431
+[2026-02-16 13:40:46 UTC] Forecast progress: 500/2431
+[2026-02-16 13:40:47 UTC] Forecast progress: 550/2431
+[2026-02-16 13:40:47 UTC] Forecast progress: 600/2431
+[2026-02-16 13:40:47 UTC] Forecast progress: 650/2431
+[2026-02-16 13:40:47 UTC] Forecast progress: 700/2431
+[2026-02-16 13:40:47 UTC] Forecast progress: 750/2431
+[2026-02-16 13:40:47 UTC] Forecast progress: 800/2431
+[2026-02-16 13:40:48 UTC] Forecast progress: 850/2431
+[2026-02-16 13:40:48 UTC] Forecast progress: 900/2431
+[2026-02-16 13:40:48 UTC] Forecast progress: 950/2431
+[2026-02-16 13:40:48 UTC] Forecast progress: 1000/2431
+[2026-02-16 13:40:48 UTC] Forecast progress: 1050/2431
+[2026-02-16 13:40:48 UTC] Forecast progress: 1100/2431
+[2026-02-16 13:40:49 UTC] Forecast progress: 1150/2431
+[2026-02-16 13:40:49 UTC] Forecast progress: 1200/2431
+[2026-02-16 13:40:49 UTC] Forecast progress: 1250/2431
+[2026-02-16 13:40:49 UTC] Forecast progress: 1300/2431
+[2026-02-16 13:40:49 UTC] Forecast progress: 1350/2431
+[2026-02-16 13:40:50 UTC] Forecast progress: 1400/2431
+[2026-02-16 13:40:50 UTC] Forecast progress: 1450/2431
+[2026-02-16 13:40:50 UTC] Forecast progress: 1500/2431
+[2026-02-16 13:40:50 UTC] Forecast progress: 1550/2431
+[2026-02-16 13:40:50 UTC] Forecast progress: 1600/2431
+[2026-02-16 13:40:51 UTC] Forecast progress: 1650/2431
+[2026-02-16 13:40:51 UTC] Forecast progress: 1700/2431
+[2026-02-16 13:40:51 UTC] Forecast progress: 1750/2431
+[2026-02-16 13:40:51 UTC] Forecast progress: 1800/2431
+[2026-02-16 13:40:51 UTC] Forecast progress: 1850/2431
+[2026-02-16 13:40:52 UTC] Forecast progress: 1900/2431
+[2026-02-16 13:40:52 UTC] Forecast progress: 1950/2431
+[2026-02-16 13:40:52 UTC] Forecast progress: 2000/2431
+[2026-02-16 13:40:52 UTC] Forecast progress: 2050/2431
+[2026-02-16 13:40:53 UTC] Forecast progress: 2100/2431
+[2026-02-16 13:40:53 UTC] Forecast progress: 2150/2431
+[2026-02-16 13:40:53 UTC] Forecast progress: 2200/2431
+[2026-02-16 13:40:53 UTC] Forecast progress: 2250/2431
+[2026-02-16 13:40:53 UTC] Forecast progress: 2300/2431
+[2026-02-16 13:40:54 UTC] Forecast progress: 2350/2431
+[2026-02-16 13:40:54 UTC] Forecast progress: 2400/2431
+[2026-02-16 13:40:55 UTC] After sync: estimated complete=2431, missing=0; forecast fresh=2431, stale=0
+[2026-02-16 13:40:55 UTC] Daily sync marker set for today (estimated backfill complete).
+[2026-02-16 14:54:18 UTC] Another sync process is already running. Exiting this run to avoid DB lock conflicts.
+[2026-02-16 15:02:39 UTC] Backfill run_id=b5436fc8-2866-4fcc-bf96-39463c6c4b48
+[2026-02-16 15:02:39 UTC] DB: /Users/jos/Desktop/Archive/weather_data_v2.db
+[2026-02-16 15:02:39 UTC] Catalog: /Users/jos/Desktop/Archive/all_city_data.json
+[2026-02-16 15:02:39 UTC] Mode=both Resume=True Cities=20
+[2026-02-16 15:02:39 UTC] Before sync: estimated complete=20, missing=0; forecast complete=20, missing=0; to_pull_est=0, to_pull_fc=0
+[2026-02-16 15:02:39 UTC] Dry run only. No API calls made.
+[2026-02-16 15:02:46 UTC] Backfill run_id=9b8b7004-7d9b-42de-88d4-4c88e8acea9e
+[2026-02-16 15:02:46 UTC] DB: /Users/jos/Desktop/Archive/weather_data_v2.db
+[2026-02-16 15:02:46 UTC] Catalog: /Users/jos/Desktop/Archive/all_city_data.json
+[2026-02-16 15:02:46 UTC] Mode=both Resume=True Cities=5
+[2026-02-16 15:02:46 UTC] Before sync: estimated complete=5, missing=0; forecast complete=5, missing=0; to_pull_est=0, to_pull_fc=0
+[2026-02-16 15:02:46 UTC] Dry run only. No API calls made.
+[2026-02-16 15:37:53 UTC] Backfill run_id=0d6ede3d-fe37-46ea-b674-3f3fd28dfb23
+[2026-02-16 15:37:53 UTC] DB: /Users/jos/Desktop/Archive/weather_data_v2.db
+[2026-02-16 15:37:53 UTC] Catalog: /Users/jos/Desktop/Archive/all_city_data.json
+[2026-02-16 15:37:53 UTC] Mode=both Resume=True Cities=2462
+[2026-02-16 15:37:53 UTC] Before sync: estimated complete=184, missing=2278; forecast complete=184, missing=2278; to_pull_est=2278, to_pull_fc=2278
+[2026-02-16 15:37:53 UTC] Dry run only. No API calls made.
+[2026-02-16 15:38:16 UTC] Backfill run_id=4a385a09-0b4a-436b-a38e-9fe5cde04037
+[2026-02-16 15:38:16 UTC] DB: /Users/jos/Desktop/Archive/weather_data_v2.db
+[2026-02-16 15:38:16 UTC] Catalog: /Users/jos/Desktop/Archive/all_city_data.json
+[2026-02-16 15:38:16 UTC] Mode=both Resume=True Cities=2462
+[2026-02-16 15:38:16 UTC] Before sync: estimated complete=184, missing=2278; forecast complete=184, missing=2278; to_pull_est=2278, to_pull_fc=2278
+[2026-02-16 15:38:16 UTC] Progress 50/2462 ok=50 err=0 (skip)
+[2026-02-16 15:38:16 UTC] Progress 100/2462 ok=100 err=0 (skip)
+[2026-02-16 15:38:16 UTC] Progress 150/2462 ok=150 err=0 (skip)
+[2026-02-16 15:38:26 UTC] Progress 175/2462 ok=175 err=0
+[2026-02-16 15:38:47 UTC] Progress 200/2462 ok=200 err=0
+[2026-02-16 15:40:01 UTC] Backfill run_id=416b42b1-784e-4891-8fba-466914628d14
+[2026-02-16 15:40:01 UTC] DB: /Users/jos/Desktop/Archive/weather_data_v2.db
+[2026-02-16 15:40:01 UTC] Catalog: /Users/jos/Desktop/Archive/all_city_data.json
+[2026-02-16 15:40:01 UTC] Filters: continent=North America country=*
+[2026-02-16 15:40:01 UTC] Mode=both Resume=True Cities=50
+[2026-02-16 15:40:01 UTC] Before sync: estimated complete=0, missing=50; forecast complete=0, missing=50; to_pull_est=50, to_pull_fc=50
+[2026-02-16 15:40:01 UTC] Dry run only. No API calls made.
+[2026-02-16 15:40:07 UTC] Backfill run_id=938126d1-5eef-4110-89e2-4087d942c691
+[2026-02-16 15:40:07 UTC] DB: /Users/jos/Desktop/Archive/weather_data_v2.db
+[2026-02-16 15:40:07 UTC] Catalog: /Users/jos/Desktop/Archive/all_city_data.json
+[2026-02-16 15:40:07 UTC] Filters: continent=* country=United States,USA
+[2026-02-16 15:40:07 UTC] Mode=both Resume=True Cities=50
+[2026-02-16 15:40:07 UTC] Before sync: estimated complete=0, missing=50; forecast complete=0, missing=50; to_pull_est=50, to_pull_fc=50
+[2026-02-16 15:40:07 UTC] Dry run only. No API calls made.
+[2026-02-16 15:41:08 UTC] Backfill run_id=8f0c2de8-6509-4169-9cd9-5da460cae902
+[2026-02-16 15:41:08 UTC] DB: /Users/jos/Desktop/Archive/weather_data_v2.db
+[2026-02-16 15:41:08 UTC] Catalog: /Users/jos/Desktop/Archive/all_city_data.json
+[2026-02-16 15:41:08 UTC] Filters: continent=* country=*
+[2026-02-16 15:41:08 UTC] Mode=both Resume=True Cities=2462
+[2026-02-16 15:41:08 UTC] Before sync: estimated complete=250, missing=2212; forecast complete=250, missing=2212; to_pull_est=2212, to_pull_fc=2212
+[2026-02-16 15:41:08 UTC] Progress 50/2462 ok=50 err=0 (skip)
+[2026-02-16 15:41:08 UTC] Progress 100/2462 ok=100 err=0 (skip)
+[2026-02-16 15:41:08 UTC] Progress 150/2462 ok=150 err=0 (skip)
+[2026-02-16 15:41:08 UTC] Progress 200/2462 ok=200 err=0 (skip)
+[2026-02-16 15:44:29 UTC] Backfill run_id=9dae304f-7a13-4daa-9253-f990dad80533
+[2026-02-16 15:44:29 UTC] DB: /Users/jos/Desktop/Archive/weather_data_v2.db
+[2026-02-16 15:44:29 UTC] Catalog: /Users/jos/Desktop/Archive/all_city_data.json
+[2026-02-16 15:44:29 UTC] Filters: continent=* country=*
+[2026-02-16 15:44:29 UTC] Mode=both Resume=True Cities=3
+[2026-02-16 15:44:29 UTC] Live status file: /Users/jos/Desktop/Archive/backfill_status.json
+[2026-02-16 15:44:29 UTC] Before sync: estimated complete=3, missing=0; forecast complete=3, missing=0; to_pull_est=0, to_pull_fc=0
+[2026-02-16 15:44:29 UTC] Dry run only. No API calls made.
+[2026-02-16 15:45:14 UTC] Backfill run_id=566df77f-a9f9-4259-a78f-2ad8b78b8764
+[2026-02-16 15:45:14 UTC] DB: /Users/jos/Desktop/Archive/weather_data_v2.db
+[2026-02-16 15:45:14 UTC] Catalog: /Users/jos/Desktop/Archive/all_city_data.json
+[2026-02-16 15:45:14 UTC] Filters: continent=* country=*
+[2026-02-16 15:45:14 UTC] Mode=both Resume=True Cities=2462
+[2026-02-16 15:45:14 UTC] Live status file: /Users/jos/Desktop/Archive/backfill_status.json
+[2026-02-16 15:45:14 UTC] Before sync: estimated complete=250, missing=2212; forecast complete=250, missing=2212; to_pull_est=2212, to_pull_fc=2212
+[2026-02-16 15:45:14 UTC] Progress 50/2462 ok=50 err=0 (skip)
+[2026-02-16 15:45:14 UTC] Progress 100/2462 ok=100 err=0 (skip)
+[2026-02-16 15:45:14 UTC] Progress 150/2462 ok=150 err=0 (skip)
+[2026-02-16 15:45:14 UTC] Progress 200/2462 ok=200 err=0 (skip)
+[2026-02-16 15:45:30 UTC] Progress 250/2462 ok=250 err=0
+[2026-02-16 15:45:49 UTC] Progress 275/2462 ok=275 err=0
+[2026-02-16 15:46:09 UTC] Progress 300/2462 ok=300 err=0
+[2026-02-16 15:46:30 UTC] Progress 325/2462 ok=325 err=0
+[2026-02-16 15:46:50 UTC] Progress 350/2462 ok=350 err=0
+[2026-02-16 15:47:11 UTC] Progress 375/2462 ok=375 err=0
+[2026-02-16 15:47:30 UTC] Progress 400/2462 ok=400 err=0
+[2026-02-16 15:47:51 UTC] Progress 425/2462 ok=425 err=0
+[2026-02-16 15:48:10 UTC] Progress 450/2462 ok=450 err=0
+[2026-02-16 15:48:28 UTC] Progress 475/2462 ok=475 err=0
+[2026-02-16 15:48:47 UTC] Progress 500/2462 ok=500 err=0
+[2026-02-16 15:49:06 UTC] Progress 525/2462 ok=525 err=0
+[2026-02-16 15:49:25 UTC] Progress 550/2462 ok=550 err=0
+[2026-02-16 15:49:47 UTC] Progress 575/2462 ok=575 err=0
+[2026-02-16 15:50:06 UTC] Progress 600/2462 ok=600 err=0
+[2026-02-16 15:50:26 UTC] Progress 625/2462 ok=625 err=0
+[2026-02-16 15:50:45 UTC] Progress 650/2462 ok=650 err=0
+[2026-02-16 15:51:03 UTC] Progress 675/2462 ok=675 err=0
+[2026-02-16 15:51:23 UTC] Progress 700/2462 ok=700 err=0
+[2026-02-16 15:51:43 UTC] Progress 725/2462 ok=725 err=0
+[2026-02-16 15:52:01 UTC] Progress 750/2462 ok=750 err=0
+[2026-02-16 15:52:18 UTC] Progress 775/2462 ok=775 err=0
+[2026-02-16 15:52:35 UTC] Progress 800/2462 ok=800 err=0
+[2026-02-16 15:52:51 UTC] Progress 825/2462 ok=825 err=0
+[2026-02-16 15:53:08 UTC] Progress 850/2462 ok=850 err=0
+[2026-02-16 15:53:25 UTC] Progress 875/2462 ok=875 err=0
+[2026-02-16 15:53:43 UTC] Progress 900/2462 ok=900 err=0
+[2026-02-16 15:54:01 UTC] Progress 925/2462 ok=925 err=0
+[2026-02-16 15:54:19 UTC] Progress 950/2462 ok=950 err=0
+[2026-02-16 15:54:38 UTC] Progress 975/2462 ok=975 err=0
+[2026-02-16 15:54:57 UTC] Progress 1000/2462 ok=1000 err=0
+[2026-02-16 15:55:16 UTC] Progress 1025/2462 ok=1025 err=0
+[2026-02-16 15:55:35 UTC] Progress 1050/2462 ok=1050 err=0
+[2026-02-16 15:55:53 UTC] Progress 1075/2462 ok=1075 err=0
+[2026-02-16 15:56:12 UTC] Progress 1100/2462 ok=1100 err=0
+[2026-02-16 15:56:33 UTC] Progress 1125/2462 ok=1125 err=0
+[2026-02-16 15:56:54 UTC] Progress 1150/2462 ok=1150 err=0
+[2026-02-16 15:57:15 UTC] Progress 1175/2462 ok=1175 err=0
+[2026-02-16 15:57:33 UTC] Progress 1200/2462 ok=1200 err=0
+[2026-02-16 15:57:52 UTC] Progress 1225/2462 ok=1225 err=0
+[2026-02-16 15:58:07 UTC] Progress 1250/2462 ok=1250 err=0
+[2026-02-16 15:58:25 UTC] Progress 1275/2462 ok=1275 err=0
+[2026-02-16 15:58:41 UTC] Progress 1300/2462 ok=1300 err=0
+[2026-02-16 15:58:59 UTC] Progress 1325/2462 ok=1325 err=0
+[2026-02-16 15:59:20 UTC] Progress 1350/2462 ok=1350 err=0
+[2026-02-16 15:59:42 UTC] Progress 1375/2462 ok=1375 err=0
+[2026-02-16 16:00:03 UTC] Progress 1400/2462 ok=1400 err=0
+[2026-02-16 16:00:27 UTC] Progress 1425/2462 ok=1425 err=0
+[2026-02-16 16:00:47 UTC] Progress 1450/2462 ok=1450 err=0
+[2026-02-16 16:01:08 UTC] Progress 1475/2462 ok=1475 err=0
+[2026-02-16 16:01:31 UTC] Progress 1500/2462 ok=1500 err=0
+[2026-02-16 16:01:53 UTC] Progress 1525/2462 ok=1525 err=0
+[2026-02-16 16:02:15 UTC] Progress 1550/2462 ok=1550 err=0
+[2026-02-16 16:02:38 UTC] Progress 1575/2462 ok=1575 err=0
+[2026-02-16 16:02:59 UTC] Progress 1600/2462 ok=1600 err=0
+[2026-02-16 16:03:21 UTC] Progress 1625/2462 ok=1625 err=0
+[2026-02-16 16:03:40 UTC] Progress 1650/2462 ok=1650 err=0
+[2026-02-16 16:03:59 UTC] Progress 1675/2462 ok=1675 err=0
+[2026-02-16 16:04:17 UTC] Progress 1700/2462 ok=1700 err=0
+[2026-02-16 16:04:35 UTC] Progress 1725/2462 ok=1725 err=0
+[2026-02-16 16:04:56 UTC] Progress 1750/2462 ok=1750 err=0
+[2026-02-16 16:05:18 UTC] Progress 1775/2462 ok=1775 err=0
+[2026-02-16 16:05:36 UTC] Progress 1800/2462 ok=1800 err=0
+[2026-02-16 16:05:55 UTC] Progress 1825/2462 ok=1825 err=0
+[2026-02-16 16:06:16 UTC] Progress 1850/2462 ok=1850 err=0
+[2026-02-16 16:06:35 UTC] Progress 1875/2462 ok=1875 err=0
+[2026-02-16 16:06:55 UTC] Progress 1900/2462 ok=1900 err=0
+[2026-02-16 16:07:16 UTC] Progress 1925/2462 ok=1925 err=0
+[2026-02-16 16:07:37 UTC] Progress 1950/2462 ok=1950 err=0
+[2026-02-16 16:07:58 UTC] Progress 1975/2462 ok=1975 err=0
+[2026-02-16 16:08:16 UTC] Progress 2000/2462 ok=2000 err=0
+[2026-02-16 16:08:38 UTC] Progress 2025/2462 ok=2025 err=0
+[2026-02-16 16:08:56 UTC] Progress 2050/2462 ok=2050 err=0
+[2026-02-16 16:09:16 UTC] Progress 2075/2462 ok=2075 err=0
+[2026-02-16 16:09:34 UTC] Progress 2100/2462 ok=2100 err=0
+[2026-02-16 16:09:51 UTC] Progress 2125/2462 ok=2125 err=0
+[2026-02-16 16:10:08 UTC] Progress 2150/2462 ok=2150 err=0
+[2026-02-16 16:10:26 UTC] Progress 2175/2462 ok=2175 err=0
+[2026-02-16 16:10:45 UTC] Progress 2200/2462 ok=2200 err=0
+[2026-02-16 16:11:02 UTC] Progress 2225/2462 ok=2225 err=0
+[2026-02-16 16:11:21 UTC] Progress 2250/2462 ok=2250 err=0
+[2026-02-16 16:11:40 UTC] Progress 2275/2462 ok=2275 err=0
+[2026-02-16 16:11:57 UTC] Progress 2300/2462 ok=2300 err=0
+[2026-02-16 16:12:14 UTC] Progress 2325/2462 ok=2325 err=0
+[2026-02-16 16:12:32 UTC] Progress 2350/2462 ok=2350 err=0
+[2026-02-16 16:12:52 UTC] Progress 2375/2462 ok=2375 err=0
+[2026-02-16 16:13:10 UTC] Progress 2400/2462 ok=2400 err=0
+[2026-02-16 16:13:25 UTC] Progress 2425/2462 ok=2425 err=0
+[2026-02-16 16:13:50 UTC] Progress 2450/2462 ok=2450 err=0
+[2026-02-16 16:14:01 UTC] Progress 2462/2462 ok=2462 err=0
+[2026-02-16 16:14:01 UTC] After sync: estimated complete=2462, missing=0; forecast complete=2462, missing=0
+[2026-02-16 16:27:34 UTC] Backfill run_id=b6d1a8bc-3afe-45a1-b580-185b1146fbc9
+[2026-02-16 16:27:34 UTC] DB: /Users/jos/Desktop/Archive/working/weather_data_v2.db
+[2026-02-16 16:27:34 UTC] Catalog: /Users/jos/Desktop/Archive/working/all_city_data.json
+[2026-02-16 16:27:34 UTC] Filters: continent=* country=*
+[2026-02-16 16:27:34 UTC] Mode=both Resume=True Cities=3
+[2026-02-16 16:27:34 UTC] Live status file: /Users/jos/Desktop/Archive/working/backfill_status.json
+[2026-02-16 16:27:35 UTC] Before sync: estimated complete=3, missing=0; forecast complete=3, missing=0; to_pull_est=0, to_pull_fc=0
+[2026-02-16 16:27:35 UTC] Dry run only. No API calls made.

@@ -1,0 +1,67 @@
+legacy_total=380
+current_before=2431
+added=62
+current_after=2493
+
+Niagara Falls	Canada	North America	43.08956,-79.08494
+Granada	Nicaragua	North America	11.92988,-85.95602
+San José	Costa Rica	North America	9.92807,-84.09072
+San Pedro (Ambergris Caye)	Belize	North America	17.9245,-87.96109
+San Juan	United States	North America	18.46633,-66.10572
+George Town	Cayman Islands	North America	19.2866,-81.37436
+Hamilton	Bermuda	North America	32.2942,-64.78393
+Philipsburg	Sint Maarten	North America	18.02699,-63.04581
+San Carlos de Bariloche	Argentina	South America	-41.13347,-71.31028
+Amalfi	Italy	Europe	40.634,14.60235
+Amsterdam	Netherlands	Europe	52.36757,4.9041
+Delft	Netherlands	Europe	52.01158,4.35707
+Wrocław	Poland	Europe	51.10789,17.03854
+Piran	Slovenia	Europe	45.5285,13.56815
+Pula	Croatia	Europe	44.86662,13.84958
+Hvar	Croatia	Europe	43.17294,16.44197
+Berat	Albania	Europe	40.708,19.944
+Sarandë	Albania	Europe	39.875,20.0
+Ohrid	North Macedonia	Europe	41.11722,20.80164
+Nicosia	Cyprus	Europe	35.18557,33.38228
+Ayia Napa	Cyprus	Europe	34.9885,34.0029
+Paphos	Cyprus	Europe	34.772,32.4297
+Kyiv	Ukraine	Europe	50.4501,30.5234
+Lviv	Ukraine	Europe	49.83968,24.02972
+Odessa	Ukraine	Europe	46.48253,30.72331
+Sibiu	Romania	Europe	45.793,24.15207
+Plovdiv	Bulgaria	Europe	42.13541,24.74529
+Veliko Tarnovo	Bulgaria	Europe	43.0846,25.63716
+Sheki	Azerbaijan	Asia	41.19194,47.17056
+Göreme	Turkey	Asia	38.643,34.827
+Bethlehem	Palestine	Asia	31.7054,35.20238
+Wadi Musa (Petra)	Jordan	Asia	30.3215,35.4788
+Al-'Ula	Saudi Arabia	Asia	26.9095,37.974
+Nur-Sultan (Astana)	Kazakhstan	Asia	51.16052,71.47036
+Panaji (Goa)	India	Asia	15.49093,73.82785
+Jodhpur	India	Asia	26.23895,73.02431
+Jaisalmer	India	Asia	26.91567,70.90834
+Rishikesh	India	Asia	30.08692,78.26756
+Darjeeling	India	Asia	27.04102,88.2663
+Leh	India	Asia	34.1642,77.5848
+Madurai	India	Asia	9.9252,78.11978
+Khajuraho	India	Asia	24.83184,79.91991
+Shimla	India	Asia	31.10482,77.17339
+Mysuru (Mysore)	India	Asia	12.29581,76.63938
+Bodh Gaya	India	Asia	24.69533,84.99145
+Hunza (Karimabad)	Pakistan	Asia	36.31667,74.65
+Hong Kong	China (Hong Kong SAR)	Asia	22.3193,114.16936
+Macau	China (Macau SAR)	Asia	22.19875,113.54387
+Xiamen	China	Asia	24.47983,118.08942
+Kashgar	China	Asia	39.4704,75.98976
+Sanya	China	Asia	18.25285,109.51191
+Pingyao	China	Asia	37.20194,112.17573
+Dali	China	Asia	25.69397,100.16809
+Nikkō	Japan	Asia	36.7198,139.6983
+Pyongyang	North Korea	Asia	39.03922,125.76252
+Jiufen	Taiwan	Asia	25.1097,121.8437
+Ko Samui	Thailand	Asia	9.539,99.93567
+Sa Pa	Vietnam	Asia	22.34025,103.84459
+Nyaungshwe (Inle Lake)	Myanmar	Asia	20.6614,96.9311
+Boracay (Malay)	Philippines	Asia	11.9674,121.925
+Tagbilaran	Philippines	Asia	9.6525,123.85338
+Malacca City	Malaysia	Asia	2.1896,102.25008
