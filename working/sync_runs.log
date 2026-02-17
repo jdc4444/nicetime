@@ -443,3 +443,62 @@
 [2026-02-16 16:27:34 UTC] Live status file: /Users/jos/Desktop/Archive/working/backfill_status.json
 [2026-02-16 16:27:35 UTC] Before sync: estimated complete=3, missing=0; forecast complete=3, missing=0; to_pull_est=0, to_pull_fc=0
 [2026-02-16 16:27:35 UTC] Dry run only. No API calls made.
+[2026-02-16 22:25:26 UTC] Backfill run_id=2bf0e739-e2bf-4170-8156-911186b48ad2
+[2026-02-16 22:25:26 UTC] DB: /Users/jos/Desktop/Archive/working/weather_data_v2.db
+[2026-02-16 22:25:26 UTC] Catalog: /Users/jos/Desktop/Archive/working/all_city_data.json
+[2026-02-16 22:25:26 UTC] Filters: continent=* country=*
+[2026-02-16 22:25:26 UTC] Mode=forecast Resume=True Cities=2472
+[2026-02-16 22:25:26 UTC] Live status file: /Users/jos/Desktop/Archive/working/backfill_status.json
+[2026-02-16 22:25:26 UTC] Before sync: estimated complete=2468, missing=4; forecast window-complete=2468, refreshed-today=2468, not-fresh-today=4; to_pull_est=0, to_pull_fc=4
+[2026-02-16 22:25:26 UTC] Progress 50/2472 ok=50 err=0 (skip)
+[2026-02-16 22:25:26 UTC] Progress 100/2472 ok=100 err=0 (skip)
+[2026-02-16 22:25:26 UTC] Progress 150/2472 ok=150 err=0 (skip)
+[2026-02-16 22:25:26 UTC] Progress 200/2472 ok=200 err=0 (skip)
+[2026-02-16 22:25:26 UTC] Progress 250/2472 ok=250 err=0 (skip)
+[2026-02-16 22:25:26 UTC] Progress 300/2472 ok=300 err=0 (skip)
+[2026-02-16 22:25:26 UTC] Progress 350/2472 ok=350 err=0 (skip)
+[2026-02-16 22:25:26 UTC] Progress 400/2472 ok=400 err=0 (skip)
+[2026-02-16 22:25:26 UTC] Progress 450/2472 ok=450 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 500/2472 ok=500 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 550/2472 ok=550 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 600/2472 ok=600 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 650/2472 ok=650 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 700/2472 ok=700 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 750/2472 ok=750 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 800/2472 ok=800 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 850/2472 ok=850 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 900/2472 ok=900 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 950/2472 ok=950 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 1000/2472 ok=1000 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 1050/2472 ok=1050 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 1100/2472 ok=1100 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 1150/2472 ok=1150 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 1200/2472 ok=1200 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 1250/2472 ok=1250 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 1300/2472 ok=1300 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 1350/2472 ok=1350 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 1400/2472 ok=1400 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 1450/2472 ok=1450 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 1500/2472 ok=1500 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 1550/2472 ok=1550 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 1600/2472 ok=1600 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 1650/2472 ok=1650 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 1700/2472 ok=1700 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 1750/2472 ok=1750 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 1800/2472 ok=1800 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 1850/2472 ok=1850 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 1900/2472 ok=1900 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 1950/2472 ok=1950 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 2000/2472 ok=2000 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 2050/2472 ok=2050 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 2100/2472 ok=2100 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 2150/2472 ok=2150 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 2200/2472 ok=2200 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 2250/2472 ok=2250 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 2300/2472 ok=2300 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 2350/2472 ok=2350 err=0 (skip)
+[2026-02-16 22:25:27 UTC] Progress 2400/2472 ok=2400 err=0 (skip)
+[2026-02-16 22:26:04 UTC] Progress 2450/2472 ok=2446 err=4 (skip)
+[2026-02-16 22:26:04 UTC] Progress 2472/2472 ok=2468 err=4 (skip)
+[2026-02-16 22:26:04 UTC] After sync: estimated complete=2468, missing=4; forecast window-complete=2468, refreshed-today=2468, not-fresh-today=4
+[2026-02-16 22:26:05 UTC] Exported web forecast assets: /Users/jos/Desktop/Archive/archive/forecast_current_data.js and /Users/jos/Desktop/Archive/archive/forecast_14day_data.js (cities_with_rows=2468, fresh_today=2468/2472)

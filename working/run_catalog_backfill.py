@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 import argparse
+from collections import defaultdict
 import json
 import os
+import re
 import sqlite3
 import sys
 import time
+import unicodedata
 import uuid
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -19,6 +22,8 @@ DEFAULT_API_LOG = f"{BASE_DIR}/sync_api_calls.ndjson"
 DEFAULT_SYNC_LOG = f"{BASE_DIR}/sync_runs.log"
 DEFAULT_KEY_FILE = f"{BASE_DIR}/.visualcrossing_key"
 DEFAULT_STATUS_FILE = f"{BASE_DIR}/backfill_status.json"
+DEFAULT_FORECAST_JS = str((Path(BASE_DIR).parent / "archive" / "forecast_current_data.js").resolve())
+DEFAULT_FORECAST_14D_JS = str((Path(BASE_DIR).parent / "archive" / "forecast_14day_data.js").resolve())
 
 VC_URL = (
     "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/"
@@ -158,6 +163,276 @@ def build_counts_map(conn: sqlite3.Connection, table: str, start_date: str, end_
         (start_date, end_date),
     ).fetchall()
     return {r["city"]: int(r["cnt"]) for r in rows}
+
+
+def parse_iso_dt(value: Any) -> datetime | None:
+    s = str(value or "").strip()
+    if not s:
+        return None
+    try:
+        if s.endswith("Z"):
+            s = s[:-1] + "+00:00"
+        dt = datetime.fromisoformat(s)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt
+    except Exception:
+        return None
+
+
+def is_updated_today_local(updated_at: Any, today_local: date) -> bool:
+    dt = parse_iso_dt(updated_at)
+    if not dt:
+        return False
+    return dt.astimezone().date() == today_local
+
+
+def build_forecast_status_map(
+    conn: sqlite3.Connection,
+    start_date: str,
+    end_date: str,
+    today_local: date,
+) -> dict[str, dict[str, Any]]:
+    rows = conn.execute(
+        """
+        SELECT city, COUNT(*) AS cnt, MAX(updated_at) AS max_updated_at
+        FROM daily_data_forecast
+        WHERE date >= ? AND date <= ?
+        GROUP BY city
+        """,
+        (start_date, end_date),
+    ).fetchall()
+    out: dict[str, dict[str, Any]] = {}
+    for r in rows:
+        mx = r["max_updated_at"]
+        out[r["city"]] = {
+            "count": int(r["cnt"]),
+            "max_updated_at": mx,
+            "fresh_today": is_updated_today_local(mx, today_local),
+        }
+    return out
+
+
+def normalize_city_key(s: Any) -> str:
+    raw = unicodedata.normalize("NFD", str(s or ""))
+    raw = "".join(ch for ch in raw if unicodedata.category(ch) != "Mn")
+    raw = raw.lower()
+    return re.sub(r"[^a-z0-9]+", "", raw)
+
+
+def to_num(v: Any) -> float | None:
+    try:
+        n = float(v)
+        if n != n:
+            return None
+        return n
+    except Exception:
+        return None
+
+
+def c_to_f(c: float | None) -> float | None:
+    if c is None:
+        return None
+    return (c * 9.0 / 5.0) + 32.0
+
+
+def parse_hms(value: Any) -> datetime | None:
+    s = str(value or "").strip()
+    if not s:
+        return None
+    # VC typically stores sunrise/sunset as HH:MM:SS for daily rows.
+    for fmt in ("%H:%M:%S", "%H:%M"):
+        try:
+            return datetime.strptime(s, fmt)
+        except Exception:
+            pass
+    dt = parse_iso_dt(s)
+    if dt:
+        return dt
+    return None
+
+
+def compute_sunny_bad_days(rows: list[dict[str, Any]]) -> tuple[float | None, float | None]:
+    if not rows:
+        return None, None
+    good_icons = {"clear-day", "clear-night", "partly-cloudy-day", "partly-cloudy-night"}
+    bad_icons = {
+        "rain",
+        "snow",
+        "fog",
+        "thunder-rain",
+        "showers-day",
+        "showers-night",
+        "sleet",
+        "thunderstorm",
+    }
+    good = 0
+    bad = 0
+    neutral = 0
+    for r in rows:
+        icon = str(r.get("icon") or "").strip().lower()
+        precip_prob = to_num(r.get("precip_prob_pct"))
+        precip_mm = to_num(r.get("precip_mm"))
+        if icon in good_icons:
+            good += 1
+        elif icon in bad_icons:
+            bad += 1
+        elif (precip_prob is not None and precip_prob >= 60.0) or (precip_mm is not None and precip_mm >= 1.0):
+            bad += 1
+        else:
+            neutral += 1
+    n = max(1, len(rows))
+    scale = 30.0 / n
+    sunny_days_30 = (good + (0.5 * neutral)) * scale
+    bad_days_30 = bad * scale
+    return sunny_days_30, bad_days_30
+
+
+def export_web_forecast_assets(
+    conn: sqlite3.Connection,
+    catalog: list[dict[str, Any]],
+    fc_start: str,
+    fc_end: str,
+    forecast_js_path: str,
+    forecast_14d_js_path: str,
+    sync_log_file: str,
+) -> dict[str, Any]:
+    rows = conn.execute(
+        """
+        SELECT city, date, tmax_c, tmin_c, precip_mm, precip_prob_pct, sunrise, sunset, icon, updated_at
+        FROM daily_data_forecast
+        WHERE date >= ? AND date <= ?
+        ORDER BY city, date
+        """,
+        (fc_start, fc_end),
+    ).fetchall()
+    grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for r in rows:
+        grouped[r["city"]].append(dict(r))
+
+    src: dict[str, dict[str, Any]] = {}
+    by_coord: dict[str, dict[str, Any]] = {}
+    daily_src: dict[str, list[dict[str, Any]]] = {}
+    daily_by_coord: dict[str, list[dict[str, Any]]] = {}
+
+    today_local = date.today()
+    cities_with_rows = 0
+    cities_fresh_today = 0
+
+    for c in catalog:
+        city = c["city"]
+        country = c["country"]
+        db_city = c["db_city"]
+        lat = to_num(c["lat"])
+        lon = to_num(c["lng"])
+        days = grouped.get(db_city, [])
+        if not days:
+            continue
+
+        cities_with_rows += 1
+        highs = [to_num(d.get("tmax_c")) for d in days]
+        lows = [to_num(d.get("tmin_c")) for d in days]
+        highs = [x for x in highs if x is not None]
+        lows = [x for x in lows if x is not None]
+        day_temp_f = c_to_f(sum(highs) / len(highs)) if highs else None
+        night_temp_f = c_to_f(sum(lows) / len(lows)) if lows else None
+
+        day_lengths = []
+        for d in days:
+            sr = parse_hms(d.get("sunrise"))
+            ss = parse_hms(d.get("sunset"))
+            if sr and ss:
+                hrs = (ss - sr).total_seconds() / 3600.0
+                if hrs < 0:
+                    hrs += 24.0
+                if 0 <= hrs <= 24:
+                    day_lengths.append(hrs)
+        day_length_hrs = (sum(day_lengths) / len(day_lengths)) if day_lengths else None
+        sunny_days_30, bad_days_30 = compute_sunny_bad_days(days)
+        fetched_at = max((str(d.get("updated_at") or "").strip() for d in days), default="")
+        if is_updated_today_local(fetched_at, today_local):
+            cities_fresh_today += 1
+
+        summary_obj = {
+            "cache_key": db_city,
+            "city": city,
+            "country": country,
+            "day_temp_f": day_temp_f,
+            "night_temp_f": night_temp_f,
+            "sunny_days_30": sunny_days_30,
+            "bad_days_30": bad_days_30,
+            "day_length_hrs": day_length_hrs,
+            "forecast_days": len(days),
+            "fetched_at": fetched_at or None,
+        }
+
+        key_city_country = normalize_city_key(f"{city}, {country}")
+        key_db_city = normalize_city_key(db_city)
+        if key_city_country:
+            src[key_city_country] = summary_obj
+            daily_src[key_city_country] = []
+        if key_db_city:
+            src[key_db_city] = summary_obj
+            daily_src[key_db_city] = []
+
+        daily_rows = []
+        for d in days:
+            hi_f = c_to_f(to_num(d.get("tmax_c")))
+            lo_f = c_to_f(to_num(d.get("tmin_c")))
+            daily_rows.append(
+                {
+                    "date": str(d.get("date") or ""),
+                    "high_f": hi_f,
+                    "low_f": lo_f,
+                    "precip_pct": to_num(d.get("precip_prob_pct")),
+                    "icon": str(d.get("icon") or ""),
+                    "updated_at": str(d.get("updated_at") or ""),
+                }
+            )
+        if key_city_country:
+            daily_src[key_city_country] = daily_rows
+        if key_db_city:
+            daily_src[key_db_city] = daily_rows
+
+        if lat is not None and lon is not None:
+            for r in (4, 3, 2):
+                ck = f"{float(round(lat, r))}|{float(round(lon, r))}"
+                by_coord[ck] = summary_obj
+                daily_by_coord[ck] = daily_rows
+
+    meta = {
+        "generated_at": utcnow_iso(),
+        "run_date_local": today_local.isoformat(),
+        "window_start": fc_start,
+        "window_end": fc_end,
+        "expected_cities": len(catalog),
+        "cities_with_rows": cities_with_rows,
+        "cities_fresh_today": cities_fresh_today,
+    }
+
+    fc_text = (
+        f"window.FORECAST_CURRENT = {json.dumps(src, ensure_ascii=False)};\n"
+        f"window.FORECAST_CURRENT_COORD = {json.dumps(by_coord, ensure_ascii=False)};\n"
+        f"window.FORECAST_CURRENT_META = {json.dumps(meta, ensure_ascii=False)};\n"
+    )
+    fc14_text = (
+        f"window.FORECAST_14DAY = {json.dumps(daily_src, ensure_ascii=False)};\n"
+        f"window.FORECAST_14DAY_COORD = {json.dumps(daily_by_coord, ensure_ascii=False)};\n"
+        f"window.FORECAST_14DAY_META = {json.dumps(meta, ensure_ascii=False)};\n"
+    )
+    Path(forecast_js_path).parent.mkdir(parents=True, exist_ok=True)
+    Path(forecast_14d_js_path).parent.mkdir(parents=True, exist_ok=True)
+    Path(forecast_js_path).write_text(fc_text, encoding="utf-8")
+    Path(forecast_14d_js_path).write_text(fc14_text, encoding="utf-8")
+    append_sync_log(
+        sync_log_file,
+        (
+            "Exported web forecast assets: "
+            f"{forecast_js_path} and {forecast_14d_js_path} "
+            f"(cities_with_rows={cities_with_rows}, fresh_today={cities_fresh_today}/{len(catalog)})"
+        ),
+    )
+    return meta
 
 
 def upsert_weather_row(conn: sqlite3.Connection, table: str, city: str, d: dict[str, Any], source: str) -> None:
@@ -362,6 +637,10 @@ def main() -> int:
     ap.add_argument("--min-interval-sec", type=float, default=0.15, help="Minimum delay between VC requests")
     ap.add_argument("--attempts", type=int, default=4)
     ap.add_argument("--status-file", default=DEFAULT_STATUS_FILE, help="Live JSON status output path")
+    ap.add_argument("--forecast-js", default=DEFAULT_FORECAST_JS, help="Output JS file for forecast summary map")
+    ap.add_argument("--forecast-14d-js", default=DEFAULT_FORECAST_14D_JS, help="Output JS file for forecast daily rows")
+    ap.add_argument("--export-web-forecast", action="store_true", default=True, help="Export web forecast JS snapshots at end of run")
+    ap.add_argument("--no-export-web-forecast", action="store_false", dest="export_web_forecast")
     ap.add_argument("--live", action="store_true", default=True, help="Print per-city live updates in terminal")
     ap.add_argument("--quiet-live", action="store_false", dest="live", help="Disable per-city live output")
     ap.add_argument("--dry-run", action="store_true")
@@ -432,20 +711,25 @@ def main() -> int:
 
     try:
         est_counts = build_counts_map(conn, "daily_data_estimated", est_start, est_end)
-        fc_counts = build_counts_map(conn, "daily_data_forecast", fc_start, fc_end)
+        fc_status = build_forecast_status_map(conn, fc_start, fc_end, today)
 
         est_complete = 0
-        fc_complete = 0
+        fc_complete_window = 0
+        fc_fresh_today = 0
         to_pull_est = 0
         to_pull_fc = 0
         for c in catalog:
             city = c["db_city"]
             e_ok = est_counts.get(city, 0) >= 365
-            f_ok = fc_counts.get(city, 0) >= 14
+            f_meta = fc_status.get(city, {})
+            f_count = int(f_meta.get("count") or 0)
+            f_ok = (f_count >= 14) and bool(f_meta.get("fresh_today"))
             if e_ok:
                 est_complete += 1
             if f_ok:
-                fc_complete += 1
+                fc_fresh_today += 1
+            if f_count >= 14:
+                fc_complete_window += 1
             if args.mode in {"both", "estimated"} and (not args.resume or not e_ok):
                 to_pull_est += 1
             if args.mode in {"both", "forecast"} and (not args.resume or not f_ok):
@@ -455,7 +739,8 @@ def main() -> int:
             args.sync_log,
             "Before sync: "
             f"estimated complete={est_complete}, missing={len(catalog)-est_complete}; "
-            f"forecast complete={fc_complete}, missing={len(catalog)-fc_complete}; "
+            f"forecast window-complete={fc_complete_window}, refreshed-today={fc_fresh_today}, "
+            f"not-fresh-today={len(catalog)-fc_fresh_today}; "
             f"to_pull_est={to_pull_est}, to_pull_fc={to_pull_fc}",
         )
         write_status_file(
@@ -474,7 +759,8 @@ def main() -> int:
                 "ok": 0,
                 "err": 0,
                 "est_complete_before": est_complete,
-                "fc_complete_before": fc_complete,
+                "fc_complete_before": fc_complete_window,
+                "fc_fresh_today_before": fc_fresh_today,
                 "to_pull_est": to_pull_est,
                 "to_pull_fc": to_pull_fc,
                 "current_city": None,
@@ -505,8 +791,8 @@ def main() -> int:
                     utcnow_iso(),
                     est_complete,
                     len(catalog) - est_complete,
-                    fc_complete,
-                    len(catalog) - fc_complete,
+                    fc_fresh_today,
+                    len(catalog) - fc_fresh_today,
                     run_id,
                 ),
             )
@@ -528,7 +814,9 @@ def main() -> int:
             city_action = []
 
             e_ok = est_counts.get(city, 0) >= 365
-            f_ok = fc_counts.get(city, 0) >= 14
+            f_meta = fc_status.get(city, {})
+            f_count = int(f_meta.get("count") or 0)
+            f_ok = (f_count >= 14) and bool(f_meta.get("fresh_today"))
             pull_est = args.mode in {"both", "estimated"} and (not args.resume or not e_ok)
             pull_fc = args.mode in {"both", "forecast"} and (not args.resume or not f_ok)
             if args.mode in {"both", "estimated"}:
@@ -652,7 +940,11 @@ def main() -> int:
                             "ts": utcnow_iso(),
                         },
                     )
-                    fc_counts[city] = len(days)
+                    fc_status[city] = {
+                        "count": len(days),
+                        "max_updated_at": utcnow_iso(),
+                        "fresh_today": True,
+                    }
                     fc_updated_cities += 1
                 elif args.mode in {"both", "forecast"}:
                     insert_city_log(conn, run_id, city, "forecast", "complete", "already complete")
@@ -733,19 +1025,41 @@ def main() -> int:
 
         est_complete_after = 0
         fc_complete_after = 0
+        fc_fresh_after = 0
+        fc_status_after = build_forecast_status_map(conn, fc_start, fc_end, today)
         for c in catalog:
             city = c["db_city"]
             if est_counts.get(city, 0) >= 365:
                 est_complete_after += 1
-            if fc_counts.get(city, 0) >= 14:
+            f_meta = fc_status_after.get(city, {})
+            f_count = int(f_meta.get("count") or 0)
+            if f_count >= 14:
                 fc_complete_after += 1
+            if (f_count >= 14) and bool(f_meta.get("fresh_today")):
+                fc_fresh_after += 1
 
         append_sync_log(
             args.sync_log,
             "After sync: "
             f"estimated complete={est_complete_after}, missing={len(catalog)-est_complete_after}; "
-            f"forecast complete={fc_complete_after}, missing={len(catalog)-fc_complete_after}",
+            f"forecast window-complete={fc_complete_after}, refreshed-today={fc_fresh_after}, "
+            f"not-fresh-today={len(catalog)-fc_fresh_after}",
         )
+
+        if args.export_web_forecast:
+            try:
+                export_web_forecast_assets(
+                    conn=conn,
+                    catalog=catalog,
+                    fc_start=fc_start,
+                    fc_end=fc_end,
+                    forecast_js_path=args.forecast_js,
+                    forecast_14d_js_path=args.forecast_14d_js,
+                    sync_log_file=args.sync_log,
+                )
+            except Exception as export_err:
+                append_sync_log(args.sync_log, f"WARN: export web forecast assets failed: {export_err}")
+
         write_status_file(
             args.status_file,
             {
@@ -760,7 +1074,8 @@ def main() -> int:
                 "historical_complete": est_complete_after,
                 "historical_missing": len(catalog) - est_complete_after,
                 "forecast_complete": fc_complete_after,
-                "forecast_missing": len(catalog) - fc_complete_after,
+                "forecast_fresh_today": fc_fresh_after,
+                "forecast_missing": len(catalog) - fc_fresh_after,
                 "historical_updated": est_updated_cities,
                 "forecast_updated": fc_updated_cities,
                 "updated_at": utcnow_iso(),
@@ -786,8 +1101,8 @@ def main() -> int:
                 "ok" if err == 0 else "partial",
                 est_complete_after,
                 len(catalog) - est_complete_after,
-                fc_complete_after,
-                len(catalog) - fc_complete_after,
+                fc_fresh_after,
+                len(catalog) - fc_fresh_after,
                 est_updated_cities,
                 fc_updated_cities,
                 err,

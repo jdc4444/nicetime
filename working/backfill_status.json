@@ -1,11 +1,18 @@
 {
-  "run_id": "b6d1a8bc-3afe-45a1-b580-185b1146fbc9",
-  "state": "dry_run",
-  "finished_at": "2026-02-16T16:27:35.095247+00:00",
-  "total_cities": 3,
-  "done": 0,
-  "ok": 0,
-  "err": 0,
-  "last_message": "dry run complete",
-  "updated_at": "2026-02-16T16:27:35.095249+00:00"
+  "run_id": "2bf0e739-e2bf-4170-8156-911186b48ad2",
+  "state": "partial",
+  "finished_at": "2026-02-16T22:26:05.039518+00:00",
+  "mode": "forecast",
+  "done": 2472,
+  "total_cities": 2472,
+  "ok": 2468,
+  "err": 4,
+  "historical_complete": 2468,
+  "historical_missing": 4,
+  "forecast_complete": 2468,
+  "forecast_fresh_today": 2468,
+  "forecast_missing": 4,
+  "historical_updated": 0,
+  "forecast_updated": 0,
+  "updated_at": "2026-02-16T22:26:05.039531+00:00"
 }
