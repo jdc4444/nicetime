@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Nicetime</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='%230a84ff'/%3E%3C/svg%3E">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
         :root {
@@ -20,6 +21,8 @@
             --sun-panel-w: 500px;
             --rank-score-w: 106px;
             --rank-meta-w: 132px;
+            --globe-left-offset: 0px;
+            --mobile-vv-bottom: 0px;
         }
         
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -143,10 +146,11 @@
         #globe {
             position: fixed;
             top: 0;
-            left: 0;
+            left: var(--globe-left-offset, 0px);
             right: 0;
-            width: auto;
+            width: calc(100vw - var(--globe-left-offset, 0px));
             height: 100vh;
+            height: 100dvh;
         }
         
         .panel {
@@ -205,9 +209,18 @@
             width: 18px;
             height: 18px;
             border-radius: 50%;
-            background: var(--accent);
+            background: var(--month-thumb, var(--accent));
             cursor: pointer;
-            box-shadow: 0 2px 6px rgba(10,132,255,0.45);
+            box-shadow: 0 2px 6px rgba(34, 56, 78, 0.35);
+        }
+        #month-slider::-moz-range-thumb {
+            width: 18px;
+            height: 18px;
+            border: 0;
+            border-radius: 50%;
+            background: var(--month-thumb, var(--accent));
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(34, 56, 78, 0.35);
         }
         .month-ticks {
             display: flex;
@@ -534,6 +547,40 @@
         #globe-zoom button:active {
             background: rgba(238,244,251,0.95);
             transform: scale(0.98);
+        }
+
+        #view-toggles {
+            position: fixed;
+            right: 16px;
+            bottom: 16px;
+            z-index: 28;
+            display: grid;
+            gap: 6px;
+            padding: 10px 12px;
+            border-radius: 12px;
+            background: rgba(251, 253, 255, 0.92);
+            border: 1px solid rgba(64, 74, 87, 0.18);
+            box-shadow: 0 6px 18px rgba(27, 43, 61, 0.14);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            user-select: none;
+        }
+        #view-toggles label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 11px;
+            font-weight: 550;
+            color: var(--ink-700);
+            line-height: 1.1;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+        #view-toggles input[type="checkbox"] {
+            width: 14px;
+            height: 14px;
+            accent-color: #0a84ff;
+            cursor: pointer;
         }
 
         #sun-panel {
@@ -1942,19 +1989,33 @@
 
         @media (max-width: 920px) {
             #sun-panel {
-                left: 12px;
-                right: 12px;
-                width: auto;
-                top: 12px;
-                bottom: 12px;
+                left: 0;
+                right: 0;
+                width: 100vw;
+                top: 0;
+                bottom: 0;
+                height: 100vh;
+                height: 100dvh;
                 max-height: none;
+                border-radius: 0;
+                border-left: 0;
+                border-right: 0;
+                border-top: 0;
+                box-shadow: none;
+            }
+            #sun-panel .sun-body {
+                padding-bottom: calc(var(--month-panel-h) + 24px + env(safe-area-inset-bottom, 0px) + var(--mobile-vv-bottom, 0px));
             }
             #month-panel {
                 left: 10px;
                 right: 10px;
-                bottom: 10px;
+                bottom: calc(10px + env(safe-area-inset-bottom, 0px) + var(--mobile-vv-bottom, 0px));
                 margin: 0;
                 padding: 10px 12px;
+            }
+            #view-toggles {
+                right: 10px;
+                bottom: calc(10px + env(safe-area-inset-bottom, 0px) + var(--mobile-vv-bottom, 0px));
             }
             #tooltip, #hover-tooltip, #country-tooltip {
                 display: none !important;
@@ -1963,7 +2024,7 @@
         }
     </style>
 </head>
-<body>
+<body class="globe-skin-outline-fully-transparent">
     <div id="globe"></div>
     
     <div id="tooltip">
@@ -2026,6 +2087,12 @@
     <div id="globe-zoom" aria-label="Globe zoom controls">
         <button id="zoom-in-btn" type="button" title="Zoom in">+</button>
         <button id="zoom-out-btn" type="button" title="Zoom out">−</button>
+    </div>
+    <div id="view-toggles" aria-label="Map display toggles">
+        <label><input id="toggle-isolate-country" type="checkbox">Isolate Country</label>
+        <label><input id="toggle-country-lines" type="checkbox" checked>Country Lines</label>
+        <label><input id="toggle-cities" type="checkbox" checked>Cities</label>
+        <label><input id="toggle-country-fill" type="checkbox">Country Fill</label>
     </div>
 
     <aside id="sun-panel">
@@ -2123,17 +2190,17 @@
                                     <div id="pref-temp-hot-fill" class="pref-temp-hot-fill"></div>
                                     <div id="pref-temp-hot-outer-fill" class="pref-temp-hot-outer-fill"></div>
                                 </div>
-                                <div id="pref-cut-min-tag" class="pref-handle-tag temp-min">60F</div>
-                                <div id="pref-night-ideal-tag" class="pref-handle-tag ideal">65F</div>
-                                <div id="pref-day-ideal-tag" class="pref-handle-tag ideal">75F</div>
-                                <div id="pref-cut-max-tag" class="pref-handle-tag temp-max">85F</div>
+                                <div id="pref-cut-min-tag" class="pref-handle-tag temp-min">50F</div>
+                                <div id="pref-night-ideal-tag" class="pref-handle-tag ideal">60F</div>
+                                <div id="pref-day-ideal-tag" class="pref-handle-tag ideal">80F</div>
+                                <div id="pref-cut-max-tag" class="pref-handle-tag temp-max">90F</div>
                                 <div id="pref-cut-min-label" class="pref-handle-sub temp-min">Too Cold</div>
                                 <div id="pref-just-right-label" class="pref-just-right-label">Just Right</div>
                                 <div id="pref-cut-max-label" class="pref-handle-sub temp-max">Too Hot</div>
-                                <input id="pref-cut-min" class="pref-range pref-thumb-cutmin" type="range" value="60" min="30" max="110" step="1"/>
-                                <input id="pref-night-ideal" class="pref-range pref-thumb-ideal" type="range" value="65" min="30" max="110" step="1"/>
-                                <input id="pref-day-ideal" class="pref-range pref-thumb-ideal" type="range" value="75" min="30" max="110" step="1"/>
-                                <input id="pref-cut-max" class="pref-range pref-thumb-cutmax" type="range" value="85" min="30" max="110" step="1"/>
+                                <input id="pref-cut-min" class="pref-range pref-thumb-cutmin" type="range" value="50" min="30" max="110" step="1"/>
+                                <input id="pref-night-ideal" class="pref-range pref-thumb-ideal" type="range" value="60" min="30" max="110" step="1"/>
+                                <input id="pref-day-ideal" class="pref-range pref-thumb-ideal" type="range" value="80" min="30" max="110" step="1"/>
+                                <input id="pref-cut-max" class="pref-range pref-thumb-cutmax" type="range" value="90" min="30" max="110" step="1"/>
                             </div>
                         </div>
 
@@ -2144,7 +2211,7 @@
                             </div>
                             <div class="pref-importance-wrap">
                                 <div id="pref-weight-tag" class="pref-weight-tag">50 / 50</div>
-                                <input id="pref-weight" class="pref-range-single" type="range" value="0.45" min="0" max="1" step="0.01"/>
+                                <input id="pref-weight" class="pref-range-single" type="range" value="0.50" min="0" max="1" step="0.01"/>
                                 <div class="pref-range-labels"><span class="weather-label">Temperature</span><span class="sunlight-label">Sunlight</span></div>
                             </div>
                         </div>
@@ -2304,7 +2371,7 @@
         const unheartedCountries = new Set();
         const unheartedCities = new Set();
         let rankingMode = 'continent';
-        let countrySelectionParentScope = 'country';
+        let countrySelectionParentScope = 'world';
         const rankingViewControls = {
             world: { scope: 'regions', sort: 'niceness', sortManuallySet: false },
             region: { scope: 'countries', sort: 'niceness', sortManuallySet: false },
@@ -2315,15 +2382,21 @@
         let defaultHomeCityKey = null;
         let mostRecentCityKey = null;
         let usePreferences = false;
-        let prefCutoffMinTemp = 60;
-        let prefCutoffMaxTemp = 85;
-        let prefIdealNightTemp = 65;
-        let prefIdealDayTemp = 75;
-        let prefTempWeight = 0.55;
+        let prefCutoffMinTemp = 50;
+        let prefCutoffMaxTemp = 90;
+        let prefIdealNightTemp = 60;
+        let prefIdealDayTemp = 80;
+        let prefTempWeight = 0.50;
+        let prefDraftProfileF = null;
         let prefTempUnit = 'F';
         let allYellowNoOrangeMode = false;
         let globeSkinMode = 'outline_fully_transparent';
         let currentSort = { key: 'niceness', dir: 'desc' };
+        let isolateCountryMode = false;
+        const HOVER_SCOPE_ISOLATION_ENABLED = false;
+        let showCountryLines = true;
+        let showCityPoints = true;
+        let showAllCountryFill = false;
         const liveForecastByCityKey = {};
         const partsByCityKey = new Map();
         const rankingCache = { month: null, pref: null, anchor: null, data: null };
@@ -2334,7 +2407,10 @@
         const countryPolyKeyByName = new Map();
         const regionPolyColorByName = new Map();
         const countryNameById = new Map();
+        let countryHitMetaByPoly = new WeakMap();
+        let countryPolyMatchSetByKey = new Map();
         let hoveredCountryNorm = null;
+        let hoveredCountryKey = null;
         let hoveredCityKey = null;
         let hoveredCityRef = null;
         let suppressGlobeHoverUntil = 0;
@@ -2367,9 +2443,13 @@
         let panelHoverCameraKey = '';
         let panelHoverCameraAt = 0;
         const PANEL_HOVER_REARM_PX = 6;
+        const GLOBE_HOVER_REARM_PX = 8;
         let panelHoverActivationGate = false;
         let panelHoverGateX = NaN;
         let panelHoverGateY = NaN;
+        let globeHoverActivationGate = false;
+        let globeHoverGateX = NaN;
+        let globeHoverGateY = NaN;
         let lastGlobeCityClickKey = '';
         let lastGlobeCityClickAt = 0;
         let lastGlobeSurfaceClickAt = 0;
@@ -2379,6 +2459,7 @@
         let pendingHoverPointer = null;
         let hoverPointerRaf = 0;
         let pointStylingRefreshRaf = 0;
+        let pointStylingRebindPending = false;
         let pointScaleRefreshRaf = 0;
         let lastCameraScaleRefreshAt = 0;
         let nearbyAutoLocateInFlight = false;
@@ -2434,13 +2515,14 @@
             cityMax: 0.50,
             countryMax: 0.98
         };
+        const COUNTRY_VIEW_MARGIN_FRAC = 0.10;
         const OCCLUSION_CLIP_START_DEG = 88.6;
         const OCCLUSION_CLIP_END_DEG = 91.8;
         const OCCLUSION_ALPHA_MIN_POINT = 0.03;
         const OCCLUSION_ALPHA_MIN_LINE = 0.05;
         const OCCLUSION_ALPHA_MIN_POLY = 0.08;
         const CITY_PROX_HOVER_PX = 12;
-        const CITY_PROX_CLICK_PX = 24;
+        const CITY_PROX_CLICK_PX = 10;
         const CITY_PROX_POLY_GUARD_PX = 14;
         const HOVER_POINTER_FRAME_MIN_MS = 16;
         const WATER_LAYER_SOURCES = {
@@ -2738,6 +2820,7 @@
         let vectorOverlayPathsNear = [];
         let vectorOverlayLoaded = false;
         let vectorOverlayLastTier = '';
+        let vectorOverlayLastScopeSig = '';
         let vectorOverlayRefreshRaf = 0;
         let globeLayerDepthOverrideRaf = 0;
         let globeEdgeRing = null;
@@ -2959,6 +3042,14 @@
                 const norm = canonicalCountryNorm(parsed.country);
                 if (norm) out.add(norm);
             });
+            if (!selectedCountries.size) {
+                const scopedKey = activeCountryScopeKey();
+                if (scopedKey) {
+                    const parsed = parseCountrySelectionKey(scopedKey);
+                    const norm = canonicalCountryNorm(parsed?.country || '');
+                    if (norm) out.add(norm);
+                }
+            }
             return out;
         }
 
@@ -2970,6 +3061,7 @@
             if (vis <= 0.001) return 'rgba(0,0,0,0)';
 
             if (kind === 'country_outline' || kind === 'country_outline_selected') {
+                if (!showCountryLines) return 'rgba(0,0,0,0)';
                 const norm = canonicalCountryNorm(pathObj?.countryNorm || '');
                 if (activeTab === 'region') {
                     const scopedRegion = getSingleSelectedRegion() || selectedRegionForCountryScope() || getEffectiveRegionName();
@@ -2983,9 +3075,17 @@
                 if (!scope.active && scopeAlpha <= 0.001) return 'rgba(0,0,0,0)';
                 const base = countryPolyColorByName.get(norm) || '#8f9cad';
                 const yellowLike = isYellowAccentColor(base);
+                const scopedKey = activeCountryScopeKey();
                 const isSelectedCountry = Boolean(
                     norm &&
-                    [...selectedCountries].some(cKey => canonicalCountryNorm(parseCountrySelectionKey(cKey).country) === norm)
+                    (
+                        [...selectedCountries].some(cKey => canonicalCountryNorm(parseCountrySelectionKey(cKey).country) === norm) ||
+                        (
+                            !selectedCountries.size &&
+                            scopedKey &&
+                            canonicalCountryNorm(parseCountrySelectionKey(scopedKey).country) === norm
+                        )
+                    )
                 );
                 const isHoveredCountry = Boolean(norm && canonicalCountryNorm(hoveredCountryNorm || '') === norm);
                 const isSelectedOverlay = kind === 'country_outline_selected' || isSelectedCountry || isHoveredCountry;
@@ -3013,10 +3113,19 @@
         function vectorPathStrokeFor(pathObj) {
             const kind = String(pathObj?.kind || '');
             if (kind === 'country_outline' || kind === 'country_outline_selected') {
+                if (!showCountryLines) return 0;
                 const norm = canonicalCountryNorm(pathObj?.countryNorm || '');
+                const scopedKey = activeCountryScopeKey();
                 const isSelectedCountry = Boolean(
                     norm &&
-                    [...selectedCountries].some(cKey => canonicalCountryNorm(parseCountrySelectionKey(cKey).country) === norm)
+                    (
+                        [...selectedCountries].some(cKey => canonicalCountryNorm(parseCountrySelectionKey(cKey).country) === norm) ||
+                        (
+                            !selectedCountries.size &&
+                            scopedKey &&
+                            canonicalCountryNorm(parseCountrySelectionKey(scopedKey).country) === norm
+                        )
+                    )
                 );
                 const isHoveredCountry = Boolean(norm && canonicalCountryNorm(hoveredCountryNorm || '') === norm);
                 const isSelectedOverlay = kind === 'country_outline_selected' || isSelectedCountry || isHoveredCountry;
@@ -3101,14 +3210,13 @@
                     mats.forEach(mat => {
                         if (!mat) return;
                         mat.depthTest = true;
-                        mat.depthWrite = false;
+                        // Keep path depth stable across hemispheres to avoid sketchy edge jitter.
+                        mat.depthWrite = true;
                         mat.transparent = true;
-                        if (typeof THREE !== 'undefined' && THREE.DoubleSide !== undefined) {
-                            mat.side = THREE.DoubleSide;
+                        if (typeof THREE !== 'undefined' && THREE.FrontSide !== undefined) {
+                            mat.side = THREE.FrontSide;
                         }
-                        mat.polygonOffset = true;
-                        mat.polygonOffsetFactor = -0.9;
-                        mat.polygonOffsetUnits = -0.9;
+                        mat.polygonOffset = false;
                         mat.needsUpdate = true;
                     });
                     return;
@@ -3118,14 +3226,24 @@
                     obj.renderOrder = Math.max(Number(obj.renderOrder) || 0, 20);
                     mats.forEach(mat => {
                         if (!mat) return;
+                        const occlusionMode = Boolean(
+                            showAllCountryFill ||
+                            isOutlineFullyTransparentSkin() ||
+                            (activeTab === 'country' || activeTab === 'details') ||
+                            hoveredCountryNorm ||
+                            panelHoverCountryKey
+                        );
                         mat.depthTest = true;
-                        mat.depthWrite = false;
-                        if (typeof THREE !== 'undefined' && THREE.DoubleSide !== undefined) {
-                            mat.side = THREE.DoubleSide;
+                        mat.depthWrite = occlusionMode;
+                        if (typeof THREE !== 'undefined') {
+                            if (THREE.DoubleSide !== undefined) mat.side = THREE.DoubleSide;
                         }
-                        mat.polygonOffset = true;
-                        mat.polygonOffsetFactor = 0.6;
-                        mat.polygonOffsetUnits = 0.6;
+                        // Prevent fully transparent polygons from writing depth in occlusion mode.
+                        mat.alphaTest = occlusionMode ? 0.01 : 0;
+                        // Offset can introduce triangle-edge depth leakage in fill masks.
+                        mat.polygonOffset = false;
+                        mat.polygonOffsetFactor = 0;
+                        mat.polygonOffsetUnits = 0;
                         mat.needsUpdate = true;
                     });
                 }
@@ -3140,22 +3258,46 @@
             });
         }
 
+        function panelHoverCountryScopeKey() {
+            // Dash hover should isolate country only when isolate mode is enabled.
+            if (isolateCountryMode) return panelHoverCountryKey;
+            return HOVER_SCOPE_ISOLATION_ENABLED ? panelHoverCountryKey : null;
+        }
+
+        function panelHoverRegionScopeName() {
+            return HOVER_SCOPE_ISOLATION_ENABLED ? panelHoverRegionName : null;
+        }
+
         function vectorOverlayDataForTier(tier) {
             let scopedOutlines = countryOutlinePaths;
+            const hoverCountryKey = panelHoverCountryScopeKey();
+            const hoverRegionName = panelHoverRegionScopeName();
 
-            if (panelHoverCountryKey) {
-                const parsed = parseCountrySelectionKey(panelHoverCountryKey);
-                const targetNorm = canonicalCountryNorm(parsed?.country || '');
-                if (targetNorm) {
+            if (hoverCountryKey) {
+                const matchedPolys = countryPolygonMatchSetForKey(hoverCountryKey);
+                const matchedNorms = new Set();
+                matchedPolys.forEach(poly => {
+                    const norm = canonicalCountryNorm(polyCountryRawName(poly));
+                    if (norm) matchedNorms.add(norm);
+                });
+                if (matchedNorms.size) {
                     scopedOutlines = scopedOutlines.filter(path =>
-                        canonicalCountryNorm(path?.countryNorm || '') === targetNorm
+                        matchedNorms.has(canonicalCountryNorm(path?.countryNorm || ''))
                     );
+                } else {
+                    const parsed = parseCountrySelectionKey(hoverCountryKey);
+                    const targetNorm = canonicalCountryNorm(parsed?.country || '');
+                    if (targetNorm) {
+                        scopedOutlines = scopedOutlines.filter(path =>
+                            canonicalCountryNorm(path?.countryNorm || '') === targetNorm
+                        );
+                    }
                 }
-            } else if (panelHoverRegionName) {
+            } else if (hoverRegionName) {
                 scopedOutlines = scopedOutlines.filter(path => {
                     const norm = canonicalCountryNorm(path?.countryNorm || '');
                     const region = countryPolyRegionByName.get(norm) || null;
-                    return region === panelHoverRegionName;
+                    return region === hoverRegionName;
                 });
             }
 
@@ -3176,9 +3318,16 @@
                 const mode = countryDisplayScopeMode();
                 if (mode === 'country') {
                     const targetNorm = canonicalCountryNorm(parsed?.country || '');
+                    const hoverNorm = canonicalCountryNorm(hoveredCountryNorm || '');
+                    const revealHoverNorm = shouldUseGlobeHoverCountryReveal(cKey, mode) ? hoverNorm : '';
                     if (targetNorm) {
                         scopedOutlines = scopedOutlines.filter(path =>
-                            canonicalCountryNorm(path?.countryNorm || '') === targetNorm
+                            (() => {
+                                const norm = canonicalCountryNorm(path?.countryNorm || '');
+                                if (!norm) return false;
+                                if (norm === targetNorm) return true;
+                                return Boolean(revealHoverNorm && norm === revealHoverNorm);
+                            })()
                         );
                     } else {
                         scopedOutlines = [];
@@ -3219,7 +3368,24 @@
                 ? globe.pointOfView()
                 : null;
             const tier = zoomTierFromAltitude(Number(pov?.altitude));
-            if (!force && tier === vectorOverlayLastTier) {
+            const scopeSig = [
+                String(activeTab || ''),
+                String(countryDisplayScopeMode()),
+                String(hoveredCountryNorm || ''),
+                String(panelHoverRegionScopeName() || ''),
+                String(panelHoverCountryScopeKey() || ''),
+                String(panelHoverCityKey || ''),
+                String(getSingleSelectedRegion() || ''),
+                String(getSingleSelectedCountryKey() || ''),
+                String(getEffectiveRegionName() || ''),
+                String(getEffectiveCountryKey() || ''),
+                String(selectedCityKey || ''),
+                [...selectedRegions].sort().join('|'),
+                [...selectedCountries].sort().join('|'),
+                heartMode ? '1' : '0'
+            ].join('::');
+
+            if (!force && tier === vectorOverlayLastTier && scopeSig === vectorOverlayLastScopeSig) {
                 let chain = globe
                     .pathColor(d => vectorPathColorFor(d))
                     .pathStroke(d => vectorPathStrokeFor(d));
@@ -3229,6 +3395,7 @@
                 return;
             }
             vectorOverlayLastTier = tier;
+            vectorOverlayLastScopeSig = scopeSig;
             applyVectorOverlayLayer(vectorOverlayDataForTier(tier));
         }
 
@@ -3236,19 +3403,22 @@
             const allPolys = Array.isArray(countryPolygonsAll) ? countryPolygonsAll : [];
             if (!allPolys.length) return allPolys;
             if (!countryPolyRegionByName.size) return allPolys;
+            const hoverCountryKey = panelHoverCountryScopeKey();
+            const hoverRegionName = panelHoverRegionScopeName();
 
-            if (panelHoverCountryKey) {
-                const parsed = parseCountrySelectionKey(panelHoverCountryKey);
+            if (hoverCountryKey) {
+                const matchedPolys = countryPolygonMatchSetForKey(hoverCountryKey);
+                if (matchedPolys.size) {
+                    return allPolys.filter(poly => matchedPolys.has(poly));
+                }
+                const parsed = parseCountrySelectionKey(hoverCountryKey);
                 const targetNorm = canonicalCountryNorm(parsed?.country || '');
                 if (!targetNorm) return [];
-                return allPolys.filter(poly => {
-                    const norm = canonicalCountryNorm(polyCountryRawName(poly));
-                    return norm === targetNorm;
-                });
+                return allPolys.filter(poly => canonicalCountryNorm(polyCountryRawName(poly)) === targetNorm);
             }
 
-            if (panelHoverRegionName) {
-                return allPolys.filter(poly => polygonRegionNameFor(poly) === panelHoverRegionName);
+            if (hoverRegionName) {
+                return allPolys.filter(poly => polygonRegionNameFor(poly) === hoverRegionName);
             }
 
             const tab = String(activeTab || '').toLowerCase();
@@ -3264,6 +3434,10 @@
                 const parsed = parseCountrySelectionKey(cKey);
                 const mode = countryDisplayScopeMode();
                 if (mode === 'country') {
+                    if (shouldUseGlobeHoverCountryReveal(cKey, mode)) {
+                        // Keep all polygons attached so globe hover can reveal non-selected countries.
+                        return allPolys;
+                    }
                     const targetNorm = canonicalCountryNorm(parsed?.country || '');
                     if (!targetNorm) return [];
                     return allPolys.filter(poly => canonicalCountryNorm(polyCountryRawName(poly)) === targetNorm);
@@ -3312,6 +3486,8 @@
             vectorOverlayPathsAll = [];
             rebuildVectorOverlayPathSets();
             vectorOverlayLoaded = true;
+            vectorOverlayLastTier = '';
+            vectorOverlayLastScopeSig = '';
             refreshVectorOverlayForCurrentView(true);
         }
 
@@ -3649,6 +3825,27 @@
             ['zimbabwe', 'Africa']
         ]);
 
+        const REGION_NAME_PATTERNS = [
+            { re: /\bmiddle\s+east\b/i, value: 'Middle East' },
+            { re: /\bnorth\s+america\b/i, value: 'North America' },
+            { re: /\bsouth\s+america\b/i, value: 'South America' },
+            { re: /\boceania\b/i, value: 'Oceania' },
+            { re: /\beurope\b/i, value: 'Europe' },
+            { re: /\basia\b/i, value: 'Asia' },
+            { re: /\bafrica\b/i, value: 'Africa' }
+        ];
+
+        function normalizeRegionLabel(rawRegion) {
+            const raw = String(rawRegion || '').trim();
+            if (!raw || /^unknown$/i.test(raw)) return '';
+            for (const entry of REGION_NAME_PATTERNS) {
+                if (entry.re.test(raw)) return entry.value;
+            }
+            // Guard against malformed values like "Europe · 550020".
+            if (/[0-9]/.test(raw) || /[·|]/.test(raw)) return '';
+            return '';
+        }
+
         function inferRegionFromCoords(lat, lng) {
             const la = Number(lat);
             const lo = Number(lng);
@@ -3675,8 +3872,8 @@
                 if (MIDDLE_EAST_COUNTRIES.has(countryNorm)) {
                     cont = 'Middle East';
                 } else {
-                    const raw = String(city?.continent || '').trim();
-                    if (raw && raw.toLowerCase() !== 'unknown') cont = raw;
+                    const raw = normalizeRegionLabel(city?.continent);
+                    if (raw) cont = raw;
                 }
                 if (!cont) return;
 
@@ -3703,8 +3900,8 @@
         function regionForCity(city) {
             const countryNorm = normalizeCountryName(city?.country || '');
             if (MIDDLE_EAST_COUNTRIES.has(countryNorm)) return 'Middle East';
-            const raw = String(city?.continent || '').trim();
-            if (raw && raw.toLowerCase() !== 'unknown') return raw;
+            const raw = normalizeRegionLabel(city?.continent);
+            if (raw) return raw;
 
             const byOverride = COUNTRY_CONTINENT_OVERRIDES.get(countryNorm);
             if (byOverride) return byOverride;
@@ -3846,6 +4043,8 @@
         }
 
         function tierAltitudeForMode(mode, fallback = null) {
+            const fb = Number(fallback);
+            if (Number.isFinite(fb)) return Math.max(0.08, Math.min(2.6, fb));
             const m = String(mode || '').toLowerCase();
             if (m === 'continent' || m === 'region' || m === 'world') return ZOOM_TIER_ALT.region;
             if (m === 'country') return ZOOM_TIER_ALT.country;
@@ -3926,12 +4125,36 @@
                 sumLngY += Math.sin(r);
             });
 
-            const centerLat = sumLat / pts.length;
-            const centerLng = Math.atan2(sumLngY, sumLngX) * 180 / Math.PI;
+            let centerLat = sumLat / pts.length;
+            let centerLng = Math.atan2(sumLngY, sumLngX) * 180 / Math.PI;
             const latSpan = Math.max(0.5, maxLat - minLat);
             const lngSpanRaw = Math.max(0.5, maxLng - minLng);
             const lngSpan = lngSpanRaw > 180 ? (360 - lngSpanRaw) : lngSpanRaw;
-            const span = Math.max(latSpan, lngSpan * 0.85);
+            let span = Math.max(latSpan, lngSpan * 0.85);
+
+            // Keep Oceania framing centered around Australia for both selection and hover preview.
+            if (mode === 'continent') {
+                const regionVotes = new Map();
+                (cities || []).forEach(city => {
+                    const region = regionForCity(city);
+                    if (!region) return;
+                    regionVotes.set(region, (regionVotes.get(region) || 0) + 1);
+                });
+                let dominantRegion = '';
+                let dominantCount = 0;
+                regionVotes.forEach((count, region) => {
+                    if (count > dominantCount) {
+                        dominantRegion = region;
+                        dominantCount = count;
+                    }
+                });
+                if (dominantRegion === 'Oceania' && dominantCount > 0) {
+                    centerLat = -25.0;
+                    centerLng = 134.0;
+                    span = Math.max(span * 0.72, 27);
+                }
+            }
+
             const altitude = (mode === 'continent')
                 ? Math.max(0.55, Math.min(1.95, 0.50 + (span / 28)))
                 : Math.max(0.32, Math.min(1.10, 0.30 + (span / 70)));
@@ -4405,10 +4628,10 @@
             let cutMax = Number(raw.cutMax);
             const activeId = String(raw.activeId || '');
 
-            if (!Number.isFinite(cutMin)) cutMin = 60;
-            if (!Number.isFinite(cutMax)) cutMax = 85;
-            if (!Number.isFinite(nightIdeal)) nightIdeal = 65;
-            if (!Number.isFinite(dayIdeal)) dayIdeal = 75;
+            if (!Number.isFinite(cutMin)) cutMin = 50;
+            if (!Number.isFinite(cutMax)) cutMax = 90;
+            if (!Number.isFinite(nightIdeal)) nightIdeal = 60;
+            if (!Number.isFinite(dayIdeal)) dayIdeal = 80;
 
             const loBound = -60;
             const hiBound = 160;
@@ -4455,11 +4678,19 @@
             const cutMaxInput = document.getElementById('pref-cut-max');
             const weightInput = document.getElementById('pref-weight');
             const bounds = tempSliderBoundsForUnit(prefTempUnit);
+            const stateProfile = (prefDraftProfileF && Number.isFinite(Number(prefDraftProfileF.cutMin)))
+                ? prefDraftProfileF
+                : {
+                    cutMin: prefCutoffMinTemp,
+                    nightIdeal: prefIdealNightTemp,
+                    dayIdeal: prefIdealDayTemp,
+                    cutMax: prefCutoffMaxTemp
+                };
             const profile = normalizeTempProfileF({
-                cutMin: prefCutoffMinTemp,
-                nightIdeal: prefIdealNightTemp,
-                dayIdeal: prefIdealDayTemp,
-                cutMax: prefCutoffMaxTemp
+                cutMin: stateProfile.cutMin,
+                nightIdeal: stateProfile.nightIdeal,
+                dayIdeal: stateProfile.dayIdeal,
+                cutMax: stateProfile.cutMax
             });
 
             const write = (el, valueF) => {
@@ -4475,7 +4706,7 @@
             write(dayIdealInput, profile.dayIdeal);
             write(cutMaxInput, profile.cutMax);
             if (weightInput) weightInput.value = String(1 - prefTempWeight);
-            syncTempProfileSliderUi();
+            syncTempProfileSliderUi('', { preferProfileF: profile });
         }
 
         function setPrefTemperatureUnit(next, opts = {}) {
@@ -4484,12 +4715,27 @@
             const persist = options.persist !== false;
             const refresh = options.refresh !== false;
 
-            const cfg = readPrefsFromInputs();
-            prefCutoffMinTemp = cfg.cutMin;
-            prefCutoffMaxTemp = cfg.cutMax;
-            prefIdealNightTemp = cfg.nightIdeal;
-            prefIdealDayTemp = cfg.dayIdeal;
-            prefTempWeight = cfg.tempWeight;
+            const draftProfile = normalizeTempProfileF(
+                (prefDraftProfileF && Number.isFinite(Number(prefDraftProfileF.cutMin)))
+                    ? prefDraftProfileF
+                    : {
+                        cutMin: prefCutoffMinTemp,
+                        cutMax: prefCutoffMaxTemp,
+                        nightIdeal: prefIdealNightTemp,
+                        dayIdeal: prefIdealDayTemp
+                    }
+            );
+            prefDraftProfileF = {
+                cutMin: draftProfile.cutMin,
+                nightIdeal: draftProfile.nightIdeal,
+                dayIdeal: draftProfile.dayIdeal,
+                cutMax: draftProfile.cutMax
+            };
+            prefCutoffMinTemp = prefDraftProfileF.cutMin;
+            prefCutoffMaxTemp = prefDraftProfileF.cutMax;
+            prefIdealNightTemp = prefDraftProfileF.nightIdeal;
+            prefIdealDayTemp = prefDraftProfileF.dayIdeal;
+            prefTempWeight = 1 - Math.max(0, Math.min(1, Number(document.getElementById('pref-weight')?.value || (1 - prefTempWeight))));
 
             prefTempUnit = normalized;
             setPrefInputsFromState();
@@ -4624,6 +4870,66 @@
             return isOutlineTransparentSkin() || isOutlineFullyTransparentSkin() || isOutlineCircleSkin();
         }
 
+        function bodyBackgroundHex() {
+            const bg = (
+                typeof window !== 'undefined' &&
+                typeof document !== 'undefined' &&
+                document.body
+            ) ? window.getComputedStyle(document.body).backgroundColor : '#edf1f6';
+            const rgb = parseRgbColor(bg || '#edf1f6');
+            return rgbToHex(rgb);
+        }
+
+        function shouldOccludeOceanForCountryFill() {
+            const mode = normalizeGlobeSkinMode(globeSkinMode);
+            if (!(mode === 'outline_fully_transparent' || mode === 'outline_transparent')) return false;
+            if (!showCountryLines && !showAllCountryFill) return false;
+            if (showAllCountryFill) return true;
+            if (panelHoverCountryKey || panelHoverRegionName || hoveredCountryNorm || hoveredCountryKey) return true;
+            if ((activeTab === 'country' || activeTab === 'details') && activeCountryScopeKey()) return true;
+            if (activeTab === 'region' && selectedRegions.size) return true;
+            return false;
+        }
+
+        function syncGlobeOceanOcclusionMask() {
+            if (typeof globe === 'undefined' || !globe || typeof THREE === 'undefined') return;
+            const mode = normalizeGlobeSkinMode(globeSkinMode);
+            const mat = globe.globeMaterial();
+            if (!mat) return;
+
+            const transparentOutlineMode = (mode === 'outline_fully_transparent' || mode === 'outline_transparent');
+            if (!transparentOutlineMode) {
+                // Restore normal globe material behavior outside transparent-outline skins.
+                mat.colorWrite = true;
+                mat.depthWrite = true;
+                mat.depthTest = true;
+                mat.alphaTest = 0;
+                mat.needsUpdate = true;
+                return;
+            }
+
+            const occlude = shouldOccludeOceanForCountryFill();
+            if (occlude) {
+                // Depth-only ocean mask: keeps the globe visually transparent while
+                // preventing far-side polygons/fills from leaking through ocean pixels.
+                mat.transparent = false;
+                mat.opacity = 1.0;
+                mat.colorWrite = false;
+                mat.depthWrite = true;
+                mat.depthTest = true;
+                mat.alphaTest = 0;
+            } else {
+                // Fully transparent baseline with no depth contribution.
+                mat.transparent = true;
+                mat.opacity = 0.0;
+                mat.colorWrite = false;
+                mat.depthWrite = false;
+                mat.depthTest = true;
+                mat.alphaTest = 0;
+            }
+            mat.needsUpdate = true;
+        }
+
         function ensureGlobeEdgeRing() {
             if (globeEdgeRingReady) return;
             globeEdgeRingReady = true;
@@ -4746,6 +5052,7 @@
                 if ('shininess' in mat) mat.shininess = 5;
             }
             mat.needsUpdate = true;
+            syncGlobeOceanOcclusionMask();
 
             updateCountryPolygonColors();
             refreshPointStyling();
@@ -6180,6 +6487,14 @@
             return [...selectedCountries][0] || null;
         }
 
+        function activeCountryScopeKey() {
+            const selected = getSingleSelectedCountryKey();
+            if (selected) return selected;
+            const tab = String(activeTab || '').toLowerCase();
+            if (!(tab === 'country' || tab === 'details')) return null;
+            return getEffectiveCountryKey() || null;
+        }
+
         function normalizeCountryParentScope(scope) {
             const s = String(scope || '').toLowerCase();
             if (s === 'world' || s === 'region' || s === 'country') return s;
@@ -6187,7 +6502,8 @@
         }
 
         function setCountrySelectionParentScope(scope) {
-            const normalized = normalizeCountryParentScope(scope) || 'country';
+            const fallback = isolateCountryMode ? 'country' : 'world';
+            const normalized = normalizeCountryParentScope(scope) || fallback;
             countrySelectionParentScope = normalized;
         }
 
@@ -6198,11 +6514,14 @@
             if (tab === 'region') return 'region';
             if (tab === 'world') return 'world';
             if (
-                tab === 'country' &&
+                (tab === 'country' || tab === 'details') &&
                 (countrySelectionParentScope === 'region' || countrySelectionParentScope === 'world')
             ) {
                 return countrySelectionParentScope;
             }
+            // When isolate is off, ambiguous dashboard actions should not
+            // silently fall back to country-only scope.
+            if (!isolateCountryMode) return 'world';
             return 'country';
         }
 
@@ -6215,11 +6534,24 @@
         }
 
         function countryDisplayScopeMode() {
-            if (!selectedCountries.size) return 'world';
-            const normalized = normalizeCountryParentScope(countrySelectionParentScope) || 'country';
+            if (!activeCountryScopeKey()) return 'world';
+            if (isolateCountryMode) return 'country';
+            const normalized = normalizeCountryParentScope(countrySelectionParentScope);
             if (normalized === 'region') return 'region';
             if (normalized === 'world') return 'world';
-            return 'country';
+            // Non-isolate mode should never default back to country-only.
+            return 'world';
+        }
+
+        function syncViewToggleInputs() {
+            const isolateInput = document.getElementById('toggle-isolate-country');
+            const linesInput = document.getElementById('toggle-country-lines');
+            const citiesInput = document.getElementById('toggle-cities');
+            const fillInput = document.getElementById('toggle-country-fill');
+            if (isolateInput) isolateInput.checked = Boolean(isolateCountryMode);
+            if (linesInput) linesInput.checked = Boolean(showCountryLines);
+            if (citiesInput) citiesInput.checked = Boolean(showCityPoints);
+            if (fillInput) fillInput.checked = Boolean(showAllCountryFill);
         }
 
         function rememberLastSelections() {
@@ -6582,9 +6914,7 @@
             setTab('country');
             refreshPointStyling();
             renderRankings();
-            if (!wasRecentPanelHoverZoom('country', cKey, 1200)) {
-                fitCameraToCities(citiesInCountryKey(cKey), 980, { mode: 'country' });
-            }
+            fitCameraToCountryScope(cKey, 980);
         }
 
         function goUpOneSelectionLevel() {
@@ -6600,7 +6930,7 @@
                 setTab('country');
                 refreshPointStyling();
                 renderRankings();
-                fitCameraToCities(citiesInCountryKey(st.country.key), 900, { mode: 'country' });
+                fitCameraToCountryScope(st.country.key, 900);
                 return;
             }
             if (st.level === 'country' && st.region) {
@@ -7197,23 +7527,43 @@
             return rgbToRgba(baseRgb, a);
         }
 
+        function isStrictCountryIsolateMode(scopedCountryKey = null, mode = '') {
+            const scoped = scopedCountryKey || activeCountryScopeKey();
+            if (!scoped || !isolateCountryMode) return false;
+            const effectiveMode = String(mode || countryDisplayScopeMode());
+            return effectiveMode === 'country';
+        }
+
+        function shouldUseGlobeHoverCountryReveal(scopedCountryKey = null, mode = '') {
+            if (!isStrictCountryIsolateMode(scopedCountryKey, mode)) return false;
+            // Panel hover previews should not drive isolate reveal; this is for direct globe hover.
+            if (panelHoverCountryKey || panelHoverRegionName || panelHoverCityKey) return false;
+            return true;
+        }
+
         function pointScopeEmphasis(city) {
             const region = regionForCity(city);
             const cKey = countrySelectionKey(region, city?.country || 'Unknown');
+            const scopedCountryKey = activeCountryScopeKey();
             const hoveredNorm = canonicalCountryNorm(hoveredCountryNorm || '');
             const cityNorm = canonicalCountryNorm(city?.country || '');
-            const hoveredCountryMatch = Boolean(hoveredNorm && cityNorm && hoveredNorm === cityNorm);
+            const allowHoverCountryBlend =
+                !isStrictCountryIsolateMode(scopedCountryKey) ||
+                shouldUseGlobeHoverCountryReveal(scopedCountryKey);
+            const hoveredCountryMatch = Boolean(allowHoverCountryBlend && hoveredNorm && cityNorm && hoveredNorm === cityNorm);
+            const hoverCountryKey = panelHoverCountryScopeKey();
+            const hoverRegionName = panelHoverRegionScopeName();
             const regionTabActive = (activeTab === 'region');
             const regionTabScope = regionTabActive
                 ? (getSingleSelectedRegion() || selectedRegionForCountryScope() || getEffectiveRegionName() || null)
                 : null;
-            if (panelHoverCityKey || panelHoverCountryKey || panelHoverRegionName) {
-                if (panelHoverCountryKey) {
-                    const active = cKey === panelHoverCountryKey;
+            if (panelHoverCityKey || hoverCountryKey || hoverRegionName) {
+                if (hoverCountryKey) {
+                    const active = cKey === hoverCountryKey;
                     return active ? { active: true, alpha: 1, sat: 1 } : { active: false, alpha: 0, sat: 0 };
                 }
-                if (panelHoverRegionName) {
-                    const active = region === panelHoverRegionName;
+                if (hoverRegionName) {
+                    const active = region === hoverRegionName;
                     return active ? { active: true, alpha: 1, sat: 1 } : { active: false, alpha: 0, sat: 0 };
                 }
             }
@@ -7225,15 +7575,16 @@
                 const active = region === regionTabScope;
                 return active ? { active: true, alpha: 1, sat: 1 } : { active: false, alpha: 0, sat: 0 };
             }
-            if (selectedCountries.size) {
+            if (scopedCountryKey) {
                 const mode = countryDisplayScopeMode();
                 if (mode === 'world') return { active: true, alpha: 1, sat: 1 };
                 if (mode === 'region') {
-                    const scopedRegion = selectedRegionForCountryScope();
+                    const parsed = parseCountrySelectionKey(scopedCountryKey);
+                    const scopedRegion = parsed?.region || selectedRegionForCountryScope() || getEffectiveRegionName() || null;
                     const active = Boolean((scopedRegion && region === scopedRegion) || hoveredCountryMatch);
                     return active ? { active: true, alpha: 1, sat: 1 } : { active: false, alpha: 0, sat: 0 };
                 }
-                const active = selectedCountries.has(cKey) || hoveredCountryMatch;
+                const active = (cKey === scopedCountryKey) || hoveredCountryMatch;
                 return active ? { active: true, alpha: 1, sat: 1 } : { active: false, alpha: 0, sat: 0 };
             }
             if (selectedRegions.size) {
@@ -7254,8 +7605,14 @@
         function countryOutlineScopeEmphasis(countryNorm) {
             const norm = canonicalCountryNorm(countryNorm);
             if (!norm) return { active: false, alpha: 0 };
+            const scopedCountryKey = activeCountryScopeKey();
             const hoveredNorm = canonicalCountryNorm(hoveredCountryNorm || '');
-            const hoveredCountryMatch = Boolean(hoveredNorm && norm === hoveredNorm);
+            const allowHoverCountryBlend =
+                !isStrictCountryIsolateMode(scopedCountryKey) ||
+                shouldUseGlobeHoverCountryReveal(scopedCountryKey);
+            const hoveredCountryMatch = Boolean(allowHoverCountryBlend && hoveredNorm && norm === hoveredNorm);
+            const hoverCountryKey = panelHoverCountryScopeKey();
+            const hoverRegionName = panelHoverRegionScopeName();
             const regionTabActive = (activeTab === 'region');
             const regionTabScope = regionTabActive
                 ? (getSingleSelectedRegion() || selectedRegionForCountryScope() || getEffectiveRegionName() || null)
@@ -7266,13 +7623,13 @@
             if (heartMode && !cKey) {
                 return { active: false, alpha: 0 };
             }
-            if (panelHoverCityKey || panelHoverCountryKey || panelHoverRegionName) {
-                if (panelHoverCountryKey) {
-                    const active = Boolean(cKey && cKey === panelHoverCountryKey);
+            if (panelHoverCityKey || hoverCountryKey || hoverRegionName) {
+                if (hoverCountryKey) {
+                    const active = Boolean(cKey && cKey === hoverCountryKey);
                     return active ? { active: true, alpha: 1 } : { active: false, alpha: 0 };
                 }
-                if (panelHoverRegionName) {
-                    const active = Boolean(region && region === panelHoverRegionName);
+                if (hoverRegionName) {
+                    const active = Boolean(region && region === hoverRegionName);
                     return active ? { active: true, alpha: 1 } : { active: false, alpha: 0 };
                 }
             }
@@ -7285,15 +7642,16 @@
                 return active ? { active: true, alpha: 1 } : { active: false, alpha: 0 };
             }
 
-            if (selectedCountries.size) {
+            if (scopedCountryKey) {
                 const mode = countryDisplayScopeMode();
                 if (mode === 'world') return { active: true, alpha: 1 };
                 if (mode === 'region') {
-                    const scopedRegion = selectedRegionForCountryScope();
+                    const parsed = parseCountrySelectionKey(scopedCountryKey);
+                    const scopedRegion = parsed?.region || selectedRegionForCountryScope() || getEffectiveRegionName() || null;
                     const active = Boolean((region && scopedRegion && region === scopedRegion) || hoveredCountryMatch);
                     return active ? { active: true, alpha: 1 } : { active: false, alpha: 0 };
                 }
-                const active = Boolean((cKey && selectedCountries.has(cKey)) || hoveredCountryMatch);
+                const active = Boolean((cKey && cKey === scopedCountryKey) || hoveredCountryMatch);
                 return active ? { active: true, alpha: 1 } : { active: false, alpha: 0 };
             }
             if (selectedRegions.size) {
@@ -7385,8 +7743,17 @@
 
         function refreshSonarRings(filteredCities = null) {
             if (typeof globe === 'undefined' || !globe || typeof globe.ringsData !== 'function') return;
+            if (!showCityPoints) {
+                globe.ringsData([]);
+                return;
+            }
             const source = Array.isArray(filteredCities) ? filteredCities : getFilteredCities();
-            const rings = buildSonarRingData(source);
+            const visible = source.filter(city => {
+                const scope = pointScopeEmphasis(city);
+                const alpha = Number.isFinite(Number(scope?.alpha)) ? Number(scope.alpha) : (scope?.active ? 1 : 0);
+                return Boolean(scope?.active) && alpha > 0.001;
+            });
+            const rings = buildSonarRingData(visible);
             globe.ringsData(rings);
         }
 
@@ -7458,11 +7825,16 @@
             return radius;
         }
 
-        function queueRefreshPointStyling() {
+        function queueRefreshPointStyling(opts = {}) {
+            if (Boolean(opts?.rebindData)) {
+                pointStylingRebindPending = true;
+            }
             if (pointStylingRefreshRaf) return;
             pointStylingRefreshRaf = requestAnimationFrame(() => {
                 pointStylingRefreshRaf = 0;
-                refreshPointStyling({ refreshRings: false, rebindData: false });
+                const rebindData = pointStylingRebindPending;
+                pointStylingRebindPending = false;
+                refreshPointStyling({ refreshRings: false, rebindData });
             });
         }
 
@@ -7486,7 +7858,8 @@
             const refreshRings = opts.refreshRings !== false;
             const rebindData = opts.rebindData !== false;
             const filtered = rebindData ? getFilteredCities() : null;
-            if (rebindData) globe.pointsData(filtered);
+            const visiblePoints = showCityPoints ? filtered : [];
+            if (rebindData) globe.pointsData(visiblePoints);
             const filteredPolys = getFilteredCountryPolygons();
             if (typeof globe.polygonsData === 'function') globe.polygonsData(filteredPolys);
             globe
@@ -7497,6 +7870,8 @@
                 .polygonSideColor(poly => polygonSideColorFor(poly))
                 .polygonStrokeColor(poly => polygonStrokeColorFor(poly))
                 .polygonAltitude(poly => polygonAltitudeFor(poly));
+            syncGlobeOceanOcclusionMask();
+            queueGlobeLayerDepthOverrides();
             if (vectorOverlayLoaded) refreshVectorOverlayForCurrentView(false);
             if (refreshRings) refreshSonarRings(rebindData ? filtered : null);
             updateCityLabels();
@@ -7523,9 +7898,7 @@
 
         function zoomPreviewToCountry(cKey, durationMs = 620) {
             if (!cKey) return;
-            const cities = citiesInCountryKey(cKey);
-            if (!cities.length) return;
-            fitCameraToCities(cities, durationMs, { mode: 'country' });
+            fitCameraToCountryKey(cKey, durationMs);
         }
 
         function zoomPreviewToRegion(regionName, durationMs = 700) {
@@ -7570,10 +7943,13 @@
                 panelHoverCameraKey = token;
                 panelHoverCameraAt = now;
                 setHoveredCityKey(null);
-                setHoveredCountryNorm(canonicalCountryNorm(parsed?.country || ''));
+                setHoveredCountryNorm(canonicalCountryNorm(parsed?.country || ''), cKey);
                 if (pinnedTooltipCityKey) clearPinnedTooltip();
                 refreshPointStyling();
-                zoomPreviewToCountry(cKey);
+                // Keep camera steady in strict isolate mode; hover should add fill, not thrash framing.
+                if (!isStrictCountryIsolateMode(getEffectiveCountryKey() || getSingleSelectedCountryKey())) {
+                    zoomPreviewToCountry(cKey);
+                }
                 return;
             }
             if (kind === 'region') {
@@ -7614,8 +7990,10 @@
 
         function clearTransientInteractionState(opts = {}) {
             const suppressRefresh = Boolean(opts?.suppressRefresh);
+            const clearActivationGates = Boolean(opts?.clearActivationGates);
             const hadTransientState = Boolean(
                 hoveredCountryNorm ||
+                hoveredCountryKey ||
                 hoveredCityKey ||
                 panelHoverCityKey ||
                 panelHoverCountryKey ||
@@ -7640,9 +8018,13 @@
             panelHoverZoomAt = 0;
             panelHoverCameraKey = '';
             panelHoverCameraAt = 0;
-            clearPanelHoverActivationGate();
+            if (clearActivationGates) {
+                clearPanelHoverActivationGate();
+                clearGlobeHoverActivationGate();
+            }
 
             hoveredCountryNorm = null;
+            hoveredCountryKey = null;
             hoveredCityKey = null;
             hoveredCityRef = null;
             lastGlobeSurfaceClickAt = 0;
@@ -7661,16 +8043,51 @@
             panelHoverGateY = NaN;
         }
 
+        function clearGlobeHoverActivationGate() {
+            globeHoverActivationGate = false;
+            globeHoverGateX = NaN;
+            globeHoverGateY = NaN;
+        }
+
+        function armGlobeHoverActivationGate(evt) {
+            const x = Number(evt?.clientX);
+            const y = Number(evt?.clientY);
+            if (!Number.isFinite(x) || !Number.isFinite(y)) {
+                clearGlobeHoverActivationGate();
+                return;
+            }
+            globeHoverActivationGate = true;
+            globeHoverGateX = x;
+            globeHoverGateY = y;
+        }
+
+        function shouldSuppressGlobeHoverForEvent(evt = null) {
+            if (!globeHoverActivationGate) return false;
+            const x = Number(evt?.clientX);
+            const y = Number(evt?.clientY);
+            if (Number.isFinite(x) && Number.isFinite(y) && Number.isFinite(globeHoverGateX) && Number.isFinite(globeHoverGateY)) {
+                const dx = x - globeHoverGateX;
+                const dy = y - globeHoverGateY;
+                if ((dx * dx + dy * dy) >= (GLOBE_HOVER_REARM_PX * GLOBE_HOVER_REARM_PX)) {
+                    clearGlobeHoverActivationGate();
+                    return false;
+                }
+            }
+            return true;
+        }
+
         function armPanelHoverActivationGate(evt) {
             const x = Number(evt?.clientX);
             const y = Number(evt?.clientY);
             if (!Number.isFinite(x) || !Number.isFinite(y)) {
                 clearPanelHoverActivationGate();
+                clearGlobeHoverActivationGate();
                 return;
             }
             panelHoverActivationGate = true;
             panelHoverGateX = x;
             panelHoverGateY = y;
+            armGlobeHoverActivationGate(evt);
         }
 
         function shouldSuppressPanelHoverForEvent(evt = null) {
@@ -7992,7 +8409,6 @@
             }
 
             let detail = regionForCity(city);
-            if (city.zip) detail += '  ·  ' + city.zip;
             tooltip.querySelector('.detail').textContent = detail;
             tooltip.style.display = 'block';
         }
@@ -8169,20 +8585,23 @@
             return true;
         }
 
-        function setHoveredCountryNorm(nextNorm) {
+        function setHoveredCountryNorm(nextNorm, nextCountryKey = null) {
             const next = nextNorm || null;
-            if (hoveredCountryNorm === next) return;
+            const nextKey = nextCountryKey ? String(nextCountryKey) : null;
+            if (hoveredCountryNorm === next && hoveredCountryKey === nextKey) return;
             hoveredCountryNorm = next;
+            hoveredCountryKey = nextKey;
             setHoveredCityKey(null);
-            queueRefreshPointStyling();
+            queueRefreshPointStyling({ rebindData: shouldUseGlobeHoverCountryReveal() });
             hideCountryTooltip();
         }
 
         function clearHoveredCountryNorm() {
-            if (!hoveredCountryNorm) return;
+            if (!hoveredCountryNorm && !hoveredCountryKey) return;
             hoveredCountryNorm = null;
+            hoveredCountryKey = null;
             setHoveredCityKey(null);
-            queueRefreshPointStyling();
+            queueRefreshPointStyling({ rebindData: shouldUseGlobeHoverCountryReveal() });
             hideCountryTooltip();
         }
 
@@ -8215,10 +8634,30 @@
                 return universe.filter(c => regionForCity(c) === scopedRegion);
             }
             if (tab === 'country' || tab === 'details') {
-                // Keep country/detail deterministic: render only active country scope
-                // unless we truly have no country context yet.
+                // Country/detail mirrors parent scope:
+                // world parent => show world, region parent => show region, country parent => isolate country.
                 const scopedCountryKey = getSingleSelectedCountryKey() || getEffectiveCountryKey();
-                if (!scopedCountryKey) return universe;
+                const mode = countryDisplayScopeMode();
+                if (mode === 'world') return universe;
+                if (mode === 'region') {
+                    const parsed = scopedCountryKey ? parseCountrySelectionKey(scopedCountryKey) : null;
+                    const scopedRegion = parsed?.region || selectedRegionForCountryScope() || getEffectiveRegionName() || null;
+                    if (!scopedRegion) return [];
+                    return universe.filter(c => regionForCity(c) === scopedRegion);
+                }
+                if (!scopedCountryKey) return [];
+                if (shouldUseGlobeHoverCountryReveal(scopedCountryKey, mode)) {
+                    const hoverMatch = hoveredCountryKey
+                        ? { cKey: hoveredCountryKey }
+                        : countrySelectionForNorm(hoveredCountryNorm);
+                    const hoverCountryKey = String(hoverMatch?.cKey || '');
+                    if (hoverCountryKey && hoverCountryKey !== scopedCountryKey) {
+                        return universe.filter(c => {
+                            const cKey = countrySelectionKey(regionForCity(c), c.country || 'Unknown');
+                            return cKey === scopedCountryKey || cKey === hoverCountryKey;
+                        });
+                    }
+                }
                 return universe.filter(c =>
                     countrySelectionKey(regionForCity(c), c.country || 'Unknown') === scopedCountryKey
                 );
@@ -8282,6 +8721,12 @@
             if (!city) return;
             clearTransientInteractionState({ suppressRefresh: true });
             const fromTab = String(activeTab || '').toLowerCase();
+            const parentScopeHint = (
+                fromTab === 'region' ? 'region'
+                : (fromTab === 'world' ? 'world'
+                    : ((fromTab === 'country' || fromTab === 'details') ? countryDisplayScopeMode() : ''))
+            );
+            const parentScope = inferCountryParentScope(parentScopeHint);
             if (fromTab === 'you') cityBackTargetTab = 'you';
             else if (fromTab === 'country' && cityBackTargetTab === 'you') {}
             else if (fromTab !== 'details') cityBackTargetTab = 'country';
@@ -8296,7 +8741,7 @@
             const cKey = countrySelectionKey(region, city.country || 'Unknown');
             selectedRegions.clear();
             selectedCountries.clear();
-            setCountrySelectionParentScope('country');
+            setCountrySelectionParentScope(parentScope);
             selectedCountries.add(cKey);
             openRegions.add(region);
             openCountries.add(cKey);
@@ -8640,7 +9085,7 @@
             fetchLiveForSelected({ cityOverride: city, force: false });
         }
 
-        function syncTempProfileSliderUi(activeId = '') {
+        function syncTempProfileSliderUi(activeId = '', opts = {}) {
             const cutMinEl = document.getElementById('pref-cut-min');
             const nightIdealEl = document.getElementById('pref-night-ideal');
             const dayIdealEl = document.getElementById('pref-day-ideal');
@@ -8666,7 +9111,10 @@
                 return Math.max(bounds.min, Math.min(bounds.max, n));
             };
 
-            const profileF = normalizeTempProfileF({
+            const preferredProfile = (opts && opts.preferProfileF)
+                ? normalizeTempProfileF(opts.preferProfileF)
+                : null;
+            const profileF = preferredProfile || normalizeTempProfileF({
                 cutMin: tempFromUiToF(readUi(cutMinEl, fallbackUi.cutMin)),
                 nightIdeal: tempFromUiToF(readUi(nightIdealEl, fallbackUi.nightIdeal)),
                 dayIdeal: tempFromUiToF(readUi(dayIdealEl, fallbackUi.dayIdeal)),
@@ -8738,6 +9186,13 @@
             setPos('pref-cut-max-label', cutMaxPct);
             setPos('pref-just-right-label', (nightPct + dayPct) * 0.5);
 
+            prefDraftProfileF = {
+                cutMin: profileF.cutMin,
+                nightIdeal: profileF.nightIdeal,
+                dayIdeal: profileF.dayIdeal,
+                cutMax: profileF.cutMax
+            };
+
             return profileF;
         }
 
@@ -8753,7 +9208,7 @@
                 cutMax: profile.cutMax,
                 nightIdeal: profile.nightIdeal,
                 dayIdeal: profile.dayIdeal,
-                tempWeight: 1 - Math.max(0, Math.min(1, Number(document.getElementById('pref-weight')?.value || 0.45)))
+                tempWeight: 1 - Math.max(0, Math.min(1, Number(document.getElementById('pref-weight')?.value || 0.50)))
             };
         }
 
@@ -8796,6 +9251,12 @@
             prefIdealNightTemp = cfg.nightIdeal;
             prefIdealDayTemp = cfg.dayIdeal;
             prefTempWeight = cfg.tempWeight;
+            prefDraftProfileF = {
+                cutMin: prefCutoffMinTemp,
+                nightIdeal: prefIdealNightTemp,
+                dayIdeal: prefIdealDayTemp,
+                cutMax: prefCutoffMaxTemp
+            };
             usePreferences = true;
             updateGlobe();
         }
@@ -8861,8 +9322,9 @@
             rankingCache.data = null;
             const filtered = getFilteredCities();
             const filteredPolys = getFilteredCountryPolygons();
+            const visiblePoints = showCityPoints ? filtered : [];
             globe
-                .pointsData(filtered)
+                .pointsData(visiblePoints)
                 .polygonsData(filteredPolys)
                 .pointColor(d => getPointColor(d))
                 .pointRadius(d => getPointRadius(d))
@@ -8871,6 +9333,7 @@
             refreshVectorOverlayForCurrentView(true);
             updateCityLabels();
             updateCountryPolygonColors();
+            updateMonthSliderVisual();
             refreshSunPanel();
             if (pinnedTooltipCityKey) {
                 const pinnedCity = allCities.find(c => cityKey(c) === pinnedTooltipCityKey);
@@ -8891,6 +9354,60 @@
             const label = document.getElementById('month-label');
             if (label) label.textContent = monthNames[m];
             updateGlobe();
+        }
+
+        function monthSliderAverageTempF() {
+            const cities = getFilteredCities();
+            const source = cities.length ? cities : getActiveCityUniverse();
+            if (!source.length) return null;
+            let tempSum = 0;
+            let tempCount = 0;
+            source.forEach(city => {
+                const p = partsForCity(city);
+                if (!p) return;
+                const temp = Number(p.dayTempF);
+                if (Number.isFinite(temp)) {
+                    tempSum += temp;
+                    tempCount += 1;
+                }
+            });
+            return tempCount ? (tempSum / tempCount) : null;
+        }
+
+        function monthSliderTempColor(tempF) {
+            const t = Number(tempF);
+            if (!Number.isFinite(t)) return '#6fb1ff';
+            const stops = [
+                { temp: 42, color: [88, 154, 241] },
+                { temp: 60, color: [118, 196, 241] },
+                { temp: 70, color: [247, 214, 88] },
+                { temp: 80, color: [244, 162, 74] },
+                { temp: 95, color: [222, 88, 64] }
+            ];
+            if (t <= stops[0].temp) return rgbToHex(stops[0].color);
+            if (t >= stops[stops.length - 1].temp) return rgbToHex(stops[stops.length - 1].color);
+            for (let i = 0; i < (stops.length - 1); i += 1) {
+                const a = stops[i];
+                const b = stops[i + 1];
+                if (t < a.temp || t > b.temp) continue;
+                const pct = (t - a.temp) / Math.max(1e-9, b.temp - a.temp);
+                return rgbToHex(mixRgb(a.color, b.color, pct));
+            }
+            return '#6fb1ff';
+        }
+
+        function updateMonthSliderVisual() {
+            const slider = document.getElementById('month-slider');
+            if (!slider) return;
+            const avgTemp = monthSliderAverageTempF();
+            const centerTemp = Number.isFinite(avgTemp) ? avgTemp : 70;
+            const left = monthSliderTempColor(centerTemp - 14);
+            const mid = monthSliderTempColor(centerTemp);
+            const right = monthSliderTempColor(centerTemp + 14);
+            const thumbBase = parseRgbColor(mid);
+            const thumb = rgbToHex(mixRgb(thumbBase, [255, 255, 255], 0.08));
+            slider.style.background = `linear-gradient(90deg, ${left} 0%, ${mid} 52%, ${right} 100%)`;
+            slider.style.setProperty('--month-thumb', thumb);
         }
 
         // Month slider
@@ -8939,13 +9456,80 @@
             return poly?.properties?.name || countryNameById.get(String(poly?.id ?? '')) || '';
         }
 
+        function countryPolygonMatchSetForKey(cKey) {
+            const key = String(cKey || '').trim();
+            if (!key) return new Set();
+            if (countryPolyMatchSetByKey.has(key)) return countryPolyMatchSetByKey.get(key);
+
+            const out = new Set();
+            const polys = Array.isArray(countryPolygonsAll) ? countryPolygonsAll : [];
+            if (!polys.length) {
+                countryPolyMatchSetByKey.set(key, out);
+                return out;
+            }
+
+            const parsed = parseCountrySelectionKey(key);
+            const targetNorm = canonicalCountryNorm(parsed?.country || '');
+            const candidateNorms = new Set();
+            if (targetNorm) candidateNorms.add(targetNorm);
+            countryPolyKeyByName.forEach((mappedKey, norm) => {
+                if (mappedKey === key && norm) candidateNorms.add(norm);
+            });
+
+            if (candidateNorms.size) {
+                polys.forEach(poly => {
+                    const polyNorm = canonicalCountryNorm(polyCountryRawName(poly));
+                    if (polyNorm && candidateNorms.has(polyNorm)) out.add(poly);
+                });
+            }
+
+            // Fallback for country name mismatches between polygon data and city/ranking data:
+            // derive ownership from country cities contained by polygon geometry.
+            if (!out.size) {
+                const cities = citiesInCountryKey(key).slice(0, 20);
+                if (cities.length) {
+                    polys.forEach(poly => {
+                        const geom = poly?.geometry;
+                        if (!geom) return;
+                        for (let i = 0; i < cities.length; i += 1) {
+                            const city = cities[i];
+                            const lat = Number(city?.lat);
+                            const lng = Number(city?.lng);
+                            if (!Number.isFinite(lat) || !Number.isFinite(lng)) continue;
+                            if (geometryContainsLatLng(geom, lat, lng)) {
+                                out.add(poly);
+                                break;
+                            }
+                        }
+                    });
+                }
+            }
+
+            countryPolyMatchSetByKey.set(key, out);
+            return out;
+        }
+
+        function polygonMatchesCountryKey(poly, cKey) {
+            const key = String(cKey || '').trim();
+            if (!poly || !key) return false;
+            const matchedPolys = countryPolygonMatchSetForKey(key);
+            if (matchedPolys && matchedPolys.size) return matchedPolys.has(poly);
+
+            const polyNorm = canonicalCountryNorm(polyCountryRawName(poly));
+            const parsed = parseCountrySelectionKey(key);
+            const selectedNorm = canonicalCountryNorm(parsed?.country || '');
+            return Boolean(polyNorm && selectedNorm && polyNorm === selectedNorm);
+        }
+
         function isPolygonCountrySelected(poly) {
-            if (!selectedCountries.size) return false;
             const norm = canonicalCountryNorm(polyCountryRawName(poly));
             if (!norm) return false;
             for (const cKey of selectedCountries) {
-                const parsed = parseCountrySelectionKey(cKey);
-                if (canonicalCountryNorm(parsed.country) === norm) return true;
+                if (polygonMatchesCountryKey(poly, cKey)) return true;
+            }
+            const scopedKey = activeCountryScopeKey();
+            if (scopedKey) {
+                if (polygonMatchesCountryKey(poly, scopedKey)) return true;
             }
             return false;
         }
@@ -8957,16 +9541,15 @@
         }
 
         function isPolygonSelectedScope(poly) {
-            if (panelHoverRegionName) {
-                return polygonRegionNameFor(poly) === panelHoverRegionName;
+            const hoverRegionName = panelHoverRegionScopeName();
+            if (hoverRegionName) {
+                return polygonRegionNameFor(poly) === hoverRegionName;
             }
-            if (selectedCountries.size) {
+            const scopedCountryKey = activeCountryScopeKey();
+            if (scopedCountryKey) {
                 const mode = countryDisplayScopeMode();
                 if (mode === 'world') return false;
-                if (mode === 'region') {
-                    const scopedRegion = selectedRegionForCountryScope();
-                    return Boolean(scopedRegion && polygonRegionNameFor(poly) === scopedRegion);
-                }
+                if (mode === 'region') return isPolygonRegionSelected(poly);
                 return isPolygonCountrySelected(poly);
             }
             if (selectedRegions.size) {
@@ -8976,7 +9559,8 @@
         }
 
         function activeRegionOutlineName() {
-            if (panelHoverRegionName) return panelHoverRegionName;
+            const hoverRegionName = panelHoverRegionScopeName();
+            if (hoverRegionName) return hoverRegionName;
             const regionScopeActive =
                 activeTab === 'region' ||
                 (activeTab === 'world' && selectedRegions.size === 1 && !selectedCountries.size);
@@ -8991,26 +9575,9 @@
         }
 
         function polygonStrokeColorFor(poly) {
-            const norm = canonicalCountryNorm(polyCountryRawName(poly));
-            if (!norm) return 'rgba(0,0,0,0)';
-            const base = countryPolyColorByName.get(norm) || '#8f9cad';
-            const scope = countryOutlineScopeEmphasis(norm);
-            const isSelectedCountry = Boolean(
-                norm &&
-                [...selectedCountries].some(cKey => canonicalCountryNorm(parseCountrySelectionKey(cKey).country) === norm)
-            );
-            const isHoveredCountry = Boolean(norm && canonicalCountryNorm(hoveredCountryNorm || '') === norm);
-            const isSelectedOverlay = isSelectedCountry || isHoveredCountry;
-            const yellowLike = isYellowAccentColor(base);
-            const scopeAlpha = scope.active ? 1 : Math.max(0, Number(scope.alpha) || 0);
-            if (!scope.active && scopeAlpha <= 0.001) return 'rgba(0,0,0,0)';
-            const boost = yellowLike ? (isSelectedOverlay ? 1.28 : 1.12) : (isSelectedOverlay ? 1.12 : 1);
-            const floor = (!scope.active && scopeAlpha <= 0.001)
-                ? 0
-                : (isSelectedOverlay
-                ? (isOutlineFullyTransparentSkin() ? 0.96 : 0.84)
-                : (isOutlineFullyTransparentSkin() ? 0.70 : 0.52));
-            return colorWithAlphaMultiplier(base, scopeAlpha * boost, floor);
+            // Country borders are rendered by vector outline paths.
+            // Keep polygon strokes off to prevent double-rendered/sketchy seams.
+            return 'rgba(0,0,0,0)';
         }
 
         function polygonAltitudeFor(poly) {
@@ -9028,12 +9595,46 @@
             return rgbToRgba(parseRgbColor(bg || '#edf1f6'), a);
         }
 
+        function shouldForceSelectedCountryFill(poly) {
+            if (!(activeTab === 'country' || activeTab === 'details')) return false;
+            if (!activeCountryScopeKey()) return false;
+            // Keep selected country filled in country/detail mode even when
+            // scope is world/region (isolate off).
+            return isPolygonCountrySelected(poly);
+        }
+
+        function isPolygonHoverFillScope(poly) {
+            // Hover should add fill highlight but must not isolate scope.
+            if (panelHoverCountryKey) {
+                return polygonMatchesCountryKey(poly, panelHoverCountryKey);
+            }
+            if (panelHoverRegionName) {
+                return polygonRegionNameFor(poly) === panelHoverRegionName;
+            }
+            if (shouldUseGlobeHoverCountryReveal()) {
+                const hoverNorm = canonicalCountryNorm(hoveredCountryNorm || '');
+                if (!hoverNorm) return false;
+                return canonicalCountryNorm(polyCountryRawName(poly)) === hoverNorm;
+            }
+            return false;
+        }
+
         function polygonCapColorFor(poly) {
+            const forceSelectedCountryFill = shouldForceSelectedCountryFill(poly);
+            const hoverFillScope = isPolygonHoverFillScope(poly);
+            if (showAllCountryFill) {
+                return selectedPolygonFillColor(1.0);
+            }
+            if (!showCountryLines) {
+                return 'rgba(0,0,0,0)';
+            }
             if (isOutlineFullyTransparentSkin()) {
                 // In fully transparent mode, only fill selected country/region scope.
-                return isPolygonSelectedScope(poly) ? selectedPolygonFillColor(1.0) : 'rgba(0,0,0,0)';
+                return (isPolygonSelectedScope(poly) || forceSelectedCountryFill || hoverFillScope)
+                    ? selectedPolygonFillColor(1.0)
+                    : 'rgba(0,0,0,0)';
             }
-            if (isPolygonSelectedScope(poly)) {
+            if (isPolygonSelectedScope(poly) || forceSelectedCountryFill || hoverFillScope) {
                 // Selected country/region gets an occlusion mask so the far side of globe is hidden.
                 return selectedPolygonFillColor(1.0);
             }
@@ -9043,11 +9644,19 @@
         }
 
         function polygonSideColorFor(poly) {
+            const forceSelectedCountryFill = shouldForceSelectedCountryFill(poly);
+            const hoverFillScope = isPolygonHoverFillScope(poly);
+            if (showAllCountryFill) {
+                return selectedPolygonFillColor(1.0);
+            }
+            if (!showCountryLines) {
+                return 'rgba(0,0,0,0)';
+            }
             if (isOutlineFullyTransparentSkin()) {
                 // Side walls cause depth haze in transparent mode; keep them off.
                 return 'rgba(0,0,0,0)';
             }
-            if (isPolygonSelectedScope(poly)) {
+            if (isPolygonSelectedScope(poly) || forceSelectedCountryFill || hoverFillScope) {
                 return selectedPolygonFillColor(1.0);
             }
             if (isOutlineTransparentSkin()) return 'rgba(246, 250, 255, 0.00)';
@@ -9056,6 +9665,8 @@
         }
 
         function updateCountryPolygonColors() {
+            countryHitMetaByPoly = new WeakMap();
+            countryPolyMatchSetByKey = new Map();
             countryPolyColorByName.clear();
             countryPolyRegionByName.clear();
             countryPolyCenterByName.clear();
@@ -9106,6 +9717,7 @@
                 .polygonSideColor(poly => polygonSideColorFor(poly))
                 .polygonStrokeColor(poly => polygonStrokeColorFor(poly))
                 .polygonAltitude(poly => polygonAltitudeFor(poly));
+            syncGlobeOceanOcclusionMask();
             queueGlobeLayerDepthOverrides();
             if (vectorOverlayLoaded) refreshVectorOverlayForCurrentView(true);
         }
@@ -9252,32 +9864,92 @@
 
             let minLat = 90;
             let maxLat = -90;
-            let sumLat = 0;
             let sumLngX = 0;
             let sumLngY = 0;
-            let minLng = 180;
-            let maxLng = -180;
 
             pts.forEach(p => {
                 minLat = Math.min(minLat, p.lat);
                 maxLat = Math.max(maxLat, p.lat);
-                minLng = Math.min(minLng, p.lng);
-                maxLng = Math.max(maxLng, p.lng);
-                sumLat += p.lat;
                 const r = p.lng * Math.PI / 180;
                 sumLngX += Math.cos(r);
                 sumLngY += Math.sin(r);
             });
 
-            const centerLat = sumLat / pts.length;
-            const centerLng = Math.atan2(sumLngY, sumLngX) * 180 / Math.PI;
+            const refLng = Math.atan2(sumLngY, sumLngX) * 180 / Math.PI;
+            let minLngUnwrapped = Infinity;
+            let maxLngUnwrapped = -Infinity;
+            pts.forEach(p => {
+                let lng = Number(p.lng);
+                while ((lng - refLng) > 180) lng -= 360;
+                while ((lng - refLng) < -180) lng += 360;
+                minLngUnwrapped = Math.min(minLngUnwrapped, lng);
+                maxLngUnwrapped = Math.max(maxLngUnwrapped, lng);
+            });
+
+            const normalizeLng = (lng) => {
+                let out = Number(lng) || 0;
+                while (out > 180) out -= 360;
+                while (out < -180) out += 360;
+                return out;
+            };
+            const centerLat = (minLat + maxLat) * 0.5;
+            const centerLng = normalizeLng((minLngUnwrapped + maxLngUnwrapped) * 0.5);
             const latSpan = Math.max(0.5, maxLat - minLat);
-            const lngSpanRaw = Math.max(0.5, maxLng - minLng);
-            const lngSpan = lngSpanRaw > 180 ? (360 - lngSpanRaw) : lngSpanRaw;
-            const span = Math.max(latSpan, lngSpan * 0.8);
-            const altitude = Math.max(0.32, Math.min(1.10, 0.30 + (span / 68)));
+            const lngSpan = Math.max(0.5, maxLngUnwrapped - minLngUnwrapped);
+            const host = document.getElementById('globe');
+            const rect = host ? host.getBoundingClientRect() : null;
+            const aspect = (rect && rect.width > 0 && rect.height > 0)
+                ? (rect.width / rect.height)
+                : 1.45;
+            const lngScale = Math.max(0.25, Math.cos(Math.abs(centerLat) * Math.PI / 180));
+            const widthEquivalentSpan = (lngSpan * lngScale) / Math.max(0.75, aspect);
+            const dominantSpan = Math.max(latSpan, widthEquivalentSpan);
+            const marginFrac = Math.max(0.03, Math.min(0.18, Number(COUNTRY_VIEW_MARGIN_FRAC) || 0.10));
+            const spanWithMargin = dominantSpan / Math.max(0.32, (1 - (marginFrac * 2)));
+            const altitude = Math.max(0.22, Math.min(1.20, 0.17 + (spanWithMargin / 78)));
             const tierAlt = tierAltitudeForMode('country', altitude);
             globe.pointOfView({ lat: centerLat, lng: centerLng, altitude: tierAlt }, durationMs);
+        }
+
+        function primaryCountryPolygonForKey(cKey) {
+            const parsed = parseCountrySelectionKey(cKey || '');
+            const targetNorm = canonicalCountryNorm(parsed?.country || '');
+            if (!targetNorm) return null;
+            let best = null;
+            let bestArea = -1;
+            const polys = Array.isArray(countryPolygonsAll) ? countryPolygonsAll : [];
+            polys.forEach(poly => {
+                const norm = canonicalCountryNorm(polyCountryRawName(poly));
+                if (norm !== targetNorm) return;
+                const pts = flattenPolygonLatLngs(poly?.geometry, []);
+                if (!pts.length) return;
+                const bb = pointsBBox(pts);
+                const area = Math.max(0.01, (bb.maxLat - bb.minLat) * (bb.maxLng - bb.minLng));
+                if (area > bestArea) {
+                    bestArea = area;
+                    best = poly;
+                }
+            });
+            return best;
+        }
+
+        function fitCameraToCountryKey(cKey, durationMs = 900) {
+            const poly = primaryCountryPolygonForKey(cKey);
+            if (poly) {
+                fitCameraToCountry(poly, durationMs);
+                return;
+            }
+            const cities = citiesInCountryKey(cKey);
+            if (cities.length) fitCameraToCities(cities, durationMs, { mode: 'country' });
+        }
+
+        function fitCameraToCountryScope(cKey, durationMs = 900) {
+            const mode = countryDisplayScopeMode();
+            if (mode === 'world' || mode === 'region') {
+                fitCameraToCountryKey(cKey, durationMs);
+                return;
+            }
+            fitCameraToCountryKey(cKey, durationMs);
         }
 
         function geoFromPointerEvent(evt) {
@@ -9341,16 +10013,212 @@
             return bestRegion;
         }
 
+        function normalizeLngAroundRef(lng, refLng) {
+            let out = Number(lng);
+            const ref = Number(refLng);
+            if (!Number.isFinite(out) || !Number.isFinite(ref)) return out;
+            while ((out - ref) > 180) out -= 360;
+            while ((out - ref) < -180) out += 360;
+            return out;
+        }
+
+        function normalizeLng180(lng) {
+            let out = Number(lng);
+            if (!Number.isFinite(out)) return out;
+            while (out > 180) out -= 360;
+            while (out < -180) out += 360;
+            return out;
+        }
+
+        function lngInWrappedRange(qLng, minLng, maxLng, pad = 0) {
+            const q = normalizeLng180(qLng);
+            const min = normalizeLng180(minLng);
+            const max = normalizeLng180(maxLng);
+            const p = Math.max(0, Number(pad) || 0);
+            if (!Number.isFinite(q) || !Number.isFinite(min) || !Number.isFinite(max)) return true;
+            const span = max - min;
+            if (span <= 180) {
+                return q >= (min - p) && q <= (max + p);
+            }
+            // Dateline-wrapped range: valid longitudes are near +/-180 and outside [min,max].
+            return q <= (min + p) || q >= (max - p);
+        }
+
+        function pointLiesOnSegment2D(px, py, ax, ay, bx, by, eps = 1e-8) {
+            const cross = ((bx - ax) * (py - ay)) - ((by - ay) * (px - ax));
+            if (Math.abs(cross) > eps) return false;
+            const dot = ((px - ax) * (bx - ax)) + ((py - ay) * (by - ay));
+            if (dot < -eps) return false;
+            const lenSq = ((bx - ax) * (bx - ax)) + ((by - ay) * (by - ay));
+            if (dot > (lenSq + eps)) return false;
+            return true;
+        }
+
+        function ringContainsLatLng(ring, qLat, qLng) {
+            if (!Array.isArray(ring) || ring.length < 3) return false;
+            const y = Number(qLat);
+            const x = normalizeLngAroundRef(Number(qLng), Number(qLng));
+            if (!Number.isFinite(x) || !Number.isFinite(y)) return false;
+            const eps = 1e-8;
+            let inside = false;
+            for (let i = 0, j = ring.length - 1; i < ring.length; j = i, i += 1) {
+                const ai = ring[i];
+                const aj = ring[j];
+                const yi = Number(ai?.[1]);
+                const yj = Number(aj?.[1]);
+                const xi = normalizeLngAroundRef(Number(ai?.[0]), Number(qLng));
+                const xj = normalizeLngAroundRef(Number(aj?.[0]), Number(qLng));
+                if (!Number.isFinite(xi) || !Number.isFinite(yi) || !Number.isFinite(xj) || !Number.isFinite(yj)) continue;
+                if (pointLiesOnSegment2D(x, y, xi, yi, xj, yj, eps)) return true;
+                const crosses = ((yi > y) !== (yj > y));
+                if (!crosses) continue;
+                const denom = (yj - yi);
+                const edgeX = xi + (((y - yi) * (xj - xi)) / (Math.abs(denom) < 1e-12 ? 1e-12 : denom));
+                if (x < (edgeX + eps)) inside = !inside;
+            }
+            return inside;
+        }
+
+        function polygonContainsLatLng(rings, qLat, qLng) {
+            if (!Array.isArray(rings) || !rings.length) return false;
+            if (!ringContainsLatLng(rings[0], qLat, qLng)) return false;
+            for (let i = 1; i < rings.length; i += 1) {
+                if (ringContainsLatLng(rings[i], qLat, qLng)) return false;
+            }
+            return true;
+        }
+
+        function geometryContainsLatLng(geometry, qLat, qLng) {
+            if (!geometry) return false;
+            const t = String(geometry.type || '');
+            if (t === 'Polygon') return polygonContainsLatLng(geometry.coordinates || [], qLat, qLng);
+            if (t === 'MultiPolygon') {
+                const polys = geometry.coordinates || [];
+                for (let i = 0; i < polys.length; i += 1) {
+                    if (polygonContainsLatLng(polys[i] || [], qLat, qLng)) return true;
+                }
+            }
+            return false;
+        }
+
+        function countrySelectionForNorm(normName, poly = null) {
+            const norm = canonicalCountryNorm(normName);
+            if (!norm) return null;
+            let cKey = countryPolyKeyByName.get(norm) || null;
+            let region = countryPolyRegionByName.get(norm) || null;
+            if (!cKey) {
+                const matches = matchingCountriesForPolygonName(norm);
+                const primary = primaryCountryMatchForPolygon(matches, poly);
+                cKey = primary?.cKey || null;
+                region = region || primary?.region || null;
+            }
+            return cKey ? { cKey, region } : null;
+        }
+
+        function countryHitMetaForPoly(poly) {
+            if (!poly || typeof poly !== 'object') return null;
+            if (countryHitMetaByPoly.has(poly)) return countryHitMetaByPoly.get(poly);
+
+            const pts = flattenPolygonLatLngs(poly?.geometry, []);
+            if (!pts.length) {
+                countryHitMetaByPoly.set(poly, null);
+                return null;
+            }
+            const bb = pointsBBox(pts);
+            const latSpan = Math.max(0.01, bb.maxLat - bb.minLat);
+            const rawLngSpan = Math.max(0.01, bb.maxLng - bb.minLng);
+            const lngSpan = Math.max(0.01, Math.min(rawLngSpan, 360 - rawLngSpan));
+            const area = Math.max(0.01, latSpan * lngSpan);
+            const norm = canonicalCountryNorm(polyCountryRawName(poly));
+            const mapped = countrySelectionForNorm(norm, poly);
+
+            const meta = mapped?.cKey
+                ? {
+                    cKey: mapped.cKey,
+                    region: mapped.region || null,
+                    minLat: bb.minLat,
+                    maxLat: bb.maxLat,
+                    minLng: bb.minLng,
+                    maxLng: bb.maxLng,
+                    rawLngSpan,
+                    area,
+                    geometry: poly?.geometry || null
+                }
+                : null;
+
+            countryHitMetaByPoly.set(poly, meta);
+            return meta;
+        }
+
+        function countryMatchForGeo(lat, lng) {
+            const qLat = Number(lat);
+            const qLng = normalizeLng180(Number(lng));
+            if (!Number.isFinite(qLat) || !Number.isFinite(qLng)) return null;
+            const polys = Array.isArray(countryPolygonsAll) ? countryPolygonsAll : [];
+            if (!polys.length) return null;
+
+            let best = null;
+            let bestArea = Infinity;
+            polys.forEach(poly => {
+                const meta = countryHitMetaForPoly(poly);
+                if (!meta || !meta.geometry) return;
+                if (qLat < (meta.minLat - 0.25) || qLat > (meta.maxLat + 0.25)) return;
+                if (Number(meta.rawLngSpan) <= 180.5 && !lngInWrappedRange(qLng, meta.minLng, meta.maxLng, 0.35)) return;
+                if (!geometryContainsLatLng(meta.geometry, qLat, qLng)) return;
+                const area = Number(meta.area);
+                if (!Number.isFinite(area)) return;
+                if (area < bestArea) {
+                    bestArea = area;
+                    best = { cKey: meta.cKey, region: meta.region };
+                }
+            });
+            return best;
+        }
+
         function zoomAround(lat, lng, altitudeFactor, durationMs = 760) {
             const dir = Number(altitudeFactor) >= 1 ? 'out' : 'in';
             stepZoomTier(dir, { lat, lng, duration: durationMs });
         }
 
+        function returnToWorldView(durationMs = 760, opts = {}) {
+            const preserveView = Boolean(opts?.preserveView);
+            const pov = (typeof globe !== 'undefined' && globe && typeof globe.pointOfView === 'function')
+                ? globe.pointOfView()
+                : null;
+            const keepLat = (preserveView && Number.isFinite(Number(pov?.lat)))
+                ? Number(pov.lat)
+                : DEFAULT_VIEW.lat;
+            const keepLng = (preserveView && Number.isFinite(Number(pov?.lng)))
+                ? Number(pov.lng)
+                : DEFAULT_VIEW.lng;
+            const keepAlt = (preserveView && Number.isFinite(Number(pov?.altitude)))
+                ? Math.max(0.22, Math.min(2.6, Number(pov.altitude)))
+                : ZOOM_TIER_ALT.region;
+            clearTransientInteractionState({ suppressRefresh: true });
+            clearPinnedTooltip();
+            clearCityFocusLock();
+            selectedRegions.clear();
+            selectedCountries.clear();
+            setCountrySelectionParentScope('world');
+            selectedCityKey = null;
+            pendingCountryFocusKey = null;
+            setRankingMode('continent');
+            clearGlobalSearchQuery();
+            lastInteractiveClickAt = Date.now();
+            setTab('world');
+            updateGlobe();
+            globe.pointOfView({ lat: keepLat, lng: keepLng, altitude: keepAlt }, durationMs);
+        }
+
         function handlePolygonCountryClick(poly, evt) {
+            const gateEvt = (evt && Number.isFinite(Number(evt.clientX)) && Number.isFinite(Number(evt.clientY)))
+                ? evt
+                : { clientX: lastMouseClientX, clientY: lastMouseClientY };
+            if (shouldSuppressGlobeHoverForEvent(gateEvt)) return;
             const clickX = Number.isFinite(evt?.clientX) ? Number(evt.clientX) : Number(lastMouseClientX);
             const clickY = Number.isFinite(evt?.clientY) ? Number(evt.clientY) : Number(lastMouseClientY);
             if (Number.isFinite(clickX) && Number.isFinite(clickY)) {
-                const nearCity = nearestCityForCursor(clickX, clickY, CITY_PROX_CLICK_PX + 4);
+                const nearCity = nearestCityForCursor(clickX, clickY, CITY_PROX_CLICK_PX);
                 if (nearCity) {
                     if (pendingPolygonSingleClickTimer) {
                         clearTimeout(pendingPolygonSingleClickTimer);
@@ -9439,10 +10307,8 @@
 
         // ---- Globe setup ----
         const globe = Globe()
-            .backgroundColor('#ffffff')
-            .showAtmosphere(true)
-            .atmosphereColor('rgba(145, 157, 172, 0.22)')
-            .atmosphereAltitude(0.10)
+            .backgroundColor('rgba(0,0,0,0)')
+            .showAtmosphere(false)
             .pointsData(allCities)
             .pointLat(d => cityRenderLat(d))
             .pointLng(d => cityRenderLng(d))
@@ -9452,8 +10318,12 @@
             .pointResolution(20)
             .pointsMerge(false)
             .onPointHover(point => {
-                if (Date.now() < suppressGlobeHoverUntil) {
+                if (
+                    Date.now() < suppressGlobeHoverUntil ||
+                    shouldSuppressGlobeHoverForEvent({ clientX: lastMouseClientX, clientY: lastMouseClientY })
+                ) {
                     setHoveredCityKey(null);
+                    setHoveredCountryNorm(null);
                     return;
                 }
                 const tooltip = document.getElementById('tooltip');
@@ -9505,17 +10375,42 @@
                 }
             })
             .onPointClick((point, evt) => {
-                if (point) {
-                    if (pendingGlobeSingleClickTimer) {
-                        clearTimeout(pendingGlobeSingleClickTimer);
-                        pendingGlobeSingleClickTimer = null;
-                    }
-                    lastGlobeSurfaceClickAt = 0;
-                    lastGlobeSurfaceClickGeo = null;
+                const gateEvt = (evt && Number.isFinite(Number(evt.clientX)) && Number.isFinite(Number(evt.clientY)))
+                    ? evt
+                    : { clientX: lastMouseClientX, clientY: lastMouseClientY };
+                if (shouldSuppressGlobeHoverForEvent(gateEvt)) return;
+                if (!point) return;
+                if (pendingGlobeSingleClickTimer) {
+                    clearTimeout(pendingGlobeSingleClickTimer);
+                    pendingGlobeSingleClickTimer = null;
+                }
+                lastGlobeSurfaceClickAt = 0;
+                lastGlobeSurfaceClickGeo = null;
+                const clickX = Number.isFinite(evt?.clientX) ? Number(evt.clientX) : Number(lastMouseClientX);
+                const clickY = Number.isFinite(evt?.clientY) ? Number(evt.clientY) : Number(lastMouseClientY);
+                const withinCityPickRadius = (
+                    Number.isFinite(clickX) &&
+                    Number.isFinite(clickY) &&
+                    isCursorNearCityDot(point, clickX, clickY, CITY_PROX_CLICK_PX)
+                );
+                if (withinCityPickRadius) {
                     selectCityFromGlobePointer(point, evt);
+                    return;
+                }
+                // Clicks near (but not on) a city should resolve to country selection.
+                const region = regionForCity(point);
+                const cKey = countrySelectionKey(region, point.country || 'Unknown');
+                if (cKey) {
+                    lastInteractiveClickAt = Date.now();
+                    const parentScope = (activeTab === 'region') ? 'region' : (activeTab === 'world' ? 'world' : '');
+                    selectCountryExclusive(cKey, { parentScope });
                 }
             })
             .onGlobeClick((evt) => {
+                const gateEvt = (evt && Number.isFinite(Number(evt.clientX)) && Number.isFinite(Number(evt.clientY)))
+                    ? evt
+                    : { clientX: lastMouseClientX, clientY: lastMouseClientY };
+                if (shouldSuppressGlobeHoverForEvent(gateEvt)) return;
                 const clickX = Number.isFinite(evt?.clientX) ? Number(evt.clientX) : Number(lastMouseClientX);
                 const clickY = Number.isFinite(evt?.clientY) ? Number(evt.clientY) : Number(lastMouseClientY);
                 const nearCity = (Number.isFinite(clickX) && Number.isFinite(clickY))
@@ -9593,6 +10488,24 @@
                     pendingGlobeSingleClickTimer = null;
                     if (Date.now() < suppressGlobeResetUntil) return;
                     if ((Date.now() - lastInteractiveClickAt) < 220) return;
+                    const clickCountryByGeo = queuedGeo
+                        ? countryMatchForGeo(queuedGeo.lat, queuedGeo.lng)
+                        : null;
+                    const clickCountry = (clickCountryByGeo?.cKey
+                        ? clickCountryByGeo
+                        : countrySelectionForNorm(hoveredCountryNorm));
+                    if (clickCountry?.cKey) {
+                        lastInteractiveClickAt = Date.now();
+                        const parentScope = (activeTab === 'region')
+                            ? 'region'
+                            : (activeTab === 'world' ? 'world' : '');
+                        selectCountryExclusive(clickCountry.cKey, { parentScope });
+                        return;
+                    }
+                    if (activeTab === 'region' && queuedGeo && !hoveredCountryNorm) {
+                        returnToWorldView(760, { preserveView: true });
+                        return;
+                    }
                     clearPinnedTooltip();
                     clearCityFocusLock();
                     const pov = globe.pointOfView();
@@ -9621,29 +10534,65 @@
         configureSonarRingLayer();
 
         const globeMaterial = globe.globeMaterial();
-        globeMaterial.color = new THREE.Color('#e6eaef');
-        globeMaterial.emissive = new THREE.Color('#d7dde5');
-        globeMaterial.emissiveIntensity = 0.03;
+        globeMaterial.color = new THREE.Color('#ffffff');
+        globeMaterial.emissive = new THREE.Color('#ffffff');
+        globeMaterial.emissiveIntensity = 0.0;
+        globeMaterial.transparent = true;
+        globeMaterial.opacity = 0.0;
+
+        const WORLD_ATLAS_COUNTRIES_URLS = [
+            'https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json',
+            'https://unpkg.com/world-atlas@2.0.2/countries-110m.json',
+            'https://unpkg.com/world-atlas@2/countries-110m.json'
+        ];
+
+        async function fetchFirstSuccessful(urls, type = 'json', fallbackValue = null) {
+            const list = Array.isArray(urls) ? urls : [urls];
+            for (const url of list) {
+                try {
+                    const res = await fetch(url, { mode: 'cors', cache: 'force-cache' });
+                    if (!res || !res.ok) continue;
+                    if (type === 'text') return await res.text();
+                    return await res.json();
+                } catch (_) {
+                    // Try next source.
+                }
+            }
+            return fallbackValue;
+        }
 
         Promise.all([
-            fetch('https://unpkg.com/world-atlas@2/countries-110m.json').then(res => res.json()),
-            fetch('https://unpkg.com/world-atlas@2/country-names.tsv').then(res => res.text()).catch(() => '')
-        ]).then(([countries, namesTsv]) => {
-            if (namesTsv) {
-                namesTsv.trim().split('\n').slice(1).forEach(line => {
-                    const [id, name] = line.split('\t');
-                    if (!id || !name) return;
-                    countryNameById.set(String(Number(id)), name.trim());
-                    countryNameById.set(String(id), name.trim());
-                });
+            fetchFirstSuccessful('/data/ne_110m_admin_0_countries.geojson', 'json', null),
+            fetchFirstSuccessful(WORLD_ATLAS_COUNTRIES_URLS, 'json', null)
+        ]).then(([localGeoJson, countries]) => {
+            let polys = [];
+            if (localGeoJson && Array.isArray(localGeoJson.features) && localGeoJson.features.length) {
+                polys = localGeoJson.features;
+            } else if (countries && countries.objects && countries.objects.countries) {
+                polys = topojson.feature(countries, countries.objects.countries).features || [];
             }
-            const polys = topojson.feature(countries, countries.objects.countries).features;
+            if (!Array.isArray(polys) || !polys.length) {
+                console.warn('Country polygon data unavailable: using empty polygon set.');
+                polys = [];
+            }
             polys.forEach(p => {
                 if (!p.properties) p.properties = {};
-                const rawName = p.properties.name || countryNameById.get(String(p.id)) || '';
+                const rawName =
+                    p.properties.name ||
+                    p.properties.NAME ||
+                    p.properties.ADMIN ||
+                    p.properties.admin ||
+                    p.properties.NAME_LONG ||
+                    p.properties.name_long ||
+                    p.properties.SOVEREIGNT ||
+                    p.properties.sovereignt ||
+                    countryNameById.get(String(p.id)) ||
+                    '';
                 if (rawName) p.properties.name = rawName;
             });
             countryPolygonsAll = polys;
+            countryHitMetaByPoly = new WeakMap();
+            countryPolyMatchSetByKey = new Map();
             countryOutlinePaths = buildCountryOutlinePathsFromPolygons(polys);
             globe
                 .polygonsData(getFilteredCountryPolygons())
@@ -9653,6 +10602,11 @@
                 .polygonAltitude(poly => polygonAltitudeFor(poly))
                 .onPolygonHover((poly) => {
                     if (Date.now() < suppressGlobeHoverUntil) {
+                        setHoveredCountryNorm(null);
+                        document.getElementById('globe').style.cursor = 'grab';
+                        return;
+                    }
+                    if (shouldSuppressGlobeHoverForEvent({ clientX: lastMouseClientX, clientY: lastMouseClientY })) {
                         setHoveredCountryNorm(null);
                         document.getElementById('globe').style.cursor = 'grab';
                         return;
@@ -9669,8 +10623,23 @@
                             return;
                         }
                     }
-                    const raw = polyCountryRawName(poly);
-                    setHoveredCountryNorm(raw ? canonicalCountryNorm(raw) : null);
+                    let nextHoverNorm = null;
+                    let nextHoverCountryKey = null;
+                    if (poly) {
+                        const raw = polyCountryRawName(poly);
+                        nextHoverNorm = raw ? canonicalCountryNorm(raw) : null;
+                        const selection = countrySelectionForNorm(raw, poly);
+                        if (selection?.cKey) nextHoverCountryKey = String(selection.cKey);
+                    } else if (shouldUseGlobeHoverCountryReveal()) {
+                        const geo = geoFromPointerEvent({ clientX: lastMouseClientX, clientY: lastMouseClientY });
+                        const hit = geo ? countryMatchForGeo(geo.lat, geo.lng) : null;
+                        if (hit?.cKey) {
+                            nextHoverCountryKey = String(hit.cKey);
+                            const parsed = parseCountrySelectionKey(hit.cKey);
+                            nextHoverNorm = canonicalCountryNorm(parsed?.country || '');
+                        }
+                    }
+                    setHoveredCountryNorm(nextHoverNorm, nextHoverCountryKey);
                     document.getElementById('globe').style.cursor = poly ? 'pointer' : 'grab';
                     globe
                         .polygonStrokeColor(p => polygonStrokeColorFor(p))
@@ -9687,6 +10656,15 @@
 
         function handleHoverPointerMove(clientX, clientY) {
             if (!Number.isFinite(clientX) || !Number.isFinite(clientY)) return;
+            if (shouldSuppressGlobeHoverForEvent({ clientX, clientY })) {
+                setHoveredCityKey(null);
+                setHoveredCountryNorm(null);
+                hideHoverTooltip();
+                const tooltip = document.getElementById('tooltip');
+                if (tooltip && !pinnedTooltipCityKey) tooltip.style.display = 'none';
+                document.getElementById('globe').style.cursor = 'grab';
+                return;
+            }
             if (isPointerOverPinnedTooltip()) {
                 setHoveredCityKey(pinnedTooltipCityKey);
                 hideHoverTooltip();
@@ -9770,9 +10748,39 @@
             });
         }
 
+        function syncMobileViewportInsetVar() {
+            const vv = window.visualViewport;
+            if (!vv) {
+                document.documentElement.style.setProperty('--mobile-vv-bottom', '0px');
+                return;
+            }
+            const bottomInset = Math.max(0, Math.round(window.innerHeight - (vv.height + vv.offsetTop)));
+            document.documentElement.style.setProperty('--mobile-vv-bottom', `${bottomInset}px`);
+        }
+
+        function syncGlobeHostLayout() {
+            const host = document.getElementById('globe');
+            const panel = document.getElementById('sun-panel');
+            if (!host) return;
+            const mobile = window.innerWidth <= 920;
+            let leftOffset = 0;
+            if (!mobile && panel) {
+                const panelRect = panel.getBoundingClientRect();
+                if (Number.isFinite(panelRect.right)) {
+                    leftOffset = Math.max(0, Math.min(Math.round(window.innerWidth * 0.62), Math.round(panelRect.right + 12)));
+                }
+            }
+            const widthPx = Math.max(1, Math.round(window.innerWidth - leftOffset));
+            host.style.left = `${leftOffset}px`;
+            host.style.width = `${widthPx}px`;
+            document.documentElement.style.setProperty('--globe-left-offset', `${leftOffset}px`);
+        }
+
         function syncGlobeViewport() {
             const host = document.getElementById('globe');
             if (!host || typeof globe.width !== 'function' || typeof globe.height !== 'function') return;
+            syncMobileViewportInsetVar();
+            syncGlobeHostLayout();
             const rect = host.getBoundingClientRect();
             const w = Math.max(1, Math.floor(rect.width || host.clientWidth || window.innerWidth));
             const h = Math.max(1, Math.floor(rect.height || host.clientHeight || window.innerHeight));
@@ -9790,6 +10798,10 @@
         }
 
         window.addEventListener('resize', syncGlobeViewport);
+        if (window.visualViewport && typeof window.visualViewport.addEventListener === 'function') {
+            window.visualViewport.addEventListener('resize', syncGlobeViewport);
+            window.visualViewport.addEventListener('scroll', syncGlobeViewport);
+        }
 
         document.addEventListener('dblclick', (e) => {
             const t = e.target;
@@ -9892,12 +10904,9 @@
             if (tab === 'country') {
                 const cKey = getEffectiveCountryKey();
                 if (cKey) {
-                    const cities = citiesInCountryKey(cKey);
-                    if (cities.length) {
-                        clearCityFocusLock();
-                        fitCameraToCities(cities, durationMs, { mode: 'country' });
-                        return;
-                    }
+                    clearCityFocusLock();
+                    fitCameraToCountryScope(cKey, durationMs);
+                    return;
                 }
                 const region = getEffectiveRegionName();
                 if (region) {
@@ -10142,6 +11151,13 @@
             armPanelHoverActivationGate(e);
             setTab(btn.dataset.tab, { zoomToScope: true });
         }));
+        ['sun-panel', 'month-panel', 'view-toggles'].forEach((id) => {
+            const el = document.getElementById(id);
+            if (!el) return;
+            const armGate = (e) => armPanelHoverActivationGate(e);
+            el.addEventListener('pointerdown', armGate, { capture: true });
+            el.addEventListener('mousedown', armGate, { capture: true });
+        });
         const rankingsModeEl = document.getElementById('rankings-mode');
         if (rankingsModeEl) {
             rankingsModeEl.addEventListener('change', (e) => {
@@ -10704,11 +11720,17 @@
         });
         function resetPrefsToStandard() {
             usePreferences = false;
-            prefCutoffMinTemp = 60;
-            prefCutoffMaxTemp = 85;
-            prefIdealNightTemp = 65;
-            prefIdealDayTemp = 75;
-            prefTempWeight = 0.55;
+            prefCutoffMinTemp = 50;
+            prefCutoffMaxTemp = 90;
+            prefIdealNightTemp = 60;
+            prefIdealDayTemp = 80;
+            prefTempWeight = 0.50;
+            prefDraftProfileF = {
+                cutMin: prefCutoffMinTemp,
+                nightIdeal: prefIdealNightTemp,
+                dayIdeal: prefIdealDayTemp,
+                cutMax: prefCutoffMaxTemp
+            };
             setPrefInputsFromState();
             updateGlobe();
             renderPrefsInfo();
@@ -10735,6 +11757,34 @@
                 setGlobeSkinMode(e?.target?.value, { persist: true, refresh: true });
             });
         }
+
+        function applyViewTogglesFromInputs() {
+            const prevIsolate = isolateCountryMode;
+            isolateCountryMode = Boolean(document.getElementById('toggle-isolate-country')?.checked);
+            showCountryLines = Boolean(document.getElementById('toggle-country-lines')?.checked);
+            showCityPoints = Boolean(document.getElementById('toggle-cities')?.checked);
+            showAllCountryFill = Boolean(document.getElementById('toggle-country-fill')?.checked);
+            if (!showCityPoints) {
+                clearPinnedTooltip();
+                hideHoverTooltip();
+                setHoveredCityKey(null);
+            }
+            updateGlobe();
+            if (
+                prevIsolate !== isolateCountryMode &&
+                (activeTab === 'country' || activeTab === 'details')
+            ) {
+                const cKey = getEffectiveCountryKey();
+                if (cKey) fitCameraToCountryScope(cKey, 720);
+            }
+        }
+        ['toggle-isolate-country', 'toggle-country-lines', 'toggle-cities', 'toggle-country-fill'].forEach(id => {
+            const el = document.getElementById(id);
+            if (!el) return;
+            el.addEventListener('change', applyViewTogglesFromInputs);
+        });
+        syncViewToggleInputs();
+
         async function pingDashboardUrl(url, timeoutMs = 700) {
             try {
                 const hasAbort = typeof AbortController !== 'undefined';
