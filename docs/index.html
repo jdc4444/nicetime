@@ -3226,13 +3226,7 @@
                     obj.renderOrder = Math.max(Number(obj.renderOrder) || 0, 20);
                     mats.forEach(mat => {
                         if (!mat) return;
-                        const occlusionMode = Boolean(
-                            showAllCountryFill ||
-                            isOutlineFullyTransparentSkin() ||
-                            (activeTab === 'country' || activeTab === 'details') ||
-                            hoveredCountryNorm ||
-                            panelHoverCountryKey
-                        );
+                        const occlusionMode = shouldOccludeOceanForCountryFill();
                         mat.depthTest = true;
                         mat.depthWrite = occlusionMode;
                         if (typeof THREE !== 'undefined') {
@@ -4885,7 +4879,6 @@
             if (!(mode === 'outline_fully_transparent' || mode === 'outline_transparent')) return false;
             if (!showCountryLines && !showAllCountryFill) return false;
             if (showAllCountryFill) return true;
-            if (panelHoverCountryKey || panelHoverRegionName || hoveredCountryNorm || hoveredCountryKey) return true;
             if ((activeTab === 'country' || activeTab === 'details') && activeCountryScopeKey()) return true;
             if (activeTab === 'region' && selectedRegions.size) return true;
             return false;
@@ -9604,18 +9597,8 @@
         }
 
         function isPolygonHoverFillScope(poly) {
-            // Hover should add fill highlight but must not isolate scope.
-            if (panelHoverCountryKey) {
-                return polygonMatchesCountryKey(poly, panelHoverCountryKey);
-            }
-            if (panelHoverRegionName) {
-                return polygonRegionNameFor(poly) === panelHoverRegionName;
-            }
-            if (shouldUseGlobeHoverCountryReveal()) {
-                const hoverNorm = canonicalCountryNorm(hoveredCountryNorm || '');
-                if (!hoverNorm) return false;
-                return canonicalCountryNorm(polyCountryRawName(poly)) === hoverNorm;
-            }
+            // Fill should only reflect explicit selection state (or all-fill toggle),
+            // never transient hover state.
             return false;
         }
 
