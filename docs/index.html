@@ -449,7 +449,7 @@
         #tooltip .niceness-row, #hover-tooltip .niceness-row { justify-content: flex-start; }
         #tooltip .niceness-score .nicebar-wrap, #hover-tooltip .niceness-score .nicebar-wrap { flex-direction: row-reverse; }
         #tooltip .metric-grid, #hover-tooltip .metric-grid { margin-top: 8px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-        #detail-card .metric-grid, #hierarchy-card .metric-grid { margin-top: 8px; display: grid; grid-template-columns: repeat(2, minmax(0, max-content)); justify-content: start; gap: 22px; }
+        #detail-card .metric-grid, #hierarchy-card .metric-grid { margin-top: 8px; display: grid; grid-template-columns: repeat(3, minmax(0, max-content)); justify-content: start; gap: 18px; }
         #tooltip .metric-box, #hover-tooltip .metric-box, #detail-card .metric-box, #hierarchy-card .metric-box { min-width: 0; text-align: left; }
         #tooltip .metric-value, #hover-tooltip .metric-value, #detail-card .metric-value, #hierarchy-card .metric-value { font-size: 22px; font-weight: 600; letter-spacing: -0.5px; line-height: 1.05; }
         #tooltip .metric-label, #hover-tooltip .metric-label, #detail-card .metric-label, #hierarchy-card .metric-label { font-size: 11px; color: #999; font-weight: 300; margin-top: 2px; }
@@ -1859,7 +1859,7 @@
         .rank-card-metrics {
             margin-top: 8px;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 10px;
         }
         .rank-card-metric { min-width: 0; }
@@ -2088,13 +2088,6 @@
         <button id="zoom-in-btn" type="button" title="Zoom in">+</button>
         <button id="zoom-out-btn" type="button" title="Zoom out">−</button>
     </div>
-    <div id="view-toggles" aria-label="Map display toggles">
-        <label><input id="toggle-isolate-country" type="checkbox">Isolate Country</label>
-        <label><input id="toggle-country-lines" type="checkbox" checked>Country Lines</label>
-        <label><input id="toggle-cities" type="checkbox" checked>Cities</label>
-        <label><input id="toggle-country-fill" type="checkbox">Country Fill</label>
-    </div>
-
     <aside id="sun-panel">
         <div class="sun-head">
             <div>
@@ -2392,7 +2385,7 @@
         let allYellowNoOrangeMode = false;
         let globeSkinMode = 'outline_fully_transparent';
         let currentSort = { key: 'niceness', dir: 'desc' };
-        let isolateCountryMode = false;
+        let isolateCountryMode = true;
         const HOVER_SCOPE_ISOLATION_ENABLED = false;
         let showCountryLines = true;
         let showCityPoints = true;
@@ -5356,11 +5349,15 @@
                             <div class="rank-card-metric-label">Day Temp</div>
                         </div>
                         <div class="rank-card-metric">
+                            <div class="rank-card-metric-value" style="color:${tempTextColorF(row?.nightTempF)}">${fmtWholeUnit(row?.nightTempF, 'F')}</div>
+                            <div class="rank-card-metric-label">Night Temp</div>
+                        </div>
+                        <div class="rank-card-metric">
                             <div class="rank-card-metric-value" style="color:${sunnyTextColor(row?.sunnyDays30)}">${fmtWhole(row?.sunnyDays30)}</div>
                             <div class="rank-card-metric-label">Sunny Days</div>
                         </div>
                     </div>
-                    <div class="rank-card-detail">Night ${fmtWholeUnit(row?.nightTempF, 'F')} · Day Length ${fmtWholeUnit(row?.dayLengthHrs, 'h')} · ${formatDistance(row?.distKm)}</div>
+                    <div class="rank-card-detail">Gray ${fmtWhole(row?.badDays30)} days · Day Length ${fmtWholeUnit(row?.dayLengthHrs, 'h')} · ${formatDistance(row?.distKm)}</div>
                 </div>
             `.trim();
         }
@@ -5381,11 +5378,15 @@
                             <div class="rank-card-metric-label">Avg Day Temp</div>
                         </div>
                         <div class="rank-card-metric">
+                            <div class="rank-card-metric-value" style="color:${tempTextColorF(row?.avgNight)}">${fmtWholeUnit(row?.avgNight, 'F')}</div>
+                            <div class="rank-card-metric-label">Avg Night Temp</div>
+                        </div>
+                        <div class="rank-card-metric">
                             <div class="rank-card-metric-value" style="color:${sunnyTextColor(row?.avgSunny)}">${fmtWhole(row?.avgSunny)}</div>
                             <div class="rank-card-metric-label">Sunny Days</div>
                         </div>
                     </div>
-                    <div class="rank-card-detail">${htmlEscape(row?.region || 'Unknown')} · Night ${fmtWholeUnit(row?.avgNight, 'F')} · Day Length ${fmtWholeUnit(row?.avgDayLength, 'h')} · ${formatDistance(row?.distKm)}</div>
+                    <div class="rank-card-detail">${htmlEscape(row?.region || 'Unknown')} · Gray ${fmtWhole(row?.avgBad)} days · Day Length ${fmtWholeUnit(row?.avgDayLength, 'h')} · ${formatDistance(row?.distKm)}</div>
                 </div>
             `.trim();
         }
@@ -5749,6 +5750,7 @@
                         avgTemp: Number.isFinite(Number(country.avgTemp)) ? Number(country.avgTemp) : null,
                         avgNight: Number.isFinite(Number(country.avgNight)) ? Number(country.avgNight) : null,
                         avgSunny: Number.isFinite(Number(country.avgSunny)) ? Number(country.avgSunny) : null,
+                        avgBad: Number.isFinite(Number(country.avgBad)) ? Number(country.avgBad) : null,
                         avgDayLength: Number.isFinite(Number(country.avgDayLength)) ? Number(country.avgDayLength) : null,
                         distKm: minDist
                     });
@@ -6220,7 +6222,18 @@
                         dayLengthHrs: toNum(forecast.day_length_hrs) ?? estimateDayLengthHours(city.lat, month),
                         rainPct: null,
                         fetchedAt: forecast.fetched_at || null,
-                        stale: Boolean(forecast._stale)
+                        stale: Boolean(forecast._stale),
+                        meteoNiceScore: toNum(forecast.avg_nice_score),
+                        meteoReallyNice30: toNum(forecast.really_nice_days_30),
+                        meteoPerfect30: toNum(forecast.perfect_days_30),
+                        tempMeanC: toNum(forecast.temp_mean_c),
+                        tempHighC: toNum(forecast.temp_high_c),
+                        tempLowC: toNum(forecast.temp_low_c),
+                        precipMm: toNum(forecast.precip_mm),
+                        windKmh: toNum(forecast.wind_kmh),
+                        cloudPct: toNum(forecast.cloud_pct),
+                        humidityPct: toNum(forecast.humidity_pct),
+                        sunshineHrs: toNum(forecast.sunshine_hrs)
                     };
                 }
                 // If forecast snapshot is missing for this city, fall back to estimated monthly.
@@ -6243,10 +6256,116 @@
                 dayLengthHrs: dayLength,
                 rainPct,
                 fetchedAt: est?.fetched_at || null,
-                stale: false
+                stale: false,
+                meteoNiceScore: toNum(est?.avg_nice_score),
+                meteoReallyNice30: toNum(est?.really_nice_days_30),
+                meteoPerfect30: toNum(est?.perfect_days_30)
             };
         }
 
+        // ── Meteo Dashboard Niceness Engine (6 parameters with band scoring) ──
+        // Ported from niceness.ts — scores weather pleasantness using ideal/acceptable bands.
+        function meteoScoreValue(value, band) {
+            const iLo = band.idealLo, iHi = band.idealHi;
+            const aLo = band.acceptLo, aHi = band.acceptHi;
+            if (value >= iLo && value <= iHi) return 100;
+            if (value < iLo && value >= aLo) {
+                const r = iLo - aLo; return r > 0 ? 50 + 50 * (value - aLo) / r : 50;
+            }
+            if (value > iHi && value <= aHi) {
+                const r = aHi - iHi; return r > 0 ? 50 + 50 * (aHi - value) / r : 50;
+            }
+            if (value < aLo) {
+                const d = aLo - value, r = (iLo - aLo) || 1;
+                return Math.max(0, 50 * (1 - Math.pow(d / r, 2)));
+            }
+            if (value > aHi) {
+                const d = value - aHi, r = (aHi - iHi) || 1;
+                return Math.max(0, 50 * (1 - Math.pow(d / r, 2)));
+            }
+            return 0;
+        }
+
+        // Default meteo param bands (temperature in °C, others in native units)
+        const METEO_PARAMS_DEFAULT = [
+            { key: 'temperature', band: { idealLo: 22.2, idealHi: 27.2, acceptLo: 14.4, acceptHi: 28.9 }, weight: 59, boost: 3 },
+            { key: 'precipitation', band: { idealLo: 0, idealHi: 0, acceptLo: 0, acceptHi: 3 }, weight: 60, boost: 2 },
+            { key: 'wind', band: { idealLo: 0, idealHi: 15, acceptLo: 0, acceptHi: 35 }, weight: 10, boost: 1 },
+            { key: 'cloud', band: { idealLo: 5, idealHi: 10, acceptLo: 0, acceptHi: 43 }, weight: 60, boost: 1 },
+            { key: 'humidity', band: { idealLo: 30, idealHi: 83, acceptLo: 10, acceptHi: 80 }, weight: 27, boost: 1 },
+            { key: 'sunshine', band: { idealLo: 9, idealHi: 16, acceptLo: 9, acceptHi: 20 }, weight: 40, boost: 3 },
+        ];
+
+        function fToC(f) { return (f - 32) * 5 / 9; }
+
+        // Build scoring params, optionally adjusting temperature band from user prefs
+        function buildMeteoParams(cfg) {
+            const params = METEO_PARAMS_DEFAULT.map(p => ({
+                key: p.key,
+                band: { ...p.band },
+                weight: p.weight,
+                boost: p.boost,
+            }));
+            if (cfg) {
+                // Map user pref cutMin/cutMax/dayIdeal (in °F) to temperature band (in °C)
+                const tempParam = params.find(p => p.key === 'temperature');
+                if (tempParam) {
+                    const idealDay = fToC(cfg.dayIdeal ?? 80);
+                    const idealNight = fToC(cfg.nightIdeal ?? 65);
+                    tempParam.band.idealLo = Math.min(idealDay, idealNight);
+                    tempParam.band.idealHi = Math.max(idealDay, idealNight);
+                    tempParam.band.acceptLo = fToC(cfg.cutMin ?? 50);
+                    tempParam.band.acceptHi = fToC(cfg.cutMax ?? 110);
+                }
+            }
+            return params;
+        }
+
+        function blendedTemperatureScore(tempMeanC, tHighC, tLowC, band) {
+            const weightedScores = [];
+            if (tempMeanC != null) weightedScores.push([0.5, meteoScoreValue(tempMeanC, band)]);
+            if (tHighC != null) weightedScores.push([0.25, meteoScoreValue(tHighC, band)]);
+            if (tLowC != null) weightedScores.push([0.25, meteoScoreValue(tLowC, band)]);
+            if (!weightedScores.length) return null;
+            const totalWeight = weightedScores.reduce((sum, [weight]) => sum + weight, 0);
+            if (totalWeight <= 0) return null;
+            const totalScore = weightedScores.reduce((sum, [weight, score]) => sum + (weight * score), 0);
+            return totalScore / totalWeight;
+        }
+
+        // Compute meteo niceness from the 6 raw scoring variables
+        // Temperature scored as a blend of mean/high/low using the same band scorer
+        function meteoComputeNiceness(vals, params) {
+            if (!params) params = METEO_PARAMS_DEFAULT;
+            const totalAbsW = params.reduce((s, p) => s + Math.abs(p.weight * p.boost), 0);
+            if (totalAbsW === 0) return null;
+            let sum = 0, hasAny = false;
+            const valMap = {
+                temperature: vals.tempMeanC,
+                precipitation: vals.precipMm,
+                wind: vals.windKmh,
+                cloud: vals.cloudPct,
+                humidity: vals.humidityPct,
+                sunshine: vals.sunshineHrs,
+            };
+            for (const p of params) {
+                const v = valMap[p.key];
+                let s = null;
+                if (p.key === 'temperature') {
+                    s = blendedTemperatureScore(vals.tempMeanC, vals.tempHighC, vals.tempLowC, p.band);
+                } else {
+                    if (v == null) continue;
+                    s = meteoScoreValue(v, p.band);
+                }
+                if (s == null) continue;
+                sum += s * (p.weight * p.boost / totalAbsW);
+                hasAny = true;
+            }
+            if (!hasAny) return null;
+            return Math.round(Math.max(0, Math.min(100, sum)) * 10) / 10;
+        }
+
+        // Legacy fallbacks (kept for any edge cases)
         function scoreTempToIdeal(tempF, idealF, cutoffMinF, cutoffMaxF, warmPenaltyBias = 0.9) {
             if (tempF == null || idealF == null) return 0;
             const lo = Math.min(cutoffMinF, cutoffMaxF);
@@ -6272,25 +6391,94 @@
         function computeNicenessParts(city, month, cfg = null) {
             const src = getScoringSource(city, month);
             if (!src) return null;
-            const c = cfg || {
+
+            const c = cfg || (usePreferences ? {
+                cutMin: prefCutoffMinTemp,
+                cutMax: prefCutoffMaxTemp,
+                nightIdeal: prefIdealNightTemp,
+                dayIdeal: prefIdealDayTemp,
+                tempWeight: prefTempWeight
+            } : null);
+
+            // Try full 6-param meteo engine if we have the raw scoring variables
+            const hasMeteoVars = src.tempMeanC != null;
+            if (hasMeteoVars) {
+                const params = buildMeteoParams(c);
+                const score = meteoComputeNiceness({
+                    tempMeanC: src.tempMeanC,
+                    tempHighC: src.tempHighC,
+                    tempLowC: src.tempLowC,
+                    precipMm: src.precipMm,
+                    windKmh: src.windKmh,
+                    cloudPct: src.cloudPct,
+                    humidityPct: src.humidityPct,
+                    sunshineHrs: src.sunshineHrs,
+                }, params);
+                if (score != null) {
+                    return {
+                        final100: score,
+                        tempScore: score / 100,
+                        dayTempScore: score / 100,
+                        nightTempScore: score / 100,
+                        sunDayScore: score / 100,
+                        dayTempF: src.dayTempF,
+                        nightTempF: src.nightTempF,
+                        sunnyDays30: src.sunnyDays30,
+                        badDays30: src.badDays30,
+                        dayLengthHrs: src.dayLengthHrs,
+                        source: src.source,
+                        fetchedAt: src.fetchedAt,
+                        rainPct: src.rainPct,
+                        stale: Boolean(src.stale),
+                        cutMinF: c ? (c.cutMin ?? 50) : 50,
+                        cutMaxF: c ? (c.cutMax ?? 110) : 110,
+                        dayIdealF: c ? (c.dayIdeal ?? 80) : 80,
+                        nightIdealF: c ? (c.nightIdeal ?? 65) : 65
+                    };
+                }
+            }
+
+            // Use pre-computed meteo score if no raw vars and no custom prefs
+            const meteoScore = toNum(src.meteoNiceScore);
+            if (meteoScore != null && !c) {
+                return {
+                    final100: Math.round(meteoScore * 10) / 10,
+                    tempScore: meteoScore / 100,
+                    dayTempScore: meteoScore / 100,
+                    nightTempScore: meteoScore / 100,
+                    sunDayScore: meteoScore / 100,
+                    dayTempF: src.dayTempF,
+                    nightTempF: src.nightTempF,
+                    sunnyDays30: src.sunnyDays30,
+                    badDays30: src.badDays30,
+                    dayLengthHrs: src.dayLengthHrs,
+                    source: src.source,
+                    fetchedAt: src.fetchedAt,
+                    rainPct: src.rainPct,
+                    stale: Boolean(src.stale),
+                    cutMinF: 50, cutMaxF: 110, dayIdealF: 80, nightIdealF: 65
+                };
+            }
+
+            // Fallback: legacy 2-param scoring
+            const fc = c || {
                 cutMin: prefCutoffMinTemp,
                 cutMax: prefCutoffMaxTemp,
                 nightIdeal: prefIdealNightTemp,
                 dayIdeal: prefIdealDayTemp,
                 tempWeight: prefTempWeight
             };
-
             const profile = normalizeTempProfileF({
-                cutMin: c.cutMin,
-                cutMax: c.cutMax,
-                nightIdeal: c.nightIdeal,
-                dayIdeal: c.dayIdeal
+                cutMin: fc.cutMin,
+                cutMax: fc.cutMax,
+                nightIdeal: fc.nightIdeal,
+                dayIdeal: fc.dayIdeal
             });
             const dayTempScore = scoreTempToIdeal(src.dayTempF, profile.dayIdeal, profile.cutMin, profile.cutMax, 0.85);
             const nightTempScore = scoreTempToIdeal(src.nightTempF, profile.nightIdeal, profile.cutMin, profile.cutMax, 1.0);
             const tempScore = (0.75 * dayTempScore) + (0.25 * nightTempScore);
             const sunDayScore = scoreSunDay(src.sunnyDays30, src.badDays30, src.dayLengthHrs);
-            const wTemp = Math.max(0, Math.min(1, c.tempWeight));
+            const wTemp = Math.max(0, Math.min(1, fc.tempWeight));
             const final100 = 100 * ((wTemp * tempScore) + ((1 - wTemp) * sunDayScore));
             return {
                 final100: Math.round(final100 * 10) / 10,
@@ -6617,11 +6805,15 @@
                             <div class="metric-label">Avg Day Temp</div>
                         </div>
                         <div class="metric-box">
+                            <div class="metric-value" style="color:${tempTextColorF(region.avgNight)}">${fmtWholeUnit(region.avgNight, 'F')}</div>
+                            <div class="metric-label">Avg Night Temp</div>
+                        </div>
+                        <div class="metric-box">
                             <div class="metric-value" style="color:${sunnyTextColor(region.avgSunny)}">${fmtWhole(region.avgSunny)}</div>
                             <div class="metric-label">Sunny Days</div>
                         </div>
                     </div>
-                    <div class="weather-detail">Night ${fmtWholeUnit(region.avgNight, 'F')} · Gray ${fmtWhole(region.avgBad)} days · Day Length ${fmtWholeUnit(region.avgDayLength, 'h')}</div>
+                    <div class="weather-detail">Gray ${fmtWhole(region.avgBad)} days · Day Length ${fmtWholeUnit(region.avgDayLength, 'h')}</div>
                 `;
                 return;
             }
@@ -6657,11 +6849,15 @@
                             <div class="metric-label">Avg Day Temp</div>
                         </div>
                         <div class="metric-box">
+                            <div class="metric-value" style="color:${tempTextColorF(c.avgNight)}">${fmtWholeUnit(c.avgNight, 'F')}</div>
+                            <div class="metric-label">Avg Night Temp</div>
+                        </div>
+                        <div class="metric-box">
                             <div class="metric-value" style="color:${sunnyTextColor(c.avgSunny)}">${fmtWhole(c.avgSunny)}</div>
                             <div class="metric-label">Sunny Days</div>
                         </div>
                     </div>
-                    <div class="weather-detail">Night ${fmtWholeUnit(c.avgNight, 'F')} · Gray ${fmtWhole(c.avgBad)} days · Day Length ${fmtWholeUnit(c.avgDayLength, 'h')}</div>
+                    <div class="weather-detail">Gray ${fmtWhole(c.avgBad)} days · Day Length ${fmtWholeUnit(c.avgDayLength, 'h')}</div>
                 `;
                 return;
             }
@@ -7230,11 +7426,15 @@
                                         <div class="rank-card-metric-label">Avg Day Temp</div>
                                     </div>
                                     <div class="rank-card-metric">
+                                        <div class="rank-card-metric-value" style="color:${tempTextColorF(region.avgNight)}">${fmtWholeUnit(region.avgNight, 'F')}</div>
+                                        <div class="rank-card-metric-label">Avg Night Temp</div>
+                                    </div>
+                                    <div class="rank-card-metric">
                                         <div class="rank-card-metric-value" style="color:${sunnyTextColor(region.avgSunny)}">${fmtWhole(region.avgSunny)}</div>
                                         <div class="rank-card-metric-label">Sunny Days</div>
                                     </div>
                                 </div>
-                                <div class="rank-card-detail">Night ${fmtWholeUnit(region.avgNight, 'F')} · Gray ${fmtWhole(region.avgBad)} days · Day Length ${fmtWholeUnit(region.avgDayLength, 'h')}${rankingDistanceSuffix(region.distKm, controls.sort)}</div>
+                                <div class="rank-card-detail">Gray ${fmtWhole(region.avgBad)} days · Day Length ${fmtWholeUnit(region.avgDayLength, 'h')}${rankingDistanceSuffix(region.distKm, controls.sort)}</div>
                             </div>`;
                     });
                     html += `</div>`;
@@ -7269,11 +7469,15 @@
                                         <div class="rank-card-metric-label">Avg Day Temp</div>
                                     </div>
                                     <div class="rank-card-metric">
+                                        <div class="rank-card-metric-value" style="color:${tempTextColorF(country.avgNight)}">${fmtWholeUnit(country.avgNight, 'F')}</div>
+                                        <div class="rank-card-metric-label">Avg Night Temp</div>
+                                    </div>
+                                    <div class="rank-card-metric">
                                         <div class="rank-card-metric-value" style="color:${sunnyTextColor(country.avgSunny)}">${fmtWhole(country.avgSunny)}</div>
                                         <div class="rank-card-metric-label">Sunny Days</div>
                                     </div>
                                 </div>
-                                <div class="rank-card-detail">Night ${fmtWholeUnit(country.avgNight, 'F')} · Gray ${fmtWhole(country.avgBad)} days · Day Length ${fmtWholeUnit(country.avgDayLength, 'h')}${rankingDistanceSuffix(country.distKm, controls.sort)}</div>
+                                <div class="rank-card-detail">Gray ${fmtWhole(country.avgBad)} days · Day Length ${fmtWholeUnit(country.avgDayLength, 'h')}${rankingDistanceSuffix(country.distKm, controls.sort)}</div>
                             </div>`;
                     });
                     html += `</div>`;
@@ -7323,11 +7527,15 @@
                                                 <div class="rank-card-metric-label">Avg Day Temp</div>
                                             </div>
                                             <div class="rank-card-metric">
+                                                <div class="rank-card-metric-value" style="color:${tempTextColorF(country.avgNight)}">${fmtWholeUnit(country.avgNight, 'F')}</div>
+                                                <div class="rank-card-metric-label">Avg Night Temp</div>
+                                            </div>
+                                            <div class="rank-card-metric">
                                                 <div class="rank-card-metric-value" style="color:${sunnyTextColor(country.avgSunny)}">${fmtWhole(country.avgSunny)}</div>
                                                 <div class="rank-card-metric-label">Sunny Days</div>
                                             </div>
                                         </div>
-                                        <div class="rank-card-detail">Night ${fmtWholeUnit(country.avgNight, 'F')} · Gray ${fmtWhole(country.avgBad)} days · Day Length ${fmtWholeUnit(country.avgDayLength, 'h')}${rankingDistanceSuffix(country.distKm, controls.sort)}</div>
+                                        <div class="rank-card-detail">Gray ${fmtWhole(country.avgBad)} days · Day Length ${fmtWholeUnit(country.avgDayLength, 'h')}${rankingDistanceSuffix(country.distKm, controls.sort)}</div>
                                     </div>`;
                             });
                             html += `</div>`;
@@ -7380,11 +7588,15 @@
                                         <div class="rank-card-metric-label">Day Temp</div>
                                     </div>
                                     <div class="rank-card-metric">
+                                        <div class="rank-card-metric-value" style="color:${tempTextColorF(c.night)}">${fmtWholeUnit(c.night, 'F')}</div>
+                                        <div class="rank-card-metric-label">Night Temp</div>
+                                    </div>
+                                    <div class="rank-card-metric">
                                         <div class="rank-card-metric-value" style="color:${sunnyTextColor(c.sunny)}">${fmtWhole(c.sunny)}</div>
                                         <div class="rank-card-metric-label">Sunny Days</div>
                                     </div>
                                 </div>
-                                <div class="rank-card-detail">Night ${fmtWholeUnit(c.night, 'F')} · Gray ${fmtWhole(c.bad)} days · Day Length ${fmtWholeUnit(c.dayLength, 'h')}${rankingDistanceSuffix(c.distKm, controls.sort)}</div>
+                                <div class="rank-card-detail">Gray ${fmtWhole(c.bad)} days · Day Length ${fmtWholeUnit(c.dayLength, 'h')}${rankingDistanceSuffix(c.distKm, controls.sort)}</div>
                             </div>`;
                     });
                     html += `</div>`;
@@ -9068,11 +9280,15 @@
                         <div class="metric-label">Day Temp</div>
                     </div>
                     <div class="metric-box">
+                        <div class="metric-value" style="color:${tempTextColorF(parts ? parts.nightTempF : null)}">${fmtWholeUnit(parts ? parts.nightTempF : null, 'F')}</div>
+                        <div class="metric-label">Night Temp</div>
+                    </div>
+                    <div class="metric-box">
                         <div class="metric-value" style="color:${sunnyTextColor(parts ? parts.sunnyDays30 : null)}">${fmtWhole(parts ? parts.sunnyDays30 : null)}</div>
                         <div class="metric-label">Sunny Days</div>
                     </div>
                 </div>
-                <div class="weather-detail">Night ${fmtWholeUnit(parts ? parts.nightTempF : null, 'F')} · Gray ${fmtWhole(parts ? parts.badDays30 : null)} days · Day Length ${fmtWholeUnit(parts ? parts.dayLengthHrs : null, 'h')}</div>
+                <div class="weather-detail">Gray ${fmtWhole(parts ? parts.badDays30 : null)} days · Day Length ${fmtWholeUnit(parts ? parts.dayLengthHrs : null, 'h')}</div>
             `;
             renderCityNearestReallyNice();
             fetchLiveForSelected({ cityOverride: city, force: false });
@@ -9263,34 +9479,24 @@
 
             if (!preview) return;
 
-            const heartRows = buildHeartNicestCityRows(5);
-            let previewRows = heartRows;
-            let previewTitle = 'Favorites Preview';
-            if (!previewRows.length) {
-                previewRows = buildNearbyRankedCityRows().slice(0, 5);
-                previewTitle = 'Nearest Preview';
-            }
-            if (!previewRows.length) {
-                previewRows = getActiveCityUniverse().map(cityEntry => {
-                    const p = partsForCity(cityEntry);
-                    if (!p || !Number.isFinite(Number(p.final100))) return null;
-                    return {
-                        city: cityEntry,
-                        score: Number(p.final100),
-                        distKm: null,
-                        dayTempF: Number.isFinite(Number(p.dayTempF)) ? Number(p.dayTempF) : null,
-                        nightTempF: Number.isFinite(Number(p.nightTempF)) ? Number(p.nightTempF) : null,
-                        sunnyDays30: Number.isFinite(Number(p.sunnyDays30)) ? Number(p.sunnyDays30) : null,
-                        badDays30: Number.isFinite(Number(p.badDays30)) ? Number(p.badDays30) : null,
-                        dayLengthHrs: Number.isFinite(Number(p.dayLengthHrs)) ? Number(p.dayLengthHrs) : null,
-                        source: p.source || null
-                    };
-                }).filter(Boolean).sort((a, b) => (b.score ?? -1e9) - (a.score ?? -1e9)).slice(0, 5);
-                previewTitle = 'Top Cities Preview';
-            }
+            const previewRows = getActiveCityUniverse().map(cityEntry => {
+                const p = partsForCity(cityEntry);
+                if (!p || !Number.isFinite(Number(p.final100))) return null;
+                return {
+                    city: cityEntry,
+                    score: Number(p.final100),
+                    distKm: null,
+                    dayTempF: Number.isFinite(Number(p.dayTempF)) ? Number(p.dayTempF) : null,
+                    nightTempF: Number.isFinite(Number(p.nightTempF)) ? Number(p.nightTempF) : null,
+                    sunnyDays30: Number.isFinite(Number(p.sunnyDays30)) ? Number(p.sunnyDays30) : null,
+                    badDays30: Number.isFinite(Number(p.badDays30)) ? Number(p.badDays30) : null,
+                    dayLengthHrs: Number.isFinite(Number(p.dayLengthHrs)) ? Number(p.dayLengthHrs) : null,
+                    source: p.source || null
+                };
+            }).filter(Boolean).sort((a, b) => (b.score ?? -1e9) - (a.score ?? -1e9)).slice(0, 5);
 
             preview.innerHTML = `
-                <div class="rank-list-head">${previewTitle}</div>
+                <div class="rank-list-head">Top Cities Preview</div>
                 ${previewRows.length
                     ? `<div class="rank-card-list">${previewRows.map(nearbyCityButtonHtml).join('')}</div>`
                     : `<div class="muted">No preview rows available.</div>`
@@ -11743,10 +11949,14 @@
 
         function applyViewTogglesFromInputs() {
             const prevIsolate = isolateCountryMode;
-            isolateCountryMode = Boolean(document.getElementById('toggle-isolate-country')?.checked);
-            showCountryLines = Boolean(document.getElementById('toggle-country-lines')?.checked);
-            showCityPoints = Boolean(document.getElementById('toggle-cities')?.checked);
-            showAllCountryFill = Boolean(document.getElementById('toggle-country-fill')?.checked);
+            const isolateInput = document.getElementById('toggle-isolate-country');
+            const linesInput = document.getElementById('toggle-country-lines');
+            const citiesInput = document.getElementById('toggle-cities');
+            const fillInput = document.getElementById('toggle-country-fill');
+            if (isolateInput) isolateCountryMode = Boolean(isolateInput.checked);
+            if (linesInput) showCountryLines = Boolean(linesInput.checked);
+            if (citiesInput) showCityPoints = Boolean(citiesInput.checked);
+            if (fillInput) showAllCountryFill = Boolean(fillInput.checked);
             if (!showCityPoints) {
                 clearPinnedTooltip();
                 hideHoverTooltip();
