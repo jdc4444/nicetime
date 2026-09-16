@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Test Globe v3</title></head>
+<body style="margin:0">
+<div id="g" style="width:100vw;height:100vh"></div>
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+<script src="https://unpkg.com/globe.gl@2.31.1/dist/globe.gl.min.js"></script>
+<script>
+try {
+  var pts = [
+    {lat:40.7, lng:-74.0},
+    {lat:51.5, lng:-0.1},
+    {lat:35.7, lng:139.7}
+  ];
+  var g = Globe()
+    .backgroundColor('#f5f5f5')
+    .globeImageUrl('https://unpkg.com/three-globe@2.31.1/example/img/earth-blue-marble.jpg')
+    .pointsData(pts)
+    .pointLat('lat').pointLng('lng')
+    .pointColor(function(){return '#ff0000'})
+    .pointRadius(0.5)
+    (document.getElementById('g'));
+  document.title = 'Globe OK';
+} catch(e) {
+  document.title = 'ERROR: ' + e.message;
+  document.body.innerHTML = '<h1 style="color:red;padding:40px">Error: ' + e.message + '</h1>';
+}
+</script>
+</body></html>

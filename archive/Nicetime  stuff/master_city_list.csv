@@ -1,0 +1,2121 @@
+City,Country,Continent,Latitude,Longitude,Zip/PostalCode
+Adrar,Algeria,Africa,27.837601,-0.186414,
+Algier,Algeria,Africa,36.691002,3.21541,16311
+Annaba,Algeria,Africa,36.822201,7.809174,36003
+Batna,Algeria,Africa,35.752102,6.30859,
+Bejaja,Algeria,Africa,36.712002,5.06992,06120
+Biskra,Algeria,Africa,34.793301,5.73823,
+Blida,Algeria,Africa,36.503601,2.81417,09054
+Oran,Algeria,Africa,35.583151,-0.57673,31026
+Benguela,Angola,Africa,-12.609,13.4037,
+Luanda,Angola,Africa,-8.82727,13.243951,
+Cotonou,Benin,Africa,6.367695,2.425251,
+Bobo-dioulasso,Burkina Faso,Africa,11.1601,-4.33097,
+Bafoussam,Cameroon,Africa,5.53692,10.3546,
+Bamenda,Cameroon,Africa,6.03924,10.1226,
+Yaounde,Cameroon,Africa,3.7793,11.5384,
+Amilcar Cabral,Cape Verde,Africa,16.7414,-22.9494,4110
+Boa Vista,Cape Verde,Africa,16.136499,-22.888901,0235
+Bangui,Central African Republic,Africa,4.39848,18.518801,
+Berberati,Central African Republic,Africa,4.22158,15.7864,
+Abeche,Chad,Africa,13.847,20.844299,
+Am Timan,Chad,Africa,11.034,20.274,
+Anjouan,Comoros,Africa,-12.1317,44.430302,
+Moroni,Comoros,Africa,-11.62225,43.2579,
+Bandoundu,Congo (Kinshasa),Africa,-3.31132,17.381701,
+Basankusu,Congo (Kinshasa),Africa,1.22472,19.7889,
+Beni,Congo (Kinshasa),Africa,0.575,29.4739,
+Boende,Congo (Kinshasa),Africa,-0.217,20.85,
+Boma,Congo (Kinshasa),Africa,-5.854,13.064,
+Kinshasa,Congo (Kinshasa),Africa,-4.356205,15.38605,
+Abidjan,Cote d'Ivoire,Africa,5.26139,-3.92629,
+Abu Simbel,Egypt,Africa,22.375999,31.6117,81525
+Aswan,Egypt,Africa,23.964399,32.82,
+Asyut,Egypt,Africa,27.046499,31.011999,
+Cairo,Egypt,Africa,30.11915,31.1605,12832
+Bata,Equatorial Guinea,Africa,1.90547,9.80568,
+Asmara,Eritrea,Africa,15.2919,38.910702,
+Assab,Eritrea,Africa,13.0718,42.645,
+Addis Ababa,Ethiopia,Africa,8.97789,38.799301,1044
+Arba Minch,Ethiopia,Africa,6.03939,37.5905,
+Asosa,Ethiopia,Africa,10.0185,34.5863,
+Awasa,Ethiopia,Africa,7.067,38.5,1235
+Axum,Ethiopia,Africa,14.1468,38.7728,
+Baco,Ethiopia,Africa,5.78287,36.562,
+Bahar Dar,Ethiopia,Africa,11.6081,37.321602,
+Beica,Ethiopia,Africa,9.38639,34.5219,
+Bitam,Gabon,Africa,2.07564,11.4932,
+Banjul,Gambia,Africa,13.338,-16.652201,
+Accra,Ghana,Africa,5.60519,-0.166786,GL-070-5368
+Bissau,Guinea-Bissau,Africa,11.8948,-15.6537,
+Nairobi,Kenya,Africa,-1.32048,36.8713,50504
+Monrovia,Liberia,Africa,6.261425,-10.5605,
+Al Bayda',Libya,Africa,32.7887,21.9643,
+Benghazi,Libya,Africa,32.096802,20.269501,
+Tripoli,Libya,Africa,32.778801,13.2175,
+Ambatondrazaka,Madagascar,Africa,-17.795378,48.442583,
+Ambilobe,Madagascar,Africa,-13.1884,48.987999,
+Ampampamena,Madagascar,Africa,-13.484816,48.632702,
+Analalava,Madagascar,Africa,-14.6297,47.763802,
+Andapa,Madagascar,Africa,-14.6517,49.620602,205
+Ankavandra,Madagascar,Africa,-18.80501,45.273467,
+Antalaha,Madagascar,Africa,-14.9994,50.320202,
+Antananarivo,Madagascar,Africa,-18.7969,47.478802,105
+Antsalova,Madagascar,Africa,-18.701273,44.614921,406
+Antsirabe,Madagascar,Africa,-19.839221,47.063713,110
+Antsiranana,Madagascar,Africa,-12.3494,49.291698,
+Antsohihy,Madagascar,Africa,-14.8988,47.9939,
+Bekily,Madagascar,Africa,-24.235695,45.304527,
+Belo sur Tsiribihina,Madagascar,Africa,-19.686701,44.541901,608
+Besalampy,Madagascar,Africa,-16.74453,44.482484,
+Blantyre,Malawi,Africa,-15.6791,34.973999,
+Bamako,Mali,Africa,12.5335,-7.94994,
+Aioun El Atrouss,Mauritania,Africa,16.7113,-9.63788,
+Atar,Mauritania,Africa,20.5068,-13.0432,
+Agadir,Morocco,Africa,30.325001,-9.41307,86600
+Al Hociema,Morocco,Africa,35.177101,-3.83952,32252
+Ben Slimane,Morocco,Africa,33.655399,-7.22145,
+Beni Mellal,Morocco,Africa,32.401895,-6.315905,23003
+Marrakech,Morocco,Africa,31.606899,-8.0363,40066
+Beira,Mozambique,Africa,-19.7964,34.9076,2103
+Arandis,Namibia,Africa,-22.4622,14.98,
+Windhoek,Namibia,Africa,-22.54605,17.27565,
+Agadez,Niger,Africa,16.966,8.00011,
+Abuja,Nigeria,Africa,9.00679,7.26317,
+Akure,Nigeria,Africa,7.24674,5.30101,
+Asaba,Nigeria,Africa,6.204167,6.665278,
+Bauchi,Nigeria,Africa,10.482833,9.744,
+Benin,Nigeria,Africa,6.31698,5.5995,300102
+Bakel,Senegal,Africa,14.8473,-12.4683,
+Bo,Sierra Leone,Africa,7.9444,-11.761,
+Freetown,Sierra Leone,Africa,8.506785,-13.1623,
+Alula,Somalia,Africa,11.9582,50.748,
+Baidoa,Somalia,Africa,3.10222,43.628601,
+Berbera,Somalia,Africa,10.3892,44.941101,
+Aggeneys,South Africa,Africa,-29.281799,18.8139,
+Alexander Bay,South Africa,Africa,-28.575001,16.5333,
+Alldays,South Africa,Africa,-22.679001,29.0555,
+Arathusa,South Africa,Africa,-24.744165,31.522499,
+Bisho,South Africa,Africa,-32.897099,27.2791,
+Bloemfontein,South Africa,Africa,-29.092699,26.302401,9313
+Durban,South Africa,Africa,-29.692522,31.089061,4339
+Johannesburg,South Africa,Africa,-26.076625,28.11585,2090
+Makhanda (Grahamstown),South Africa,Africa,-33.307059,26.527265,6139
+Atbara,Sudan,Africa,17.710344,34.057018,
+Manzini,Swaziland,Africa,-26.443805,31.512222,
+Arusha,Tanzania,Africa,-3.36779,36.633301,23210
+Arua,Uganda,Africa,3.05,30.917,
+Algiers,Algeria,Africa,36.772933,3.058844,16007
+Cape Town,South Africa,Africa,-34.014372,18.704281,7103
+Casablanca,Venezuela,South America,10.603117,-66.901566,1164
+Dakar,Senegal,Africa,14.693425,-17.447938,13500
+Fez,Morocco,Africa,34.034653,-5.016193,30030
+Luxor,Egypt,Africa,25.6872,32.6396,2001
+Mombasa,Kenya,Africa,-4.05052,39.667169,80112
+Port Louis,Mauritius,Africa,-20.162452,57.502804,11602
+Stone Town,Tanzania,Africa,-6.162653,39.189655,71101
+Tunis,Tunisia,Africa,36.814462,10.177594,1075
+Bamyan,Afghanistan,Asia,34.817001,67.817001,
+Kabul,Afghanistan,Asia,34.755999,69.238651,
+Baku,Azerbaijan,Asia,40.48152,50.011753,1112
+Bahrain,Bahrain,Asia,26.2708,50.633598,101
+Manama,Bahrain,Asia,26.223504,50.582244,308
+Barisal,Bangladesh,Asia,22.801001,90.301201,8213
+Dhaka,Bangladesh,Asia,23.764386,90.389014,1215
+Bandar Seri Begawan,Brunei,Asia,4.9442,114.928001,BB3113
+Ann,Burma,Asia,19.769199,94.0261,07151
+Bagan,Burma,Asia,30.422595,106.994544,
+Banmaw,Burma,Asia,24.268999,97.246201,
+Bokepyin,Burma,Asia,11.1494,98.735901,
+Naypyidaw,Burma,Asia,21.35325,96.792,
+Battambang,Cambodia,Asia,13.0956,103.223999,021402
+Phnom Penh,Cambodia,Asia,11.573039,104.857807,120806
+Siem Reap,Cambodia,Asia,13.361756,103.859032,123456
+Sihanoukville,Cambodia,Asia,10.622048,103.522336,180403
+Aksu,China,Asia,41.262501,80.291702,
+Altay,China,Asia,47.749886,88.085808,836500
+Alxa Left Banner,China,Asia,38.74831,105.58858,
+Alxa Right Banner,China,Asia,39.225,101.546,
+Andong,China,Asia,40.123766,124.382175,118000
+Ankang,China,Asia,32.708099,108.931,
+Anqing,China,Asia,30.582199,117.050003,
+Anshan,China,Asia,41.105301,122.853996,114225
+Anshun,China,Asia,26.260556,105.873333,561000
+Arxan,China,Asia,47.3106,119.9117,
+Baicheng,China,Asia,45.505278,123.019722,
+Baise,China,Asia,23.7206,106.959999,
+Baishan,China,Asia,42.066944,127.602222,
+Bangda,China,Asia,30.5536,97.108299,
+Baoshan,China,Asia,25.053301,99.168297,
+Baotou,China,Asia,40.560001,109.997002,014000
+Bayannur,China,Asia,40.926,107.7428,
+Beihai,China,Asia,21.5394,109.293999,
+Beijing,China,Asia,39.790948,116.461307,
+Bengbu,China,Asia,32.847733,117.320244,
+Bijie,China,Asia,27.267066,105.472097,
+Bole,China,Asia,44.895,82.3,833404
+Changchun,China,Asia,43.88442,125.3181,130000
+Changsha,China,Asia,28.198754,112.970868,410005
+Chengdu,China,Asia,30.578501,103.946999,
+Chongqing,China,Asia,29.7192,106.641998,401120
+Daegu,China,Asia,35.8713,128.6018,41939
+Daejeon,China,Asia,36.349701,127.384902,35242
+Dalian,China,Asia,38.91305,121.609801,116011
+Fuzhou,China,Asia,26.077495,119.291822,350000
+Goyang,China,Asia,37.658186,126.831945,10460
+Guangzhou,China,Asia,23.392401,113.299004,
+Guilin,China,Asia,25.2181,110.039001,641106
+Gwangju,China,Asia,35.175975,126.91423,61189
+Gyeongju,China,Asia,35.85567,129.224881,38103
+Hangzhou,China,Asia,30.2295,120.433998,311223
+Harbin,China,Asia,45.759363,126.627618,150000
+Hong Kong,China,Asia,40.580299,120.697998,
+Incheon,China,Asia,37.456,126.7052,21554
+Jinan,China,Asia,36.651975,117.113848,250000
+Kunming,China,Asia,25.101944,102.929167,650211
+Lhasa,China,Asia,29.654205,91.117302,850000
+Lijiang,China,Asia,26.68,100.246002,
+Macau,China,Asia,40.580299,120.697998,
+Nanjing,China,Asia,32.043828,118.778863,210005
+Qingdao,China,Asia,36.066325,120.377766,266001
+Seongnam,China,Asia,37.403616,127.109324,13494
+Shanghai,China,Asia,31.17065,121.570499,101201
+Shenyang,China,Asia,41.80261,123.42791,110011
+Shenzhen,China,Asia,22.639299,113.810997,518100
+Suwon,China,Asia,37.263332,127.028747,16490
+Suzhou,China,Asia,31.2631,120.401001,215164
+Tianjin,China,Asia,39.08449,117.195672,300061
+Ulsan,China,Asia,35.53917,129.311914,44677
+Wuhan,China,Asia,30.56116,114.288971,230060
+Xi'an,China,Asia,34.411902,108.936001,710018
+Zhangjiajie,China,Asia,29.117679,110.474143,427000
+Zhengzhou,China,Asia,34.747253,113.619321,450007
+Zhuhai,China,Asia,22.006399,113.375999,519041
+Zunyi,China,Asia,27.70294,106.66669,
+Akrotiri,Cyprus,Asia,34.590401,32.9879,4640
+Baucau,East Timor,Asia,-8.48903,126.401001,
+Batumi,Georgia,Asia,41.610298,41.599701,6000
+Tbilisi,Georgia,Asia,41.669201,44.9547,0109
+Adampur,India,Asia,31.4338,75.758797,144106
+Agartala,India,Asia,23.886999,91.240402,799001
+Agra,India,Asia,27.1558,77.960899,282010
+Ahmedabad,India,Asia,23.0772,72.634697,380003
+Aizwal,India,Asia,23.840599,92.619698,796410
+Ajmer,India,Asia,26.601473,74.814147,305802
+Akola,India,Asia,20.698999,77.058601,444001
+Allahabad,India,Asia,25.4401,81.733902,211001
+Along,India,Asia,28.175301,94.802002,
+Amritsar,India,Asia,31.7096,74.797302,143101
+Aurangabad,India,Asia,19.8627,75.398102,431002
+Baghdogra,India,Asia,26.6812,88.328598,734014
+Bangalore,India,Asia,13.1979,77.706299,560300
+Bareilly,India,Asia,28.4221,79.450798,243202
+Baroda,India,Asia,22.336201,73.226303,390022
+Belgaum,India,Asia,15.8593,74.618301,591124
+Bellary,India,Asia,15.1628,76.882797,583275
+Bhatinda,India,Asia,30.2701,74.755798,
+Bhaunagar,India,Asia,21.752199,72.185204,364001
+Bhopal,India,Asia,23.2875,77.337402,462001
+Bhubaneswar,India,Asia,20.2444,85.817802,752010
+Bhuj,India,Asia,23.2878,69.670197,370001
+Bikaner,India,Asia,28.070601,73.207199,
+Bilaspur,India,Asia,21.9884,82.111,495220
+Chennai,India,Asia,13.083694,80.270186,600001
+Delhi,India,Asia,28.5665,77.103104,110077
+Ghaziabad,India,Asia,28.774997,77.458697,
+Goa,India,Asia,15.300454,74.085513,403706
+Hyderabad,India,Asia,17.342209,78.448727,500064
+Indore,India,Asia,22.720362,75.8682,452001
+Jaipur,India,Asia,26.915458,75.818982,302001
+Kanpur,India,Asia,26.460914,80.321759,208022
+Kerala,India,Asia,10.352874,76.51204,
+Kochi,India,Asia,9.967903,76.244438,682001
+Kolkata,India,Asia,22.572646,88.363895,700073
+Lucknow,India,Asia,26.8381,80.9346,226001
+Ludhiana,India,Asia,30.909016,75.851601,141001
+Mumbai,India,Asia,19.054999,72.869204,400024
+Nagpur,India,Asia,21.149813,79.082056,440001
+Patna,India,Asia,25.609324,85.123525,800001
+Pune,India,Asia,18.521374,73.854507,411002
+Pushkar,India,Asia,26.487647,74.557848,305022
+Surat,India,Asia,21.209489,72.831706,395003
+Thane,India,Asia,19.36536,73.368544,
+Vadodara,India,Asia,22.297314,73.194257,390001
+Varanasi,India,Asia,25.335649,83.007629,221001
+Ambon,Indonesia,Asia,-3.71026,128.089005,97236
+Ayawasi,Indonesia,Asia,-1.1593,132.4633,98277
+Babo,Indonesia,Asia,-2.53224,133.438995,
+Bajawa,Indonesia,Asia,-8.707435,121.057427,
+Bali,Indonesia,Asia,-8.22713,115.19192,81171
+Balikpapan,Indonesia,Asia,-1.26827,116.893997,76113
+Banda Aceh,Indonesia,Asia,5.522872,95.420637,23371
+Bandar Lampung,Indonesia,Asia,-5.446071,105.264374,34223
+Bandung,Indonesia,Asia,-6.90063,107.575996,40175
+Banjarmasin,Indonesia,Asia,-3.44236,114.763,70724
+Banyuwangi,Indonesia,Asia,-8.31015,114.3401,
+Batam,Indonesia,Asia,1.12103,104.119003,29464
+Batu Licin,Indonesia,Asia,-3.41241,115.995003,72213
+Bau-Bau,Indonesia,Asia,-5.48688,122.569,93724
+Bengkulu,Indonesia,Asia,-3.8637,102.338997,38213
+Biak,Indonesia,Asia,-1.19002,136.108002,98115
+Bima,Indonesia,Asia,-8.53965,118.686996,84171
+Bintuni,Indonesia,Asia,-2.1033,133.5164,
+Denpasar,Indonesia,Asia,-8.74817,115.167,80362
+Jakarta,Indonesia,Asia,-6.243047,106.770665,12230
+Makassar,Indonesia,Asia,-5.134296,119.412428,90171
+Medan,Indonesia,Asia,3.600694,98.778194,20372
+Palembang,Indonesia,Asia,-2.988824,104.756851,30124
+Pekanbaru,Indonesia,Asia,0.526246,101.451573,28156
+Semarang,Indonesia,Asia,-6.990399,110.42291,50241
+Surabaya,Indonesia,Asia,-7.246284,112.737767,60174
+Yogyakarta,Indonesia,Asia,-7.977838,110.367226,55771
+Abadan,Iran,Asia,30.371099,48.228298,63159-73971
+Abumusa I.,Iran,Asia,25.8757,55.033001,
+Aghajari,Iran,Asia,30.7444,49.6772,
+Ahwaz,Iran,Asia,31.3374,48.762001,61646-44492
+Arak,Iran,Asia,34.1381,49.847301,
+Ardabil,Iran,Asia,38.325699,48.4244,
+Bakhtaran,Iran,Asia,34.345901,47.1581,67157-39391
+Bam,Iran,Asia,29.0842,58.450001,
+Bandar Abbas,Iran,Asia,27.1883,56.27515,79146-14785
+Bandar Lengeh,Iran,Asia,26.532,54.824799,
+Bandar Mahshahr,Iran,Asia,30.5562,49.151901,63518-78808
+Birjand,Iran,Asia,32.898102,59.266102,97176-99143
+Bojnourd,Iran,Asia,37.493,57.308201,94196-94891
+Isfahan,Iran,Asia,32.670788,51.665,81386-84339
+Shiraz,Iran,Asia,29.606022,52.537804,71386-14348
+Tehran,Iran,Asia,35.689252,51.3896,13179-47564
+Yazd,Iran,Asia,32.040616,54.665719,
+Al Asad,Iraq,Asia,33.785599,42.4412,
+Al Bakr,Iraq,Asia,33.940201,44.361599,
+Al Taqaddum,Iraq,Asia,33.3381,43.597099,
+Baghdad,Iraq,Asia,33.262501,44.2346,
+Basrah,Iraq,Asia,30.549101,47.662102,
+Beer-sheba,Israel,Asia,31.287001,34.723,8448101
+Bethlehem,Israel,Asia,31.75918,35.221899,9347102
+Eilat,Israel,Asia,29.556935,34.949795,8804625
+Haifa,Israel,Asia,32.819122,34.998386,3303333
+Jerusalem,Israel,Asia,31.7683,35.2137,9218812
+Nazareth,Israel,Asia,32.704636,35.297185,1756103
+Tel Aviv,Israel,Asia,32.063049,34.83445,5225527
+Aguni,Japan,Asia,26.592501,127.240997,
+Aichi Prefecture,Japan,Asia,34.999164,137.254574,444-3165
+Akita,Japan,Asia,39.615601,140.218994,019-2611
+Amakusa,Japan,Asia,32.482498,130.158997,863-0014
+Amami,Japan,Asia,28.430599,129.712997,
+Aomori,Japan,Asia,40.734699,140.690994,
+Asahikawa,Japan,Asia,43.670799,142.447006,071-1562
+Atsugi,Japan,Asia,35.454601,139.449997,242-0025
+Chiba,Japan,Asia,35.549399,140.26473,267-0066
+Fukuoka,Japan,Asia,33.585899,130.451004,812-0003
+Hakone,Japan,Asia,35.232366,139.106885,250-0398
+Hamamatsu,Japan,Asia,34.710979,137.725943,430-0946
+Hiroshima,Japan,Asia,34.401501,132.666504,739-0153
+Hokkaido,Japan,Asia,43.451983,142.819783,
+Kanazawa,Japan,Asia,36.561627,136.656882,920-0962
+Kawasaki,Japan,Asia,35.530664,139.703767,210-0004
+Kitakyushu,Japan,Asia,33.883,130.874902,803-0814
+Kobe,Japan,Asia,34.693238,135.194376,651-0097
+Kumamoto,Japan,Asia,32.645047,130.634134,
+Kyoto,Japan,Asia,35.0116,135.7681,604-8571
+Nagoya,Japan,Asia,35.0567,136.864494,490-1435
+Nara,Japan,Asia,34.684544,135.804836,630-8580
+Niigata,Japan,Asia,37.645228,138.766912,
+Okayama,Japan,Asia,34.858133,133.775926,709-2332
+Osaka,Japan,Asia,34.6064,135.341003,
+Sagamihara,Japan,Asia,35.571462,139.373105,252-5277
+Saitama,Japan,Asia,35.975417,139.416011,350-0212
+Sapporo,Japan,Asia,42.946323,141.536671,061-1147
+Sendai,Japan,Asia,38.267755,140.86915,980-8671
+Seto Inland Sea,Japan,Asia,34.891367,134.653334,671-2201
+Shizuoka,Japan,Asia,34.975197,138.38317,420-8602
+Takayama,Japan,Asia,36.139625,137.251032,506-0026
+Tokyo,Japan,Asia,35.6585,140.083,262-0018
+Yokohama,Japan,Asia,35.450338,139.63438,231-0017
+Amman,Jordan,Asia,31.847651,35.992399,11511
+Aqaba,Jordan,Asia,29.611601,35.018101,
+Petra,Jordan,Asia,30.325836,35.474567,71810
+Wadi Rum,Jordan,Asia,29.508444,35.336215,
+Aktau,Kazakhstan,Asia,43.8601,51.091999,
+Aktyubinsk,Kazakhstan,Asia,50.2458,57.206699,030000
+Alma-ata,Kazakhstan,Asia,43.3521,77.040497,041626
+Almaty,Kazakhstan,Asia,43.236392,76.945728,005051
+Arkalyk,Kazakhstan,Asia,50.3186,66.952797,
+Atyrau,Kazakhstan,Asia,47.121899,51.8214,060000
+Baikonur,Kazakhstan,Asia,45.621994,63.210773,
+Balkhash,Kazakhstan,Asia,46.893299,75.004997,100300
+Nur-Sultan,Kazakhstan,Asia,51.12822,71.430668,010000
+Ahmed Al Jaber AB,Kuwait,Asia,28.934799,47.791901,
+Bishkek,Kyrgyzstan,Asia,43.061298,74.4776,
+Osh,Kyrgyzstan,Asia,40.108285,73.193145,723311
+Attopeu,Laos,Asia,14.814715,106.821699,
+Honolulu,United States,North America,21.3069,-157.8583,96813
+Luang Prabang,Laos,Asia,19.888744,102.135898,10554
+Malé,Maldives,Asia,4.1755,73.5093,16010
+Nadi,Fiji,Oceania,-17.7765,177.95,
+Nuku'alofa,Tonga,Oceania,-21.13434,-175.201808,
+Pago Pago,American Samoa,Oceania,-14.275479,-170.70483,96799
+Papeete,French Polynesia,Oceania,-17.5516,-149.5585,98714
+Ponta Delgada,Portugal,Europe,37.73934,-25.66895,9545
+Reykjavik,Iceland,Europe,64.145981,-21.942237,101
+Vientiane,Laos,Asia,17.964099,102.613371,01003
+Baalbek,Lebanon,Asia,34.007887,36.211811,1800
+Beirut,Lebanon,Asia,33.8209,35.4884,1500
+Sidon,Lebanon,Asia,33.564733,35.374978,1600
+Tyre,Lebanon,Asia,33.272121,35.196402,1601
+Alor Setar,Malaysia,Asia,6.18967,100.398003,06020
+Bakalalan,Malaysia,Asia,3.974,115.617996,
+Bario,Malaysia,Asia,3.73389,115.478996,
+Belaga,Malaysia,Asia,2.65,113.766998,
+Bintulu,Malaysia,Asia,3.12385,113.019997,
+Borneo,Malaysia,Asia,2.015743,112.940083,96800
+George Town,Malaysia,Asia,5.414162,100.328735,10000
+Ipoh,Malaysia,Asia,4.598682,101.090024,30450
+Johor Bahru,Malaysia,Asia,1.64131,103.669998,81000
+Kota Kinabalu,Malaysia,Asia,5.978007,116.072899,88000
+Kuala Lumpur,Malaysia,Asia,2.93808,101.629501,47130
+Kuching,Malaysia,Asia,1.559756,110.345397,93000
+Langkawi,Malaysia,Asia,6.370039,99.792863,07000
+Malacca,Malaysia,Asia,2.329374,102.288096,76100
+Altai,Mongolia,Asia,46.3764,96.2211,
+Arvaikheer,Mongolia,Asia,46.250301,102.802002,
+Bayankhongor,Mongolia,Asia,46.1633,100.704002,
+Inle Lake,Myanmar,Asia,20.539915,96.91721,
+Mandalay,Myanmar,Asia,21.959683,96.094874,05024
+Yangon,Myanmar,Asia,16.796713,96.160992,11000
+Kathmandu,Nepal,Asia,27.708317,85.320582,46000
+Al Masna'ah,Oman,Asia,23.640556,57.4875,
+Muscat,Oman,Asia,23.612363,58.593813,940
+Salalah,Oman,Asia,17.017494,54.101092,999
+Bahawalpur,Pakistan,Asia,29.348101,71.718002,63100
+Bannu,Pakistan,Asia,32.9729,70.527901,
+Bhagtanwala,Pakistan,Asia,32.056099,72.948402,
+Karachi,Pakistan,Asia,24.854684,67.020706,75530
+Lahore,Pakistan,Asia,31.565682,74.314183,54500
+Angeles City,Philippines,Asia,15.186,120.559998,2009
+Antipolo,Philippines,Asia,14.587197,121.175925,1910
+Bacolod,Philippines,Asia,10.7764,123.014999,6116
+Baguio,Philippines,Asia,16.375099,120.620003,2600
+Baler,Philippines,Asia,15.729309,121.500034,3201
+Basco,Philippines,Asia,20.4513,121.980003,3900
+Boracay,Philippines,Asia,11.969369,121.922734,5608
+Cagayan de Oro,Philippines,Asia,8.475642,124.642153,9000
+Caloocan,Philippines,Asia,14.651348,120.9724,1409
+Cebu City,Philippines,Asia,10.293495,123.901818,6000
+Davao City,Philippines,Asia,7.064831,125.608062,8000
+El Nido,Philippines,Asia,11.18004,119.390496,5313
+Manila,Philippines,Asia,14.590449,120.980362,1000
+Pasig,Philippines,Asia,14.560517,121.076434,1601
+Quezon City,Philippines,Asia,14.651055,121.048625,1100
+Romblon,Philippines,Asia,9.1845,123.5905,6228
+Taguig,Philippines,Asia,14.527054,121.074494,1637
+Zamboanga City,Philippines,Asia,6.904688,122.076487,7000
+Doha,Qatar,Asia,25.217152,51.496052,
+Abha,Saudi Arabia,Asia,18.2404,42.656601,61321
+Al Kharj,Saudi Arabia,Asia,24.0627,47.580502,
+Al-Jawf,Saudi Arabia,Asia,29.785101,40.099998,
+Al-Ula,Saudi Arabia,Asia,26.48,38.128889,
+Al-ahsa,Saudi Arabia,Asia,25.285299,49.485199,
+Arar,Saudi Arabia,Asia,30.906601,41.138199,
+Bisha,Saudi Arabia,Asia,19.9844,42.620899,
+Dammam,Saudi Arabia,Asia,26.436782,50.103999,32242
+Jeddah,Saudi Arabia,Asia,21.550443,39.174236,23124
+Mecca,Saudi Arabia,Asia,21.3736,43.462351,18211
+Medina,Saudi Arabia,Asia,21.3736,43.462351,18211
+Riyadh,Saudi Arabia,Asia,24.8337,46.712,11263
+Singapore,Singapore,Asia,1.38357,103.931,518220
+Busan,South Korea,Asia,35.179501,128.938004,46720
+Seoul,South Korea,Asia,37.5137,126.620998,22766
+Anuradhapura,Sri Lanka,Asia,8.30149,80.427902,50000
+Batticaloa,Sri Lanka,Asia,7.70576,81.678802,30100
+Colombo,Sri Lanka,Asia,7.001375,79.885151,11300
+Aleppo,Syria,Asia,36.180698,37.2244,
+Hualien,Taiwan,Asia,23.991342,121.619728,970
+Kaohsiung,Taiwan,Asia,22.620335,120.312038,802
+Taichung,Taiwan,Asia,24.2255,120.637501,42878
+Tainan,Taiwan,Asia,22.991235,120.184982,708
+Taipei,Taiwan,Asia,25.07355,121.392502,24445
+Ayutthaya,Thailand,Asia,14.318947,100.511168,13000
+Bangkok,Thailand,Asia,13.79685,100.677002,10230
+Chiang Mai,Thailand,Asia,18.788278,98.98588,55520
+Chiang Rai,Thailand,Asia,19.758952,99.673459,57250
+Hua Hin,Thailand,Asia,12.569933,99.957344,77110
+Kanchanaburi,Thailand,Asia,14.44019,99.267673,71250
+Koh Phangan,Thailand,Asia,9.73495,100.030571,84280
+Koh Samui,Thailand,Asia,9.501394,99.995619,84140
+Krabi,Thailand,Asia,8.111165,99.10973,
+Pai,Thailand,Asia,19.358106,98.440579,58130
+Pattaya,Thailand,Asia,12.936692,100.8865,20150
+Pattaya-Chonburi,Thailand,Asia,12.6799,101.004997,21130
+Phuket,Thailand,Asia,8.1132,98.316902,83140
+Sukhothai,Thailand,Asia,17.144698,99.437584,64140
+Tak,Thailand,Asia,16.79795,98.8992,
+Antalya,Turkey,Asia,36.898701,30.800501,07112
+Bursa,Turkey,Asia,40.182573,29.067504,16010
+Cappadocia,Turkey,Asia,38.638612,34.845518,50300
+Diyarbakır,Turkey,Asia,37.916222,40.236354,21300
+Ephesus,Turkey,Asia,37.940446,27.339319,35920
+Gaziantep,Turkey,Asia,37.062832,37.379262,27220
+Istanbul,Turkey,Asia,41.050259,28.958581,34445
+Konya,Turkey,Asia,37.872734,32.492438,42200
+Mersin,Turkey,Asia,36.797838,34.629839,33060
+Ashkhabad,Turkmenistan,Asia,37.986801,58.361,744020
+Abu Dhabi & Al Ain,UAE,Asia,24.227971,55.766768,
+Abu Dhabi,United Arab Emirates,Asia,24.369834,54.552299,
+Ajman,United Arab Emirates,Asia,25.332875,55.996007,
+Al Ain,United Arab Emirates,Asia,24.2617,55.6092,
+Dubai,United Arab Emirates,Asia,25.074578,55.262894,
+Fujairah,United Arab Emirates,Asia,25.414736,56.231367,
+Ras Al Khaimah,United Arab Emirates,Asia,25.77377,55.938232,
+Sharjah,United Arab Emirates,Asia,25.3286,55.5172,
+Umm Al Quwain,United Arab Emirates,Asia,25.514494,55.718292,
+Andizhan,Uzbekistan,Asia,40.727699,72.293999,170102
+Bukhara,Uzbekistan,Asia,39.775984,64.415153,200121
+Khiva,Uzbekistan,Asia,41.37751,60.363455,220900
+Samarkand,Uzbekistan,Asia,39.655002,66.975695,140000
+Tashkent,Uzbekistan,Asia,41.312336,69.278708,100000
+Can Tho,Vietnam,Asia,10.036205,105.787266,94111
+Da Lat,Vietnam,Asia,11.940242,108.437576,02633
+Da Nang,Vietnam,Asia,16.068,108.212,50207
+Ha Long,Vietnam,Asia,20.947256,107.116467,01010
+Hanoi,Vietnam,Asia,21.221201,105.806999,12910
+Ho Chi Minh City,Vietnam,Asia,10.8188,106.652,72100
+Hoi An,Vietnam,Asia,15.879586,108.331941,64000
+Hue,Vietnam,Asia,16.463932,107.586339,54000
+Nha Trang,Vietnam,Asia,12.208499,109.28712,
+Ninh Binh,Vietnam,Asia,20.242114,105.974621,08212
+Sapa,Vietnam,Asia,22.335917,103.842366,31786
+Vung Tau,Vietnam,Asia,10.347899,107.074466,78207
+Aden,Yemen,Asia,12.8295,45.028801,
+Al Ghaidah Intl,Yemen,Asia,16.1917,52.174999,
+Ataq,Yemen,Asia,14.5513,46.826199,
+Beihan,Yemen,Asia,14.782,45.7201,
+Amstetten,Austria,Europe,48.120326,14.875242,3300
+Baden,Austria,Europe,48.007671,16.234369,2500
+Bregenz,Austria,Europe,47.502578,9.747292,6900
+Dornbirn,Austria,Europe,47.413635,9.742376,6850
+Feldkirch,Austria,Europe,47.237567,9.598172,6800
+Graz,Austria,Europe,46.9911,15.4396,8073
+Hallein,Austria,Europe,47.682152,13.095631,5400
+Hallstatt,Austria,Europe,47.56,13.6496,4830
+Innsbruck,Austria,Europe,47.260201,11.344,6020
+Kapfenberg,Austria,Europe,47.440548,15.290167,8605
+Kitzbühel,Austria,Europe,47.446358,12.391147,6370
+Klagenfurt,Austria,Europe,46.623943,14.307598,9020
+Klosterneuburg,Austria,Europe,48.30499,16.323756,3400
+Krems an der Donau,Austria,Europe,48.410838,15.600372,3500
+Kufstein,Austria,Europe,47.582996,12.169213,6330
+Leoben,Austria,Europe,47.380513,15.094776,8700
+Linz,Austria,Europe,48.305908,14.286198,4020
+Lustenau,Austria,Europe,47.427654,9.659941,6890
+Melk,Austria,Europe,48.227207,15.336999,3390
+Saalbach-Hinterglemm,Austria,Europe,47.372498,12.593678,5754
+Salzburg,Austria,Europe,47.793301,13.0043,5020
+Sankt Pölten,Austria,Europe,48.204398,15.622912,3100
+Steyr,Austria,Europe,48.039005,14.419128,4400
+Traun,Austria,Europe,47.918608,13.802306,4810
+Vienna,Austria,Europe,48.110298,16.5697,1300
+Villach,Austria,Europe,46.616728,13.850027,9500
+Wels,Austria,Europe,48.156547,14.024375,4600
+Wiener Neustadt,Austria,Europe,47.813185,16.244117,2700
+Wolfsberg,Austria,Europe,46.839058,14.845206,9400
+Zell am See,Austria,Europe,47.323964,12.796316,5700
+Aalst,Belgium,Europe,50.938323,4.039215,9300
+Anderlecht,Belgium,Europe,50.82869,4.289557,1070
+Antwerp,Belgium,Europe,51.1894,4.46028,2100
+Binche,Belgium,Europe,50.4103,4.165163,7130
+Bruges,Belgium,Europe,51.2093,3.2247,8000
+Brussels,Belgium,Europe,50.901402,4.48444,1930
+Charleroi,Belgium,Europe,50.411623,4.444528,6000
+Dinant,Belgium,Europe,50.259181,4.913059,5500
+Genk,Belgium,Europe,50.966763,5.483395,3600
+Ghent,Belgium,Europe,51.0543,3.7174,9000
+Hasselt,Belgium,Europe,50.930374,5.337804,3500
+Ixelles,Belgium,Europe,50.820633,4.388055,1050
+Kortrijk,Belgium,Europe,50.827643,3.265988,8500
+La Louvière,Belgium,Europe,50.479358,4.18563,7100
+Leuven,Belgium,Europe,50.879202,4.701168,3000
+Liège,Belgium,Europe,50.645094,5.573611,4000
+Mechelen,Belgium,Europe,51.028138,4.480345,2800
+Molenbeek-Saint-Jean,Belgium,Europe,50.854596,4.338636,1080
+Mons,Belgium,Europe,50.454957,3.951958,7000
+Mouscron,Belgium,Europe,50.743667,3.214273,7700
+Namur,Belgium,Europe,50.466528,4.866189,5000
+Ostend,Belgium,Europe,51.225856,2.919496,8400
+Roeselare,Belgium,Europe,50.944495,3.124765,8800
+Schaerbeek,Belgium,Europe,50.867604,4.373712,1030
+Seraing,Belgium,Europe,50.615238,5.508944,4100
+Tournai,Belgium,Europe,50.605646,3.387818,7500
+Verviers,Belgium,Europe,50.59324,5.867828,4800
+Banja Luka,Bosnia and Herzegovina,Europe,44.941399,17.297501,78250
+Kazanlak,Bulgaria,Europe,42.61913,25.393333,6100
+Sofia,Bulgaria,Europe,42.696693,23.411436,1540
+Varna,Bulgaria,Europe,43.232101,27.8251,9023
+Dubrovnik,Croatia,Europe,42.561401,18.2682,20213
+Sinj,Croatia,Europe,43.701731,16.63734,21230
+Split,Croatia,Europe,43.538898,16.298,21217
+Zagreb,Croatia,Europe,45.742901,16.0688,10410
+Limassol,Cyprus,Europe,34.68529,33.033266,3085
+Brno,Czech Republic,Europe,49.192244,16.611338,659 37
+Děčín,Czech Republic,Europe,50.78242,14.214722,405 02
+Frýdek-Místek,Czech Republic,Europe,49.685635,18.348342,738 01
+Havířov,Czech Republic,Europe,49.780114,18.436845,736 01
+Hradec Králové,Czech Republic,Europe,50.209211,15.832751,500 03
+Jihlava,Czech Republic,Europe,49.396064,15.590306,586 01
+Karlovy Vary,Czech Republic,Europe,50.230622,12.870144,913 34
+Karviná,Czech Republic,Europe,49.854272,18.541656,733 01
+Kladno,Czech Republic,Europe,49.772474,15.982281,539 72
+Kutná Hora,Czech Republic,Europe,49.948656,15.268112,284 01
+Liberec,Czech Republic,Europe,50.770265,15.058395,460 59
+Mariánské Lázně,Czech Republic,Europe,49.973952,12.703319,353 43
+Most,Czech Republic,Europe,50.503274,13.636112,434 01
+Olomouc,Czech Republic,Europe,49.594057,17.251143,771 00
+Opava,Czech Republic,Europe,49.9389,17.902417,746 01
+Ostrava,Czech Republic,Europe,49.834914,18.282008,702 00
+Pardubice,Czech Republic,Europe,50.038581,15.779136,530 02
+Plzeň,Czech Republic,Europe,49.747742,13.377525,306 17
+Prague,Czech Republic,Europe,50.1008,14.26,161 00
+Telč,Czech Republic,Europe,49.184765,15.452477,588 56
+Teplice,Czech Republic,Europe,50.640664,13.824446,415 01
+Zlín,Czech Republic,Europe,49.226766,17.666742,761 50
+Ústí nad Labem,Czech Republic,Europe,50.660333,14.038136,506 62
+České Budějovice,Czech Republic,Europe,48.974736,14.474285,370 01
+Český Krumlov,Czech Republic,Europe,48.810653,14.315059,381 01
+Aalborg,Denmark,Europe,57.092759,9.849243,9430
+Aarhus,Denmark,Europe,56.299999,10.619,
+Billund,Denmark,Europe,55.740299,9.15178,7190
+Copenhagen,Denmark,Europe,55.601751,12.3937,2665
+Tallinn,Estonia,Europe,59.4133,24.8328,10112
+Helsinki,Finland,Europe,60.2859,25.003051,00740
+Abbeville,France,Europe,50.143501,1.831891,80132
+Agen,France,Europe,44.174702,0.590556,47310
+Aix-en-Provence,France,Europe,43.529842,5.447474,13100
+Ajaccio,France,Europe,43.665301,7.690431,
+Albert,France,Europe,49.9715,2.69766,80300
+Albi,France,Europe,43.913898,2.11306,81990
+Amiens,France,Europe,49.894171,2.295695,80000
+Angers,France,Europe,47.473988,-0.551559,49100
+Angers/Marcé,France,Europe,47.560299,-0.312222,49140
+Angouleme,France,Europe,45.729198,0.221456,16430
+Annecy,France,Europe,45.930833,6.106389,74370
+Annemasse,France,Europe,46.192001,6.26839,74100
+Antibes,France,Europe,43.581388,7.123697,06600
+Arles,France,Europe,43.677622,4.630965,13200
+Aubenas-vals-lanas,France,Europe,44.544203,4.372192,07200
+Aurillac,France,Europe,44.891399,2.42194,15000
+Auxerre,France,Europe,47.850201,3.49711,89113
+Avignon,France,Europe,43.907299,4.90183,84000
+Bastia,France,Europe,42.5527,9.48373,20290
+Bayonne,France,Europe,43.494514,-1.473666,64100
+Beauvais,France,Europe,49.454399,2.11278,60000
+Belfort,France,Europe,47.655602,7.01083,90150
+Bergerac,France,Europe,44.825298,0.518611,24100
+Besançon,France,Europe,47.238022,6.024362,25000
+Beziers,France,Europe,43.323502,3.3539,34420
+Biarritz,France,Europe,43.471144,-1.552727,64200
+Biarritz-bayonne,France,Europe,43.468333,-1.531111,64600
+Bordeaux,France,Europe,44.8283,-0.715556,33700
+Boulogne-Billancourt,France,Europe,48.835665,2.240206,92100
+Brest,France,Europe,48.390528,-4.486009,29200
+Caen,France,Europe,49.18134,-0.363562,14000
+Cannes,France,Europe,43.55152,7.013442,06407
+Carcassonne,France,Europe,43.213036,2.349107,11000
+Chamonix,France,Europe,45.92467,6.872751,74400
+Charleville-Mézières,France,Europe,49.773571,4.720694,08000
+Colmar,France,Europe,48.077752,7.357964,68000
+Dijon,France,Europe,47.321581,5.04147,21000
+Grenoble,France,Europe,45.18756,5.735782,38000
+Le Havre,France,Europe,49.493898,0.107973,76620
+Lille,France,Europe,50.636565,3.063528,59800
+Limoges,France,Europe,45.835424,1.264485,87085
+Loire Valley,France,Europe,47.449277,-0.349549,49630
+Lourdes,France,Europe,43.09409,-0.046498,65100
+Lyon,France,Europe,45.726378,5.012691,69740
+Marne-La-Vallée,France,Europe,48.031399,-0.742986,53000
+Marseille,France,Europe,43.439272,5.221424,13700
+Menton,France,Europe,43.77535,7.502921,06500
+Metz,France,Europe,49.026901,6.191495,57420
+Monaco,France,Europe,42.280315,9.430448,20230
+Montpellier,France,Europe,43.611242,3.876734,34062
+Mulhouse,France,Europe,47.746723,7.338994,68100
+Nancy,France,Europe,48.693722,6.18341,54100
+Nantes,France,Europe,47.153198,-1.61073,44860
+Nice,France,Europe,43.658401,7.21587,06206
+Nîmes,France,Europe,43.837425,4.360069,30033
+Orléans,France,Europe,47.902734,1.908607,45000
+Paris,France,Europe,48.901843,2.456945,93000
+Perpignan,France,Europe,42.69853,2.895312,66000
+Provence,France,Europe,44.058056,6.063851,04510
+Reims,France,Europe,49.257789,4.031926,51100
+Rennes,France,Europe,48.111339,-1.68002,35000
+Rouen,France,Europe,49.440459,1.093966,76000
+Saint-Tropez,France,Europe,43.272719,6.640522,83990
+Saint-Étienne,France,Europe,45.440147,4.387306,42000
+Strasbourg,France,Europe,48.5383,7.62823,67960
+Toulon,France,Europe,43.125731,5.930492,12345
+Toulouse,France,Europe,43.629101,1.36382,31700
+Tours,France,Europe,47.390047,0.688927,37000
+Épernay,France,Europe,49.042561,3.952866,51200
+Aachen,Germany,Europe,50.823055,6.186389,52146
+Altenburg,Germany,Europe,50.981945,12.506389,04603
+Augsburg,Germany,Europe,48.425278,10.931667,86169
+Baltrum,Germany,Europe,53.724724,7.373333,26579
+Bamberg,Germany,Europe,49.891604,10.886848,96047
+Barth,Germany,Europe,54.338253,12.710515,18356
+Bayreuth,Germany,Europe,49.985001,11.64,95463
+Berchtesgaden,Germany,Europe,47.633022,13.002005,83471
+Berlin,Germany,Europe,52.4709,13.4047,12099
+Bielefeld,Germany,Europe,51.964722,8.544444,33659
+Birburg,Germany,Europe,49.945278,6.565,54634
+Bochum,Germany,Europe,51.481811,7.219664,44787
+Bonn,Germany,Europe,50.735262,7.102464,53111
+Braunschweig,Germany,Europe,52.264658,10.523607,38100
+Bremen,Germany,Europe,53.07582,8.807165,28195
+Chemnitz,Germany,Europe,50.832353,12.918914,09111
+Cologne,Germany,Europe,50.865898,7.14274,51147
+Cottbus,Germany,Europe,51.756745,14.335731,03046
+Darmstadt,Germany,Europe,49.872775,8.651177,64283
+Dortmund,Germany,Europe,51.514227,7.465279,44137
+Dresden,Germany,Europe,51.132801,13.7672,01109
+Duisburg,Germany,Europe,51.434999,6.759562,47051
+Dusseldorf,Germany,Europe,51.2277,6.7735,40213
+Erfurt,Germany,Europe,50.977797,11.028736,99084
+Erlangen,Germany,Europe,49.589157,10.981207,91056
+Essen,Germany,Europe,51.458224,7.015817,45127
+Frankfurt,Germany,Europe,50.033333,8.570556,64546
+Freiburg im Breisgau,Germany,Europe,47.99609,7.8494,79098
+Füssen,Germany,Europe,47.5676,10.699322,87629
+Garmisch-Partenkirchen,Germany,Europe,47.492374,11.096282,82467
+Gelsenkirchen,Germany,Europe,51.511032,7.096012,45879
+Görlitz,Germany,Europe,51.156318,14.991018,02826
+Göttingen,Germany,Europe,51.532833,9.935181,37073
+Halle,Germany,Europe,51.482435,11.971298,06108
+Hamburg,Germany,Europe,53.58284,9.911893,22525
+Hanover,Germany,Europe,52.374478,9.738553,30159
+Heidelberg,Germany,Europe,49.409358,8.694724,69117
+Ingolstadt,Germany,Europe,48.763016,11.42504,85049
+Jena,Germany,Europe,50.928172,11.587936,07743
+Karlsruhe,Germany,Europe,49.00687,8.40342,76133
+Kassel,Germany,Europe,51.315783,9.497848,34117
+Kiel,Germany,Europe,54.322708,10.135555,24103
+Leipzig,Germany,Europe,51.423889,12.236389,04435
+Lübeck,Germany,Europe,53.866444,10.684738,23552
+Magdeburg,Germany,Europe,52.131478,11.640079,39104
+Mannheim,Germany,Europe,49.489291,8.46731,68159
+Munich,Germany,Europe,48.353802,11.7861,85356
+Mönchengladbach,Germany,Europe,51.194713,6.435379,41061
+Münster,Germany,Europe,51.96251,7.625188,48143
+Nuremberg,Germany,Europe,49.4521,11.0767,90403
+Oberammergau,Germany,Europe,47.597344,11.064066,82487
+Potsdam,Germany,Europe,52.400931,13.05914,14467
+Quedlinburg,Germany,Europe,51.785543,11.151993,06484
+Regensburg,Germany,Europe,49.019533,12.097487,93047
+Rostock,Germany,Europe,54.088671,12.140021,18055
+Rothenburg ob der Tauber,Germany,Europe,49.377253,10.179002,91541
+Schwerin,Germany,Europe,53.62883,11.414804,19055
+Stuttgart,Germany,Europe,48.689899,9.22196,70629
+Trier,Germany,Europe,49.759621,6.644188,54290
+Tübingen,Germany,Europe,48.520326,9.053596,72070
+Ulm,Germany,Europe,48.398497,9.991246,89073
+Weimar,Germany,Europe,50.97933,11.329792,99423
+Wernigerode,Germany,Europe,51.834417,10.786253,38855
+Wiesbaden,Germany,Europe,50.082038,8.241656,65183
+Wuppertal,Germany,Europe,51.264018,7.178037,42285
+Würzburg,Germany,Europe,49.778036,9.943477,97074
+Agrinion,Greece,Europe,38.602001,21.3512,
+Alexandroupoli,Greece,Europe,40.845666,25.877881,681 00
+Alexandroupolis,Greece,Europe,40.8559,25.956301,681 33
+Alonissos,Greece,Europe,39.212307,23.909393,370 05
+Andravida,Greece,Europe,37.9207,21.292601,270 51
+Astypalaia,Greece,Europe,36.579899,26.375799,859 00
+Athens,Greece,Europe,37.91485,23.8353,194 41
+Chalcis,Greece,Europe,38.462366,23.594688,341 09
+Chania,Greece,Europe,35.512083,24.019154,731 36
+Corfu,Greece,Europe,39.591337,19.859619,490 84
+Crete,Greece,Europe,35.308495,24.463342,741 50
+Drama,Greece,Europe,41.149944,24.146829,661 00
+Heraklion,Greece,Europe,35.339699,25.1803,716 01
+Ioannina,Greece,Europe,39.663982,20.852278,453 32
+Ios,Greece,Europe,36.717324,25.333112,840 01
+Kalamata,Greece,Europe,37.037271,22.110707,241 00
+Katerini,Greece,Europe,40.271362,22.508762,601 50
+Kavala,Greece,Europe,40.936922,24.412277,653 02
+Kefalonia,Greece,Europe,38.266032,20.53739,280 81
+Komotini,Greece,Europe,41.1182,25.403571,691 00
+Kos,Greece,Europe,36.793693,27.084827,853 02
+Kozani,Greece,Europe,40.300726,21.788312,501 00
+Lamia,Greece,Europe,38.899383,22.433582,351 31
+Larissa,Greece,Europe,39.638309,22.416071,422 22
+Milos,Greece,Europe,36.709344,24.506834,848 00
+Mykonos,Greece,Europe,37.451394,25.392315,846 00
+Naxos,Greece,Europe,37.06001,25.470757,843 02
+Paros,Greece,Europe,37.087064,25.150997,844 00
+Patras,Greece,Europe,38.246242,21.735085,262 21
+Rhodes,Greece,Europe,36.434,28.2176,851 00
+Santorini,Greece,Europe,36.407111,25.456664,847 00
+Serres,Greece,Europe,41.091071,23.549803,621 00
+Skiathos,Greece,Europe,39.169298,23.455251,370 02
+Skopelos,Greece,Europe,39.140174,23.681376,370 04
+Thessaloniki,Greece,Europe,40.519699,22.9709,570 01
+Trikala,Greece,Europe,39.556087,21.767884,421 00
+Veria,Greece,Europe,40.521534,22.203683,591 32
+Volos,Greece,Europe,39.362483,22.940186,380 01
+Xanthi,Greece,Europe,41.13805,24.886409,671 33
+Zakynthos,Greece,Europe,37.789138,20.79009,290 90
+Alderney,Guernsey,Europe,49.706104,-2.21472,GY9 3UF
+Budapest,Hungary,Europe,47.42976,19.261093,1185
+Békéscsaba,Hungary,Europe,46.6798,21.098542,5600
+Debrecen,Hungary,Europe,47.531399,21.625978,4024
+Eger,Hungary,Europe,47.898989,20.374366,3300
+Győr,Hungary,Europe,47.683503,17.634283,9021
+Kaposvár,Hungary,Europe,46.356469,17.788689,7400
+Kecskemét,Hungary,Europe,46.907388,19.691721,6000
+Miskolc,Hungary,Europe,48.103064,20.790043,3525
+Mohács,Hungary,Europe,45.993384,18.682108,7700
+Nyíregyháza,Hungary,Europe,47.95578,21.716798,4400
+Pécs,Hungary,Europe,46.076509,18.228032,7621
+Salgótarján,Hungary,Europe,48.096068,19.800564,3100
+Sopron,Hungary,Europe,47.680306,16.598346,9400
+Szeged,Hungary,Europe,46.254631,20.148602,6720
+Szolnok,Hungary,Europe,47.175383,20.194628,5000
+Szombathely,Hungary,Europe,47.229118,16.618762,9700
+Székesfehérvár,Hungary,Europe,47.191017,18.410811,8000
+Tatabánya,Hungary,Europe,47.583845,18.397986,2800
+Veszprém,Hungary,Europe,47.093382,17.908041,8200
+Zalaegerszeg,Hungary,Europe,46.84158,16.845632,8900
+Érd,Hungary,Europe,47.37725,18.921383,2030
+Akureyri,Iceland,Europe,65.660004,-18.072701,600
+Bildudalur,Iceland,Europe,65.641296,-23.5462,
+Bantry,Ireland,Europe,51.668598,-9.48417,P75 N978
+Cork,Ireland,Europe,51.841301,-8.49111,T12 WK83
+Dublin,Ireland,Europe,53.421299,-6.27007,K67 A5W6
+Galway,Ireland,Europe,53.300201,-8.94159,H91 W9KH
+Killorglin,Ireland,Europe,52.106197,-9.786788,V93 KR66
+Limerick,Ireland,Europe,52.661252,-8.630124,V94 WF63
+Agrigento,Italy,Europe,37.312299,13.57465,92100
+Albenga,Italy,Europe,44.050598,8.12743,17038
+Alberobello,Italy,Europe,40.784124,17.237703,70011
+Alghero,Italy,Europe,40.632099,8.29077,
+Ancona,Italy,Europe,43.616299,13.3623,60015
+Aosta,Italy,Europe,45.738499,7.36872,11100
+Assisi,Italy,Europe,43.071195,12.614667,06081
+Aviano,Italy,Europe,46.031898,12.596503,33074
+Bari,Italy,Europe,41.138901,16.760599,70128
+Bergamo,Italy,Europe,45.673901,9.70417,24050
+Bologna,Italy,Europe,44.5354,11.2887,40132
+Bolzano,Italy,Europe,46.460201,11.3264,39055
+Brescia,Italy,Europe,45.77958,10.425873,25074
+Cagliari,Italy,Europe,39.217199,9.113311,09124
+Capri,Italy,Europe,40.548843,14.228371,80071
+Catania,Italy,Europe,37.502361,15.087372,95131
+Cinque Terre,Italy,Europe,44.122214,9.71325,19017
+Florence,Italy,Europe,43.810001,11.2051,50127
+Genoa,Italy,Europe,44.40726,8.933862,16123
+Ischia,Italy,Europe,40.734205,13.947125,80077
+Ivrea,Italy,Europe,45.467379,7.874797,10015
+Lecce,Italy,Europe,40.152217,18.226063,73022
+Livorno,Italy,Europe,42.790238,10.340224,57037
+Lucca,Italy,Europe,44.017764,10.45443,55052
+Matera,Italy,Europe,40.447642,16.473574,
+Milan,Italy,Europe,45.445099,9.27674,20138
+Modena,Italy,Europe,44.538473,10.935961,41014
+Naples,Italy,Europe,40.835885,14.248768,80132
+Olbia,Italy,Europe,40.923266,9.502744,07026
+Ostuni,Italy,Europe,40.727631,17.576406,72017
+Padua,Italy,Europe,45.407717,11.873446,35149
+Palermo,Italy,Europe,38.111227,13.352443,90134
+Parma,Italy,Europe,44.695201,10.097987,43048
+Perugia,Italy,Europe,43.107032,12.402996,06122
+Pisa,Italy,Europe,43.471472,10.679791,
+Pompeii,Italy,Europe,40.751738,14.490564,80045
+Ravenna,Italy,Europe,44.364061,12.05901,48026
+Reggio Calabria,Italy,Europe,38.103539,15.639756,89127
+Rome,Italy,Europe,41.799839,12.416894,00127
+San Gimignano,Italy,Europe,43.467799,11.043212,53038
+Siena,Italy,Europe,43.167206,11.467561,53022
+Syracuse,Italy,Europe,37.064614,15.29072,
+Taormina,Italy,Europe,37.851222,15.283019,98039
+Trieste,Italy,Europe,45.649648,13.777278,34122
+Turin,Italy,Europe,45.067755,7.682489,10121
+Tuscany,Italy,Europe,43.458654,11.13892,53036
+Venice,Italy,Europe,45.505299,12.3519,30012
+Verona,Italy,Europe,45.4386,10.9928,37121
+Riga,Latvia,Europe,56.923599,23.9711,LV-1053
+Barysiai,Lithuania,Europe,56.070599,23.5581,84253
+Kaunas,Lithuania,Europe,54.963902,24.084801,54456
+Vilnius,Lithuania,Europe,54.634102,25.285801,02195
+Echternach,Luxembourg,Europe,49.812096,6.421486,6422
+Luxembourg City,Luxembourg,Europe,49.6116,6.1319,2229
+Chișinău,Moldova,Europe,47.024512,28.832292,MD-2033
+'s-Hertogenbosch,Netherlands,Europe,51.688939,5.303116,5211 JW
+Alkmaar,Netherlands,Europe,52.600854,4.817099,1843 HG
+Almere,Netherlands,Europe,52.441751,5.209294,
+Amersfoort,Netherlands,Europe,52.16377,5.408884,3815 KA
+Amsterdam,Netherlands,Europe,52.308601,4.76389,1118 AS
+Apeldoorn,Netherlands,Europe,52.179574,5.930078,7339 GM
+Arnhem,Netherlands,Europe,51.984257,5.910857,6811 AD
+Breda,Netherlands,Europe,51.588784,4.776024,4811 XS
+Delft,Netherlands,Europe,52.011402,4.35839,2611 GP
+Deventer,Netherlands,Europe,52.26949,6.236489,7434 PM
+Dordrecht,Netherlands,Europe,51.768955,4.686789,3329 LA
+Eindhoven,Netherlands,Europe,51.439265,5.478633,5611 EB
+Enschede,Netherlands,Europe,52.220986,6.894054,7511 GD
+Groningen,Netherlands,Europe,53.219065,6.568008,9712 HS
+Haarlem,Netherlands,Europe,52.383728,4.643568,2031 WH
+Hilversum,Netherlands,Europe,52.224138,5.17194,1211 GX
+Leeuwarden,Netherlands,Europe,53.200594,5.791855,8911 CV
+Leiden,Netherlands,Europe,52.159475,4.490884,2312 JA
+Lelystad,Netherlands,Europe,52.515095,5.476892,8224 BS
+Maastricht,Netherlands,Europe,50.857986,5.696988,6221 AB
+Nijmegen,Netherlands,Europe,51.847495,5.863777,6511 KA
+Rotterdam,Netherlands,Europe,51.924442,4.47775,3032 AC
+The Hague,Netherlands,Europe,52.074946,4.26968,2563 JA
+Tilburg,Netherlands,Europe,51.585618,5.066062,5048 AB
+Utrecht,Netherlands,Europe,52.090701,5.121563,3512 JE
+Zaanstad,Netherlands,Europe,52.468924,4.773784,1551 SE
+Zoetermeer,Netherlands,Europe,52.062289,4.487754,2711 PH
+Zwolle,Netherlands,Europe,52.508976,6.094376,8011 CT
+Galičnik,North Macedonia,Europe,41.594841,20.654209,
+Alesund,Norway,Europe,62.5625,6.1197,6040
+Alta,Norway,Europe,69.976097,23.3717,9515
+Andoya,Norway,Europe,69.292503,16.144199,8480
+Bardufoss,Norway,Europe,69.055801,18.5404,9325
+Batsfjord,Norway,Europe,70.600502,29.691401,9990
+Bergen,Norway,Europe,60.2934,5.21814,5258
+Berlevag,Norway,Europe,70.871399,29.034201,
+Bodo,Norway,Europe,67.269203,14.3653,8003
+Moss,Norway,Europe,59.414668,10.659658,1525
+Oslo,Norway,Europe,60.008401,10.8337,1482
+Biała Podlaska,Poland,Europe,52.00078,23.132528,21-500
+Białystok,Poland,Europe,53.127505,23.147051,15-404
+Bielsko-Biała,Poland,Europe,49.822118,19.044894,43-300
+Bydgoszcz,Poland,Europe,53.129713,18.029449,85-669
+Bytom,Poland,Europe,50.347039,18.923186,41-902
+Chorzów,Poland,Europe,50.288473,18.97038,40-887
+Częstochowa,Poland,Europe,50.809,19.124409,42-202
+Dąbrowa Górnicza,Poland,Europe,50.369624,19.289046,42-520
+Elbląg,Poland,Europe,54.155871,19.404458,82-300
+Gdansk,Poland,Europe,54.377602,18.4662,80-298
+Gdynia,Poland,Europe,54.52333,18.604028,
+Gliwice,Poland,Europe,50.294113,18.665731,44-100
+Gorzów Wielkopolski,Poland,Europe,52.730993,15.240045,66-400
+Grudziądz,Poland,Europe,53.487648,18.755775,86-380
+Jastrzębie-Zdrój,Poland,Europe,49.96068,18.599372,44-335
+Kalisz,Poland,Europe,51.762475,18.089536,62-800
+Katowice,Poland,Europe,50.213732,19.005885,40-635
+Kielce,Poland,Europe,50.87199,20.631049,25-303
+Koszalin,Poland,Europe,54.19092,16.17707,75-241
+Kraków,Poland,Europe,50.077702,19.7848,32-083
+Legnica,Poland,Europe,51.204769,16.174675,59-220
+Lublin,Poland,Europe,51.218194,22.554678,20-484
+Olsztyn,Poland,Europe,53.776684,20.476507,10-027
+Opole,Poland,Europe,50.678793,17.929884,45-223
+Poznan,Poland,Europe,52.421001,16.8263,60-183
+Płock,Poland,Europe,52.535347,19.71363,09-402
+Radom,Poland,Europe,51.402256,21.154155,26-602
+Ruda Śląska,Poland,Europe,50.269866,18.864259,41-710
+Rybnik,Poland,Europe,50.110569,18.553187,44-200
+Rzeszów,Poland,Europe,50.013319,22.016168,35-333
+Sosnowiec,Poland,Europe,50.27124,19.215563,41-216
+Szczecin,Poland,Europe,53.430182,14.550962,70-413
+Słupsk,Poland,Europe,54.463577,17.020948,76-200
+Tarnów,Poland,Europe,50.012378,20.988074,33-106
+Toruń,Poland,Europe,53.014536,18.596583,87-119
+Tychy,Poland,Europe,50.126498,19.006785,43-100
+Warsaw,Poland,Europe,52.308399,20.80945,05-080
+Wałbrzych,Poland,Europe,50.785221,16.28464,58-302
+Wroclaw,Poland,Europe,51.102699,16.885799,54-340
+Włocławek,Poland,Europe,52.660387,19.071948,87-800
+Zabrze,Poland,Europe,50.308615,18.786375,41-800
+Zakopane,Poland,Europe,49.296911,19.950475,34-500
+Zielona Góra,Poland,Europe,51.938378,15.505041,65-068
+Łódź,Poland,Europe,51.768732,19.456991,90-102
+Agualva-Cacém,Portugal,Europe,38.766518,-9.298478,2735-044
+Albufeira,Portugal,Europe,37.088241,-8.252634,8200-081
+Almada,Portugal,Europe,38.68313,-9.15763,2800-125
+Alverca,Portugal,Europe,38.883301,-9.0301,2615-216
+Amadora,Portugal,Europe,38.758959,-9.236523,2700-336
+Aveiro,Portugal,Europe,40.640496,-8.653784,3810-156
+Azores,Portugal,Europe,37.808556,-25.473137,9600-313
+Beja,Portugal,Europe,38.078899,-7.9324,7800-742
+Braga,Portugal,Europe,41.551058,-8.428004,4704-553
+Coimbra,Portugal,Europe,40.211193,-8.429463,3000-179
+Faro,Portugal,Europe,37.016294,-7.935182,8000-268
+Funchal,Portugal,Europe,32.64965,-16.908678,9000-072
+Gondomar,Portugal,Europe,41.13982,-8.532627,4420-356
+Guimarães,Portugal,Europe,41.441768,-8.295571,4810-427
+Lagos,Portugal,Europe,37.102796,-8.672869,8600-668
+Leiria,Portugal,Europe,39.74379,-8.807112,2400-137
+Lisbon,Portugal,Europe,38.7813,-9.13592,1700-111
+Madeira,Portugal,Europe,32.75175,-16.981749,9030-347
+Odivelas,Portugal,Europe,38.790434,-9.179262,2675-367
+Portimão,Portugal,Europe,37.137581,-8.536843,8500-701
+Porto,Portugal,Europe,41.2481,-8.68139,4455-078
+Queluz,Portugal,Europe,38.756584,-9.254522,2745-143
+Setúbal,Portugal,Europe,38.524178,-8.893234,2900-277
+Tavira,Portugal,Europe,37.126249,-7.649912,8800-316
+Vila Nova de Gaia,Portugal,Europe,41.129226,-8.60574,4430-038
+Viseu,Portugal,Europe,40.657471,-7.913866,3514-501
+Évora,Portugal,Europe,38.570774,-7.909281,7000-508
+Arad,Romania,Europe,46.176601,21.261999,310059
+Bacau,Romania,Europe,46.5219,26.910299,600302
+Baia Mare,Romania,Europe,47.658401,23.469999,437348
+Brasov,Romania,Europe,45.6579,25.6012,500193
+Bucharest,Romania,Europe,44.537156,26.09355,014042
+Sighişoara,Romania,Europe,46.220204,24.793448,545400
+Timișoara,Romania,Europe,45.753836,21.225747,300030
+Transylvania,Romania,Europe,46.597162,24.37403,547065
+Abakan,Russia,Asia,53.740002,91.385002,655004
+Achinsk,Russia,Asia,56.268299,90.570801,
+Aldan,Russia,Asia,58.602798,125.408997,678900
+Amderma,Russia,Asia,69.763298,61.5564,
+Anadyr,Russia,Asia,64.734902,177.740997,689500
+Anapa,Russia,Europe,45.002102,37.347301,353419
+Apatity,Russia,Europe,67.463303,33.588299,
+Arkhangelsk,Russia,Europe,64.748154,43.219851,
+Astrakhan,Russia,Europe,46.283298,48.006302,414000
+Balakovo,Russia,Europe,51.858299,47.745602,
+Barnaul,Russia,Asia,53.3638,83.538498,656048
+Batagay,Russia,Asia,67.648003,134.695007,
+Batagay-Alyta,Russia,Asia,67.792,130.394,678580
+Belgorod,Russia,Europe,50.643799,36.590099,308508
+Beloyarsky,Russia,Asia,63.686901,66.698601,628164
+Berezovo,Russia,Asia,63.921001,65.030502,628140
+Beslan,Russia,Europe,43.205101,44.606602,386122
+Blagoveschensk,Russia,Asia,50.4254,127.412003,
+Bodaibo,Russia,Asia,57.8661,114.242996,666901
+Bogorodskoe,Russia,Asia,52.38,140.448,682400
+Cheboksary,Russia,Europe,56.13996,47.2481,428032
+Chelyabinsk,Russia,Asia,55.159841,61.402555,454091
+Irkutsk,Russia,Asia,52.289122,104.279829,664011
+Izhevsk,Russia,Europe,56.852973,53.210307,426057
+Kaliningrad,Russia,Europe,54.704648,20.456567,290505
+Kazan,Russia,Europe,55.794648,49.111502,420111
+Kemerovo,Russia,Asia,55.355091,86.087121,650099
+Khabarovsk,Russia,Asia,51.631268,136.121524,
+Kirov,Russia,Europe,58.603566,49.666624,610000
+Krasnodar,Russia,Europe,45.035153,38.97724,350000
+Krasnoyarsk,Russia,Asia,56.009117,92.872586,660049
+Kursk,Russia,Europe,51.727036,36.192248,305000
+Lipetsk,Russia,Europe,52.693518,39.112266,
+Makhachkala,Russia,Europe,42.983024,47.504872,367000
+Moscow,Russia,Europe,55.620352,37.629925,117545
+Nizhny Novgorod,Russia,Europe,56.130142,44.136469,607650
+Novokuznetsk,Russia,Asia,53.75759,87.135849,654007
+Novosibirsk,Russia,Asia,55.028831,82.922689,630099
+Omsk,Russia,Asia,54.983007,73.374522,644043
+Orenburg,Russia,Europe,51.767125,55.097852,460000
+Penza,Russia,Europe,53.195348,45.019044,440600
+Perm,Russia,Europe,58.010853,56.231853,614600
+Rostov-on-Don,Russia,Europe,47.261044,39.724909,344068
+Ryazan,Russia,Europe,54.629569,39.742504,390000
+Saint Petersburg,Russia,Europe,59.960674,30.158655,
+Samara,Russia,Europe,53.195626,50.101493,443028
+Saratov,Russia,Europe,51.530018,46.034683,410012
+Sergiev Posad,Russia,Europe,56.315328,38.13599,141315
+Sochi,Russia,Europe,43.585482,39.723109,354000
+Stavropol,Russia,Europe,44.863258,43.440691,
+Suzdal,Russia,Europe,56.419391,40.448789,601293
+Tolyatti,Russia,Europe,53.509884,49.418919,445021
+Tomsk,Russia,Asia,58.612428,82.047532,
+Tula,Russia,Europe,54.193032,37.61754,300000
+Tyumen,Russia,Asia,57.153534,65.542274,625000
+Ufa,Russia,Europe,54.726141,55.947499,450077
+Ulyanovsk,Russia,Europe,54.33465,48.5147,432069
+Vladimir,Russia,Europe,56.12889,40.40752,600000
+Vladivostok,Russia,Asia,43.115068,131.885577,690000
+Volgograd,Russia,Europe,48.708191,44.515335,400066
+Voronezh,Russia,Europe,51.660598,39.200586,394018
+Yakutsk,Russia,Asia,62.098392,129.658142,
+Yaroslavl,Russia,Europe,57.626388,39.89337,150000
+Yekaterinburg,Russia,Asia,56.838207,60.600789,620014
+Batajnica,Serbia,Europe,44.935299,20.2575,11273
+Belgrade,Serbia,Europe,44.818401,20.309099,11271
+Guča,Serbia,Europe,43.777293,20.226942,32230
+Novi Sad,Serbia,Europe,45.255134,19.845176,21000
+Lerwick,"Shetland Islands, Scotland",Europe,60.153111,-1.142707,ZE1 0BD
+Východná,Slovakia,Europe,49.061229,19.894612,032 32
+Ljubljana,Slovenia,Europe,46.223701,14.4576,4210
+Ptuj,Slovenia,Europe,46.41981,15.871738,2250
+A Coruña,Spain,Europe,43.37097,-8.395942,15001
+Albacete,Spain,Europe,38.948502,-1.86352,02006
+Algeciras,Spain,Europe,36.12888,-5.441118,11201
+Alicante,Spain,Europe,38.2822,-0.558156,03195
+Almeria,Spain,Europe,36.843899,-2.3701,04130
+Arrecife,Spain,Europe,28.945499,-13.6052,35559
+Aviles,Spain,Europe,43.563599,-6.03462,33459
+Badajoz,Spain,Europe,38.8913,-6.82133,06195
+Barcelona,Spain,Europe,41.2971,2.07846,08820
+Benidorm,Spain,Europe,38.540626,-0.129093,03500
+Bilbao,Spain,Europe,43.301102,-2.91061,48150
+Burgos,Spain,Europe,42.343926,-3.696977,09004
+Buñol,Spain,Europe,39.418958,-0.790964,46360
+Castellón de la Plana,Spain,Europe,39.986035,-0.037735,12001
+Cuenca,Spain,Europe,40.066103,-2.131353,16004
+Cáceres,Spain,Europe,39.474518,-6.371676,10003
+Gijón,Spain,Europe,43.544942,-5.66275,33201
+Granada,Spain,Europe,37.1735,-3.599534,18005
+Ibiza,Spain,Europe,38.97439,1.419746,07816
+L'Hospitalet de Llobregat,Spain,Europe,41.35986,2.099793,08901
+Las Palmas de Gran Canaria,Spain,Europe,28.128869,-15.434902,35006
+Logroño,Spain,Europe,42.46612,-2.439668,26003
+Madrid,Spain,Europe,40.446442,-3.597883,28022
+Magaluf,Spain,Europe,39.509568,2.535724,07181
+Marbella,Spain,Europe,36.508976,-4.88562,29601
+Murcia,Spain,Europe,37.789001,-0.968695,30591
+Málaga,Spain,Europe,36.721303,-4.421637,29015
+Oviedo,Spain,Europe,43.353345,-5.87951,33006
+Palma de Mallorca,Spain,Europe,39.551701,2.73881,07610
+Pamplona,Spain,Europe,42.818199,-1.644009,31001
+Playa de Palma,Spain,Europe,39.517773,2.742604,07610
+Salamanca,Spain,Europe,40.965157,-5.664018,37002
+San Sebastián,Spain,Europe,43.322422,-1.983889,20003
+Santa Cruz de Tenerife,Spain,Europe,28.467178,-16.250784,38002
+Santander,Spain,Europe,43.461893,-3.810026,39002
+Santiago de Compostela,Spain,Europe,42.880422,-8.545861,15705
+Segovia,Spain,Europe,40.948119,-4.11721,40001
+Sevilla,Spain,Europe,37.29645,-5.754525,
+Seville,Spain,Europe,37.3891,-5.9845,41003
+Tenerife,Spain,Europe,28.2636,-16.457,38579
+Toledo,Spain,Europe,39.855891,-4.024265,45001
+Valencia,Spain,Europe,39.4893,-0.481625,46940
+Valladolid,Spain,Europe,41.652181,-4.728605,47001
+Vigo,Spain,Europe,42.23766,-8.72472,36202
+Zaragoza,Spain,Europe,41.652134,-0.880943,50004
+Ávila,Spain,Europe,40.656478,-4.700217,05001
+Arvidsjaur,Sweden,Europe,65.590302,19.2819,
+Gothenborg,Sweden,Europe,57.71875,12.0751,433 67
+Gothenburg,Sweden,Europe,57.707233,11.967017,411 10
+Stockholm,Sweden,Europe,59.264968,17.590834,151 57
+Altenrhein,Switzerland,Europe,47.485001,9.56077,9423
+Basel,Switzerland,Europe,47.5596,7.5886,4051
+Bern,Switzerland,Europe,46.914101,7.49715,3123
+Biel/Bienne,Switzerland,Europe,47.140208,7.243903,2501
+Chur,Switzerland,Europe,46.854747,9.52649,7000
+Fribourg,Switzerland,Europe,46.678912,7.102711,1648
+Geneva,Switzerland,Europe,46.238098,6.10895,1218
+Grindelwald,Switzerland,Europe,46.624273,8.036746,3818
+Interlaken,Switzerland,Europe,46.685523,7.858514,3800
+Köniz,Switzerland,Europe,46.922238,7.413058,3098
+La Chaux-de-Fonds,Switzerland,Europe,47.103132,6.832578,2300
+Lausanne,Switzerland,Europe,46.521827,6.632702,1003
+Lucerne,Switzerland,Europe,47.0502,8.3093,6004
+Lugano,Switzerland,Europe,46.00501,8.952028,6900
+Montreux,Switzerland,Europe,46.431083,6.912992,1820
+Neuchâtel,Switzerland,Europe,46.989583,6.929264,2000
+Schaffhausen,Switzerland,Europe,47.696049,8.634513,8201
+Sion,Switzerland,Europe,46.231175,7.35888,1950
+St. Gallen,Switzerland,Europe,47.425618,9.37624,9004
+Thun,Switzerland,Europe,46.758283,7.628086,3600
+Uster,Switzerland,Europe,47.351206,8.717922,8610
+Vernier,Switzerland,Europe,46.213184,6.081576,1214
+Vevey,Switzerland,Europe,46.460298,6.841866,1800
+Winterthur,Switzerland,Europe,47.499172,8.72915,8400
+Yverdon-les-Bains,Switzerland,Europe,46.778571,6.640916,1400
+Zermatt,Switzerland,Europe,46.021208,7.749254,3920
+Zurich,Switzerland,Europe,47.464699,8.54917,8185
+Adana,Turkey,Asia,36.992151,35.353149,01280
+Adiyaman,Turkey,Asia,37.7314,38.468899,
+Afyon,Turkey,Asia,38.726398,30.601101,
+Agri,Turkey,Asia,39.654541,43.025978,
+Alanya,Turkey,Asia,36.299217,32.300598,07900
+Ankara,Turkey,Asia,40.03895,32.841848,06291
+Balikesir,Turkey,Asia,39.619301,27.926001,10050
+Balikesir Korfez,Turkey,Asia,39.5546,27.0138,10302
+Bandirma,Turkey,Asia,40.318001,27.977699,10200
+Batman,Turkey,Asia,37.929001,41.1166,72100
+Bingol,Turkey,Asia,38.859261,40.595963,
+Bodrum,Turkey,Asia,37.195349,27.667001,
+Edirne,Turkey,Asia,41.675933,26.558722,22020
+Izmir,Turkey,Asia,38.4027,27.083549,35290
+Sanliurfa,Turkey,Asia,37.269981,38.871346,
+Berdyansk,Ukraine,Europe,46.814999,36.758099,71116
+Chernivtsi,Ukraine,Europe,48.28647,25.937653,58002
+Kiev,Ukraine,Europe,50.450147,30.512846,01054
+Aberdeen,United Kingdom,Europe,57.2019,-2.19778,AB21 7EY
+Angelsey,United Kingdom,Europe,53.2481,-4.53534,LL65 3NY
+Barra,United Kingdom,Europe,57.0228,-7.44306,HS9 5YD
+Bath,United Kingdom,Europe,51.381386,-2.359696,BA1 1LY
+Belfast,United Kingdom,Europe,54.6378,-6.044165,BT17 0NG
+Bembridge,United Kingdom,Europe,50.678101,-1.10944,PO36 8QY
+Benbecula,United Kingdom,Europe,57.481098,-7.36278,HS7 5LW
+Benson,United Kingdom,Europe,51.616402,-1.09583,OX10 6AA
+Biggin Hill,United Kingdom,Europe,51.330799,0.0325,TN16 3BH
+Birmingham,United Kingdom,Europe,52.453899,-1.74803,B92 0DX
+Blackbushe,United Kingdom,Europe,51.323898,-0.8475,GU17 9LQ
+Blackpool,United Kingdom,Europe,53.771702,-3.02861,FY4 2RN
+Bournemouth,United Kingdom,Europe,50.720151,-1.879912,BH2 6EG
+Brighton,United Kingdom,Europe,50.821463,-0.140056,BN1 1HH
+Bristol,United Kingdom,Europe,51.451052,-2.65496,BS8 3TF
+Cambridge,United Kingdom,Europe,52.205531,0.118664,CB2 3NR
+Canterbury,United Kingdom,Europe,51.280028,1.080253,CT1 2JA
+Cardiff,United Kingdom,Europe,51.481655,-3.179193,CF10 3FG
+Chester,United Kingdom,Europe,53.190887,-2.890896,CH1 2ET
+Chichester,United Kingdom,Europe,50.836486,-0.779172,PO19 1LQ
+Dundee,United Kingdom,Europe,56.460594,-2.97019,DD1 1SG
+Durham,United Kingdom,Europe,54.666667,-1.75,DL14 0LT
+Edinburgh,United Kingdom,Europe,55.950001,-3.3725,EH29 9ES
+Fort William,United Kingdom,Europe,56.817826,-5.110952,PH33 6AJ
+Glasgow,United Kingdom,Europe,55.871899,-4.43306,PA3 2SW
+Inverness,United Kingdom,Europe,57.479012,-4.225739,IV1 1AN
+Isle of Skye,United Kingdom,Europe,57.363008,-6.302174,
+Leeds,United Kingdom,Europe,53.797418,-1.543794,LS1 6EX
+Lincoln,United Kingdom,Europe,53.229354,-0.540482,LN2 1AH
+Liverpool,United Kingdom,Europe,53.407199,-2.99168,L2 3SW
+London,United Kingdom,Europe,51.57674,-0.146055,N6 5ST
+Manchester,United Kingdom,Europe,53.479489,-2.245115,M60 2TL
+Newcastle upon Tyne,United Kingdom,Europe,54.973847,-1.613157,NE1 5BS
+Newquay,United Kingdom,Europe,50.413441,-5.084884,TR7 1JF
+Norwich,United Kingdom,Europe,52.628558,1.292395,NR2 1NE
+Nottingham,United Kingdom,Europe,52.953419,-1.149646,NG1 2LH
+Plymouth,United Kingdom,Europe,50.371412,-4.142445,PL1 1RJ
+Salisbury,United Kingdom,Europe,51.069061,-1.795413,SP1 1EP
+Sheffield,United Kingdom,Europe,53.380663,-1.470228,S1 2HY
+Southampton,United Kingdom,Europe,50.902535,-1.404189,SO14 2FT
+St Ives,United Kingdom,Europe,50.214906,-5.479508,TR26 1LP
+Stratford-upon-Avon,United Kingdom,Europe,52.19278,-1.70634,CV37 6AH
+Torquay,United Kingdom,Europe,50.465239,-3.521136,TQ1 1QN
+Warwick,United Kingdom,Europe,52.281452,-1.581574,CV34 4JY
+Winchester,United Kingdom,Europe,51.061277,-1.313169,SO23 9LS
+Windsor,United Kingdom,Europe,51.483789,-0.604042,SL4 1QF
+York,United Kingdom,Europe,53.965658,-1.074305,YO31 8RA
+Antigua,Antigua and Barbuda,North America,17.1367,-61.792702,
+Alice Town,Bahamas,North America,25.6999,-79.264702,
+Andros,Bahamas,North America,24.158701,-77.589798,
+Andros Town,Bahamas,North America,24.697901,-77.795601,
+Arthur's Town,Bahamas,North America,24.6294,-75.673797,
+Nassau,Bahamas,North America,25.061,-77.383102,
+Ambergris Caye,Belize,North America,17.902625,-87.981793,
+Belize City,Belize,North America,17.539101,-88.308197,
+Caye Caulker,Belize,North America,17.743204,-88.02503,
+Placencia,Belize,North America,16.515611,-88.367178,
+San Ignacio,Belize,North America,17.152759,-89.076172,
+Bermuda,Bermuda,North America,32.363998,-64.678703,DD 03
+Anegada,British Virgin Islands,North America,18.7272,-64.329697,
+108 Mile Ranch,Canada,North America,51.736099,-121.333,V0K 2Z0
+Abbotsford,Canada,North America,49.025299,-122.361,V2T 6C2
+Aklavik,Canada,North America,68.223297,-135.00599,X0E 0T0
+Akulivik,Canada,North America,60.8186,-78.148598,
+Alert,Canada,North America,82.517799,-62.280602,
+Alert Bay,Canada,North America,50.582199,-126.916,V0N 1A0
+Alma,Canada,North America,48.5089,-71.641899,G8C 1N8
+Amos,Canada,North America,48.563903,-78.249702,
+Anahim Lake,Canada,North America,52.452499,-125.303001,V0L 1C0
+Angling Lake,Canada,North America,53.849201,-89.579399,
+Arctic Bay,Canada,North America,73.005892,-85.032549,
+Armstrong,Canada,North America,50.290298,-88.909698,
+Atikokan,Canada,North America,48.773899,-91.638603,
+Attawapiskat,Canada,North America,52.927502,-82.4319,P0L 1A0
+Aupaluk,Canada,North America,59.2967,-69.599701,
+Bagotville,Canada,North America,48.330601,-70.996399,G7B 3N8
+Baie Comeau,Canada,North America,49.1325,-68.204399,
+Baker Lake,Canada,North America,64.298897,-96.077797,
+Banff,Canada,North America,51.20734,-115.541861,T1L 1H8
+Barrie-Orillia,Canada,North America,44.485298,-79.555603,L0L 2E0
+Bathurst,Canada,North America,47.6297,-65.738899,E2A 7C2
+Bearskin Lake,Canada,North America,53.965599,-91.027199,
+Beaver Creek,Canada,North America,62.410301,-140.867004,
+Bedwell Harbour,Canada,North America,48.75,-123.233002,V0N 2M2
+Bella Coola,Canada,North America,52.387501,-126.596001,V0T 1H0
+Berens River,Canada,North America,52.358898,-97.018303,
+Big Trout Lake,Canada,North America,53.817799,-89.896896,
+Black Tickle,Canada,North America,53.469398,-55.785,
+Bob Quinn Lake,Canada,North America,56.966702,-130.25,
+Bonaventure,Canada,North America,48.071098,-65.460297,G0C 1E0
+Bonnyville,Canada,North America,54.304199,-110.744003,T9N 2J5
+Calgary,Canada,North America,51.113899,-114.019997,T2E 7V8
+Deer Lake,Canada,North America,50.9333,-75.7264,
+Edmonton,Canada,North America,53.441099,-113.550503,T6R 0X1
+Halifax,Canada,North America,44.880798,-63.508598,B2T 1K2
+Kamloops,Canada,North America,47.012152,-102.566002,
+Kitchener–Waterloo,Canada,North America,43.452867,-80.503692,N2G 1E1
+Montreal,Canada,North America,45.555868,-73.732132,H7V 0A3
+Nanaimo,Canada,North America,49.119135,-123.90993,V9R 6Z7
+Ottawa,Canada,North America,45.391399,-75.65765,K1H 5M9
+Quebec City,Canada,North America,46.7911,-71.393303,G2G 0J4
+St. John's,Canada,North America,47.618599,-52.7519,A1A 0L2
+Toronto,Canada,North America,43.72735,-79.465601,M3K 1E1
+Vancouver,Canada,North America,49.24415,-123.147499,V6J
+Victoria,Canada,North America,48.535943,-123.407435,V8Y 1T1
+Winnipeg,Canada,North America,49.91,-97.239899,R3J 3W5
+La Fortuna,Costa Rica,North America,10.471684,-84.644436,21007
+Liberia,Costa Rica,North America,10.62967,-85.438252,50101
+Manuel Antonio,Costa Rica,North America,9.408569,-84.154759,60601
+Monteverde,Costa Rica,North America,10.291152,-84.813644,61201
+Puerto Viejo de Talamanca,Costa Rica,North America,9.649654,-82.775088,70403
+Tamarindo,Costa Rica,North America,10.298412,-85.83995,50309
+Baracoa Playa,Cuba,North America,21.69905,-78.542801,
+Bayamo,Cuba,North America,20.3964,-76.621399,85100
+Guantanamo,Cuba,North America,19.9959,-75.182701,
+Havana,Cuba,North America,22.989201,-82.409103,19210
+Barahona,Dominican Republic,North America,18.251499,-71.120399,81000
+Punta Cana,Dominican Republic,North America,18.5674,-68.363403,23000
+Santo Domingo,Dominican Republic,North America,18.4497,-69.819149,11705
+San Salvador,El Salvador,North America,13.697629,-89.191156,1011
+Suchitoto,El Salvador,North America,13.936723,-89.025934,
+Aasiaat,Greenland,North America,68.721802,-52.784698,3950
+Alluitsup Paa,Greenland,North America,60.46445,-45.56917,3919
+Attu,Greenland,North America,67.940663,-53.62187,
+Uummannaq,Greenland,North America,70.707314,-52.403916,
+Antigua Guatemala,Guatemala,North America,14.556781,-90.733735,03001
+Guatemala City,Guatemala,North America,14.641614,-90.513284,01001
+Guatemala City & Antigua,Guatemala,North America,14.506168,-90.610927,01064
+Lake Atitlán,Guatemala,North America,14.680146,-91.186161,07013
+Tikal,Guatemala,North America,17.220815,-89.617016,
+Ahuas,Honduras,North America,15.4722,-84.352203,
+Copán,Honduras,North America,14.895868,-88.925581,
+Roatán,Honduras,North America,16.349021,-86.497751,34101
+Tegucigalpa,Honduras,North America,14.105814,-87.204705,11100
+Utila,Honduras,North America,16.100512,-86.894986,34201
+Kingston,Jamaica,North America,17.96215,-76.805649,
+Montego Bay,Jamaica,North America,18.47246,-77.921736,
+Acapulco,Mexico,North America,16.757099,-99.753998,39893
+Aguascalientes,Mexico,North America,21.705601,-102.318001,20375
+Cabo San Lucas,Mexico,North America,22.8909,-109.912,23470
+Campeche,Mexico,North America,19.0,-90.5,
+Cancún,Mexico,North America,21.036501,-86.877098,77565
+Chihuahua,Mexico,North America,28.5,-106.0,
+Ciudad Juárez,Mexico,North America,31.690798,-106.425322,32606
+Culiacán,Mexico,North America,24.797896,-107.393395,80200
+Guadalajara,Mexico,North America,20.521799,-103.310997,45659
+Guanajuato,Mexico,North America,20.9877,-101.0,37848
+Hermosillo,Mexico,North America,29.094821,-110.96922,83190
+León,Mexico,North America,21.121965,-101.682977,37000
+Los Cabos,Mexico,North America,22.8905,-109.9167,37807
+Mazatlán,Mexico,North America,23.203578,-106.420839,82000
+Mexicali,Mexico,North America,32.624531,-115.452604,21280
+Mexico City,Mexico,North America,19.4363,-99.072098,07970
+Monterrey,Mexico,North America,25.82205,-100.172001,66626
+Morelia,Mexico,North America,19.6546,-101.26238,58343
+Mérida,Mexico,North America,20.937,-89.6577,97259
+Oaxaca,Mexico,North America,16.999901,-96.726601,71230
+Playa del Carmen,Mexico,North America,20.64611,-87.080902,77724
+Puebla,Mexico,North America,19.1581,-98.371399,74160
+Puerto Escondido,Mexico,North America,15.869333,-97.072643,71980
+Puerto Vallarta,Mexico,North America,20.680099,-105.253998,48354
+Querétaro,Mexico,North America,20.805222,-99.883738,
+San Cristóbal de las Casas,Mexico,North America,16.735377,-92.63873,29200
+San Miguel de Allende,Mexico,North America,20.9144,-100.7419,37700
+Tijuana,Mexico,North America,32.53174,-117.019529,22010
+Torreón,Mexico,North America,25.542698,-103.410512,27289
+Tulum,Mexico,North America,20.429647,-87.652931,
+Veracruz,Mexico,North America,19.333333,-96.666667,
+Zacatecas,Mexico,North America,23.091618,-102.933395,
+Bluefields,Nicaragua,North America,11.991,-83.774101,81000
+Bonanza,Nicaragua,North America,13.95,-84.599998,72300
+Managua,Nicaragua,North America,12.154712,-86.273725,12000
+Bocas Del Toro,Panama,North America,9.34085,-82.250801,
+Boquete,Panama,North America,8.74075,-82.385383,
+Aguadilla,Puerto Rico,North America,18.4949,-67.129402,00603
+Arecibo,Puerto Rico,North America,18.450001,-66.675301,00616
+San Juan,Puerto Rico,North America,18.4481,-66.04995,00914
+Basse Terre,Saint Kitts and Nevis,North America,17.311199,-62.7187,
+Bequia,Saint Vincent and the Grenadines,North America,12.9884,-61.262001,VC0400
+Albert Lea,USA,North America,43.648013,-93.368266,56007
+Albia,USA,North America,41.026456,-92.807522,52531
+Ames,USA,North America,42.026757,-93.617045,50010
+Anaheim,USA,North America,33.834752,-117.911732,92805
+Anamosa,USA,North America,42.108337,-91.285159,52205
+Andover,USA,North America,42.65717,-71.140878,01810
+Ankeny,USA,North America,41.73208,-93.605092,50023
+Antioch,USA,North America,38.00933,-121.810692,94509
+Apple Valley,USA,North America,44.731909,-93.21772,55068
+Arlington Heights,USA,North America,42.081156,-87.980216,60005
+Arvada,USA,North America,39.80055,-105.081157,80002
+Atlantic,USA,North America,39.514327,-74.663288,08330
+Aurora,USA,North America,41.75717,-88.314754,60505
+Baxter,USA,North America,36.282069,-92.344522,72653
+Belle Plaine,USA,North America,41.89692,-92.277323,52208
+Beloit,USA,North America,42.508327,-89.031784,53511
+Bend,USA,North America,44.058173,-121.31531,97703
+Berkeley,USA,North America,37.870839,-122.272863,94704
+Beverly Hills,USA,North America,34.06965,-118.396306,90210
+Blaine,USA,North America,41.919584,-99.979237,
+Bolingbrook,USA,North America,41.70033,-88.071771,60440
+Boone,USA,North America,42.321246,-88.823551,61008
+Boulder,USA,North America,40.014986,-105.270545,80302
+Bozeman,USA,North America,45.679429,-111.044047,59715
+Brainerd,USA,North America,46.358022,-94.200829,56401
+Brookfield,USA,North America,41.822838,-87.848085,60513
+Brooklyn,USA,North America,40.652601,-73.949721,11226
+Brooklyn Center,USA,North America,45.074854,-93.32963,55429
+Brooklyn Park,USA,North America,45.100481,-93.344358,55443
+Buffalo,USA,North America,42.886416,-78.878149,14202
+Buffalo Grove,USA,North America,42.15442,-87.958962,60089
+Bullhead City,USA,North America,35.145,-114.56278,86429
+Burbank,USA,North America,34.181209,-118.307201,91502
+Burnsville,USA,North America,44.767057,-93.277389,55337
+Butte,USA,North America,39.651928,-121.585844,95965
+Canton,USA,North America,40.798546,-81.374951,44702
+Carroll,USA,North America,42.064735,-89.955678,61053
+Carson,USA,North America,33.832204,-118.251755,90745
+Cedar Rapids,USA,North America,41.975887,-91.670405,52401
+Centennial,USA,North America,39.579155,-104.876923,80114
+Center Point,USA,North America,42.190826,-91.785177,52213
+Centerville,USA,North America,31.257822,-95.97853,75833
+Champaign,USA,North America,40.116484,-88.243093,61820
+Champlin,USA,North America,45.188854,-93.397454,55316
+Chandler,USA,North America,33.306203,-111.841185,85225
+Chariton,USA,North America,39.537293,-92.952473,
+Charles City,USA,North America,37.370578,-77.06051,23147
+Charlotte,USA,North America,35.227209,-80.843083,28202
+Chico,USA,North America,39.728494,-121.837478,95928
+Chula Vista,USA,North America,32.640054,-117.084195,91950
+Cicero,USA,North America,41.84554,-87.75402,60804
+Clive,USA,North America,41.609656,-93.775464,50325
+Coeur d'Alene,USA,North America,47.674299,-116.781153,83814
+Colfax,USA,North America,41.573864,-97.082849,68661
+Collins,USA,North America,41.902803,-93.306338,50055
+Colo,USA,North America,38.725178,-105.607716,
+Colorado Springs,USA,North America,38.833958,-104.825348,80903
+Columbia Heights,USA,North America,45.046046,-93.25178,55421
+Compton,USA,North America,33.894927,-118.226624,90220
+Coon Rapids,USA,North America,45.172892,-93.30239,55433
+Coralville,USA,North America,41.675998,-91.580705,52241
+Corona,USA,North America,33.875294,-117.566444,92879
+Corvallis,USA,North America,44.564566,-123.262044,97333
+Costa Mesa,USA,North America,33.663339,-117.903317,92626
+Cottage Grove,USA,North America,44.827745,-92.943822,55016
+Council Bluffs,USA,North America,41.258841,-95.851948,51501
+Creston,USA,North America,41.058588,-94.361397,50801
+Crystal,USA,North America,45.031823,-93.360607,55427
+Daly City,USA,North America,37.690483,-122.47267,94015
+Davenport,USA,North America,41.523581,-90.577097,52801
+Dearborn,USA,North America,42.32226,-83.176314,48126
+Decorah,USA,North America,43.304161,-91.78591,52101
+Des Moines,USA,North America,41.586865,-93.624949,50309
+Des Plaines,USA,North America,42.041582,-87.887392,60016
+Devils Lake,USA,North America,48.112779,-98.86512,58301
+Dickinson,USA,North America,38.879062,-97.189334,67410
+Downers Grove,USA,North America,41.793682,-88.010228,60516
+Downey,USA,North America,33.940444,-118.129285,90241
+Dubuque,USA,North America,42.500624,-90.664798,52001
+Duluth,USA,North America,46.783829,-92.105268,55802
+Eagan,USA,North America,44.818173,-93.165918,55122
+East Grand Forks,USA,North America,47.931701,-97.017579,56721
+Eau Claire,USA,North America,44.811349,-91.498494,54701
+Eden Prairie,USA,North America,44.854686,-93.470786,55344
+Edina,USA,North America,44.889703,-93.350122,55436
+El Cajon,USA,North America,32.794773,-116.962526,92020
+El Monte,USA,North America,34.075157,-118.036849,91731
+Elk Grove Village,USA,North America,42.003559,-88.003771,60007
+Elkhart,USA,North America,41.60128,-85.85906,46528
+Elmhurst,USA,North America,41.899474,-87.940342,60126
+Escondido,USA,North America,33.121675,-117.081485,92025
+Estherville,USA,North America,43.402664,-94.83636,51334
+Eugene,USA,North America,44.050505,-123.095051,97401
+Eureka,USA,North America,40.801875,-124.170756,95501
+Evanston,USA,North America,42.047004,-87.684605,60201
+Evansville,USA,North America,37.970495,-87.571564,47708
+Everett,USA,North America,47.979344,-122.212701,98201
+Fairfield,USA,North America,39.788611,-82.641888,43112
+Fargo,USA,North America,46.877229,-96.789821,58102
+Faribault,USA,North America,43.664796,-93.95105,56013
+Farmington,USA,North America,44.640243,-93.14355,55024
+Farmington Hills,USA,North America,42.485312,-83.377155,48334
+Flagstaff,USA,North America,35.198752,-111.651822,86001
+Flint,USA,North America,43.016169,-83.690021,48502
+Fond du Lac,USA,North America,43.753341,-88.44938,54935
+Fontana,USA,North America,34.092295,-117.43433,92335
+Forest Lake,USA,North America,45.279106,-92.985163,55025
+Fort Collins,USA,North America,40.587178,-105.077011,80524
+Fort Dodge,USA,North America,42.504402,-94.191004,50501
+Fort Madison,USA,North America,40.631142,-91.308401,52627
+Fort Wayne,USA,North America,41.07999,-85.138602,46802
+Fresno,USA,North America,36.739442,-119.78483,93721
+Fridley,USA,North America,45.083829,-93.259039,55432
+Fullerton,USA,North America,33.870822,-117.929416,92832
+Garden Grove,USA,North America,33.774629,-117.946372,92843
+Gary,USA,North America,41.602096,-87.337065,46402
+Gilbert,USA,North America,33.352763,-111.789037,85269
+Glendale,USA,North America,34.146942,-118.247847,91206
+Glenview,USA,North America,42.070066,-87.811404,60025
+Golden Valley,USA,North America,46.931794,-103.866841,58654
+Grafton,USA,North America,43.970245,-71.874263,03279
+Grand Forks,USA,North America,47.92521,-97.030632,58201
+Grand Junction,USA,North America,39.067257,-108.56448,81501
+Grand Rapids,USA,North America,42.963242,-85.667864,49503
+Greeley,USA,North America,40.423314,-104.709132,80631
+Green Bay,USA,North America,44.512638,-88.012579,54305
+Greenfield,USA,North America,42.587634,-72.600207,01301
+Grinnell,USA,North America,39.12723,-100.629031,67738
+Ham Lake,USA,North America,45.250243,-93.249951,55304
+Hammond,USA,North America,41.617396,-87.522011,46320
+Hampton,USA,North America,37.026441,-76.344285,23669
+Hartford,USA,North America,41.764582,-72.690855,06160
+Hastings,USA,North America,40.586132,-98.389888,68901
+Helena,USA,North America,46.592742,-112.036277,59601
+Hesperia,USA,North America,34.422036,-117.304687,92345
+Hiawatha,USA,North America,39.852403,-95.536497,66434
+Hibbing,USA,North America,47.427155,-92.937689,55746
+Hobbs,USA,North America,32.702702,-103.13553,88240
+Hoffman Estates,USA,North America,42.042726,-88.079278,60169
+Hudson,USA,North America,40.738164,-74.055073,07306
+Huntington Beach,USA,North America,33.678334,-118.000016,92648
+Huxley,USA,North America,41.894613,-93.60659,50124
+Independence,USA,North America,39.092479,-94.413792,64050
+Indianapolis,USA,North America,39.768333,-86.15835,46204
+Indianola,USA,North America,33.450951,-90.655092,38751
+Inglewood,USA,North America,33.9562,-118.353132,90301
+Inver Grove Heights,USA,North America,44.847904,-93.042812,55076
+Iowa City,USA,North America,41.661256,-91.529911,52240
+Janesville,USA,North America,42.682976,-89.022679,53545
+Jefferson,USA,North America,29.834772,-94.17045,
+Jersey City,USA,North America,40.721568,-74.047455,07302
+Joliet,USA,North America,41.52636,-88.084021,60432
+Jurupa Valley,USA,North America,33.979847,-117.451575,92509
+Kalamazoo,USA,North America,42.291707,-85.587229,49007
+Kellogg,USA,North America,41.717679,-92.90735,50135
+Kennewick,USA,North America,46.208707,-119.119919,99336
+Kenosha,USA,North America,42.584677,-87.821226,53140
+Keokuk,USA,North America,41.315479,-92.186713,52591
+Knoxville,USA,North America,35.960395,-83.921026,37902
+Kokomo,USA,North America,40.486444,-86.133635,46901
+La Crosse,USA,North America,43.812284,-91.251436,54601
+Lake Havasu City,USA,North America,34.47753,-114.337997,86403
+Lakeville,USA,North America,44.650051,-93.243279,55044
+Lakewood,USA,North America,39.708574,-105.084669,80226
+Lansing,USA,North America,42.733825,-84.55463,48933
+Las Cruces,USA,North America,32.314035,-106.779807,88005
+Layton,USA,North America,41.075105,-111.974192,84041
+Livonia,USA,North America,42.36837,-83.35271,48150
+Logan,USA,North America,40.107509,-89.376854,62761
+Lombard,USA,North America,41.886469,-88.020154,60148
+Long Beach,USA,North America,33.769016,-118.191604,90803
+Longmont,USA,North America,40.167212,-105.101928,80501
+Loveland,USA,North America,40.397761,-105.07498,80537
+Lynnville,USA,North America,39.686991,-90.345956,62650
+Madison,USA,North America,43.07469,-89.384166,53703
+Mandan,USA,North America,46.826415,-100.889704,58554
+Manitowoc,USA,North America,44.099834,-87.827992,54230
+Mankato,USA,North America,44.165853,-94.002801,56001
+Maple Grove,USA,North America,45.098498,-93.441922,55369
+Maplewood,USA,North America,45.008222,-93.045698,55109
+Maquoketa,USA,North America,42.069092,-90.665475,52060
+Marengo,USA,North America,32.201002,-87.756936,36748
+Marion,USA,North America,32.793166,-94.344488,75657
+Marshalltown,USA,North America,42.048881,-92.912267,50158
+Marshfield,USA,North America,44.666229,-90.174031,54449
+Mason City,USA,North America,43.152457,-93.201794,50401
+Maxwell,USA,North America,41.891932,-93.399655,50161
+Medford,USA,North America,42.41843,-71.106164,02155
+Melcher-Dallas,USA,North America,41.2243,-93.242021,50062
+Menlo Park,USA,North America,37.451967,-122.177992,94025
+Menomonie,USA,North America,44.876529,-91.927872,54751
+Meridian,USA,North America,32.36431,-88.703656,39301
+Minneapolis,USA,North America,44.9773,-93.265469,55415
+Minnetonka,USA,North America,44.940509,-93.463894,55345
+Mishawaka,USA,North America,41.661164,-86.180703,46544
+Mission Viejo,USA,North America,33.596568,-117.659405,92691
+Missoula,USA,North America,46.870105,-113.995267,59807
+Missouri Valley,USA,North America,41.556498,-95.887944,51555
+Modesto,USA,North America,37.639342,-120.996889,95354
+Monroe,USA,North America,41.040042,-75.324948,18372
+Montezuma,USA,North America,37.347655,-108.626085,81321
+Moorhead,USA,North America,46.873908,-96.753867,56560
+Moreno Valley,USA,North America,33.937518,-117.230579,92553
+Mount Pleasant,USA,North America,33.157058,-94.969401,75455
+Mount Prospect,USA,North America,42.066417,-87.937291,60056
+Mount Vernon,USA,North America,40.912508,-73.83865,10550
+Mountain View,USA,North America,37.389389,-122.08321,94039
+Muncie,USA,North America,40.193689,-85.386527,47305
+Murrieta,USA,North America,33.560832,-117.210656,92562
+Muscatine,USA,North America,41.477612,-91.121005,
+Muskegon,USA,North America,43.234181,-86.248392,49440
+Nampa,USA,North America,43.573736,-116.559631,83651
+Napa,USA,North America,38.489868,-122.321841,94574
+Naperville,USA,North America,41.77287,-88.147928,60540
+Nevada,USA,North America,39.515882,-116.853722,
+New Sharon,USA,North America,41.469736,-92.65143,50207
+Newark,USA,North America,40.735657,-74.172367,07102
+Newport Beach,USA,North America,33.617009,-117.92944,92663
+Newton,USA,North America,30.811899,-93.740504,75966
+Niles,USA,North America,42.028932,-87.812235,60714
+Normal,USA,North America,40.509296,-88.984394,61761
+North Liberty,USA,North America,41.74783,-91.60644,52317
+Northfield,USA,North America,42.09975,-87.780897,60093
+Norwalk,USA,North America,41.117597,-73.407897,06851
+Oak Lawn,USA,North America,41.710866,-87.758108,60453
+Oakland,USA,North America,37.804456,-122.271356,94612
+Oceanside,USA,North America,33.19587,-117.379483,92054
+Oelwein,USA,North America,42.677874,-91.914514,50662
+Olympia,USA,North America,47.045102,-122.895008,98501
+Orange,USA,North America,33.750631,-117.872231,82706
+Orem,USA,North America,40.29816,-111.694431,84057
+Orland Park,USA,North America,41.630663,-87.853629,60462
+Oshkosh,USA,North America,44.020692,-88.540857,54901
+Oskaloosa,USA,North America,41.295104,-92.644845,52577
+Ottumwa,USA,North America,41.019566,-92.411689,52501
+Owatonna,USA,North America,44.083994,-93.226108,55060
+Oxnard,USA,North America,34.197631,-119.180381,93030
+Palatine,USA,North America,42.11055,-88.04343,60067
+Palm Bay,USA,North America,27.994697,-80.636614,32909
+Palo,USA,North America,42.066079,-91.796384,52324
+Palo Alto,USA,North America,37.444329,-122.159846,94301
+Park Ridge,USA,North America,42.011233,-87.840603,60068
+Pasadena,USA,North America,34.147651,-118.144155,91129
+Pasco,USA,North America,28.299618,-82.45227,34637
+Pella,USA,North America,41.407314,-92.917407,50219
+Peoria,USA,North America,40.693861,-89.589101,61629
+Perry,USA,North America,40.396646,-77.289028,17024
+Pleasantville,USA,North America,41.132874,-73.792634,10570
+Pocatello,USA,North America,42.862029,-112.450627,83204
+Pomona,USA,North America,34.055381,-117.75175,91766
+Prairie City,USA,North America,41.59877,-93.236074,50228
+Prescott,USA,North America,34.539984,-112.468812,86301
+Prior Lake,USA,North America,44.713327,-93.422687,55372
+Providence,USA,North America,41.823989,-71.412834,02903
+Provo,USA,North America,40.233729,-111.658708,84603
+Pueblo,USA,North America,38.263995,-104.614187,81003
+Racine,USA,North America,42.731376,-87.783477,53401
+Rancho Cucamonga,USA,North America,34.103319,-117.575173,91730
+Red Oak,USA,North America,41.009519,-95.228247,51566
+Redding,USA,North America,40.586356,-122.391675,96001
+Redondo Beach,USA,North America,33.839829,-118.384594,90277
+Redwood City,USA,North America,37.486324,-122.232523,94063
+Rialto,USA,North America,34.1064,-117.370324,92376
+Richfield,USA,North America,44.876643,-93.287788,55423
+Richland,USA,North America,38.706046,-88.094935,62450
+Rio Rancho,USA,North America,35.310823,-106.684745,87144
+Robins,USA,North America,42.070993,-91.666812,52328
+Rockford,USA,North America,42.271394,-89.093966,61101
+Roseville,USA,North America,38.752124,-121.288006,95678
+Roswell,USA,North America,33.394328,-104.522952,88201
+Rugby,USA,North America,48.368888,-99.996246,58368
+Saginaw,USA,North America,43.420039,-83.949036,48601
+Salem,USA,North America,44.939156,-123.033121,97311
+Salinas,USA,North America,36.674412,-121.655037,93901
+Salt Lake City,USA,North America,40.75962,-111.886797,84139
+San Bernardino,USA,North America,34.825302,-116.083314,
+San Marcos,USA,North America,29.882644,-97.940583,78666
+San Mateo,USA,North America,37.496904,-122.333057,94002
+San Rafael,USA,North America,37.97478,-122.531669,94902
+Sandy,USA,North America,40.571045,-111.895382,84070
+Santa Clarita,USA,North America,34.412796,-118.553809,91355
+Santa Fe,USA,North America,35.68761,-105.938456,87501
+Santa Monica,USA,North America,34.01947,-118.491227,90401
+Santa Rosa,USA,North America,38.440492,-122.714105,95401
+Savage,USA,North America,44.777904,-93.33562,55378
+Schaumburg,USA,North America,42.033361,-88.083406,60194
+Scottsdale,USA,North America,33.494219,-111.926018,85251
+Shakopee,USA,North America,44.798019,-93.526899,55379
+Sheboygan,USA,North America,43.712897,-87.937043,53093
+Shenandoah,USA,North America,38.856559,-78.589089,22824
+Sierra Vista,USA,North America,31.564769,-110.274299,85635
+Sigourney,USA,North America,41.333094,-92.204936,52591
+Simi Valley,USA,North America,34.26774,-118.753807,93065
+Sioux City,USA,North America,42.496682,-96.405878,51101
+Skokie,USA,North America,42.026297,-87.752107,60077
+Slater,USA,North America,41.882414,-93.683684,50244
+Solon,USA,North America,41.807234,-91.49406,52333
+Sonoma,USA,North America,38.51108,-122.847339,95492
+South Bend,USA,North America,41.683381,-86.250007,46601
+South Gate,USA,North America,33.946346,-118.200981,90280
+Spencer,USA,North America,38.028881,-86.997645,47611
+St. Cloud,USA,North America,45.574643,-94.120581,56304
+St. George,USA,North America,37.109877,-113.583206,84770
+St. Louis,USA,North America,38.625406,-90.190009,63101
+St. Louis Park,USA,North America,44.947573,-93.356902,55416
+St. Paul,USA,North America,44.949749,-93.093103,55101
+State Center,USA,North America,42.016708,-93.163688,50247
+Sterling Heights,USA,North America,42.580312,-83.030203,48311
+Stevens Point,USA,North America,44.523447,-89.584446,54481
+Stockton,USA,North America,37.957702,-121.290779,95202
+Storm Lake,USA,North America,42.645282,-95.199273,50588
+Story City,USA,North America,42.187206,-93.595771,50248
+Superior,USA,North America,46.720774,-92.10408,54880
+Surprise,USA,North America,33.629247,-112.368143,85374
+Tama,USA,North America,42.056811,-92.543392,52342
+Temecula,USA,North America,33.494635,-117.147366,92590
+Tempe,USA,North America,33.425512,-111.940016,85281
+Terre Haute,USA,North America,39.466702,-87.413912,47807
+Thornton,USA,North America,39.869552,-104.985181,80229
+Thousand Oaks,USA,North America,34.170561,-118.837594,91362
+Tiffin,USA,North America,41.705772,-91.665042,52340
+Tinley Park,USA,North America,41.573367,-87.784494,60477
+Tipton,USA,North America,40.289915,-86.058442,46072
+Tooele,USA,North America,40.406287,-113.196639,
+Torrance,USA,North America,33.837139,-118.341361,90503
+Traverse City,USA,North America,44.760648,-85.616598,49684
+Troy,USA,North America,42.728412,-73.691788,12180
+Urbana,USA,North America,40.111717,-88.207301,61802
+Urbandale,USA,North America,41.627451,-93.738024,50322
+Vacaville,USA,North America,38.356577,-121.987744,95688
+Vallejo,USA,North America,38.104086,-122.256637,94590
+Valley City,USA,North America,46.923313,-98.003155,58072
+Ventura,USA,North America,34.445825,-119.077936,
+Victor,USA,North America,38.70999,-105.13998,80860
+Victorville,USA,North America,34.536107,-117.291156,92395
+Vinton,USA,North America,39.274436,-82.47403,45651
+Virginia,USA,North America,37.123224,-78.492772,
+Visalia,USA,North America,36.330228,-119.292058,93291
+Vista,USA,North America,33.202142,-117.24248,92055
+Wahpeton,USA,North America,46.265879,-96.608863,58075
+Warren,USA,North America,41.81196,-79.265445,16329
+Washington D.C.,USA,North America,38.895037,-77.036543,20230
+Waterloo,USA,North America,42.498275,-92.332874,50703
+Waukee,USA,North America,41.611848,-93.884513,50263
+Waukesha,USA,North America,43.062254,-88.312389,53072
+Wausau,USA,North America,44.959786,-89.627279,54401
+Wauwatosa,USA,North America,43.049412,-88.007927,53213
+Webster City,USA,North America,42.469567,-93.818386,50595
+West Allis,USA,North America,43.016681,-88.007032,53214
+West Covina,USA,North America,34.068621,-117.938953,91790
+West Des Moines,USA,North America,41.564448,-93.759406,50265
+West Jordan,USA,North America,40.606134,-111.939521,84088
+West Liberty,USA,North America,41.570023,-91.26377,52776
+West Valley City,USA,North America,40.696789,-111.986695,84120
+Westland,USA,North America,42.323806,-83.400532,48185
+Westminster,USA,North America,39.836653,-105.037205,80030
+Wheaton,USA,North America,41.864696,-88.110171,60187
+Williamsburg,USA,North America,37.270879,-76.707404,23185
+Williston,USA,North America,48.146546,-103.621814,58801
+Willmar,USA,North America,45.121949,-95.043537,56201
+Winona,USA,North America,43.958227,-91.780778,
+Winterset,USA,North America,41.334763,-94.013569,50273
+Wisconsin Rapids,USA,North America,44.391759,-89.822877,54495
+Woodbury,USA,North America,42.377536,-96.060719,51026
+Yakima,USA,North America,46.601557,-120.510842,98902
+Yuba City,USA,North America,39.140448,-121.616911,95991
+Yuma,USA,North America,32.725422,-114.619809,85364
+Zearing,USA,North America,42.161241,-93.297016,50278
+ANDERSON,United States,North America,40.108601,-85.612999,46017
+Abilene,United States,North America,32.41605,-99.76825,79605
+Ada,United States,North America,34.804298,-96.671303,74820
+Addison,United States,North America,32.968601,-96.836403,75001
+Aiken,United States,North America,33.649399,-81.684998,29805
+Akhiok,United States,North America,56.938702,-154.182999,
+Akiak,United States,North America,60.902901,-161.231003,99552
+Akron,United States,North America,40.709732,-88.710368,61726
+Akutan,United States,North America,54.13377,-165.778896,99553
+Alakanuk,United States,North America,62.680042,-164.659927,99554
+Alameda,United States,North America,37.788898,-122.32,94110
+Alamogordo,United States,North America,32.846201,-106.049,88330
+Alamosa,United States,North America,37.434898,-105.866997,81101
+Albany,United States,North America,37.141899,-78.9981,
+Albuquerque,United States,North America,35.040199,-106.609001,87106
+Aleknagik,United States,North America,59.2826,-158.617996,99555
+Alexander City,United States,North America,32.9147,-85.962997,35010
+Alexandria,United States,North America,36.196199,-93.413432,
+Alice,United States,North America,27.7409,-98.026901,78332
+Allakaket,United States,North America,66.551804,-152.621994,
+Allentown,United States,North America,40.6521,-75.440804,18109
+Alliance,United States,North America,42.0532,-102.804001,69301
+Alpena,United States,North America,45.078098,-83.560303,
+Alpine,United States,North America,30.384199,-103.683998,79830
+Alton/St Louis,United States,North America,38.890301,-90.045998,62010
+Altoona,United States,North America,40.296398,-78.32,16662
+Altus,United States,North America,34.667099,-99.266701,73521
+Amarillo,United States,North America,35.219398,-101.706001,79111
+Ambler,United States,North America,67.1063,-157.856989,99786
+Anaktuvuk Pass,United States,North America,68.133598,-151.742996,99721
+Anchorage,United States,North America,61.212967,-149.882334,99501
+Andersen,United States,North America,34.494598,-82.709396,28926
+Angleton,United States,North America,29.108601,-95.462097,
+Angola,United States,North America,41.639702,-85.083504,46703
+Angoon,United States,North America,57.503601,-134.585007,99820
+Aniak,United States,North America,61.5816,-159.542999,
+Ann Arbor,United States,North America,42.223,-83.745598,48108
+Annapolis,United States,North America,38.942902,-76.568398,21037
+Anniston,United States,North America,33.5882,-85.8581,36203
+Anvik,United States,North America,62.646702,-160.190994,99558
+Apalachicola,United States,North America,29.727501,-85.027496,32329
+Appleton,United States,North America,44.258099,-88.519096,54942
+Arcata CA,United States,North America,40.978101,-124.109,95519
+Arctic Village,United States,North America,68.1147,-145.578995,
+Ardmore,United States,North America,34.30301,-97.019634,73436
+Asheville,United States,North America,35.436199,-82.541801,28732
+Aspen,United States,North America,39.223202,-106.869003,81656
+Astoria,United States,North America,46.158001,-123.878998,97146
+Atka,United States,North America,52.220299,-174.205994,99547
+Atlanta,United States,North America,33.763799,-84.417168,30314
+Atlantic City,United States,North America,39.4576,-74.577202,08234
+Atqasuk,United States,North America,70.4673,-157.436005,99791
+Auburn,United States,North America,32.615101,-85.433998,36830
+Augusta,United States,North America,38.893549,-75.91835,
+Austin,United States,North America,30.1945,-97.669899,78719
+Avon Park,United States,North America,27.5912,-81.527802,33825
+Bainbridge,United States,North America,30.9715,-84.637398,
+Baker City,United States,North America,44.837299,-117.808998,
+Bakersfield,United States,North America,35.433601,-119.056999,93302
+Baltimore,United States,North America,39.25055,-76.54105,21222
+Bangor,United States,North America,44.8074,-68.828102,04401
+Banning,United States,North America,33.9231,-116.850998,92220
+Bar Harbor,United States,North America,44.450001,-68.361504,04705
+Barking Sands,United States,North America,22.0228,-159.785004,
+Barnstable,United States,North America,41.6693,-70.280403,02649
+Barrow,United States,North America,71.285402,-156.766008,99273
+Bartow,United States,North America,27.943399,-81.783401,33830
+Baton Rouge,United States,North America,30.533199,-91.149597,70811
+Battle Creek,United States,North America,42.307301,-85.251503,49015
+Baudette,United States,North America,48.728401,-94.612198,
+Bay City,United States,North America,28.973301,-95.863503,
+Beaufort,United States,North America,32.412201,-80.634399,29907
+Beaumont,United States,North America,30.01075,-94.118248,77705
+Beaver,United States,North America,66.362198,-147.406998,99724
+Beckley,United States,North America,37.7873,-81.124199,25813
+Bedford,United States,North America,42.470001,-71.289001,01730
+Belleville,United States,North America,38.5452,-89.835197,62225
+Bellingham,United States,North America,48.792801,-122.538002,99248
+Bemidji,United States,North America,47.509399,-94.933701,56601
+Bentonville,United States,North America,36.281898,-94.306801,
+Bethel,United States,North America,60.7798,-161.837997,99559
+Bettles,United States,North America,66.913902,-151.529007,99726
+Beverly,United States,North America,42.584202,-70.916496,01923
+Big Mountain,United States,North America,59.361198,-155.259003,
+Big Piney,United States,North America,42.585098,-110.111,83113
+Billings,United States,North America,45.807701,-108.542999,59015
+Biloxi,United States,North America,30.4104,-88.9244,39534
+Binghamton,United States,North America,42.208698,-75.979797,13777
+Bishop,United States,North America,37.3731,-118.363998,
+Bismarck,United States,North America,46.772701,-100.746002,58504
+Bloomington,United States,North America,39.81155,-87.7663,
+Bluefield,United States,North America,37.295799,-81.207703,24701
+Blythe,United States,North America,33.619202,-114.717003,92225
+Blytheville,United States,North America,35.964298,-89.944,72315
+Boca Raton,United States,North America,26.3785,-80.107697,33431
+Boise,United States,North America,43.5644,-116.223,83705
+Boston,United States,North America,42.3643,-71.005203,02152
+Brunswick,United States,North America,35.434267,-77.598798,28538
+Burlington,United States,North America,42.62755,-82.1394,N0P 1M0
+Carlsbad,United States,North America,32.732901,-110.7715,
+Charleston,United States,North America,35.635851,-80.816849,28115
+Chicago,United States,North America,42.011399,-87.783251,60646
+Cincinnati,United States,North America,39.07605,-84.543201,41011
+Cleveland,United States,North America,39.383101,-82.788498,45644
+Clinton,United States,North America,38.585451,-94.764801,66071
+Clovis,United States,North America,34.40395,-103.2005,88101
+Cold Bay,United States,North America,55.60605,-161.643005,
+Columbia,United States,North America,35.575801,-84.778099,
+Columbus,United States,North America,39.9612,-82.9988,
+Concord,United States,North America,36.688749,-101.383049,
+Crestview,United States,North America,30.7146,-86.522503,
+Dallas,United States,North America,32.765733,-97.053833,75050
+Danville,United States,North America,38.386049,-83.466,
+Dayton,United States,North America,39.7725,-84.1642,45402
+Decatur,United States,North America,37.243649,-87.905548,42445
+Del Rio,United States,North America,29.366851,-100.852502,78841
+Denver,United States,North America,39.715899,-104.760998,80047
+Detroit,United States,North America,42.286499,-83.297902,48141
+Dillingham,United States,North America,59.0397,-158.4575,
+Douglas,United States,North America,31.4058,-109.554996,85607
+El Paso,United States,North America,31.82835,-106.378998,79916
+Ely,United States,North America,43.562101,-103.336353,
+Fairbanks,United States,North America,64.740402,-147.479004,
+Fayetteville,United States,North America,35.49815,-86.5252,
+Fort Lauderdale,United States,North America,26.134949,-80.161701,33311
+Fort Myers,United States,North America,26.561399,-81.80925,33912
+Fort Worth,United States,North America,32.9037,-97.340599,76131
+Gainesville,United States,North America,31.981349,-83.050999,
+Georgetown,United States,North America,36.00045,-77.339252,27857
+Greenville,United States,North America,34.724,-83.063242,
+Harrisburg,United States,North America,40.205299,-76.807449,17034
+Hayward,United States,North America,41.842199,-106.78315,
+Houston,United States,North America,29.8066,-95.432134,77008
+Huntsville,United States,North America,32.69205,-91.181149,71286
+Jackson,United States,North America,36.723633,-87.816966,
+Jacksonville,United States,North America,31.24036,-83.781859,31768
+Jamestown,United States,North America,44.54155,-88.968102,
+Jasper,United States,North America,32.9732,-89.810097,
+Kansas City,United States,North America,39.2104,-94.653347,64151
+Key West,United States,North America,24.56595,-81.724251,33040
+Lafayette,United States,North America,35.3088,-89.46225,
+Lancaster,United States,North America,37.4314,-97.257549,67013
+Las Vegas,United States,North America,36.0453,-112.630499,
+Lawrence,United States,North America,40.864201,-83.169998,43351
+Lewiston,United States,North America,45.2115,-93.64925,55376
+Lompoc,United States,North America,34.70145,-120.526001,93437
+Los Angeles,United States,North America,34.100901,-118.4105,90210
+Louisville,United States,North America,38.2012,-85.699848,40231
+Macon,United States,North America,36.819866,-84.959834,42633
+Merced,United States,North America,37.3326,-120.541,95348
+Mesa,United States,North America,33.3843,-111.691498,85206
+Miami,United States,North America,25.854,-80.488668,
+Milwaukee,United States,North America,43.028801,-87.9655,53214
+Minot,United States,North America,48.3375,-101.319,
+Mobile,United States,North America,30.659,-88.155449,36609
+Molokai,United States,North America,21.181951,-157.034996,96757
+Montgomery,United States,North America,35.397832,-82.341466,28792
+Mountain Home,United States,North America,39.706249,-104.17125,
+Nashville,United States,North America,36.1245,-86.6782,37214
+New Orleans,United States,North America,29.9537,-90.107101,70125
+New York,United States,North America,40.718175,-73.916901,11378
+New York City,United States,North America,40.718175,-73.916901,11378
+Norfolk,United States,North America,36.916099,-76.245251,23518
+Ogden,United States,North America,41.159965,-111.992544,84405
+Oklahoma City,United States,North America,35.447333,-97.5448,73108
+Olathe,United States,North America,38.839249,-94.81395,66062
+Omaha,United States,North America,41.210751,-95.903297,68108
+Ontario,United States,North America,39.03825,-117.307499,
+Orlando,United States,North America,28.48745,-81.32095,32812
+Oxford,United States,North America,37.93145,-81.335999,25044
+Palm Springs,United States,North America,33.734934,-116.314003,92211
+Panama City,United States,North America,30.212935,-85.684538,32405
+Pensacola,United States,North America,30.41305,-87.252602,32505
+Peru,United States,North America,41.0,-87.652599,60912
+Petersburg,United States,North America,46.99275,-105.226204,
+Philadelphia,United States,North America,40.030434,-75.172264,19144
+Phoenix,United States,North America,33.552533,-112.159335,85301
+Pittsburgh,United States,North America,40.422951,-80.081551,15205
+Portland,United States,North America,44.617449,-96.453651,
+Portsmouth,United States,North America,40.9592,-76.8353,17850
+Rapid City,United States,North America,44.09515,-103.080498,57719
+Riverside,United States,North America,33.9163,-117.352001,92508
+Rochester,United States,North America,43.513599,-85.086201,49310
+Sacramento,United States,North America,38.60735,-121.445749,95815
+San Antonio,United States,North America,29.482533,-98.443268,78209
+San Diego,United States,North America,32.668367,-117.128334,92136
+San Francisco,United States,North America,37.618999,-122.375,94128
+San Jose,United States,North America,37.34775,-121.874001,95112
+Santa Ana,United States,North America,33.675901,-117.7995,92614
+Seattle,United States,North America,47.4895,-122.3055,98168
+Shreveport,United States,North America,32.496201,-93.744433,71101
+Sidney,United States,North America,44.404101,-103.589001,
+Spokane,United States,North America,47.639267,-117.504331,99219
+Springfield,United States,North America,38.976701,-88.968903,62418
+St. Petersburg,United States,North America,27.83765,-82.6572,33702
+Tacoma,United States,North America,47.202799,-122.527,98467
+Tampa,United States,North America,27.913467,-82.501236,33629
+Tonopah,United States,North America,37.929501,-116.933998,
+Topeka,United States,North America,39.0098,-95.643047,66605
+Tucson,United States,North America,32.230733,-111.014002,85745
+Tulsa,United States,North America,36.118999,-95.936348,74119
+Valdosta,United States,North America,30.87515,-83.234852,31604
+Waco,United States,North America,31.62455,-97.152298,76705
+Washington,United States,North America,37.789033,-77.181099,23009
+"Washington, D.C.",United States,North America,37.789033,-77.181099,23009
+Watertown,United States,North America,44.452951,-86.5882,
+West Palm Beach,United States,North America,26.638101,-80.090347,33461
+Wichita,United States,North America,37.655433,-97.305433,67211
+Wilmington,United States,North America,37.792399,-79.1004,
+Bridgetown,Barbados,North America,13.097783,-59.618418,BB11009
+Castries,Saint Lucia,North America,14.0101,-60.9875,34160
+Oranjestad,Aruba,North America,12.526269,-70.03843,
+Philipsburg,St. Maarten,North America,18.025071,-63.048307,
+Port-au-Prince,Haiti,North America,18.604445,-72.326915,6210
+Willemstad,Curaçao,North America,12.10667,-68.935131,0000 NA
+Adelaide,Australia,Oceania,-34.945,138.531006,5950
+Airlie Beach,Australia,Oceania,-20.27611,148.755,4802
+Albury,Australia,Oceania,-36.067799,146.957993,2640
+Alice Springs,Australia,Oceania,-23.8067,133.901993,0873
+Alpha,Australia,Oceania,-23.646099,146.584,
+Amata,Australia,Oceania,-26.108299,131.207001,0872
+Amberley,Australia,Oceania,-10.9508,142.459,
+Argyle,Australia,Oceania,-24.5719,133.084,0872
+Armidale,Australia,Oceania,-30.528099,151.617004,2350
+Aurukun,Australia,Oceania,-13.354067,141.72065,
+Avalon,Australia,Oceania,-38.039398,144.468994,3212
+Bairnsdale,Australia,Oceania,-37.887501,147.567993,3875
+Ballarat,Australia,Oceania,-37.562301,143.860564,3350
+Ballera,Australia,Oceania,-27.405633,141.809458,
+Ballina Byron Bay,Australia,Oceania,-28.8339,153.561996,2478
+Barcaldine,Australia,Oceania,-23.5653,145.307007,
+Barimunya,Australia,Oceania,-22.673901,119.166,
+Bedourie,Australia,Oceania,-24.3461,139.460007,
+Bendigo,Australia,Oceania,-36.739399,144.330002,3550
+Biloela,Australia,Oceania,-24.4939,150.576004,4716
+Birdsville,Australia,Oceania,-25.897499,139.348007,4482
+Blackall,Australia,Oceania,-24.427799,145.429001,
+Blackwater,Australia,Oceania,-23.6031,148.807007,
+Boigu,Australia,Oceania,-9.23278,142.218002,
+Brisbane,Australia,Oceania,-27.477249,153.0625,4170
+Derby,Australia,Oceania,-17.4757,123.744503,6728
+Melbourne,Australia,Oceania,-37.792401,144.949,3052
+Perth,Australia,Oceania,-32.0189,115.924,6102
+Richmond,Australia,Oceania,-27.151251,146.948006,4468
+Sydney,Australia,Oceania,-33.935249,151.082504,2196
+Tasmania,Australia,Oceania,-42.035067,146.636689,7140
+Toowoomba,Australia,Oceania,-27.550567,151.854668,4350
+Aitutaki,Cook Islands,Oceania,-18.8309,-159.764008,
+Avarua,Cook Islands,Oceania,-21.2027,-159.806,
+Ahe,French Polynesia,Oceania,-14.4281,-146.257004,98770
+Anaa,French Polynesia,Oceania,-17.3526,-145.509995,98760
+Apataki,French Polynesia,Oceania,-15.5736,-146.414993,98762
+Arutua,French Polynesia,Oceania,-15.2483,-146.617004,
+Agana,Guam,Oceania,13.4834,144.796005,96913
+Abaiang Atoll,Kiribati,Oceania,1.79861,173.041,
+Abemama,Kiribati,Oceania,0.490833,173.828995,
+Arorae,Kiribati,Oceania,-2.61611,176.802994,
+Noumea,New Caledonia,Oceania,-22.136451,166.343002,98840
+Alexandra,New Zealand,Oceania,-45.2117,169.373001,9391
+Auckland,New Zealand,Oceania,-37.008099,174.792007,2022
+Alofi,Niue,Oceania,-19.079031,-169.925598,
+Babelthuap,Palau,Oceania,7.36731,134.544236,
+Baimuru,Papua New Guinea,Oceania,-7.49686,144.819901,
+Balimo,Papua New Guinea,Oceania,-8.05,142.932999,
+Bodinumu,Papua New Guinea,Oceania,-9.107778,147.666722,
+Apia,Samoa,Oceania,-13.8487,-171.740005,
+Afutara,Solomon Islands,Oceania,-9.191389,160.948611,
+Atoifi,Solomon Islands,Oceania,-8.87333,161.011002,
+Auki,Solomon Islands,Oceania,-8.70257,160.682007,
+Ballalae,Solomon Islands,Oceania,-6.990745,155.886656,
+Batuna,Solomon Islands,Oceania,-8.562028,158.119306,
+Ablow,Vanuatu,Oceania,-13.666,167.712006,
+Anelghowhat,Vanuatu,Oceania,-20.249201,169.770996,
+Aniwa,Vanuatu,Oceania,-19.2346,169.6009,
+Broken Hill,Australia,Oceania,-31.965,141.451111,2880
+Broome,Australia,Oceania,-17.9614,122.2359,13904
+Byron Bay,Australia,Oceania,-28.648333,153.617778,2481
+Cairns,Australia,Oceania,-16.920666,145.772185,4870
+Canberra,Australia,Oceania,-35.297591,149.101268,2600
+Christchurch,New Zealand,Oceania,-43.530955,172.636434,8011
+Coober Pedy,Australia,Oceania,-29.013368,134.753616,5723
+Darwin,Australia,Oceania,-12.4634,130.8456,6150
+Dunedin,New Zealand,Oceania,-45.874098,170.503576,9016
+Geelong,Australia,Oceania,-38.149325,144.359824,3220
+Gisborne,New Zealand,Oceania,-38.661326,178.020649,4010
+Greymouth,New Zealand,Oceania,-42.449947,171.207988,7801
+Hamilton,New Zealand,Oceania,-37.787,175.2793,1060
+Hobart,Australia,Oceania,-42.882509,147.328123,7000
+Invercargill,New Zealand,Oceania,-46.411846,168.347063,9810
+Launceston,Australia,Oceania,-41.434081,147.13735,7250
+Margaret River,Australia,Oceania,-33.953178,115.076937,6285
+Napier,New Zealand,Oceania,-39.49021,176.917839,4001
+Nelson,New Zealand,Oceania,-41.2706,173.284,3023
+New Plymouth,New Zealand,Oceania,-39.057994,174.080647,4310
+Newcastle,Australia,Oceania,-32.9267,151.7789,NE1 5BS
+Noosa,Australia,Oceania,-26.318244,152.930798,
+Palmerston North,New Zealand,Oceania,-40.356317,175.611239,4410
+Port Douglas,Australia,Oceania,-16.484598,145.463629,4877
+Queenstown,New Zealand,Oceania,-45.032192,168.661,9348
+Rotorua,New Zealand,Oceania,-38.136073,176.252543,3010
+Surfers Paradise,Australia,Oceania,-27.99899,153.42398,4217
+Taupo,New Zealand,Oceania,-38.68662,176.069477,3377
+Tauranga,New Zealand,Oceania,-37.685901,176.167505,3110
+Townsville,Australia,Oceania,-19.256939,146.823954,4810
+Wanaka,New Zealand,Oceania,-44.694169,169.136464,9305
+Wellington,New Zealand,Oceania,-41.288795,174.777211,6011
+Whangarei,New Zealand,Oceania,-35.727527,174.31942,0110
+Wollongong,Australia,Oceania,-34.424394,150.89385,2500
+Alto Rio Senguer,Argentina,South America,-45.013599,-70.812202,9033
+Bahia Blanca,Argentina,South America,-38.725,-62.1693,B8000
+Bariloche,Argentina,South America,-41.151199,-71.157501,
+Buenos Aires,Argentina,South America,-34.6907,-58.4757,1772
+Córdoba,Argentina,South America,-31.323601,-64.208,X5000
+El Calafate,Argentina,South America,-50.308201,-72.150848,
+Mendoza,Argentina,South America,-32.831699,-68.7929,M5539HSQ
+Rosario,Argentina,South America,-32.959361,-60.661702,S2000
+Salta,Argentina,South America,-25.226991,-64.591196,
+Ushuaia,Argentina,South America,-54.8433,-68.2958,V9410BJE
+Bermejo,Bolivia,South America,-22.7733,-64.312897,
+Cochabamba,Bolivia,South America,-17.401246,-66.167568,
+La Paz,Bolivia,South America,-16.5133,-68.192299,
+Oruro,Bolivia,South America,-18.666667,-67.666667,
+Potosí,Bolivia,South America,-19.58929,-65.753471,
+Santa Cruz,Bolivia,South America,-17.7282,-63.15345,
+Santa Cruz de la Sierra,Bolivia,South America,-17.783422,-63.182085,
+Sucre,Bolivia,South America,-19.007099,-65.288696,
+Uyuni,Bolivia,South America,-20.462841,-66.823907,
+Almeirim,Brazil,South America,-0.889839,-52.6022,
+Alta Floresta,Brazil,South America,-9.866389,-56.105,78580-000
+Altamira,Brazil,South America,-3.25391,-52.254002,68375-000
+Aracaju,Brazil,South America,-10.984,-37.070301,49037-580
+Aracatuba,Brazil,South America,-21.1413,-50.424702,16052-800
+Araguaina,Brazil,South America,-7.22787,-48.240501,77815-710
+Arapiraca,Brazil,South America,-9.77536,-36.6292,57303-256
+Araxa,Brazil,South America,-19.5632,-46.9604,38180-129
+Aripuana,Brazil,South America,-10.188278,-59.457273,
+BLUMENAU,Brazil,South America,-26.830601,-49.090302,89068-000
+Bage,Brazil,South America,-31.390499,-54.112202,96422-250
+Barcelos,Brazil,South America,-0.981292,-62.919601,69700-000
+Barra Do Garcas,Brazil,South America,-15.8613,-52.388901,
+Barreiras,Brazil,South America,-12.0789,-45.008999,47810-902
+Barretos,Brazil,South America,-20.584499,-48.594101,14784-400
+Bauru,Brazil,South America,-22.255929,-49.052043,17023-145
+Belem,Brazil,South America,-1.37925,-48.476299,66816-240
+Belo Horizonte,Brazil,South America,-19.737822,-43.961271,33200-000
+Bointo,Brazil,South America,-21.247299,-56.452499,
+Bom Jesus Da Lapa,Brazil,South America,-13.2621,-43.4081,47600-959
+Brasília,Brazil,South America,-10.333333,-53.2,
+Campinas,Brazil,South America,-22.9333,-47.121349,13060-800
+Curitiba,Brazil,South America,-25.4668,-49.203899,82960-000
+Florianópolis,Brazil,South America,-27.5973,-48.54961,88010-100
+Fortaleza,Brazil,South America,-3.77628,-38.5326,60741-900
+Foz do Iguaçu,Brazil,South America,-25.600279,-54.485001,85863-900
+Itaituba,Brazil,South America,-3.6848,-57.240952,
+Juiz De Fora,Brazil,South America,-21.652278,-43.279928,36048-710
+Manaus,Brazil,South America,-3.092325,-60.018002,69000-000
+Natal,Brazil,South America,-5.805398,-35.20809,59030-660
+Olinda,Brazil,South America,-7.99864,-34.845955,53030-060
+Oriximina,Brazil,South America,-1.60184,-56.116501,
+Paraty,Brazil,South America,-23.219646,-44.71542,23970-000
+Porto Alegre,Brazil,South America,-30.0325,-51.230377,90010-300
+Recife,Brazil,South America,-8.12649,-34.923599,51190-485
+Rio de Janeiro,Brazil,South America,-22.8843,-43.377586,21740-030
+Salvador,Brazil,South America,-12.908611,-38.322498,41603-115
+São Paulo,Brazil,South America,-23.530833,-46.564722,03086-040
+Antofagasta,Chile,South America,-23.444501,-70.445099,
+Arica,Chile,South America,-18.348499,-70.338699,
+Balmaceda,Chile,South America,-45.9161,-71.689499,
+Concepción,Chile,South America,-36.82707,-73.050206,4030575
+Puerto Varas,Chile,South America,-41.317802,-72.982907,5550596
+Punta Arenas,Chile,South America,-53.162569,-70.907822,6201065
+San Pedro de Atacama,Chile,South America,-22.910832,-68.200138,1410000
+Santiago,Chile,South America,-33.393002,-70.785797,9020000
+Temuco,Chile,South America,-38.84635,-72.6443,
+Valparaíso,Chile,South America,-33.045846,-71.619675,2362829
+Viña del Mar,Chile,South America,-33.024454,-71.551764,2571546
+Acandi,Colombia,South America,8.51667,-77.3,
+Apiay,Colombia,South America,4.07607,-73.5627,500008
+Araracuara,Colombia,South America,-0.5833,-72.4083,
+Arauca,Colombia,South America,7.06888,-70.7369,810001
+Armenia,Colombia,South America,4.45278,-75.7664,
+Bahia Solano,Colombia,South America,6.20292,-77.3947,
+Barrancabermeja,Colombia,South America,7.02433,-73.8068,687033
+Barranquilla,Colombia,South America,10.8896,-74.7808,083010
+Bogotá,Colombia,South America,4.70159,-74.1469,111071
+Cali,Colombia,South America,3.451999,-76.532526,760044
+Cartagena,Colombia,South America,10.4424,-75.513,130015
+Medellín,Colombia,South America,6.220549,-75.590582,050025
+Salento,Colombia,South America,4.637301,-75.569799,631020
+Santa Marta,Colombia,South America,11.232094,-74.195092,470003
+Ambato,Ecuador,South America,-1.21207,-78.5746,180106
+Baños,Ecuador,South America,-1.331916,-78.262528,180302
+Guayaquil,Ecuador,South America,-2.15742,-79.883598,090513
+Otavalo,Ecuador,South America,0.222764,-78.245427,100450
+Quito,Ecuador,South America,-0.129167,-78.3575,170907
+Cayenne,French Guiana,South America,4.937154,-52.325874,97300
+Annai,Guyana,South America,3.95944,-59.124199,
+Bartica,Guyana,South America,6.358864,-58.655207,
+Asunción,Paraguay,South America,-25.24,-57.52,111009
+Ayolas,Paraguay,South America,-27.370554,-56.854064,
+Ciudad del Este,Paraguay,South America,-25.516902,-54.616864,100151
+Encarnación,Paraguay,South America,-27.275584,-55.87508,070101
+Andahuaylas,Peru,South America,-13.7064,-73.350403,
+Andoas,Peru,South America,-2.79613,-76.466599,
+Anta,Peru,South America,-9.34744,-77.598396,
+Arequipa,Peru,South America,-16.341101,-71.583099,
+Ayacucho,Peru,South America,-13.1548,-74.204399,05011
+Cusco,Peru,South America,-13.53195,-71.96746,08007
+Iquitos,Peru,South America,-3.749365,-73.244414,16000
+Lima,Peru,South America,-12.0219,-77.114305,07031
+Machu Picchu,Peru,South America,-13.164341,-72.545009,08680
+Nazca,Peru,South America,-14.82772,-74.937062,11401
+Puno,Peru,South America,-15.0,-70.0,
+Trujillo,Peru,South America,-8.111678,-79.028774,13008
+Albina,Suriname,South America,5.51272,-54.050098,
+Paramaribo,Suriname,South America,5.824176,-55.166281,
+Artigas,Uruguay,South America,-30.4007,-56.5079,55000
+Cabo Polonio,Uruguay,South America,-34.402852,-53.782501,27200
+Colonia del Sacramento,Uruguay,South America,-34.469859,-57.843368,70000
+Montevideo,Uruguay,South America,-34.838402,-56.0308,14000
+Punta del Este,Uruguay,South America,-34.963234,-54.943998,20100
+Acarigua,Venezuela,South America,9.553375,-69.237869,3301
+Anaco,Venezuela,South America,9.430225,-64.470726,6003
+Barinas,Venezuela,South America,8.615,-70.214167,5201
+Barquisimeto,Venezuela,South America,10.042747,-69.35862,3001
+Caracas,Venezuela,South America,10.506093,-66.914601,1012
+Isla Margarita,Venezuela,South America,11.02056,-63.907398,6323
+Maracaibo,Venezuela,South America,10.64981,-71.64436,4012
+Santa Barbara,Venezuela,South America,8.389032,-71.554485,
+Baglung,Nepal,Asia,28.212799,83.666298,33400
+Bajhang,Nepal,Asia,29.539,81.185402,
+Bajura,Nepal,Asia,29.502001,81.668999,
+Bhairawa,Nepal,Asia,27.505685,83.416293,
+Bharatpur,Nepal,Asia,27.678101,84.429398,44207
+Bhojpur,Nepal,Asia,27.1474,87.050797,
+Biratnagar,Nepal,Asia,26.481501,87.264,56613
+Prizren,Kosovo,Europe,42.213015,20.736334,20080
+Coventry,United Kingdom,Europe,52.408181,-1.510477,CV1 1LL
+Folkestone,United Kingdom,Europe,51.079134,1.179407,CT20 1SS
+Park City,United States,North America,40.646092,-111.497996,84060
